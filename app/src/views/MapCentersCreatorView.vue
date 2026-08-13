@@ -29,7 +29,7 @@ const selectedPointId = ref<number | null>(null)
 const feedbackMessage = ref('')
 const isSaving = ref(false)
 const isUploading = ref(false)
-
+const pointSpacing = ref(50)
 
 const selectedPoint = computed(() => {
   if (selectedPointId.value === null) {
@@ -134,24 +134,52 @@ function createPointFromClick(event: MouseEvent) {
   const offsetX = event.clientX - rect.left
   const offsetY = event.clientY - rect.top
 
-  if (offsetX < 0 || offsetY < 0 || offsetX > rect.width || offsetY > rect.height) {
+  if (
+    offsetX < 0 ||
+    offsetY < 0 ||
+    offsetX > rect.width ||
+    offsetY > rect.height
+  ) {
     return
   }
 
-  const x = Math.round((offsetX / rect.width) * mapWidth.value)
-  const y = Math.round((offsetY / rect.height) * mapHeight.value)
-  const id = getNextPointId()
+  const centerX = Math.round((offsetX / rect.width) * mapWidth.value)
+  const centerY = Math.round((offsetY / rect.height) * mapHeight.value)
 
-  points.value.push({
-    id,
-    name: `Point ${id}`,
-    x,
-    y,
-    borders: [],
-  })
+  const spacing = pointSpacing.value
 
-  selectedPointId.value = id
-  feedbackMessage.value = `Ponto ${id} criado em (${x}, ${y}).`
+  const positions = [
+    [-1, -1], [0, -1], [1, -1],
+    [-1,  0], [0,  0], [1,  0],
+    [-1,  1], [0,  1], [1,  1],
+  ]
+
+  for (const [dx, dy] of positions) {
+    const x = centerX + dx * spacing
+    const y = centerY + dy * spacing
+
+    // Não cria pontos fora do mapa
+    if (
+      x < 0 ||
+      y < 0 ||
+      x > mapWidth.value ||
+      y > mapHeight.value
+    ) {
+      continue
+    }
+
+    const id = getNextPointId()
+
+    points.value.push({
+      id,
+      name: `Point ${id}`,
+      x,
+      y,
+      borders: [],
+    })
+  }
+
+  feedbackMessage.value = `9 pontos criados ao redor de (${centerX}, ${centerY}).`
 }
 
 function removePoint(pointId: number) {
@@ -376,6 +404,16 @@ onMounted(() => {
         </button>
 
         <p v-if="feedbackMessage" class="feedback">{{ feedbackMessage }}</p>
+
+        <label class="field">
+        <span>Distância entre pontos</span>
+        <input
+            v-model.number="pointSpacing"
+            type="number"
+            min="1"
+            max="500"
+        />
+        </label>
 
         <div v-if="selectedPoint" class="editor-card">
           <h3>Ponto selecionado: {{ selectedPoint.id }}</h3>

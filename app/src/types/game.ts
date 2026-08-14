@@ -1,5 +1,20 @@
 export type ProvinceOwner = 'player' | 'ally' | 'enemy' | 'neutral' | string
 
+export interface Country {
+  id?: number
+  name: string
+  color?: string
+}
+
+export interface Troop {
+  id?: number
+  name?: string
+  country_id: number | string | null
+  province_id?: number | null
+  type?: string
+  health?: number
+}
+
 export interface MapProvinceData {
   id: number
   name: string
@@ -9,6 +24,7 @@ export interface MapProvinceData {
   centerX: number
   centerY: number
   borders: number[]
+  country_id?: number | string | null
 }
 
 export interface Province extends MapProvinceData {}

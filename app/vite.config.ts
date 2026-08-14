@@ -70,6 +70,27 @@ function mapCentersApi() {
           }
         }
 
+        if (req.method === 'GET' && req.url === '/api/map-centers/json-assets') {
+          try {
+            await mkdir(mapsJsonDir, { recursive: true })
+
+            const files = await readdir(mapsJsonDir)
+
+            const allowed = files
+              .filter((file) => /\.json$/i.test(file))
+              .sort()
+
+            res.statusCode = 200
+            res.setHeader('Content-Type', 'application/json')
+            res.end(JSON.stringify(allowed))
+            return
+          } catch {
+            res.statusCode = 500
+            res.end('Falha ao listar mapas')
+            return
+          }
+        }
+
         if (req.method === 'POST' && req.url === '/api/map-centers/upload') {
           try {
             const rawBody = await readRawBody(req)

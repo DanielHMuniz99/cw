@@ -30,6 +30,61 @@ const feedbackMessage = ref('')
 const isSaving = ref(false)
 const isUploading = ref(false)
 const pointSpacing = ref(50)
+const mapJsonAssets = ref<string[]>([])
+
+async function refreshMapJsonAssets() {
+  try {
+    const response = await fetch('/api/map-centers/json-assets')
+
+    if (!response.ok) {
+      return
+    }
+
+    mapJsonAssets.value = await response.json()
+  } catch {
+    mapJsonAssets.value = []
+  }
+}
+
+async function handleMapJsonSelection(event: Event) {
+  const select = event.target as HTMLSelectElement
+  const selected = select.value
+
+  if (!selected) {
+    return
+  }
+
+  try {
+    const response = await fetch(`/json/maps/${encodeURIComponent(selected)}`)
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`)
+    }
+
+    const data = await response.json()
+
+    mapWidth.value = data.width
+    mapHeight.value = data.height
+    points.value = data.points ?? []
+
+    if (data.name) {
+      mapFileName.value = data.name
+    }
+
+    if (data.overlayImagePath) {
+      overlayImagePath.value = data.overlayImagePath
+    } else {
+      overlayImagePath.value = ''
+    }
+
+    selectedPointId.value = null
+
+    feedbackMessage.value = `Mapa "${selected}" carregado com sucesso.`
+  } catch (error) {
+    console.error(error)
+    feedbackMessage.value = `Erro ao carregar o mapa "${selected}".`
+  }
+}
 
 const selectedPoint = computed(() => {
   if (selectedPointId.value === null) {
@@ -40,19 +95,21 @@ const selectedPoint = computed(() => {
 })
 
 const nearbyPoints = computed(() => {
-  if (!selectedPoint.value) {
+  const selected = selectedPoint.value
+
+  if (!selected) {
     return []
   }
 
-  const range = 50
+  const range = 75
 
   return points.value.filter((point) => {
     if (point.id === selectedPointId.value) {
       return false
     }
 
-    const dx = point.x - selectedPoint.value.x
-    const dy = point.y - selectedPoint.value.y
+    const dx = point.x - selected.x
+    const dy = point.y - selected.y
 
     const distance = Math.sqrt(dx * dx + dy * dy)
 
@@ -109,8 +166,8 @@ function sanitizeFileName(rawName: string) {
 }
 
 function clampDimensions() {
-  mapWidth.value = Math.max(200, Math.min(12000, Math.round(mapWidth.value || 0)))
-  mapHeight.value = Math.max(200, Math.min(12000, Math.round(mapHeight.value || 0)))
+  mapWidth.value = Math.max(200, Math.min(120000, Math.round(mapWidth.value || 0)))
+  mapHeight.value = Math.max(200, Math.min(120000, Math.round(mapHeight.value || 0)))
 }
 
 function selectPoint(pointId: number) {
@@ -126,6 +183,32 @@ function getNextPointId() {
 }
 
 function createPointFromClick(event: MouseEvent) {
+
+  if (!pointSpacing.value) {
+    if (!(event.currentTarget instanceof HTMLElement)) {
+      return
+    }
+    const rect = event.currentTarget.getBoundingClientRect()
+    const offsetX = event.clientX - rect.left
+    const offsetY = event.clientY - rect.top
+    if (offsetX < 0 || offsetY < 0 || offsetX > rect.width || offsetY > rect.height) {
+      return
+    }
+    const x = Math.round((offsetX / rect.width) * mapWidth.value)
+    const y = Math.round((offsetY / rect.height) * mapHeight.value)
+    const id = getNextPointId()
+    points.value.push({
+      id,
+      name: `Point ${id}`,
+      x,
+      y,
+      borders: [],
+    })
+    selectedPointId.value = id
+    feedbackMessage.value = `Ponto ${id} criado em (${x}, ${y}).`
+    return
+  }
+
   if (!(event.currentTarget instanceof HTMLElement)) {
     return
   }
@@ -362,6 +445,7 @@ async function saveMapJson() {
 
 onMounted(() => {
   refreshImageAssets()
+  refreshMapJsonAssets()
 })
 </script>
 
@@ -372,13 +456,29 @@ onMounted(() => {
         <h2>Criar Mapa por Centros</h2>
 
         <label class="field">
+        <span>Carregar mapa salvo</span>
+
+        <select @change="handleMapJsonSelection">
+            <option value="">Novo mapa</option>
+
+            <option
+            v-for="map in mapJsonAssets"
+            :key="map"
+            :value="map"
+            >
+            {{ map }}
+            </option>
+        </select>
+        </label>
+
+        <label class="field">
           <span>Largura do mapa (horizontal)</span>
-          <input v-model.number="mapWidth" type="number" min="200" max="12000" @change="clampDimensions" />
+          <input v-model.number="mapWidth" type="number" min="200" max="120000" @change="clampDimensions" />
         </label>
 
         <label class="field">
           <span>Altura do mapa (vertical)</span>
-          <input v-model.number="mapHeight" type="number" min="200" max="12000" @change="clampDimensions" />
+          <input v-model.number="mapHeight" type="number" min="200" max="120000" @change="clampDimensions" />
         </label>
 
         <label class="field">

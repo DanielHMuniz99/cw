@@ -1,0 +1,856 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-14T19:11:26.843Z",
+  "width": 2000,
+  "height": 1200,
+  "overlayImage": null,
+  "points": [
+    {
+      "id": 1,
+      "name": "Point 1",
+      "x": 68,
+      "y": 68,
+      "borders": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Point 2",
+      "x": 108,
+      "y": 68,
+      "borders": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Point 3",
+      "x": 148,
+      "y": 68,
+      "borders": []
+    },
+    {
+      "id": 4,
+      "name": "Point 4",
+      "x": 68,
+      "y": 108,
+      "borders": [
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Point 5",
+      "x": 108,
+      "y": 108,
+      "borders": []
+    },
+    {
+      "id": 6,
+      "name": "Point 6",
+      "x": 148,
+      "y": 108,
+      "borders": []
+    },
+    {
+      "id": 7,
+      "name": "Point 7",
+      "x": 68,
+      "y": 148,
+      "borders": []
+    },
+    {
+      "id": 8,
+      "name": "Point 8",
+      "x": 108,
+      "y": 148,
+      "borders": []
+    },
+    {
+      "id": 9,
+      "name": "Point 9",
+      "x": 148,
+      "y": 148,
+      "borders": []
+    },
+    {
+      "id": 10,
+      "name": "Point 10",
+      "x": 70,
+      "y": 185,
+      "borders": []
+    },
+    {
+      "id": 11,
+      "name": "Point 11",
+      "x": 110,
+      "y": 185,
+      "borders": []
+    },
+    {
+      "id": 12,
+      "name": "Point 12",
+      "x": 150,
+      "y": 185,
+      "borders": []
+    },
+    {
+      "id": 13,
+      "name": "Point 13",
+      "x": 70,
+      "y": 225,
+      "borders": []
+    },
+    {
+      "id": 14,
+      "name": "Point 14",
+      "x": 110,
+      "y": 225,
+      "borders": []
+    },
+    {
+      "id": 15,
+      "name": "Point 15",
+      "x": 150,
+      "y": 225,
+      "borders": []
+    },
+    {
+      "id": 16,
+      "name": "Point 16",
+      "x": 70,
+      "y": 265,
+      "borders": []
+    },
+    {
+      "id": 17,
+      "name": "Point 17",
+      "x": 110,
+      "y": 265,
+      "borders": []
+    },
+    {
+      "id": 18,
+      "name": "Point 18",
+      "x": 150,
+      "y": 265,
+      "borders": []
+    },
+    {
+      "id": 19,
+      "name": "Point 19",
+      "x": 67,
+      "y": 309,
+      "borders": []
+    },
+    {
+      "id": 20,
+      "name": "Point 20",
+      "x": 107,
+      "y": 309,
+      "borders": []
+    },
+    {
+      "id": 21,
+      "name": "Point 21",
+      "x": 147,
+      "y": 309,
+      "borders": []
+    },
+    {
+      "id": 22,
+      "name": "Point 22",
+      "x": 67,
+      "y": 349,
+      "borders": []
+    },
+    {
+      "id": 23,
+      "name": "Point 23",
+      "x": 107,
+      "y": 349,
+      "borders": []
+    },
+    {
+      "id": 24,
+      "name": "Point 24",
+      "x": 147,
+      "y": 349,
+      "borders": []
+    },
+    {
+      "id": 25,
+      "name": "Point 25",
+      "x": 67,
+      "y": 389,
+      "borders": []
+    },
+    {
+      "id": 26,
+      "name": "Point 26",
+      "x": 107,
+      "y": 389,
+      "borders": []
+    },
+    {
+      "id": 27,
+      "name": "Point 27",
+      "x": 147,
+      "y": 389,
+      "borders": []
+    },
+    {
+      "id": 28,
+      "name": "Point 28",
+      "x": 197,
+      "y": 311,
+      "borders": []
+    },
+    {
+      "id": 29,
+      "name": "Point 29",
+      "x": 237,
+      "y": 311,
+      "borders": []
+    },
+    {
+      "id": 30,
+      "name": "Point 30",
+      "x": 277,
+      "y": 311,
+      "borders": []
+    },
+    {
+      "id": 31,
+      "name": "Point 31",
+      "x": 197,
+      "y": 351,
+      "borders": []
+    },
+    {
+      "id": 32,
+      "name": "Point 32",
+      "x": 237,
+      "y": 351,
+      "borders": []
+    },
+    {
+      "id": 33,
+      "name": "Point 33",
+      "x": 277,
+      "y": 351,
+      "borders": []
+    },
+    {
+      "id": 34,
+      "name": "Point 34",
+      "x": 197,
+      "y": 391,
+      "borders": []
+    },
+    {
+      "id": 35,
+      "name": "Point 35",
+      "x": 237,
+      "y": 391,
+      "borders": []
+    },
+    {
+      "id": 36,
+      "name": "Point 36",
+      "x": 277,
+      "y": 391,
+      "borders": []
+    },
+    {
+      "id": 37,
+      "name": "Point 37",
+      "x": 202,
+      "y": 194,
+      "borders": []
+    },
+    {
+      "id": 38,
+      "name": "Point 38",
+      "x": 242,
+      "y": 194,
+      "borders": []
+    },
+    {
+      "id": 39,
+      "name": "Point 39",
+      "x": 282,
+      "y": 194,
+      "borders": []
+    },
+    {
+      "id": 40,
+      "name": "Point 40",
+      "x": 202,
+      "y": 234,
+      "borders": []
+    },
+    {
+      "id": 41,
+      "name": "Point 41",
+      "x": 242,
+      "y": 234,
+      "borders": []
+    },
+    {
+      "id": 42,
+      "name": "Point 42",
+      "x": 282,
+      "y": 234,
+      "borders": []
+    },
+    {
+      "id": 43,
+      "name": "Point 43",
+      "x": 202,
+      "y": 274,
+      "borders": []
+    },
+    {
+      "id": 44,
+      "name": "Point 44",
+      "x": 242,
+      "y": 274,
+      "borders": []
+    },
+    {
+      "id": 45,
+      "name": "Point 45",
+      "x": 282,
+      "y": 274,
+      "borders": []
+    },
+    {
+      "id": 46,
+      "name": "Point 46",
+      "x": 202,
+      "y": 73,
+      "borders": []
+    },
+    {
+      "id": 47,
+      "name": "Point 47",
+      "x": 242,
+      "y": 73,
+      "borders": []
+    },
+    {
+      "id": 48,
+      "name": "Point 48",
+      "x": 282,
+      "y": 73,
+      "borders": []
+    },
+    {
+      "id": 49,
+      "name": "Point 49",
+      "x": 202,
+      "y": 113,
+      "borders": []
+    },
+    {
+      "id": 50,
+      "name": "Point 50",
+      "x": 242,
+      "y": 113,
+      "borders": []
+    },
+    {
+      "id": 51,
+      "name": "Point 51",
+      "x": 282,
+      "y": 113,
+      "borders": []
+    },
+    {
+      "id": 52,
+      "name": "Point 52",
+      "x": 202,
+      "y": 153,
+      "borders": []
+    },
+    {
+      "id": 53,
+      "name": "Point 53",
+      "x": 242,
+      "y": 153,
+      "borders": []
+    },
+    {
+      "id": 54,
+      "name": "Point 54",
+      "x": 282,
+      "y": 153,
+      "borders": []
+    },
+    {
+      "id": 55,
+      "name": "Point 55",
+      "x": 343,
+      "y": 68,
+      "borders": []
+    },
+    {
+      "id": 56,
+      "name": "Point 56",
+      "x": 383,
+      "y": 68,
+      "borders": []
+    },
+    {
+      "id": 57,
+      "name": "Point 57",
+      "x": 423,
+      "y": 68,
+      "borders": []
+    },
+    {
+      "id": 58,
+      "name": "Point 58",
+      "x": 343,
+      "y": 108,
+      "borders": []
+    },
+    {
+      "id": 59,
+      "name": "Point 59",
+      "x": 383,
+      "y": 108,
+      "borders": []
+    },
+    {
+      "id": 60,
+      "name": "Point 60",
+      "x": 423,
+      "y": 108,
+      "borders": []
+    },
+    {
+      "id": 61,
+      "name": "Point 61",
+      "x": 343,
+      "y": 148,
+      "borders": []
+    },
+    {
+      "id": 62,
+      "name": "Point 62",
+      "x": 383,
+      "y": 148,
+      "borders": []
+    },
+    {
+      "id": 63,
+      "name": "Point 63",
+      "x": 423,
+      "y": 148,
+      "borders": []
+    },
+    {
+      "id": 64,
+      "name": "Point 64",
+      "x": 340,
+      "y": 191,
+      "borders": []
+    },
+    {
+      "id": 65,
+      "name": "Point 65",
+      "x": 380,
+      "y": 191,
+      "borders": []
+    },
+    {
+      "id": 66,
+      "name": "Point 66",
+      "x": 420,
+      "y": 191,
+      "borders": []
+    },
+    {
+      "id": 67,
+      "name": "Point 67",
+      "x": 340,
+      "y": 231,
+      "borders": []
+    },
+    {
+      "id": 68,
+      "name": "Point 68",
+      "x": 380,
+      "y": 231,
+      "borders": []
+    },
+    {
+      "id": 69,
+      "name": "Point 69",
+      "x": 420,
+      "y": 231,
+      "borders": []
+    },
+    {
+      "id": 70,
+      "name": "Point 70",
+      "x": 340,
+      "y": 271,
+      "borders": []
+    },
+    {
+      "id": 71,
+      "name": "Point 71",
+      "x": 380,
+      "y": 271,
+      "borders": []
+    },
+    {
+      "id": 72,
+      "name": "Point 72",
+      "x": 420,
+      "y": 271,
+      "borders": []
+    },
+    {
+      "id": 73,
+      "name": "Point 73",
+      "x": 324,
+      "y": 308,
+      "borders": []
+    },
+    {
+      "id": 74,
+      "name": "Point 74",
+      "x": 364,
+      "y": 308,
+      "borders": []
+    },
+    {
+      "id": 75,
+      "name": "Point 75",
+      "x": 404,
+      "y": 308,
+      "borders": []
+    },
+    {
+      "id": 76,
+      "name": "Point 76",
+      "x": 324,
+      "y": 348,
+      "borders": []
+    },
+    {
+      "id": 77,
+      "name": "Point 77",
+      "x": 364,
+      "y": 348,
+      "borders": []
+    },
+    {
+      "id": 78,
+      "name": "Point 78",
+      "x": 404,
+      "y": 348,
+      "borders": []
+    },
+    {
+      "id": 79,
+      "name": "Point 79",
+      "x": 324,
+      "y": 388,
+      "borders": []
+    },
+    {
+      "id": 80,
+      "name": "Point 80",
+      "x": 364,
+      "y": 388,
+      "borders": []
+    },
+    {
+      "id": 81,
+      "name": "Point 81",
+      "x": 404,
+      "y": 388,
+      "borders": []
+    },
+    {
+      "id": 82,
+      "name": "Point 82",
+      "x": 474,
+      "y": 313,
+      "borders": []
+    },
+    {
+      "id": 83,
+      "name": "Point 83",
+      "x": 514,
+      "y": 313,
+      "borders": []
+    },
+    {
+      "id": 84,
+      "name": "Point 84",
+      "x": 554,
+      "y": 313,
+      "borders": []
+    },
+    {
+      "id": 85,
+      "name": "Point 85",
+      "x": 474,
+      "y": 353,
+      "borders": []
+    },
+    {
+      "id": 86,
+      "name": "Point 86",
+      "x": 514,
+      "y": 353,
+      "borders": []
+    },
+    {
+      "id": 87,
+      "name": "Point 87",
+      "x": 554,
+      "y": 353,
+      "borders": []
+    },
+    {
+      "id": 88,
+      "name": "Point 88",
+      "x": 474,
+      "y": 393,
+      "borders": []
+    },
+    {
+      "id": 89,
+      "name": "Point 89",
+      "x": 514,
+      "y": 393,
+      "borders": []
+    },
+    {
+      "id": 90,
+      "name": "Point 90",
+      "x": 554,
+      "y": 393,
+      "borders": []
+    },
+    {
+      "id": 91,
+      "name": "Point 91",
+      "x": 482,
+      "y": 198,
+      "borders": []
+    },
+    {
+      "id": 92,
+      "name": "Point 92",
+      "x": 522,
+      "y": 198,
+      "borders": []
+    },
+    {
+      "id": 93,
+      "name": "Point 93",
+      "x": 562,
+      "y": 198,
+      "borders": []
+    },
+    {
+      "id": 94,
+      "name": "Point 94",
+      "x": 482,
+      "y": 238,
+      "borders": []
+    },
+    {
+      "id": 95,
+      "name": "Point 95",
+      "x": 522,
+      "y": 238,
+      "borders": []
+    },
+    {
+      "id": 96,
+      "name": "Point 96",
+      "x": 562,
+      "y": 238,
+      "borders": []
+    },
+    {
+      "id": 97,
+      "name": "Point 97",
+      "x": 482,
+      "y": 278,
+      "borders": []
+    },
+    {
+      "id": 98,
+      "name": "Point 98",
+      "x": 522,
+      "y": 278,
+      "borders": []
+    },
+    {
+      "id": 99,
+      "name": "Point 99",
+      "x": 562,
+      "y": 278,
+      "borders": []
+    },
+    {
+      "id": 100,
+      "name": "Point 100",
+      "x": 456,
+      "y": 81,
+      "borders": []
+    },
+    {
+      "id": 101,
+      "name": "Point 101",
+      "x": 496,
+      "y": 81,
+      "borders": []
+    },
+    {
+      "id": 102,
+      "name": "Point 102",
+      "x": 536,
+      "y": 81,
+      "borders": []
+    },
+    {
+      "id": 103,
+      "name": "Point 103",
+      "x": 456,
+      "y": 121,
+      "borders": []
+    },
+    {
+      "id": 104,
+      "name": "Point 104",
+      "x": 496,
+      "y": 121,
+      "borders": []
+    },
+    {
+      "id": 105,
+      "name": "Point 105",
+      "x": 536,
+      "y": 121,
+      "borders": []
+    },
+    {
+      "id": 106,
+      "name": "Point 106",
+      "x": 456,
+      "y": 161,
+      "borders": []
+    },
+    {
+      "id": 107,
+      "name": "Point 107",
+      "x": 496,
+      "y": 161,
+      "borders": []
+    },
+    {
+      "id": 108,
+      "name": "Point 108",
+      "x": 536,
+      "y": 161,
+      "borders": []
+    },
+    {
+      "id": 109,
+      "name": "Point 109",
+      "x": 442,
+      "y": 370,
+      "borders": []
+    },
+    {
+      "id": 110,
+      "name": "Point 110",
+      "x": 445,
+      "y": 326,
+      "borders": []
+    },
+    {
+      "id": 111,
+      "name": "Point 111",
+      "x": 455,
+      "y": 281,
+      "borders": []
+    },
+    {
+      "id": 112,
+      "name": "Point 112",
+      "x": 453,
+      "y": 240,
+      "borders": []
+    },
+    {
+      "id": 113,
+      "name": "Point 113",
+      "x": 451,
+      "y": 202,
+      "borders": []
+    },
+    {
+      "id": 114,
+      "name": "Point 114",
+      "x": 312,
+      "y": 172,
+      "borders": []
+    },
+    {
+      "id": 115,
+      "name": "Point 115",
+      "x": 313,
+      "y": 218,
+      "borders": []
+    },
+    {
+      "id": 116,
+      "name": "Point 116",
+      "x": 313,
+      "y": 254,
+      "borders": []
+    },
+    {
+      "id": 117,
+      "name": "Point 117",
+      "x": 309,
+      "y": 132,
+      "borders": []
+    },
+    {
+      "id": 118,
+      "name": "Point 118",
+      "x": 310,
+      "y": 96,
+      "borders": []
+    },
+    {
+      "id": 119,
+      "name": "Point 119",
+      "x": 562,
+      "y": 152,
+      "borders": []
+    },
+    {
+      "id": 120,
+      "name": "Point 120",
+      "x": 564,
+      "y": 103,
+      "borders": []
+    }
+  ]
+}

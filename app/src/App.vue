@@ -3,8 +3,9 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import GameMapView from './views/GameMapView.vue'
 import MapEditorView from './views/MapEditorView.vue'
 import MapCentersCreatorView from './views/MapCentersCreatorView.vue'
+import CombatMapTestView from './views/CombatMapTestView.vue'
 
-type MapVariant = 'default' | 'world' | 'editor' | 'centers-creator'
+type MapVariant = 'default' | 'world' | 'editor' | 'centers-creator' | 'combat-test'
 
 const currentPath = ref(window.location.pathname)
 const currentSearch = ref(window.location.search)
@@ -23,6 +24,10 @@ const mapVariant = computed<MapVariant>(() => {
 
   if (currentPath.value === '/map-centers-creator' || mapQuery === 'centers') {
     return 'centers-creator'
+  }
+
+  if (currentPath.value === '/combat-test' || mapQuery === 'combat') {
+    return 'combat-test'
   }
 
   return 'default'
@@ -53,7 +58,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="app-shell">
-    <nav class="map-switcher">
+    <nav v-if="mapVariant !== 'combat-test'" class="map-switcher">
       <button
         type="button"
         :class="{ active: mapVariant === 'default' }"
@@ -85,11 +90,13 @@ onBeforeUnmount(() => {
       >
         Criar Centros
       </button>
+
     </nav>
 
     <GameMapView v-if="mapVariant === 'default' || mapVariant === 'world'" :key="mapVariant" :map-variant="mapVariant" />
     <MapEditorView v-else-if="mapVariant === 'editor'" :key="mapVariant" />
     <MapCentersCreatorView v-else-if="mapVariant === 'centers-creator'" :key="mapVariant" />
+    <CombatMapTestView v-else-if="mapVariant === 'combat-test'" :key="mapVariant" />
   </div>
 </template>
 

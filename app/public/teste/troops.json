@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Azul 1",
+    "country": "blue",
+    "pointId": 1,
+    "label": "Azul 1",
+    "type": "infantry",
+    "attack": 10,
+    "defense": 15,
+    "speed": 50
+  },
+  {
+    "id": 2,
+    "name": "Vermelho 1",
+    "country": "red",
+    "pointId": 5,
+    "label": "Vermelho 1",
+    "type": "infantry",
+    "attack": 10,
+    "defense": 15,
+    "speed": 10
+  }
+]

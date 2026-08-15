@@ -4,6 +4,7 @@ export interface MapPointData {
   x: number
   y: number
   borders?: number[]
+  owner?: number | string | null
   country_id?: number | string | null
 }
 
@@ -23,22 +24,45 @@ export function normalizeMapJson(data: unknown): MapJsonData {
 
   const candidate = data as Record<string, unknown>
 
+  const points: MapPointData[] = Array.isArray(candidate.points)
+    ? candidate.points.reduce<MapPointData[]>((accumulator, point) => {
+        if (!point || typeof point !== 'object') {
+          return accumulator
+        }
+
+        const entry = point as Record<string, unknown>
+        if (typeof entry.id !== 'number' || typeof entry.x !== 'number' || typeof entry.y !== 'number') {
+          return accumulator
+        }
+
+        const ownerValue = entry.country_id ?? entry.owner
+        const normalizedOwner = typeof ownerValue === 'number' || typeof ownerValue === 'string'
+          ? ownerValue
+          : null
+
+        accumulator.push({
+          id: entry.id,
+          name: typeof entry.name === 'string' ? entry.name : undefined,
+          x: entry.x,
+          y: entry.y,
+          borders: Array.isArray(entry.borders)
+            ? entry.borders.filter((border): border is number => typeof border === 'number')
+            : [],
+          country_id: normalizedOwner === '' ? null : normalizedOwner,
+          owner: normalizedOwner === '' ? null : normalizedOwner,
+        })
+
+        return accumulator
+      }, [])
+    : []
+
   return {
     schemaVersion: typeof candidate.schemaVersion === 'number' ? candidate.schemaVersion : undefined,
     createdAt: typeof candidate.createdAt === 'string' ? candidate.createdAt : undefined,
     width: typeof candidate.width === 'number' ? candidate.width : 1200,
     height: typeof candidate.height === 'number' ? candidate.height : 800,
     overlayImage: typeof candidate.overlayImage === 'string' || candidate.overlayImage === null ? candidate.overlayImage : null,
-    points: Array.isArray(candidate.points)
-      ? candidate.points.filter((point): point is MapPointData => {
-          if (!point || typeof point !== 'object') {
-            return false
-          }
-
-          const entry = point as Record<string, unknown>
-          return typeof entry.id === 'number' && typeof entry.x === 'number' && typeof entry.y === 'number'
-        })
-      : [],
+    points,
   }
 }
 

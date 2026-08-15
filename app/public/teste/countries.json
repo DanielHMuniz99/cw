@@ -2,11 +2,13 @@
   {
     "id": 1,
     "name": "Azul",
-    "color": "#3b82f6"
+    "color": "#3b82f6",
+    "at_war": []
   },
   {
     "id": 2,
     "name": "Vermelho",
-    "color": "#ef4444"
+    "color": "#ef4444",
+    "at_war": []
   }
 ]

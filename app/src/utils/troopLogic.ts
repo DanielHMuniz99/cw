@@ -24,6 +24,41 @@ export function getPointGraph(points: MapPointData[]) {
   return adjacency
 }
 
+function getVectorLength(x: number, y: number) {
+  return Math.hypot(x, y)
+}
+
+function normalizeVector(x: number, y: number) {
+  const length = getVectorLength(x, y)
+  if (length === 0) {
+    return { x: 0, y: 0 }
+  }
+
+  return {
+    x: x / length,
+    y: y / length,
+  }
+}
+
+function getTurnPenalty(previousDirection: { x: number; y: number } | null, nextDirection: { x: number; y: number }) {
+  if (!previousDirection || (previousDirection.x === 0 && previousDirection.y === 0)) {
+    return 0
+  }
+
+  const previous = normalizeVector(previousDirection.x, previousDirection.y)
+  const next = normalizeVector(nextDirection.x, nextDirection.y)
+  const dot = previous.x * next.x + previous.y * next.y
+  const angleRadians = Math.acos(Math.max(-1, Math.min(1, dot)))
+  const angleDegrees = (angleRadians * 180) / Math.PI
+  const toleranceDegrees = 18
+
+  if (angleDegrees <= toleranceDegrees) {
+    return 0
+  }
+
+  return (angleDegrees - toleranceDegrees) * 1.5
+}
+
 export function findShortestPath(
   startPointId: number,
   targetPointId: number,
@@ -33,44 +68,64 @@ export function findShortestPath(
     return [startPointId]
   }
 
+  const pointMap = new Map(points.map((point) => [point.id, point]))
   const adjacency = getPointGraph(points)
-  const queue: number[] = [startPointId]
-  const visited = new Set<number>([startPointId])
+  const frontier: Array<{ id: number; cost: number }> = [{ id: startPointId, cost: 0 }]
+  const bestCost = new Map<number, number>([[startPointId, 0]])
   const previous = new Map<number, number | null>([[startPointId, null]])
+  const previousDirection = new Map<number, { x: number; y: number } | null>([[startPointId, null]])
 
-  while (queue.length > 0) {
-    const current = queue.shift()
+  while (frontier.length > 0) {
+    frontier.sort((left, right) => left.cost - right.cost)
+    const current = frontier.shift()
     if (current === undefined) {
       continue
     }
 
-    const neighbors = adjacency.get(current) ?? []
+    if (current.id === targetPointId) {
+      const path: number[] = [current.id]
+      let cursor: number | null = current.id
+
+      while (previous.get(cursor) !== null && previous.get(cursor) !== undefined) {
+        const parent = previous.get(cursor)
+        if (parent === null || parent === undefined) {
+          break
+        }
+        path.unshift(parent)
+        cursor = parent
+      }
+
+      return path
+    }
+
+    const currentPoint = pointMap.get(current.id)
+    if (!currentPoint) {
+      continue
+    }
+
+    const currentMove = previousDirection.get(current.id) ?? null
+    const neighbors = adjacency.get(current.id) ?? []
 
     for (const neighbor of neighbors) {
-      if (visited.has(neighbor)) {
+      const neighborPoint = pointMap.get(neighbor)
+      if (!neighborPoint) {
         continue
       }
 
-      visited.add(neighbor)
-      previous.set(neighbor, current)
+      const deltaX = neighborPoint.x - currentPoint.x
+      const deltaY = neighborPoint.y - currentPoint.y
+      const movementCost = Math.hypot(deltaX, deltaY) + getTurnPenalty(currentMove, { x: deltaX, y: deltaY })
+      const candidateCost = current.cost + movementCost
+      const currentBest = bestCost.get(neighbor)
 
-      if (neighbor === targetPointId) {
-        const path: number[] = [neighbor]
-        let cursor: number | null = neighbor
-
-        while (previous.get(cursor) !== null && previous.get(cursor) !== undefined) {
-          const parent = previous.get(cursor)
-          if (parent === null || parent === undefined) {
-            break
-          }
-          path.unshift(parent)
-          cursor = parent
-        }
-
-        return path
+      if (currentBest !== undefined && candidateCost >= currentBest) {
+        continue
       }
 
-      queue.push(neighbor)
+      bestCost.set(neighbor, candidateCost)
+      previous.set(neighbor, current.id)
+      previousDirection.set(neighbor, { x: deltaX, y: deltaY })
+      frontier.push({ id: neighbor, cost: candidateCost })
     }
   }
 

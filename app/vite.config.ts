@@ -43,6 +43,8 @@ function mapCentersApi() {
   const rootDir = path.dirname(fileURLToPath(import.meta.url))
   const mapsDir = path.resolve(rootDir, 'public/maps')
   const mapsJsonDir = path.resolve(rootDir, 'public/json/maps')
+  const centersJsonDir = path.resolve(mapsJsonDir, 'centers')
+  const visualJsonDir = path.resolve(mapsJsonDir, 'visual')
 
   return {
     name: 'map-centers-api',
@@ -53,7 +55,10 @@ function mapCentersApi() {
           return
         }
 
-        if (req.method === 'GET' && req.url === '/api/map-centers/assets') {
+        const parsedUrl = new URL(req.url, 'http://localhost')
+        const requestPath = parsedUrl.pathname
+
+        if (req.method === 'GET' && requestPath === '/api/map-centers/assets') {
           try {
             await mkdir(mapsDir, { recursive: true })
             const files = await readdir(mapsDir)
@@ -70,11 +75,20 @@ function mapCentersApi() {
           }
         }
 
-        if (req.method === 'GET' && req.url === '/api/map-centers/json-assets') {
+        if (req.method === 'GET' && requestPath === '/api/map-centers/json-assets') {
           try {
-            await mkdir(mapsJsonDir, { recursive: true })
+            const scope = parsedUrl.searchParams.get('scope')
 
-            const files = await readdir(mapsJsonDir)
+            if (scope !== 'centers' && scope !== 'visual') {
+              res.statusCode = 400
+              res.end('Escopo inválido. Use scope=centers ou scope=visual')
+              return
+            }
+
+            const scopedDir = scope === 'centers' ? centersJsonDir : visualJsonDir
+            await mkdir(scopedDir, { recursive: true })
+
+            const files = await readdir(scopedDir)
 
             const allowed = files
               .filter((file) => /\.json$/i.test(file))
@@ -91,7 +105,7 @@ function mapCentersApi() {
           }
         }
 
-        if (req.method === 'POST' && req.url === '/api/map-centers/upload') {
+        if (req.method === 'POST' && requestPath === '/api/map-centers/upload') {
           try {
             const rawBody = await readRawBody(req)
             const payload = safeJsonParse(rawBody)
@@ -131,13 +145,23 @@ function mapCentersApi() {
           }
         }
 
-        if (req.method === 'POST' && req.url === '/api/map-centers/save') {
+        if (req.method === 'POST' && requestPath === '/api/map-centers/save') {
           try {
             const rawBody = await readRawBody(req)
             const payload = safeJsonParse(rawBody)
             const fileNameRaw = String(payload?.fileName ?? '')
             const mapData = payload?.map
+            const overwriteExisting = Boolean(payload?.overwriteExisting)
+            const scope = payload?.scope
             const baseFileName = sanitizeFileName(fileNameRaw)
+
+            if (scope !== 'centers' && scope !== 'visual') {
+              res.statusCode = 400
+              res.end('Escopo inválido para salvar JSON')
+              return
+            }
+
+            const scopedDir = scope === 'centers' ? centersJsonDir : visualJsonDir
 
             if (!baseFileName || !baseFileName.endsWith('.json')) {
               res.statusCode = 400
@@ -151,7 +175,7 @@ function mapCentersApi() {
               return
             }
 
-            await mkdir(mapsJsonDir, { recursive: true })
+            await mkdir(scopedDir, { recursive: true })
 
             const now = new Date()
             const stamp = [
@@ -165,14 +189,24 @@ function mapCentersApi() {
             ].join('')
 
             let finalFileName = baseFileName
-            let finalPath = path.join(mapsJsonDir, finalFileName)
+            let finalPath = path.join(scopedDir, finalFileName)
 
-            try {
-              await stat(finalPath)
-              finalFileName = `${baseFileName.replace(/\.json$/, '')}-${stamp}.json`
-              finalPath = path.join(mapsJsonDir, finalFileName)
-            } catch {
-              finalPath = path.join(mapsJsonDir, finalFileName)
+            if (overwriteExisting) {
+              try {
+                await stat(finalPath)
+              } catch {
+                res.statusCode = 404
+                res.end('Arquivo para atualização não encontrado')
+                return
+              }
+            } else {
+              try {
+                await stat(finalPath)
+                finalFileName = `${baseFileName.replace(/\.json$/, '')}-${stamp}.json`
+                finalPath = path.join(scopedDir, finalFileName)
+              } catch {
+                finalPath = path.join(scopedDir, finalFileName)
+              }
             }
 
             const content = {
@@ -187,7 +221,9 @@ function mapCentersApi() {
             res.setHeader('Content-Type', 'application/json')
             res.end(JSON.stringify({
               fileName: finalFileName,
-              message: `Mapa salvo em public/json/maps/${finalFileName}`,
+              message: overwriteExisting
+                ? `Mapa atualizado em public/json/maps/${scope}/${finalFileName}`
+                : `Mapa salvo em public/json/maps/${scope}/${finalFileName}`,
             }))
             return
           } catch {

@@ -6,6 +6,7 @@ export interface MapPointData {
   borders?: number[]
   owner?: number | string | null
   country_id?: number | string | null
+  center?: boolean
 }
 
 export interface MapJsonData {
@@ -40,6 +41,8 @@ export function normalizeMapJson(data: unknown): MapJsonData {
           ? ownerValue
           : null
 
+        const centerValue = typeof entry.center === 'boolean' ? entry.center : true
+
         accumulator.push({
           id: entry.id,
           name: typeof entry.name === 'string' ? entry.name : undefined,
@@ -50,6 +53,7 @@ export function normalizeMapJson(data: unknown): MapJsonData {
             : [],
           country_id: normalizedOwner === '' ? null : normalizedOwner,
           owner: normalizedOwner === '' ? null : normalizedOwner,
+          center: centerValue,
         })
 
         return accumulator

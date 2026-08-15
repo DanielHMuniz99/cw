@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-15T15:09:02.851Z",
+  "width": 2000,
+  "height": 1200,
+  "overlayImage": null,
+  "type": "visual-province-map",
+  "provinces": [
+    {
+      "id": 1,
+      "name": "Província 1",
+      "country_id": null,
+      "vertices": [
+        {
+          "x": 222,
+          "y": 279
+        },
+        {
+          "x": 242,
+          "y": 327
+        },
+        {
+          "x": 277,
+          "y": 328
+        },
+        {
+          "x": 279,
+          "y": 293
+        },
+        {
+          "x": 265,
+          "y": 286
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Província 2",
+      "country_id": null,
+      "vertices": [
+        {
+          "x": 277,
+          "y": 328
+        },
+        {
+          "x": 310,
+          "y": 360
+        },
+        {
+          "x": 334,
+          "y": 328
+        },
+        {
+          "x": 320,
+          "y": 300
+        },
+        {
+          "x": 295,
+          "y": 297
+        },
+        {
+          "x": 279,
+          "y": 293
+        }
+      ]
+    }
+  ]
+}

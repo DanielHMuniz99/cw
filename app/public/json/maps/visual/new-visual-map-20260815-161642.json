@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-15T16:16:42.285Z",
+  "width": 2000,
+  "height": 1200,
+  "overlayImage": null,
+  "centers": "new-map-centers.json",
+  "type": "visual-province-map",
+  "provinces": [
+    {
+      "id": 1,
+      "name": "Província 1",
+      "country_id": null,
+      "center_id": 1,
+      "vertices": [
+        {
+          "x": 93,
+          "y": 174
+        },
+        {
+          "x": 139,
+          "y": 183
+        },
+        {
+          "x": 140,
+          "y": 213
+        },
+        {
+          "x": 95,
+          "y": 215
+        }
+      ]
+    }
+  ]
+}

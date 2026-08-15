@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
+import { normalizeMapJson } from '../utils/mapData'
 
 interface CenterPoint {
   id: number
@@ -7,6 +8,8 @@ interface CenterPoint {
   x: number
   y: number
   borders: number[]
+  owner: number | null
+  center: boolean
 }
 
 interface UploadImageResponse {
@@ -17,6 +20,11 @@ interface UploadImageResponse {
 interface SaveMapResponse {
   fileName: string
   message: string
+}
+
+interface CountryOption {
+  id: number
+  name: string
 }
 
 const mapWidth = ref(2000)
@@ -31,10 +39,97 @@ const isSaving = ref(false)
 const isUploading = ref(false)
 const pointSpacing = ref(50)
 const mapJsonAssets = ref<string[]>([])
+const borderRange = ref(75)
+const countries = ref<CountryOption[]>([])
+const selectedCountryId = ref<number | null>(1)
+const newCountryName = ref('')
+const saveMode = ref<'new' | 'update'>('new')
+const saveTargetFile = ref('')
+
+function ensureMinimumCountries() {
+  if (countries.value.length >= 2) {
+    return
+  }
+
+  const byId = new Map(countries.value.map((country) => [country.id, country]))
+
+  if (!byId.has(1)) {
+    byId.set(1, { id: 1, name: 'País 1' })
+  }
+
+  if (!byId.has(2)) {
+    byId.set(2, { id: 2, name: 'País 2' })
+  }
+
+  countries.value = Array.from(byId.values()).sort((left, right) => left.id - right.id)
+
+  if (selectedCountryId.value === null) {
+    selectedCountryId.value = countries.value[0]?.id ?? 1
+  }
+}
+
+function mergeCountries(countryList: CountryOption[]) {
+  const merged = new Map(countries.value.map((country) => [country.id, country]))
+
+  for (const country of countryList) {
+    if (!Number.isFinite(country.id)) {
+      continue
+    }
+
+    const existing = merged.get(country.id)
+    merged.set(country.id, {
+      id: country.id,
+      name: country.name?.trim() || existing?.name || `País ${country.id}`,
+    })
+  }
+
+  countries.value = Array.from(merged.values()).sort((left, right) => left.id - right.id)
+  ensureMinimumCountries()
+}
+
+function syncCountriesFromPoints(pointList: CenterPoint[]) {
+  const discoveredCountries = Array.from(new Set(
+    pointList
+      .map((point) => point.owner)
+      .filter((owner): owner is number => owner !== null && Number.isFinite(owner)),
+  )).map((id) => ({
+    id,
+    name: countries.value.find((country) => country.id === id)?.name ?? `País ${id}`,
+  }))
+
+  if (discoveredCountries.length > 0) {
+    mergeCountries(discoveredCountries)
+  } else {
+    ensureMinimumCountries()
+  }
+}
+
+function getDefaultOwnerForNewPoint() {
+  return selectedCountryId.value !== null && Number.isFinite(selectedCountryId.value)
+    ? selectedCountryId.value
+    : null
+}
+
+function getNextCountryId() {
+  return countries.value.reduce((maxId, country) => Math.max(maxId, country.id), 0) + 1
+}
+
+function createCountry() {
+  const trimmedName = newCountryName.value.trim()
+  const nextCountry = {
+    id: getNextCountryId(),
+    name: trimmedName || `País ${getNextCountryId()}`,
+  }
+
+  mergeCountries([nextCountry])
+  selectedCountryId.value = nextCountry.id
+  newCountryName.value = ''
+  feedbackMessage.value = `País ${nextCountry.name} criado com id ${nextCountry.id}.`
+}
 
 async function refreshMapJsonAssets() {
   try {
-    const response = await fetch('/api/map-centers/json-assets')
+    const response = await fetch('/api/map-centers/json-assets?scope=centers')
 
     if (!response.ok) {
       return
@@ -55,24 +150,35 @@ async function handleMapJsonSelection(event: Event) {
   }
 
   try {
-    const response = await fetch(`/json/maps/${encodeURIComponent(selected)}`)
+    const response = await fetch(`/json/maps/centers/${encodeURIComponent(selected)}`)
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`)
     }
 
-    const data = await response.json()
+    const data = normalizeMapJson(await response.json())
 
-    mapWidth.value = data.width
-    mapHeight.value = data.height
-    points.value = data.points ?? []
+    mapWidth.value = data.width ?? 2000
+    mapHeight.value = data.height ?? 1200
+    points.value = (data.points ?? []).map((point) => ({
+      id: point.id,
+      name: point.name ?? `Point ${point.id}`,
+      x: point.x,
+      y: point.y,
+      borders: [...(point.borders ?? [])],
+      owner: point.country_id === null || point.country_id === undefined || point.country_id === ''
+        ? null
+        : Number(point.country_id),
+      center: point.center !== false,
+    }))
 
-    if (data.name) {
-      mapFileName.value = data.name
-    }
+    syncCountriesFromPoints(points.value)
 
-    if (data.overlayImagePath) {
-      overlayImagePath.value = data.overlayImagePath
+    mapFileName.value = selected.replace(/\.json$/i, '')
+    saveTargetFile.value = selected
+
+    if (data.overlayImage) {
+      overlayImagePath.value = `/maps/${data.overlayImage}`
     } else {
       overlayImagePath.value = ''
     }
@@ -101,7 +207,7 @@ const nearbyPoints = computed(() => {
     return []
   }
 
-  const range = 75
+  const range = Math.max(1, borderRange.value || 0)
 
   return points.value.filter((point) => {
     if (point.id === selectedPointId.value) {
@@ -172,10 +278,32 @@ function clampDimensions() {
 
 function selectPoint(pointId: number) {
   selectedPointId.value = pointId
+
+  const point = points.value.find((item) => item.id === pointId)
+  if (!point) {
+    return
+  }
+
+  selectedCountryId.value = point.center ? point.owner : null
 }
 
 function clearSelection() {
   selectedPointId.value = null
+}
+
+function normalizePointOwnership(point: CenterPoint) {
+  if (!point.center) {
+    point.owner = null
+  }
+}
+
+function handleCenterToggle(value: boolean) {
+  if (!selectedPoint.value) {
+    return
+  }
+
+  selectedPoint.value.center = value
+  normalizePointOwnership(selectedPoint.value)
 }
 
 function getNextPointId() {
@@ -183,6 +311,7 @@ function getNextPointId() {
 }
 
 function createPointFromClick(event: MouseEvent) {
+  const defaultOwner = getDefaultOwnerForNewPoint()
 
   if (!pointSpacing.value) {
     if (!(event.currentTarget instanceof HTMLElement)) {
@@ -203,8 +332,11 @@ function createPointFromClick(event: MouseEvent) {
       x,
       y,
       borders: [],
+      owner: defaultOwner,
+      center: true,
     })
     selectedPointId.value = id
+    selectedCountryId.value = defaultOwner
     feedbackMessage.value = `Ponto ${id} criado em (${x}, ${y}).`
     return
   }
@@ -259,9 +391,12 @@ function createPointFromClick(event: MouseEvent) {
       x,
       y,
       borders: [],
+      owner: defaultOwner,
+      center: true,
     })
   }
 
+  selectedCountryId.value = defaultOwner
   feedbackMessage.value = `9 pontos criados ao redor de (${centerX}, ${centerY}).`
 }
 
@@ -311,6 +446,77 @@ function toggleBorder(neighborId: number) {
 
   const hasBorder = selectedPoint.value.borders.includes(neighborId)
   syncBorders(selectedPoint.value.id, neighborId, !hasBorder)
+}
+
+function getDistanceBetweenPoints(left: CenterPoint, right: CenterPoint) {
+  const dx = right.x - left.x
+  const dy = right.y - left.y
+  return Math.sqrt(dx * dx + dy * dy)
+}
+
+function autoAssignBordersForPoint(pointId: number) {
+  const point = points.value.find((item) => item.id === pointId)
+  if (!point) {
+    return
+  }
+
+  const range = Math.max(1, borderRange.value || 0)
+
+  for (const otherPoint of points.value) {
+    if (otherPoint.id === point.id) {
+      continue
+    }
+
+    const shouldConnect = getDistanceBetweenPoints(point, otherPoint) <= range
+    syncBorders(point.id, otherPoint.id, shouldConnect)
+  }
+}
+
+function autoAssignBordersForAllPoints() {
+  const range = Math.max(1, borderRange.value || 0)
+
+  points.value = points.value.map((point) => ({
+    ...point,
+    borders: [],
+  }))
+
+  for (let index = 0; index < points.value.length; index += 1) {
+    for (let neighborIndex = index + 1; neighborIndex < points.value.length; neighborIndex += 1) {
+      const point = points.value[index]
+      const neighbor = points.value[neighborIndex]
+      if (getDistanceBetweenPoints(point, neighbor) <= range) {
+        syncBorders(point.id, neighbor.id, true)
+      }
+    }
+  }
+
+  feedbackMessage.value = `Bordas recalculadas usando alcance de ${range}.`
+}
+
+async function loadCountries() {
+  try {
+    const response = await fetch('/teste/countries.json')
+    if (!response.ok) {
+      countries.value = []
+      return
+    }
+
+    const payload = await response.json()
+    const rawCountries: Array<{ id?: number | string; name?: string }> = Array.isArray(payload)
+      ? payload
+      : (payload?.countries ?? [])
+
+    countries.value = rawCountries
+      .map((country) => ({
+        id: Number(country.id),
+        name: String(country.name ?? `País ${country.id ?? ''}`),
+      }))
+      .filter((country) => Number.isFinite(country.id))
+    ensureMinimumCountries()
+  } catch {
+    countries.value = []
+    ensureMinimumCountries()
+  }
 }
 
 async function refreshImageAssets() {
@@ -393,10 +599,24 @@ function handleImageAssetSelection(event: Event) {
 async function saveMapJson() {
   clampDimensions()
 
+  const isUpdateMode = saveMode.value === 'update'
   const fileBase = sanitizeFileName(mapFileName.value)
-  if (!fileBase) {
-    feedbackMessage.value = 'Informe um nome valido para o arquivo do mapa.'
-    return
+  let fileName = ''
+
+  if (isUpdateMode) {
+    if (!saveTargetFile.value) {
+      feedbackMessage.value = 'Selecione um arquivo existente para atualizar.'
+      return
+    }
+
+    fileName = saveTargetFile.value
+  } else {
+    if (!fileBase) {
+      feedbackMessage.value = 'Informe um nome valido para o arquivo do mapa.'
+      return
+    }
+
+    fileName = `${fileBase}.json`
   }
 
   if (points.value.length === 0) {
@@ -413,16 +633,20 @@ async function saveMapJson() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        fileName: `${fileBase}.json`,
+        fileName,
+        scope: 'centers',
+        overwriteExisting: isUpdateMode,
         map: {
           width: mapWidth.value,
           height: mapHeight.value,
           overlayImage: overlayImagePath.value ? overlayImagePath.value.replace('/maps/', '') : null,
           points: points.value.map((point) => ({
             id: point.id,
+            center: point.center,
             name: point.name.trim() || `Point ${point.id}`,
             x: Math.round(point.x),
             y: Math.round(point.y),
+            owner: point.center && point.owner !== null ? point.owner : null,
             borders: [...new Set(point.borders)].sort((a, b) => a - b),
           })),
         },
@@ -436,6 +660,7 @@ async function saveMapJson() {
 
     const payload = (await response.json()) as SaveMapResponse
     feedbackMessage.value = payload.message
+    await refreshMapJsonAssets()
   } catch (error) {
     feedbackMessage.value = error instanceof Error ? error.message : 'Falha ao salvar mapa.'
   } finally {
@@ -444,6 +669,7 @@ async function saveMapJson() {
 }
 
 onMounted(() => {
+  loadCountries()
   refreshImageAssets()
   refreshMapJsonAssets()
 })
@@ -495,9 +721,46 @@ onMounted(() => {
         </label>
 
         <label class="field">
-          <span>Nome do JSON (public/json/maps)</span>
+          <span>Nome do JSON (public/json/maps/centers)</span>
           <input v-model="mapFileName" type="text" placeholder="new-map-centers" />
         </label>
+
+        <label class="field">
+          <span>Modo de salvamento</span>
+          <select v-model="saveMode">
+            <option value="new">Criar novo arquivo</option>
+            <option value="update">Atualizar arquivo existente</option>
+          </select>
+        </label>
+
+        <label v-if="saveMode === 'update'" class="field">
+          <span>Arquivo existente para atualizar</span>
+          <select v-model="saveTargetFile">
+            <option value="">Selecione um arquivo</option>
+            <option v-for="map in mapJsonAssets" :key="`update-${map}`" :value="map">{{ map }}</option>
+          </select>
+        </label>
+
+        <div class="editor-card">
+          <h3>Países</h3>
+
+          <label class="field">
+            <span>País padrão para novas províncias</span>
+            <select v-model.number="selectedCountryId">
+              <option :value="null">Sem país</option>
+              <option v-for="country in countries" :key="country.id" :value="country.id">
+                {{ country.id }} - {{ country.name }}
+              </option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Criar novo país</span>
+            <input v-model="newCountryName" type="text" placeholder="Ex: País 3" />
+          </label>
+
+          <button type="button" @click="createCountry">Criar país</button>
+        </div>
 
         <button type="button" :disabled="isSaving" class="primary" @click="saveMapJson">
           {{ isSaving ? 'Salvando...' : 'Salvar Mapa JSON' }}
@@ -514,6 +777,20 @@ onMounted(() => {
             max="500"
         />
         </label>
+
+        <label class="field">
+          <span>Alcance para atribuir bordas</span>
+          <input
+            v-model.number="borderRange"
+            type="number"
+            min="1"
+            max="1000"
+          />
+        </label>
+
+        <button type="button" @click="autoAssignBordersForAllPoints">
+          Recalcular bordas pelo alcance
+        </button>
 
         <div v-if="selectedPoint" class="editor-card">
           <h3>Ponto selecionado: {{ selectedPoint.id }}</h3>
@@ -533,8 +810,30 @@ onMounted(() => {
             <input v-model.number="selectedPoint.y" type="number" />
           </label>
 
+          <label class="field checkbox-field">
+            <span>Tipo do ponto</span>
+            <label class="toggle-row">
+              <input
+                :checked="selectedPoint.center"
+                type="checkbox"
+                @change="handleCenterToggle(($event.target as HTMLInputElement).checked)"
+              />
+              <span>{{ selectedPoint.center ? 'Center true (destino final)' : 'Center false (apenas transição)' }}</span>
+            </label>
+          </label>
+
+          <label class="field">
+            <span>País atribuído</span>
+            <select v-model.number="selectedPoint.owner" :disabled="!selectedPoint.center">
+              <option :value="null">Sem país</option>
+              <option v-for="country in countries" :key="country.id" :value="country.id">
+                {{ country.name }}
+              </option>
+            </select>
+          </label>
+
           <div class="field">
-            <span>Bordas</span>
+            <span>Bordas no alcance atual</span>
             <div class="borders-list">
   <label
     v-for="point in nearbyPoints"
@@ -552,6 +851,7 @@ onMounted(() => {
           </div>
 
           <div class="actions-row">
+            <button type="button" @click="autoAssignBordersForPoint(selectedPoint.id)">Auto bordas do ponto</button>
             <button type="button" @click="clearSelection">Desselecionar</button>
             <button type="button" class="danger" @click="removePoint(selectedPoint.id)">Remover ponto</button>
           </div>
@@ -648,6 +948,18 @@ h3 {
   font-size: 0.8rem;
   color: #bfdbfe;
   font-weight: 600;
+}
+
+.checkbox-field {
+  gap: 0.55rem;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #e6edf8;
 }
 
 input,

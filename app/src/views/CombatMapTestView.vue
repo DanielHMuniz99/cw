@@ -7,7 +7,22 @@ import {
   type CombatTroop,
 } from '../utils/troopLogic'
 
+interface VisualProvince {
+  id: number
+  name: string
+  country_id: number | string | null
+  center_id: number | null
+  vertices: Array<{ x: number; y: number }>
+}
+
+interface VisualMapData {
+  width: number
+  height: number
+  provinces: VisualProvince[]
+}
+
 const mapData = ref<MapJsonData | null>(null)
+const visualMapData = ref<VisualMapData | null>(null)
 const isLoading = ref(false)
 const errorMessage = ref('')
 const zoom = ref(1)
@@ -122,6 +137,29 @@ const selectedTroopsList = computed(() => troops.value.filter((troop) => selecte
 const troopLookup = computed(() => new Map(troops.value.map((troop) => [troop.id, troop])))
 const selectedGroup = computed(() => groups.value.find((group) => group.id === selectedGroupId.value) ?? null)
 const groupsForPlayer = computed(() => groups.value.filter((group) => group.troopIds.some((troopId) => troopLookup.value.has(troopId))))
+const visualProvincePolygons = computed(() => {
+  if (!visualMapData.value) {
+    return []
+  }
+
+  const pointLookup = pointMap.value
+
+  return visualMapData.value.provinces
+    .filter((province) => province.vertices.length >= 3)
+    .map((province) => {
+      const centerPoint = province.center_id !== null ? pointLookup.get(province.center_id) : undefined
+      const effectiveCountry = province.country_id
+        ?? centerPoint?.country_id
+        ?? null
+
+      return {
+        id: province.id,
+        name: province.name,
+        points: province.vertices.map((vertex) => `${vertex.x},${vertex.y}`).join(' '),
+        fill: getPointColor(effectiveCountry),
+      }
+    })
+})
 const frontlineSegments = computed(() => {
   const points = mapData.value?.points ?? []
   const pointMapPreview = new Map(points.map((point) => [point.id, point]))
@@ -234,6 +272,10 @@ const previewSegments = computed(() => {
     ? selectedTroopsList.value
     : (selectedTroop.value ? [selectedTroop.value] : [])
 
+  if (!activeTroops.length || !isCenterPoint(hoverTargetId)) {
+    return []
+  }
+
   const pointMapPreview = new Map(points.map((point) => [point.id, point]))
   const segments: Array<{ key: string; x1: number; y1: number; x2: number; y2: number; color: string }> = []
 
@@ -277,6 +319,82 @@ function getPointColor(countryId: number | string | null | undefined) {
   }
 
   return countryPalette[String(countryId)] ?? countryPalette.default
+}
+
+function normalizeVisualMap(data: unknown): VisualMapData | null {
+  if (!data || typeof data !== 'object') {
+    return null
+  }
+
+  const candidate = data as Record<string, unknown>
+  const width = typeof candidate.width === 'number' ? candidate.width : 0
+  const height = typeof candidate.height === 'number' ? candidate.height : 0
+  const rawProvinces = Array.isArray(candidate.provinces) ? candidate.provinces : []
+
+  const provinces = rawProvinces.reduce<VisualProvince[]>((accumulator, province, index) => {
+    if (!province || typeof province !== 'object') {
+      return accumulator
+    }
+
+    const entry = province as Record<string, unknown>
+    const id = Number(entry.id ?? index + 1)
+    const name = typeof entry.name === 'string' ? entry.name : `Província ${id}`
+    const center_id = entry.center_id === null || entry.center_id === undefined
+      ? null
+      : Number(entry.center_id)
+    const country_id = entry.country_id === null || entry.country_id === undefined || entry.country_id === ''
+      ? null
+      : (typeof entry.country_id === 'number' || typeof entry.country_id === 'string' ? entry.country_id : null)
+
+    const vertices = Array.isArray(entry.vertices)
+      ? entry.vertices
+          .map((vertex) => {
+            if (!vertex || typeof vertex !== 'object') {
+              return null
+            }
+
+            const pointEntry = vertex as Record<string, unknown>
+            const x = Number(pointEntry.x)
+            const y = Number(pointEntry.y)
+
+            if (!Number.isFinite(x) || !Number.isFinite(y)) {
+              return null
+            }
+
+            return { x, y }
+          })
+          .filter((vertex): vertex is { x: number; y: number } => vertex !== null)
+      : []
+
+    accumulator.push({
+      id,
+      name,
+      country_id,
+      center_id: Number.isFinite(center_id as number) ? Number(center_id) : null,
+      vertices,
+    })
+
+    return accumulator
+  }, [])
+
+  if (!Number.isFinite(width) || !Number.isFinite(height) || width <= 0 || height <= 0) {
+    return null
+  }
+
+  return {
+    width,
+    height,
+    provinces,
+  }
+}
+
+function isCenterPoint(pointId: number | null) {
+  if (pointId === null) {
+    return false
+  }
+
+  const point = pointMap.value.get(pointId)
+  return point ? point.center !== false : false
 }
 
 function isPointFrontlineEligible(pointId: number | null) {
@@ -634,11 +752,12 @@ async function loadLocalTestData() {
   errorMessage.value = ''
 
   try {
-    const [countriesResponse, mapResponse, troopsResponse, playerResponse] = await Promise.all([
+    const [countriesResponse, mapResponse, troopsResponse, playerResponse, visualResponse] = await Promise.all([
       fetch('/teste/countries.json'),
       fetch('/teste/map.json'),
       fetch('/teste/troops.json'),
       fetch('/teste/player.json'),
+      fetch('/teste/visual.json'),
     ])
 
     if (!countriesResponse.ok) {
@@ -661,6 +780,7 @@ async function loadLocalTestData() {
     const mapDataPayload = await mapResponse.json()
     const troopsData = await troopsResponse.json()
     const playerData = await playerResponse.json()
+    const visualData = visualResponse.ok ? await visualResponse.json() : null
 
     const loadedCountries = Array.isArray(countriesData)
       ? countriesData
@@ -676,6 +796,7 @@ async function loadLocalTestData() {
 
     const normalizedMap = normalizeMapJson(mapDataPayload)
     mapData.value = normalizedMap
+    visualMapData.value = normalizeVisualMap(visualData)
 
     const rawTroops = Array.isArray(troopsData)
       ? troopsData
@@ -696,6 +817,7 @@ async function loadLocalTestData() {
     resetTroopsForMap()
   } catch (error) {
     mapData.value = null
+    visualMapData.value = null
     troops.value = []
     errorMessage.value = error instanceof Error ? error.message : 'Erro ao carregar os dados locais de teste.'
   } finally {
@@ -933,6 +1055,11 @@ function advanceAlongRoute(troopId: number) {
 }
 
 function moveSelectedTroop(targetPointId: number | null = destinationPointId.value) {
+  if (targetPointId !== null && !isCenterPoint(targetPointId)) {
+    errorMessage.value = 'Esta província só pode ser usada como transição, não como destino final.'
+    return
+  }
+
   const selectedIds = selectedTroopIds.value.length
     ? [...selectedTroopIds.value]
     : (selectedTroopId.value !== null ? [selectedTroopId.value] : [])
@@ -1109,6 +1236,11 @@ function handleMapPointClick(pointId: number) {
     }
 
     frontlinePreviewEndPointId.value = pointId
+    return
+  }
+
+  if (isMovementMode.value && !isCenterPoint(pointId)) {
+    errorMessage.value = 'Só é possível mover para uma província central.'
     return
   }
 
@@ -1368,6 +1500,18 @@ onBeforeUnmount(() => {
                 stroke-width="5"
                 stroke-linecap="round"
                 opacity="0.9"
+              />
+            </g>
+
+            <g v-if="visualProvincePolygons.length" class="visual-provinces-layer">
+              <polygon
+                v-for="province in visualProvincePolygons"
+                :key="`visual-province-${province.id}`"
+                :points="province.points"
+                :fill="province.fill"
+                stroke="#0f172a"
+                stroke-width="1.2"
+                opacity="0.36"
               />
             </g>
 

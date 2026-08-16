@@ -6,8 +6,14 @@ export interface CombatTroop {
   id: number
   country: CombatCountry
   pointId: number | null
+  name?: string
   label: string
   speed?: number
+  attack?: number
+  defense?: number
+  military_organization?: 'battalion' | 'division'
+  parent_id?: number | null
+  pending_division_id?: number | null
 }
 
 export function getNextTroopId(troops: CombatTroop[]) {

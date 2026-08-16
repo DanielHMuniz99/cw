@@ -11,6 +11,8 @@ const props = defineProps<{
 const emit = defineEmits<{
   (event: 'move'): void
   (event: 'frontline'): void
+  (event: 'create-division'): void
+  (event: 'cancel-join'): void
   (event: 'close'): void
 }>()
 </script>
@@ -18,23 +20,47 @@ const emit = defineEmits<{
 <template>
   <div v-if="troop" class="troop-panel">
     <div class="panel-header">
-      <h3>{{ props.groupName ? 'Grupo selecionado' : 'Tropa selecionada' }}</h3>
+      <h3>{{ props.groupName ? 'Grupo selecionado' : troop.military_organization === 'division' ? 'Divisão selecionada' : 'Tropa selecionada' }}</h3>
       <button type="button" class="close-button" aria-label="Fechar painel da tropa" @click="emit('close')">×</button>
     </div>
     <p><strong>{{ props.groupName ?? troop.label }}</strong></p>
-    <p v-if="props.selectionCount && props.selectionCount > 1" class="selection-summary">
+    <p v-if="props.selectionCount && props.selectionCount > 1 && troop.military_organization !== 'division'" class="selection-summary">
       {{ props.selectionCount }} tropas selecionadas
+    </p>
+    <p v-else-if="troop.military_organization === 'division'" class="selection-summary">
+      {{ props.selectionCount ?? 0 }} batalhões na divisão
+    </p>
+    <p v-else-if="troop.pending_division_id" class="status-text">
+      Se juntando a uma divisão
     </p>
     <p v-else class="selection-summary">
       {{ troop.label }}
     </p>
 
     <button type="button" class="action-button" @click="emit('move')">
-      {{ isMovementMode ? 'Aguardando destino...' : props.groupName ? 'Mover grupo' : 'Mover' }}
+      {{ isMovementMode ? 'Aguardando destino...' : props.groupName ? 'Mover grupo' : troop.military_organization === 'division' ? 'Mover divisão' : 'Mover' }}
     </button>
 
     <button v-if="props.groupName" type="button" class="action-button secondary-button" @click="emit('frontline')">
       Criar linha de frente
+    </button>
+
+    <button
+      v-if="!props.groupName && troop.military_organization !== 'division' && (props.selectionCount ?? 0) >= 2"
+      type="button"
+      class="action-button secondary-button"
+      @click="emit('create-division')"
+    >
+      Criar divisão
+    </button>
+
+    <button
+      v-if="troop.pending_division_id"
+      type="button"
+      class="action-button secondary-button"
+      @click="emit('cancel-join')"
+    >
+      Cancelar junção
     </button>
   </div>
 </template>

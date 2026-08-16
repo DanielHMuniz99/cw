@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import TroopSelectionPanel from '../components/game/TroopSelectionPanel.vue'
+import {
+  MAP_THEME,
+  getBattalionColor,
+  getDivisionFillColor as getCountryDivisionFillColor,
+  getProvinceColor,
+  getRoutePreviewColor,
+} from '../data/countryColors'
 import { buildBorderSegments, normalizeMapJson, type MapJsonData, type MapPointData } from '../utils/mapData'
 import {
   findShortestPath,
@@ -104,20 +111,67 @@ const mapTransform = computed(() => {
   return `translate(${offsetX} ${offsetY}) scale(${zoom.value})`
 })
 
-const countryPalette: Record<string, string> = {
-  default: '#94a3b8',
-  1: '#3b82f6',
-  2: '#ef4444',
-  3: '#22c55e',
-  4: '#f59e0b',
-  5: '#8b5cf6',
-  6: '#ec4899',
-  7: '#14b8a6',
-}
-
-const troopCountryToId: Record<string, number> = {
+const legacyTroopCountryToId: Record<string, number> = {
   blue: 1,
   red: 2,
+}
+
+function getTroopCountryId(troop: CombatTroop) {
+  if (typeof troop.country === 'number' && Number.isFinite(troop.country)) {
+    return troop.country
+  }
+
+  if (typeof troop.country === 'string') {
+    const normalized = troop.country.trim().toLowerCase()
+
+    if (normalized in legacyTroopCountryToId) {
+      return legacyTroopCountryToId[normalized]
+    }
+
+    const numeric = Number(normalized)
+    if (Number.isFinite(numeric)) {
+      return numeric
+    }
+  }
+
+  return null
+}
+
+function getTroopFillColor(troop: CombatTroop) {
+  const countryId = getTroopCountryId(troop)
+  return getBattalionColor(countryId)
+}
+
+function getTroopPreviewColor(troop: CombatTroop) {
+  return getRoutePreviewColor(getTroopCountryId(troop))
+}
+
+function getDivisionCountryId(divisionId: number) {
+  const divisionTroop = troopLookup.value.get(divisionId)
+  if (divisionTroop) {
+    return getTroopCountryId(divisionTroop)
+  }
+
+  const divisionBattalion = troops.value.find((troop) => troop.parent_id === divisionId && troop.military_organization !== 'division')
+  if (divisionBattalion) {
+    return getTroopCountryId(divisionBattalion)
+  }
+
+  return null
+}
+
+function getDivisionFillColor(divisionId: number, isSelected: boolean) {
+  return getCountryDivisionFillColor(getDivisionCountryId(divisionId), isSelected)
+}
+
+function getDivisionStrokeColor(divisionId: number, isSelected: boolean) {
+  void divisionId
+
+  if (isSelected) {
+    return MAP_THEME.selectionStroke
+  }
+
+  return '#0f172a'
 }
 
 function canTroopEnterPoint(troop: CombatTroop, pointId: number | null) {
@@ -131,7 +185,10 @@ function canTroopEnterPoint(troop: CombatTroop, pointId: number | null) {
   }
 
   const ownerValue = point.country_id
-  const troopCountryId = troopCountryToId[troop.country]
+  const troopCountryId = getTroopCountryId(troop)
+  if (troopCountryId === null) {
+    return false
+  }
 
   if (ownerValue === null || ownerValue === undefined || ownerValue === '') {
     return true
@@ -522,7 +579,7 @@ const previewSegments = computed(() => {
         y1: fromPoint.y,
         x2: toPoint.x,
         y2: toPoint.y,
-        color: troop.country === 'blue' ? '#60a5fa' : '#fca5a5',
+        color: getTroopPreviewColor(troop),
       })
     }
   }
@@ -531,11 +588,7 @@ const previewSegments = computed(() => {
 })
 
 function getPointColor(countryId: number | string | null | undefined) {
-  if (countryId === null || countryId === undefined || countryId === '') {
-    return countryPalette.default
-  }
-
-  return countryPalette[String(countryId)] ?? countryPalette.default
+  return getProvinceColor(countryId)
 }
 
 function getWorldPointFromMouseEvent(event: MouseEvent) {
@@ -740,6 +793,163 @@ function isCenterPoint(pointId: number | null) {
   return point ? point.center !== false : false
 }
 
+function normalizePointCountryId(countryId: number | string | null | undefined) {
+  if (countryId === null || countryId === undefined || countryId === '') {
+    return null
+  }
+
+  const normalizedCountryId = Number(countryId)
+  return Number.isFinite(normalizedCountryId) ? normalizedCountryId : null
+}
+
+function hasEnemyBorderThroughTransitionPoints(startPointId: number, ownCountryId: number) {
+  const pointsById = pointMap.value
+  const startPoint = pointsById.get(startPointId)
+  if (!startPoint) {
+    return false
+  }
+
+  const visited = new Set<number>([startPointId])
+  const transitionQueue: number[] = []
+
+  for (const neighborId of startPoint.borders ?? []) {
+    const neighbor = pointsById.get(neighborId)
+    if (!neighbor) {
+      continue
+    }
+
+    const neighborCountryId = normalizePointCountryId(neighbor.country_id)
+    if (neighborCountryId !== null && neighborCountryId !== ownCountryId) {
+      return true
+    }
+
+    if (neighbor.center === false && !visited.has(neighborId)) {
+      visited.add(neighborId)
+      transitionQueue.push(neighborId)
+    }
+  }
+
+  while (transitionQueue.length > 0) {
+    const currentTransitionId = transitionQueue.shift()
+    if (currentTransitionId === undefined) {
+      continue
+    }
+
+    const transitionPoint = pointsById.get(currentTransitionId)
+    if (!transitionPoint) {
+      continue
+    }
+
+    for (const neighborId of transitionPoint.borders ?? []) {
+      if (visited.has(neighborId)) {
+        continue
+      }
+
+      const neighbor = pointsById.get(neighborId)
+      if (!neighbor) {
+        continue
+      }
+
+      const neighborCountryId = normalizePointCountryId(neighbor.country_id)
+      if (neighborCountryId !== null && neighborCountryId !== ownCountryId) {
+        return true
+      }
+
+      if (neighbor.center === false) {
+        visited.add(neighborId)
+        transitionQueue.push(neighborId)
+      }
+    }
+  }
+
+  return false
+}
+
+function getFrontlineEligibleNeighborsSkippingTransition(
+  startPointId: number,
+  eligibleIds: Set<number>,
+  pointsById: Map<number, MapPointData>,
+) {
+  const reachableEligibleNeighbors = new Set<number>()
+  const visited = new Set<number>([startPointId])
+  const queue: number[] = []
+  const startPoint = pointsById.get(startPointId)
+
+  if (!startPoint) {
+    return reachableEligibleNeighbors
+  }
+
+  for (const neighborId of startPoint.borders ?? []) {
+    const neighbor = pointsById.get(neighborId)
+    if (!neighbor) {
+      continue
+    }
+
+    if (eligibleIds.has(neighborId) && neighborId !== startPointId) {
+      reachableEligibleNeighbors.add(neighborId)
+      continue
+    }
+
+    if (neighbor.center === false && !visited.has(neighborId)) {
+      visited.add(neighborId)
+      queue.push(neighborId)
+    }
+  }
+
+  while (queue.length > 0) {
+    const currentId = queue.shift()
+    if (currentId === undefined) {
+      continue
+    }
+
+    const currentPoint = pointsById.get(currentId)
+    if (!currentPoint) {
+      continue
+    }
+
+    for (const neighborId of currentPoint.borders ?? []) {
+      if (visited.has(neighborId)) {
+        continue
+      }
+
+      const neighbor = pointsById.get(neighborId)
+      if (!neighbor) {
+        continue
+      }
+
+      if (eligibleIds.has(neighborId) && neighborId !== startPointId) {
+        reachableEligibleNeighbors.add(neighborId)
+        continue
+      }
+
+      if (neighbor.center === false) {
+        visited.add(neighborId)
+        queue.push(neighborId)
+      }
+    }
+  }
+
+  return reachableEligibleNeighbors
+}
+
+function buildFrontlineGraphPoints(points: MapPointData[], eligibleIds: Set<number>) {
+  const pointsById = new Map(points.map((point) => [point.id, point]))
+
+  return points
+    .filter((point) => eligibleIds.has(point.id))
+    .map((point) => {
+      const directEligibleNeighbors = (point.borders ?? []).filter((neighborId) => eligibleIds.has(neighborId))
+      const virtualEligibleNeighbors = Array.from(
+        getFrontlineEligibleNeighborsSkippingTransition(point.id, eligibleIds, pointsById),
+      )
+
+      return {
+        ...point,
+        borders: Array.from(new Set([...directEligibleNeighbors, ...virtualEligibleNeighbors])),
+      }
+    })
+}
+
 function isPointFrontlineEligible(pointId: number | null) {
   if (pointId === null) {
     return false
@@ -754,13 +964,12 @@ function isPointFrontlineEligible(pointId: number | null) {
     return false
   }
 
-  const pointCountryId = point.country_id
-  if (pointCountryId === null || pointCountryId === undefined || pointCountryId === '') {
+  if (point.center === false) {
     return false
   }
 
-  const normalizedCountryId = Number(pointCountryId)
-  if (!Number.isFinite(normalizedCountryId)) {
+  const normalizedCountryId = normalizePointCountryId(point.country_id)
+  if (normalizedCountryId === null) {
     return false
   }
 
@@ -768,20 +977,7 @@ function isPointFrontlineEligible(pointId: number | null) {
     return false
   }
 
-  return (point.borders ?? []).some((neighborId) => {
-    const neighbor = pointMap.value.get(neighborId)
-    if (!neighbor) {
-      return false
-    }
-
-    const neighborCountryId = neighbor.country_id
-    if (neighborCountryId === null || neighborCountryId === undefined || neighborCountryId === '') {
-      return false
-    }
-
-    const normalizedNeighborCountryId = Number(neighborCountryId)
-    return Number.isFinite(normalizedNeighborCountryId) && normalizedNeighborCountryId !== normalizedCountryId
-  })
+  return hasEnemyBorderThroughTransitionPoints(point.id, normalizedCountryId)
 }
 
 function resetTroopsForMap() {
@@ -868,6 +1064,19 @@ function getSelectionMovementTroops() {
     .map((divisionId) => troopLookup.value.get(divisionId))
     .filter((troop): troop is CombatTroop => troop !== undefined)
     .filter(isDivision)
+
+  const selectedLooseBattalionUnits = selectedTroopIds.value
+    .map((troopId) => troopLookup.value.get(troopId))
+    .filter((troop): troop is CombatTroop => troop !== undefined)
+    .filter(isBattalion)
+
+  if (selectedDivisionTroops.length > 0 && selectedLooseBattalionUnits.length > 0) {
+    return Array.from(
+      new Map(
+        [...selectedDivisionTroops, ...selectedLooseBattalionUnits].map((troop) => [troop.id, troop]),
+      ).values(),
+    )
+  }
 
   if (selectedDivisionTroops.length > 0) {
     return selectedDivisionTroops
@@ -1577,12 +1786,7 @@ function buildFrontlinePath(startId: number, endId: number) {
       .map((point) => point.id),
   )
 
-  const frontlineGraphPoints = points
-    .filter((point) => eligibleIds.has(point.id))
-    .map((point) => ({
-      ...point,
-      borders: (point.borders ?? []).filter((neighborId) => eligibleIds.has(neighborId)),
-    }))
+  const frontlineGraphPoints = buildFrontlineGraphPoints(points, eligibleIds)
 
   return findFrontlineConstrainedPath(startId, endId, frontlineGraphPoints)
 }
@@ -1871,10 +2075,10 @@ async function loadLocalTestData() {
   try {
     const [countriesResponse, mapResponse, troopsResponse, playerResponse, visualResponse] = await Promise.all([
       fetch('/teste/countries.json'),
-      fetch('/teste/map.json'),
+      fetch('/teste/map-teste-dt.json'),
       fetch('/teste/troops.json'),
       fetch('/teste/player.json'),
-      fetch('/teste/visual.json'),
+      fetch('/teste/visual.dt-svg.json'),
     ])
 
     if (!countriesResponse.ok) {
@@ -1921,7 +2125,7 @@ async function loadLocalTestData() {
 
     troops.value = rawTroops.map((troop: any, index: number) => ({
       id: Number(troop.id ?? index + 1),
-      country: troop.country === 'red' ? 'red' : 'blue',
+      country: troop.country ?? troop.country_id ?? 0,
       pointId: troop.pointId ?? troop.point_id ?? null,
       label: troop.label ?? troop.name ?? `Unidade ${index + 1}`,
       speed: Number(troop.speed ?? 80),
@@ -1964,7 +2168,7 @@ function clearTroopSelection() {
 
 function selectTroop(troopId: number, event?: MouseEvent) {
   const troop = troops.value.find((item) => item.id === troopId)
-  if (!troop || troopCountryToId[troop.country] !== controlledCountryId.value) {
+  if (!troop || getTroopCountryId(troop) !== controlledCountryId.value) {
     return
   }
 
@@ -2035,9 +2239,9 @@ function startMovementMode() {
     return
   }
 
-  const hasInvalidTroop = activeTroops.some((troop) => troopCountryToId[troop.country] !== controlledCountryId.value)
+  const hasInvalidTroop = activeTroops.some((troop) => getTroopCountryId(troop) !== controlledCountryId.value)
   if (hasInvalidTroop) {
-    errorMessage.value = 'Você só pode mover tropas do país que controla.'
+    errorMessage.value = `Você só pode mover tropas do país que controla. ${controlledCountryId.value}`
     return
   }
 
@@ -2089,7 +2293,7 @@ function claimProvinceIfNeutral(troop: CombatTroop, pointId: number) {
     return
   }
 
-  const countryId = troopCountryToId[troop.country] ?? 1
+  const countryId = getTroopCountryId(troop) ?? controlledCountryId.value ?? 1
 
   mapData.value = {
     ...mapData.value,
@@ -2244,7 +2448,7 @@ function moveSelectedTroop(targetPointId: number | null = destinationPointId.val
     return
   }
 
-  const invalidTroop = selectedTroopsForMovement.find((troop) => troopCountryToId[troop.country] !== controlledCountryId.value)
+  const invalidTroop = selectedTroopsForMovement.find((troop) => getTroopCountryId(troop) !== controlledCountryId.value)
   if (invalidTroop) {
     errorMessage.value = 'Você só pode mover tropas do país que controla.'
     return
@@ -2635,7 +2839,7 @@ onBeforeUnmount(() => {
                 :y1="segment.y1"
                 :x2="segment.x2"
                 :y2="segment.y2"
-                stroke="#fbbf24"
+                :stroke="MAP_THEME.frontlineStroke"
                 stroke-width="4"
                 stroke-dasharray="8 8"
                 stroke-linecap="round"
@@ -2651,7 +2855,7 @@ onBeforeUnmount(() => {
                 :y1="segment.y1"
                 :x2="segment.x2"
                 :y2="segment.y2"
-                stroke="#fbbf24"
+                :stroke="MAP_THEME.frontlineStroke"
                 stroke-width="5"
                 stroke-linecap="round"
                 opacity="0.9"
@@ -2665,8 +2869,8 @@ onBeforeUnmount(() => {
                 :points="province.points"
                 :fill="province.fill"
                 stroke="#0f172a"
-                stroke-width="1.2"
-                opacity="0.36"
+                stroke-width="1.7"
+                opacity="0.56"
               />
             </g>
 
@@ -2679,9 +2883,9 @@ onBeforeUnmount(() => {
                 :x2="segment.x2"
                 :y2="segment.y2"
                 stroke="#cbd5e1"
-                stroke-width="1"
+                stroke-width="0.25"
                 stroke-linecap="round"
-                opacity="0.45"
+                opacity="0.15"
               />
             </g>
 
@@ -2695,8 +2899,8 @@ onBeforeUnmount(() => {
                 fill="#020617"
                 stroke="#f8fafc"
                 :stroke-width="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? 1.2 : hoveredDestinationId === point.id && isMovementMode ? 1.1 : 0.7"
-                :opacity="frontlineSelectionMode ? (isPointFrontlineEligible(point.id) ? 0.95 : 0.16) : hoveredDestinationId === point.id && isMovementMode ? 0.95 : 0.72"
-                :filter="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? 'drop-shadow(0 0 5px rgba(251, 191, 36, 0.85))' : undefined"
+                :opacity="frontlineSelectionMode ? (isPointFrontlineEligible(point.id) ? 0.95 : 0.16) : hoveredDestinationId === point.id && isMovementMode ? 0.95 : 0.75"
+                :filter="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? `drop-shadow(0 0 5px ${MAP_THEME.frontlineGlow})` : undefined"
                 @mouseenter="handleMapPointMouseEnter(point.id)"
                 @mouseleave="handleMapPointMouseLeave(point.id)"
                 @click="handleMapPointClick(point.id)"
@@ -2707,10 +2911,10 @@ onBeforeUnmount(() => {
                   :cx="division.x"
                   :cy="division.y"
                   r="10"
-                  :fill="selectedDivisionIds.includes(division.id) ? '#f59e0b' : '#fbbf24'"
-                  :stroke="selectedDivisionIds.includes(division.id) ? '#f8fafc' : '#78350f'"
+                  :fill="getDivisionFillColor(division.id, selectedDivisionIds.includes(division.id))"
+                  :stroke="getDivisionStrokeColor(division.id, selectedDivisionIds.includes(division.id))"
                   stroke-width="2"
-                  opacity="0.92"
+                  opacity="1"
                   @click.stop="selectDivision(division.id, $event)"
                   @mousedown.stop
                 />
@@ -2730,8 +2934,8 @@ onBeforeUnmount(() => {
                   :cx="getTroopRenderPosition(troop).x"
                   :cy="getTroopRenderPosition(troop).y"
                   r="6.5"
-                  :fill="troop.country === 'blue' ? '#3b82f6' : '#ef4444'"
-                  :stroke="selectedTroopIds.includes(troop.id) || selectedTroopId === troop.id ? '#f8fafc' : '#0f172a'"
+                  :fill="getTroopFillColor(troop)"
+                  :stroke="selectedTroopIds.includes(troop.id) || selectedTroopId === troop.id ? MAP_THEME.selectionStroke : '#0f172a'"
                   stroke-width="2.5"
                   :stroke-dasharray="troop.pending_division_id ? '4 3' : undefined"
                   @click.stop="selectTroop(troop.id, $event)"

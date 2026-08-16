@@ -27,8 +27,8 @@ const maxProvinceArea = Math.max(
   Number(args.maxProvinceArea ?? args.maxArea ?? 120000),
 )
 const curveSteps = Math.max(3, Number(args.curveSteps ?? 10))
-const targetWidth = Math.max(100, Number(args.targetWidth ?? 11628))
-const targetHeight = Math.max(100, Number(args.targetHeight ?? 5760))
+const targetWidth = Math.max(100, Number(args.targetWidth ?? 10000))
+const targetHeight = Math.max(100, Number(args.targetHeight ?? 3929))
 const targetPadding = Math.max(0, Number(args.padding ?? 270))
 
 const rng = createSeededRandom(seed)

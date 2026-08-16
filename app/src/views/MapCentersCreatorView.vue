@@ -45,6 +45,11 @@ const selectedCountryId = ref<number | null>(1)
 const newCountryName = ref('')
 const saveMode = ref<'new' | 'update'>('new')
 const saveTargetFile = ref('')
+const mapZoom = ref(1)
+const updateCountryOnClick = ref(false)
+
+const MIN_ZOOM = 0.25
+const MAX_ZOOM = 4
 
 function ensureMinimumCountries() {
   if (countries.value.length >= 2) {
@@ -224,9 +229,11 @@ const nearbyPoints = computed(() => {
 })
 
 const boardStyle = computed(() => ({
-  width: `${mapWidth.value}px`,
-  height: `${mapHeight.value}px`,
+  width: `${Math.round(mapWidth.value * mapZoom.value)}px`,
+  height: `${Math.round(mapHeight.value * mapZoom.value)}px`,
 }))
+
+const zoomLabel = computed(() => `${Math.round(mapZoom.value * 100)}%`)
 
 const borderSegments = computed(() => {
   const index = new Map(points.value.map((point) => [point.id, point]))
@@ -276,6 +283,32 @@ function clampDimensions() {
   mapHeight.value = Math.max(200, Math.min(120000, Math.round(mapHeight.value || 0)))
 }
 
+function clampZoom(value: number) {
+  return Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, value))
+}
+
+function zoomIn() {
+  mapZoom.value = clampZoom(Number((mapZoom.value + 0.1).toFixed(2)))
+}
+
+function zoomOut() {
+  mapZoom.value = clampZoom(Number((mapZoom.value - 0.1).toFixed(2)))
+}
+
+function resetZoom() {
+  mapZoom.value = 1
+}
+
+function handleBoardWheel(event: WheelEvent) {
+  if (!event.ctrlKey) {
+    return
+  }
+
+  event.preventDefault()
+  const delta = event.deltaY < 0 ? 0.1 : -0.1
+  mapZoom.value = clampZoom(Number((mapZoom.value + delta).toFixed(2)))
+}
+
 function selectPoint(pointId: number) {
   selectedPointId.value = pointId
 
@@ -285,6 +318,37 @@ function selectPoint(pointId: number) {
   }
 
   selectedCountryId.value = point.center ? point.owner : null
+}
+
+function assignCountryToPoint(pointId: number) {
+  const point = points.value.find((item) => item.id === pointId)
+  if (!point) {
+    return
+  }
+
+  if (!point.center) {
+    selectedPointId.value = pointId
+    feedbackMessage.value = `Ponto ${pointId} nao e center. O pais so pode ser atualizado em pontos center.`
+    return
+  }
+
+  point.owner = selectedCountryId.value !== null && Number.isFinite(selectedCountryId.value)
+    ? selectedCountryId.value
+    : null
+
+  selectedPointId.value = pointId
+  feedbackMessage.value = point.owner === null
+    ? `Pais removido do ponto ${pointId}.`
+    : `Ponto ${pointId} atualizado para o pais ${point.owner}.`
+}
+
+function handlePointClick(pointId: number) {
+  if (updateCountryOnClick.value) {
+    assignCountryToPoint(pointId)
+    return
+  }
+
+  selectPoint(pointId)
 }
 
 function clearSelection() {
@@ -311,6 +375,10 @@ function getNextPointId() {
 }
 
 function createPointFromClick(event: MouseEvent) {
+  if (updateCountryOnClick.value) {
+    return
+  }
+
   const defaultOwner = getDefaultOwnerForNewPoint()
 
   if (!pointSpacing.value) {
@@ -760,6 +828,26 @@ onMounted(() => {
           </label>
 
           <button type="button" @click="createCountry">Criar país</button>
+
+          <label class="field checkbox-field">
+            <span>Modo de clique</span>
+            <label class="toggle-row">
+              <input v-model="updateCountryOnClick" type="checkbox" />
+              <span>
+                {{ updateCountryOnClick ? 'Atualizar país no centro clicado' : 'Criar pontos ao clicar no mapa' }}
+              </span>
+            </label>
+          </label>
+
+          <div class="zoom-controls">
+            <span>Zoom do mapa</span>
+            <div class="zoom-buttons">
+              <button type="button" @click="zoomOut">-</button>
+              <button type="button" @click="resetZoom">100%</button>
+              <button type="button" @click="zoomIn">+</button>
+              <strong>{{ zoomLabel }}</strong>
+            </div>
+          </div>
         </div>
 
         <button type="button" :disabled="isSaving" class="primary" @click="saveMapJson">
@@ -859,9 +947,14 @@ onMounted(() => {
       </aside>
 
       <section class="board-panel">
-        <p class="hint">Clique na area para criar pontos. A imagem fica em 50% de transparencia apenas como referencia visual.</p>
+        <p class="hint">
+          {{ updateCountryOnClick
+            ? 'Modo atualizar país ativo: clique em um center para aplicar o país selecionado.'
+            : 'Clique na area para criar pontos. A imagem fica em 50% de transparencia apenas como referencia visual.' }}
+          Use Ctrl + roda do mouse para zoom rapido.
+        </p>
 
-        <div class="board-scroll">
+        <div class="board-scroll" @wheel="handleBoardWheel">
           <div class="map-board" :style="boardStyle" @click="createPointFromClick">
             <img
               v-if="overlayImagePath"
@@ -886,7 +979,7 @@ onMounted(() => {
                 v-for="point in points"
                 :key="point.id"
                 class="point-group"
-                @click.stop="selectPoint(point.id)"
+                @click.stop="handlePointClick(point.id)"
               >
                 <circle
                   :cx="point.x"
@@ -1032,6 +1125,28 @@ button:disabled {
 .actions-row {
   display: flex;
   gap: 0.5rem;
+}
+
+.zoom-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.zoom-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.zoom-buttons button {
+  min-width: 3rem;
+}
+
+.zoom-buttons strong {
+  color: #bae6fd;
+  font-size: 0.9rem;
 }
 
 .board-panel {

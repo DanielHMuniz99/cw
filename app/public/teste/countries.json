@@ -1,14 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Azul",
+    "name": "Portugal",
     "color": "#3b82f6",
     "at_war": []
   },
   {
     "id": 2,
-    "name": "Vermelho",
+    "name": "Spain",
     "color": "#ef4444",
+    "at_war": []
+  },
+  {
+    "id": 3,
+    "name": "France",
+    "color": "#10b981",
+    "at_war": []
+  },
+  {
+    "id": 4,
+    "name": "Belgium",
+    "color": "#f59e0b",
+    "at_war": []
+  },
+  {
+    "id": 5,
+    "name": "Netherlands",
+    "color": "#f59e0b",
+    "at_war": []
+  },
+  {
+    "id": 6,
+    "name": "Luxemburgo",
+    "color": "#f59e0b",
+    "at_war": []
+  },
+  {
+    "id": 7,
+    "name": "Germany",
+    "color": "#f59e0b",
+    "at_war": []
+  },
+  {
+    "id": 8,
+    "name": "Italy",
+    "color": "#f59e0b",
     "at_war": []
   }
 ]

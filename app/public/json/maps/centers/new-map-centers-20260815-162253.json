@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-08-15T18:49:14.271Z",
+  "createdAt": "2026-08-16T15:26:19.777Z",
   "width": 11628,
   "height": 5760,
   "overlayImage": "MapChart_Map.png",
@@ -1113,7 +1113,11 @@
       "borders": [
         79,
         80,
-        95
+        95,
+        144,
+        204,
+        216,
+        217
       ]
     },
     {
@@ -1126,7 +1130,8 @@
       "borders": [
         78,
         95,
-        96
+        96,
+        144
       ]
     },
     {
@@ -1140,7 +1145,9 @@
         78,
         91,
         94,
-        95
+        95,
+        137,
+        216
       ]
     },
     {
@@ -1269,7 +1276,8 @@
       "borders": [
         84,
         90,
-        92
+        92,
+        132
       ]
     },
     {
@@ -1281,7 +1289,10 @@
       "owner": 3,
       "borders": [
         89,
-        92
+        91,
+        92,
+        133,
+        135
       ]
     },
     {
@@ -1293,8 +1304,11 @@
       "owner": 3,
       "borders": [
         80,
+        90,
         92,
-        93
+        93,
+        135,
+        137
       ]
     },
     {
@@ -1733,6 +1747,1220 @@
       "owner": 3,
       "borders": [
         121
+      ]
+    },
+    {
+      "id": 132,
+      "center": true,
+      "name": "Point 132",
+      "x": 5717,
+      "y": 1345,
+      "owner": 6,
+      "borders": [
+        89,
+        134,
+        135,
+        138
+      ]
+    },
+    {
+      "id": 133,
+      "center": true,
+      "name": "Point 133",
+      "x": 5741,
+      "y": 1361,
+      "owner": 6,
+      "borders": [
+        90,
+        135
+      ]
+    },
+    {
+      "id": 134,
+      "center": true,
+      "name": "Point 134",
+      "x": 5761,
+      "y": 1347,
+      "owner": 6,
+      "borders": [
+        132,
+        135,
+        136,
+        140
+      ]
+    },
+    {
+      "id": 135,
+      "center": true,
+      "name": "Point 135",
+      "x": 5766,
+      "y": 1374,
+      "owner": 6,
+      "borders": [
+        90,
+        91,
+        132,
+        133,
+        134,
+        136,
+        137
+      ]
+    },
+    {
+      "id": 136,
+      "center": true,
+      "name": "Point 136",
+      "x": 5790,
+      "y": 1366,
+      "owner": 6,
+      "borders": [
+        134,
+        135,
+        137,
+        140,
+        187
+      ]
+    },
+    {
+      "id": 137,
+      "center": true,
+      "name": "Point 137",
+      "x": 5805,
+      "y": 1392,
+      "owner": 5,
+      "borders": [
+        80,
+        91,
+        135,
+        136,
+        186,
+        216
+      ]
+    },
+    {
+      "id": 138,
+      "center": true,
+      "name": "Point 138",
+      "x": 5750,
+      "y": 1318,
+      "owner": 4,
+      "borders": [
+        132,
+        139,
+        140
+      ]
+    },
+    {
+      "id": 139,
+      "center": true,
+      "name": "Point 139",
+      "x": 5764,
+      "y": 1290,
+      "owner": 4,
+      "borders": [
+        138,
+        140
+      ]
+    },
+    {
+      "id": 140,
+      "center": true,
+      "name": "Point 140",
+      "x": 5783,
+      "y": 1320,
+      "owner": 4,
+      "borders": [
+        134,
+        136,
+        138,
+        139,
+        141,
+        188
+      ]
+    },
+    {
+      "id": 141,
+      "center": true,
+      "name": "Point 141",
+      "x": 5810,
+      "y": 1300,
+      "owner": 4,
+      "borders": [
+        140,
+        143,
+        188,
+        189
+      ]
+    },
+    {
+      "id": 142,
+      "center": true,
+      "name": "Point 142",
+      "x": 5793,
+      "y": 1273,
+      "owner": 4,
+      "borders": [
+        143
+      ]
+    },
+    {
+      "id": 143,
+      "center": true,
+      "name": "Point 143",
+      "x": 5817,
+      "y": 1273,
+      "owner": 4,
+      "borders": [
+        141,
+        142,
+        190
+      ]
+    },
+    {
+      "id": 144,
+      "center": true,
+      "name": "Point 144",
+      "x": 5871,
+      "y": 1454,
+      "owner": 7,
+      "borders": [
+        78,
+        79,
+        145,
+        204
+      ]
+    },
+    {
+      "id": 145,
+      "center": true,
+      "name": "Point 145",
+      "x": 5905,
+      "y": 1453,
+      "owner": 7,
+      "borders": [
+        144,
+        146,
+        204,
+        205
+      ]
+    },
+    {
+      "id": 146,
+      "center": true,
+      "name": "Point 146",
+      "x": 5933,
+      "y": 1459,
+      "owner": 7,
+      "borders": [
+        145,
+        147,
+        153
+      ]
+    },
+    {
+      "id": 147,
+      "center": true,
+      "name": "Point 147",
+      "x": 5963,
+      "y": 1457,
+      "owner": 7,
+      "borders": [
+        146,
+        153,
+        154
+      ]
+    },
+    {
+      "id": 148,
+      "center": true,
+      "name": "Point 148",
+      "x": 5954,
+      "y": 1415,
+      "owner": 7,
+      "borders": [
+        149,
+        150,
+        151,
+        152,
+        153
+      ]
+    },
+    {
+      "id": 149,
+      "center": true,
+      "name": "Point 149",
+      "x": 5931,
+      "y": 1412,
+      "owner": 7,
+      "borders": [
+        148,
+        153,
+        206,
+        212
+      ]
+    },
+    {
+      "id": 150,
+      "center": true,
+      "name": "Point 150",
+      "x": 5949,
+      "y": 1394,
+      "owner": 7,
+      "borders": [
+        148,
+        156,
+        157,
+        205,
+        212
+      ]
+    },
+    {
+      "id": 151,
+      "center": true,
+      "name": "Point 151",
+      "x": 5971,
+      "y": 1400,
+      "owner": 7,
+      "borders": [
+        148,
+        152,
+        156,
+        157
+      ]
+    },
+    {
+      "id": 152,
+      "center": true,
+      "name": "Point 152",
+      "x": 5977,
+      "y": 1424,
+      "owner": 7,
+      "borders": [
+        148,
+        151,
+        153,
+        154,
+        155
+      ]
+    },
+    {
+      "id": 153,
+      "center": true,
+      "name": "Point 153",
+      "x": 5946,
+      "y": 1437,
+      "owner": 7,
+      "borders": [
+        146,
+        147,
+        148,
+        149,
+        152,
+        205
+      ]
+    },
+    {
+      "id": 154,
+      "center": true,
+      "name": "Point 154",
+      "x": 5993,
+      "y": 1454,
+      "owner": 7,
+      "borders": [
+        147,
+        152,
+        155
+      ]
+    },
+    {
+      "id": 155,
+      "center": true,
+      "name": "Point 155",
+      "x": 6012,
+      "y": 1431,
+      "owner": 7,
+      "borders": [
+        152,
+        154,
+        156
+      ]
+    },
+    {
+      "id": 156,
+      "center": true,
+      "name": "Point 156",
+      "x": 5996,
+      "y": 1406,
+      "owner": 7,
+      "borders": [
+        150,
+        151,
+        155,
+        157
+      ]
+    },
+    {
+      "id": 157,
+      "center": true,
+      "name": "Point 157",
+      "x": 5969,
+      "y": 1373,
+      "owner": 7,
+      "borders": [
+        150,
+        151,
+        156,
+        171,
+        210,
+        212
+      ]
+    },
+    {
+      "id": 158,
+      "center": true,
+      "name": "Point 158",
+      "x": 5893,
+      "y": 1211,
+      "owner": 7,
+      "borders": [
+        159
+      ]
+    },
+    {
+      "id": 159,
+      "center": true,
+      "name": "Point 159",
+      "x": 5893,
+      "y": 1234,
+      "owner": 7,
+      "borders": [
+        158,
+        160,
+        191,
+        192
+      ]
+    },
+    {
+      "id": 160,
+      "center": true,
+      "name": "Point 160",
+      "x": 5922,
+      "y": 1230,
+      "owner": 7,
+      "borders": [
+        159,
+        177
+      ]
+    },
+    {
+      "id": 161,
+      "center": true,
+      "name": "Point 161",
+      "x": 6124,
+      "y": 1221,
+      "owner": 7,
+      "borders": [
+        162,
+        163
+      ]
+    },
+    {
+      "id": 162,
+      "center": true,
+      "name": "Point 162",
+      "x": 6098,
+      "y": 1229,
+      "owner": 7,
+      "borders": [
+        161,
+        176
+      ]
+    },
+    {
+      "id": 163,
+      "center": true,
+      "name": "Point 163",
+      "x": 6103,
+      "y": 1253,
+      "owner": 7,
+      "borders": [
+        161,
+        164,
+        176
+      ]
+    },
+    {
+      "id": 164,
+      "center": true,
+      "name": "Point 164",
+      "x": 6087,
+      "y": 1271,
+      "owner": 7,
+      "borders": [
+        163,
+        165,
+        175,
+        176
+      ]
+    },
+    {
+      "id": 165,
+      "center": true,
+      "name": "Point 165",
+      "x": 6087,
+      "y": 1297,
+      "owner": 7,
+      "borders": [
+        164,
+        166,
+        170,
+        174,
+        175
+      ]
+    },
+    {
+      "id": 166,
+      "center": true,
+      "name": "Point 166",
+      "x": 6114,
+      "y": 1314,
+      "owner": 7,
+      "borders": [
+        165,
+        170
+      ]
+    },
+    {
+      "id": 167,
+      "center": true,
+      "name": "Point 167",
+      "x": 6134,
+      "y": 1329,
+      "owner": 7,
+      "borders": [
+        168
+      ]
+    },
+    {
+      "id": 168,
+      "center": true,
+      "name": "Point 168",
+      "x": 6152,
+      "y": 1350,
+      "owner": 7,
+      "borders": [
+        167,
+        169
+      ]
+    },
+    {
+      "id": 169,
+      "center": true,
+      "name": "Point 169",
+      "x": 6119,
+      "y": 1350,
+      "owner": 7,
+      "borders": [
+        168,
+        170
+      ]
+    },
+    {
+      "id": 170,
+      "center": true,
+      "name": "Point 170",
+      "x": 6089,
+      "y": 1327,
+      "owner": 7,
+      "borders": [
+        165,
+        166,
+        169,
+        174
+      ]
+    },
+    {
+      "id": 171,
+      "center": true,
+      "name": "Point 171",
+      "x": 5987,
+      "y": 1350,
+      "owner": 7,
+      "borders": [
+        157,
+        172,
+        196,
+        210,
+        213
+      ]
+    },
+    {
+      "id": 172,
+      "center": true,
+      "name": "Point 172",
+      "x": 6003,
+      "y": 1326,
+      "owner": 7,
+      "borders": [
+        171,
+        173,
+        184,
+        196,
+        213
+      ]
+    },
+    {
+      "id": 173,
+      "center": true,
+      "name": "Point 173",
+      "x": 6022,
+      "y": 1308,
+      "owner": 7,
+      "borders": [
+        172,
+        174,
+        184,
+        213,
+        215
+      ]
+    },
+    {
+      "id": 174,
+      "center": true,
+      "name": "Point 174",
+      "x": 6059,
+      "y": 1317,
+      "owner": 7,
+      "borders": [
+        165,
+        170,
+        173,
+        175,
+        213,
+        215
+      ]
+    },
+    {
+      "id": 175,
+      "center": true,
+      "name": "Point 175",
+      "x": 6061,
+      "y": 1286,
+      "owner": 7,
+      "borders": [
+        164,
+        165,
+        174,
+        176,
+        215
+      ]
+    },
+    {
+      "id": 176,
+      "center": true,
+      "name": "Point 176",
+      "x": 6069,
+      "y": 1249,
+      "owner": 7,
+      "borders": [
+        162,
+        163,
+        164,
+        175,
+        214
+      ]
+    },
+    {
+      "id": 177,
+      "center": true,
+      "name": "Point 177",
+      "x": 5937,
+      "y": 1250,
+      "owner": 7,
+      "borders": [
+        160,
+        183,
+        192,
+        193
+      ]
+    },
+    {
+      "id": 178,
+      "center": true,
+      "name": "Point 178",
+      "x": 5988,
+      "y": 1240,
+      "owner": 7,
+      "borders": [
+        179,
+        182,
+        183
+      ]
+    },
+    {
+      "id": 179,
+      "center": true,
+      "name": "Point 179",
+      "x": 6017,
+      "y": 1251,
+      "owner": 7,
+      "borders": [
+        178,
+        180,
+        182,
+        214
+      ]
+    },
+    {
+      "id": 180,
+      "center": true,
+      "name": "Point 180",
+      "x": 6015,
+      "y": 1283,
+      "owner": 7,
+      "borders": [
+        179,
+        182,
+        184,
+        215
+      ]
+    },
+    {
+      "id": 182,
+      "center": true,
+      "name": "Point 182",
+      "x": 5989,
+      "y": 1274,
+      "owner": 7,
+      "borders": [
+        178,
+        179,
+        180,
+        183,
+        184,
+        185
+      ]
+    },
+    {
+      "id": 183,
+      "center": true,
+      "name": "Point 183",
+      "x": 5965,
+      "y": 1258,
+      "owner": 7,
+      "borders": [
+        177,
+        178,
+        182,
+        185,
+        193
+      ]
+    },
+    {
+      "id": 184,
+      "center": true,
+      "name": "Point 184",
+      "x": 5993,
+      "y": 1300,
+      "owner": 7,
+      "borders": [
+        172,
+        173,
+        180,
+        182,
+        185,
+        196
+      ]
+    },
+    {
+      "id": 185,
+      "center": true,
+      "name": "Point 185",
+      "x": 5970,
+      "y": 1291,
+      "owner": 7,
+      "borders": [
+        182,
+        183,
+        184,
+        193,
+        196
+      ]
+    },
+    {
+      "id": 186,
+      "center": true,
+      "name": "Point 186",
+      "x": 5830,
+      "y": 1383,
+      "owner": 7,
+      "borders": [
+        137,
+        187,
+        201,
+        216
+      ]
+    },
+    {
+      "id": 187,
+      "center": true,
+      "name": "Point 187",
+      "x": 5826,
+      "y": 1352,
+      "owner": 7,
+      "borders": [
+        136,
+        186,
+        188,
+        200,
+        201
+      ]
+    },
+    {
+      "id": 188,
+      "center": true,
+      "name": "Point 188",
+      "x": 5827,
+      "y": 1327,
+      "owner": 7,
+      "borders": [
+        140,
+        141,
+        187,
+        189,
+        200
+      ]
+    },
+    {
+      "id": 189,
+      "center": true,
+      "name": "Point 189",
+      "x": 5852,
+      "y": 1307,
+      "owner": 7,
+      "borders": [
+        141,
+        188,
+        190,
+        194,
+        199
+      ]
+    },
+    {
+      "id": 190,
+      "center": true,
+      "name": "Point 190",
+      "x": 5850,
+      "y": 1278,
+      "owner": 7,
+      "borders": [
+        143,
+        189,
+        191,
+        194
+      ]
+    },
+    {
+      "id": 191,
+      "center": true,
+      "name": "Point 191",
+      "x": 5881,
+      "y": 1261,
+      "owner": 7,
+      "borders": [
+        159,
+        190,
+        192,
+        194
+      ]
+    },
+    {
+      "id": 192,
+      "center": true,
+      "name": "Point 192",
+      "x": 5912,
+      "y": 1261,
+      "owner": 7,
+      "borders": [
+        159,
+        177,
+        191,
+        193
+      ]
+    },
+    {
+      "id": 193,
+      "center": true,
+      "name": "Point 193",
+      "x": 5932,
+      "y": 1280,
+      "owner": 7,
+      "borders": [
+        177,
+        183,
+        185,
+        192,
+        195,
+        197,
+        198
+      ]
+    },
+    {
+      "id": 194,
+      "center": true,
+      "name": "Point 194",
+      "x": 5875,
+      "y": 1291,
+      "owner": 7,
+      "borders": [
+        189,
+        190,
+        191,
+        195,
+        199
+      ]
+    },
+    {
+      "id": 195,
+      "center": true,
+      "name": "Point 195",
+      "x": 5898,
+      "y": 1287,
+      "owner": 7,
+      "borders": [
+        193,
+        194,
+        199
+      ]
+    },
+    {
+      "id": 196,
+      "center": true,
+      "name": "Point 196",
+      "x": 5974,
+      "y": 1318,
+      "owner": 7,
+      "borders": [
+        171,
+        172,
+        184,
+        185,
+        197,
+        210
+      ]
+    },
+    {
+      "id": 197,
+      "center": true,
+      "name": "Point 197",
+      "x": 5946,
+      "y": 1306,
+      "owner": 7,
+      "borders": [
+        193,
+        196,
+        198,
+        210
+      ]
+    },
+    {
+      "id": 198,
+      "center": true,
+      "name": "Point 198",
+      "x": 5914,
+      "y": 1311,
+      "owner": 7,
+      "borders": [
+        193,
+        197,
+        199,
+        209,
+        210
+      ]
+    },
+    {
+      "id": 199,
+      "center": true,
+      "name": "Point 199",
+      "x": 5882,
+      "y": 1317,
+      "owner": 7,
+      "borders": [
+        189,
+        194,
+        195,
+        198,
+        200,
+        208
+      ]
+    },
+    {
+      "id": 200,
+      "center": true,
+      "name": "Point 200",
+      "x": 5856,
+      "y": 1340,
+      "owner": 7,
+      "borders": [
+        187,
+        188,
+        199,
+        208
+      ]
+    },
+    {
+      "id": 201,
+      "center": true,
+      "name": "Point 201",
+      "x": 5856,
+      "y": 1366,
+      "owner": 7,
+      "borders": [
+        186,
+        187,
+        202,
+        207,
+        208
+      ]
+    },
+    {
+      "id": 202,
+      "center": true,
+      "name": "Point 202",
+      "x": 5864,
+      "y": 1391,
+      "owner": 7,
+      "borders": [
+        201,
+        203,
+        207,
+        216
+      ]
+    },
+    {
+      "id": 203,
+      "center": true,
+      "name": "Point 203",
+      "x": 5883,
+      "y": 1411,
+      "owner": 7,
+      "borders": [
+        202,
+        204,
+        205,
+        206,
+        216,
+        217
+      ]
+    },
+    {
+      "id": 204,
+      "center": true,
+      "name": "Point 204",
+      "x": 5883,
+      "y": 1433,
+      "owner": 7,
+      "borders": [
+        78,
+        144,
+        145,
+        203,
+        205
+      ]
+    },
+    {
+      "id": 205,
+      "center": true,
+      "name": "Point 205",
+      "x": 5911,
+      "y": 1427,
+      "owner": 7,
+      "borders": [
+        145,
+        150,
+        153,
+        203,
+        204,
+        206
+      ]
+    },
+    {
+      "id": 206,
+      "center": true,
+      "name": "Point 206",
+      "x": 5904,
+      "y": 1395,
+      "owner": 7,
+      "borders": [
+        149,
+        203,
+        205,
+        207,
+        211,
+        212
+      ]
+    },
+    {
+      "id": 207,
+      "center": true,
+      "name": "Point 207",
+      "x": 5883,
+      "y": 1371,
+      "owner": 7,
+      "borders": [
+        201,
+        202,
+        206,
+        208,
+        211
+      ]
+    },
+    {
+      "id": 208,
+      "center": true,
+      "name": "Point 208",
+      "x": 5884,
+      "y": 1346,
+      "owner": 7,
+      "borders": [
+        199,
+        200,
+        201,
+        207,
+        209,
+        211
+      ]
+    },
+    {
+      "id": 209,
+      "center": true,
+      "name": "Point 209",
+      "x": 5916,
+      "y": 1340,
+      "owner": 7,
+      "borders": [
+        198,
+        208,
+        210,
+        211
+      ]
+    },
+    {
+      "id": 210,
+      "center": true,
+      "name": "Point 210",
+      "x": 5949,
+      "y": 1341,
+      "owner": 7,
+      "borders": [
+        157,
+        171,
+        196,
+        197,
+        198,
+        209,
+        212
+      ]
+    },
+    {
+      "id": 211,
+      "center": true,
+      "name": "Point 211",
+      "x": 5910,
+      "y": 1370,
+      "owner": 7,
+      "borders": [
+        206,
+        207,
+        208,
+        209,
+        212
+      ]
+    },
+    {
+      "id": 212,
+      "center": true,
+      "name": "Point 212",
+      "x": 5933,
+      "y": 1370,
+      "owner": 7,
+      "borders": [
+        149,
+        150,
+        157,
+        206,
+        210,
+        211
+      ]
+    },
+    {
+      "id": 213,
+      "center": true,
+      "name": "Point 213",
+      "x": 6029,
+      "y": 1334,
+      "owner": 7,
+      "borders": [
+        171,
+        172,
+        173,
+        174
+      ]
+    },
+    {
+      "id": 214,
+      "center": true,
+      "name": "Point 214",
+      "x": 6041,
+      "y": 1256,
+      "owner": 7,
+      "borders": [
+        176,
+        179,
+        215
+      ]
+    },
+    {
+      "id": 215,
+      "center": true,
+      "name": "Point 215",
+      "x": 6038,
+      "y": 1290,
+      "owner": 7,
+      "borders": [
+        173,
+        174,
+        175,
+        180,
+        214
+      ]
+    },
+    {
+      "id": 216,
+      "center": true,
+      "name": "Point 216",
+      "x": 5844,
+      "y": 1404,
+      "owner": 7,
+      "borders": [
+        78,
+        80,
+        137,
+        186,
+        202,
+        203
+      ]
+    },
+    {
+      "id": 217,
+      "center": false,
+      "name": "Point 217",
+      "x": 5862,
+      "y": 1420,
+      "owner": null,
+      "borders": [
+        78,
+        203
       ]
     }
   ]

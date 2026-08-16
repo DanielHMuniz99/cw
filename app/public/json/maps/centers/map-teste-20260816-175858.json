@@ -1,0 +1,9956 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-16T17:58:58.424Z",
+  "width": 10000,
+  "height": 3929,
+  "overlayImage": "mapchart_map-4-.png",
+  "points": [
+    {
+      "id": 4,
+      "center": true,
+      "name": "pattern3",
+      "x": 14,
+      "y": 13,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 5,
+      "center": true,
+      "name": "pattern4",
+      "x": 143,
+      "y": 131,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 6,
+      "center": true,
+      "name": "pattern5",
+      "x": 11,
+      "y": 23,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 9,
+      "center": true,
+      "name": "pattern3",
+      "x": 14,
+      "y": 13,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 10,
+      "center": true,
+      "name": "pattern5",
+      "x": 11,
+      "y": 23,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 11,
+      "center": true,
+      "name": "West_Papua",
+      "x": 8774,
+      "y": 2356,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 12,
+      "center": true,
+      "name": "Ajteh",
+      "x": 7681,
+      "y": 2176,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 13,
+      "center": true,
+      "name": "Aru_Islands",
+      "x": 8723,
+      "y": 2443,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 14,
+      "center": true,
+      "name": "Auckland",
+      "x": 9905,
+      "y": 3051,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 15,
+      "center": true,
+      "name": "Bali",
+      "x": 8187,
+      "y": 2500,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 16,
+      "center": true,
+      "name": "Bangka-Belitung",
+      "x": 7933,
+      "y": 2341,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 17,
+      "center": true,
+      "name": "Bangkok",
+      "x": 7785,
+      "y": 1921,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 18,
+      "center": true,
+      "name": "Bassac",
+      "x": 7947,
+      "y": 1888,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 19,
+      "center": true,
+      "name": "Batavia",
+      "x": 7965,
+      "y": 2450,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 20,
+      "center": true,
+      "name": "Battambang",
+      "x": 7876,
+      "y": 1928,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 21,
+      "center": true,
+      "name": "Cambodia",
+      "x": 7911,
+      "y": 1964,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 22,
+      "center": true,
+      "name": "Central_Australia",
+      "x": 8709,
+      "y": 2859,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 23,
+      "center": true,
+      "name": "Central_Siam",
+      "x": 7779,
+      "y": 1856,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 24,
+      "center": true,
+      "name": "Central_West_Australia",
+      "x": 8496,
+      "y": 2880,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 25,
+      "center": true,
+      "name": "Champa",
+      "x": 7995,
+      "y": 1936,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 26,
+      "center": true,
+      "name": "Dutch_Southern_New_Guinea",
+      "x": 8861,
+      "y": 2443,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 27,
+      "center": true,
+      "name": "Dutch_Timor",
+      "x": 8443,
+      "y": 2537,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 28,
+      "center": true,
+      "name": "East_Java",
+      "x": 8094,
+      "y": 2481,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 29,
+      "center": true,
+      "name": "East_Nusa_Tenggara",
+      "x": 8356,
+      "y": 2506,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 30,
+      "center": true,
+      "name": "East_Timor",
+      "x": 8488,
+      "y": 2511,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 31,
+      "center": true,
+      "name": "Eastern_Kalimantan",
+      "x": 8216,
+      "y": 2291,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 32,
+      "center": true,
+      "name": "Eastern_Siam",
+      "x": 7818,
+      "y": 1937,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 33,
+      "center": true,
+      "name": "Interior_Papua",
+      "x": 8974,
+      "y": 2440,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 34,
+      "center": true,
+      "name": "Java",
+      "x": 7981,
+      "y": 2465,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 35,
+      "center": true,
+      "name": "Johor",
+      "x": 7857,
+      "y": 2236,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 36,
+      "center": true,
+      "name": "Kaiser-Wilhelmsland",
+      "x": 9015,
+      "y": 2415,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 37,
+      "center": true,
+      "name": "Kalimantan",
+      "x": 8063,
+      "y": 2314,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 38,
+      "center": true,
+      "name": "Kelantan",
+      "x": 7837,
+      "y": 2159,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 39,
+      "center": true,
+      "name": "Lan_Chang",
+      "x": 7803,
+      "y": 1786,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 40,
+      "center": true,
+      "name": "Laos",
+      "x": 7860,
+      "y": 1774,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 41,
+      "center": true,
+      "name": "Lesser_Sunda_Islands",
+      "x": 8323,
+      "y": 2537,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 42,
+      "center": true,
+      "name": "Limbang",
+      "x": 8188,
+      "y": 2184,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 43,
+      "center": true,
+      "name": "Malaya",
+      "x": 7815,
+      "y": 2210,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 44,
+      "center": true,
+      "name": "Manado",
+      "x": 8360,
+      "y": 2310,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 45,
+      "center": true,
+      "name": "Marlborough",
+      "x": 9816,
+      "y": 3180,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 46,
+      "center": true,
+      "name": "Medan_and_Riouw",
+      "x": 7805,
+      "y": 2265,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 47,
+      "center": true,
+      "name": "Mekong_Delta",
+      "x": 7936,
+      "y": 2016,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 48,
+      "center": true,
+      "name": "New_Caledonia",
+      "x": 9588,
+      "y": 2846,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 49,
+      "center": true,
+      "name": "North_Island",
+      "x": 9896,
+      "y": 3121,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 50,
+      "center": true,
+      "name": "North_Queensland",
+      "x": 8930,
+      "y": 2702,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 51,
+      "center": true,
+      "name": "Northern_Malay",
+      "x": 7760,
+      "y": 2078,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 52,
+      "center": true,
+      "name": "Northern_Territory",
+      "x": 8705,
+      "y": 2665,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 53,
+      "center": true,
+      "name": "Otago",
+      "x": 9705,
+      "y": 3290,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 54,
+      "center": true,
+      "name": "Padang",
+      "x": 7780,
+      "y": 2288,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 55,
+      "center": true,
+      "name": "Pahang",
+      "x": 7845,
+      "y": 2201,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 56,
+      "center": true,
+      "name": "Papua",
+      "x": 9033,
+      "y": 2488,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 57,
+      "center": true,
+      "name": "Penang",
+      "x": 7782,
+      "y": 2152,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 58,
+      "center": true,
+      "name": "Perak",
+      "x": 7803,
+      "y": 2169,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 59,
+      "center": true,
+      "name": "Perlis_Kedah",
+      "x": 7786,
+      "y": 2136,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 60,
+      "center": true,
+      "name": "Queensland",
+      "x": 9080,
+      "y": 2881,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 61,
+      "center": true,
+      "name": "Sarawak",
+      "x": 8126,
+      "y": 2228,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 62,
+      "center": true,
+      "name": "Siam",
+      "x": 7749,
+      "y": 1899,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 63,
+      "center": true,
+      "name": "South_Island",
+      "x": 9758,
+      "y": 3242,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 64,
+      "center": true,
+      "name": "South_West_Queensland",
+      "x": 8980,
+      "y": 2931,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 65,
+      "center": true,
+      "name": "Sulawesi",
+      "x": 8334,
+      "y": 2372,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 66,
+      "center": true,
+      "name": "Sumatra",
+      "x": 7883,
+      "y": 2380,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 67,
+      "center": true,
+      "name": "Trung_Bo",
+      "x": 7927,
+      "y": 1799,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 68,
+      "center": true,
+      "name": "Vanuatu",
+      "x": 9625,
+      "y": 2682,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 69,
+      "center": true,
+      "name": "West_Queensland",
+      "x": 8876,
+      "y": 2888,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 70,
+      "center": true,
+      "name": "Hebei-Chahar",
+      "x": 8187,
+      "y": 1171,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 71,
+      "center": true,
+      "name": "Vladivostok",
+      "x": 8727,
+      "y": 1028,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 72,
+      "center": true,
+      "name": "Macau",
+      "x": 8138,
+      "y": 1692,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 73,
+      "center": true,
+      "name": "Sabah",
+      "x": 8244,
+      "y": 2151,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 74,
+      "center": true,
+      "name": "East_Hebei",
+      "x": 8275,
+      "y": 1184,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 75,
+      "center": true,
+      "name": "Hainan",
+      "x": 8039,
+      "y": 1779,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 76,
+      "center": true,
+      "name": "Jiangxi",
+      "x": 8201,
+      "y": 1552,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 77,
+      "center": true,
+      "name": "Manila",
+      "x": 8360,
+      "y": 1895,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 78,
+      "center": true,
+      "name": "Wuwei",
+      "x": 7831,
+      "y": 1243,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 79,
+      "center": true,
+      "name": "Yunnan",
+      "x": 7848,
+      "y": 1634,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 80,
+      "center": true,
+      "name": "Changde",
+      "x": 8055,
+      "y": 1491,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 81,
+      "center": true,
+      "name": "Gansu",
+      "x": 7899,
+      "y": 1339,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 82,
+      "center": true,
+      "name": "Kanto",
+      "x": 8870,
+      "y": 1301,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 83,
+      "center": true,
+      "name": "Henan",
+      "x": 8143,
+      "y": 1364,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 84,
+      "center": true,
+      "name": "Suzhou",
+      "x": 8330,
+      "y": 1424,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 85,
+      "center": true,
+      "name": "Jehol",
+      "x": 8293,
+      "y": 1121,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 86,
+      "center": true,
+      "name": "Jiuquan",
+      "x": 7673,
+      "y": 1174,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 87,
+      "center": true,
+      "name": "Haixi",
+      "x": 7644,
+      "y": 1259,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 88,
+      "center": true,
+      "name": "Eastern_Visayas",
+      "x": 8461,
+      "y": 1986,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 89,
+      "center": true,
+      "name": "Hubei",
+      "x": 8104,
+      "y": 1437,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 90,
+      "center": true,
+      "name": "Nanjing",
+      "x": 8286,
+      "y": 1421,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 91,
+      "center": true,
+      "name": "Guangzhou",
+      "x": 8103,
+      "y": 1685,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 92,
+      "center": true,
+      "name": "Xian",
+      "x": 7998,
+      "y": 1381,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 93,
+      "center": true,
+      "name": "Koshinetsu",
+      "x": 8838,
+      "y": 1275,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 94,
+      "center": true,
+      "name": "Chengdu",
+      "x": 7894,
+      "y": 1462,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 95,
+      "center": true,
+      "name": "Ganzi",
+      "x": 7771,
+      "y": 1456,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 96,
+      "center": true,
+      "name": "Singapore",
+      "x": 7872,
+      "y": 2254,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 97,
+      "center": true,
+      "name": "Yan’an",
+      "x": 8009,
+      "y": 1328,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 98,
+      "center": true,
+      "name": "Fujian",
+      "x": 8268,
+      "y": 1592,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 99,
+      "center": true,
+      "name": "Khotan",
+      "x": 7331,
+      "y": 1273,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 100,
+      "center": true,
+      "name": "Bataan",
+      "x": 8339,
+      "y": 1871,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 101,
+      "center": true,
+      "name": "Suiyuan",
+      "x": 8031,
+      "y": 1148,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 102,
+      "center": true,
+      "name": "Hamgyong",
+      "x": 8551,
+      "y": 1159,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 103,
+      "center": true,
+      "name": "Shanghai",
+      "x": 8354,
+      "y": 1443,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 104,
+      "center": true,
+      "name": "Nanlu",
+      "x": 8027,
+      "y": 1710,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 105,
+      "center": true,
+      "name": "Taklamakan",
+      "x": 7285,
+      "y": 1209,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 106,
+      "center": true,
+      "name": "Golog",
+      "x": 7779,
+      "y": 1323,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 107,
+      "center": true,
+      "name": "Ordos",
+      "x": 8005,
+      "y": 1203,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 108,
+      "center": true,
+      "name": "Shikoku",
+      "x": 8697,
+      "y": 1375,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 109,
+      "center": true,
+      "name": "Chongqing",
+      "x": 7922,
+      "y": 1505,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 110,
+      "center": true,
+      "name": "Beiping",
+      "x": 8216,
+      "y": 1201,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 111,
+      "center": true,
+      "name": "Hunan",
+      "x": 8101,
+      "y": 1558,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 112,
+      "center": true,
+      "name": "Kita-Tohoku",
+      "x": 8904,
+      "y": 1188,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 113,
+      "center": true,
+      "name": "Guangzhouwan",
+      "x": 8059,
+      "y": 1721,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 114,
+      "center": true,
+      "name": "Guizhou",
+      "x": 7958,
+      "y": 1584,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 115,
+      "center": true,
+      "name": "Nagqu",
+      "x": 7437,
+      "y": 1395,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 116,
+      "center": true,
+      "name": "Shanxi",
+      "x": 8107,
+      "y": 1255,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 117,
+      "center": true,
+      "name": "San’in",
+      "x": 8686,
+      "y": 1332,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 118,
+      "center": true,
+      "name": "Minami_Kyūshū",
+      "x": 8627,
+      "y": 1425,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 119,
+      "center": true,
+      "name": "Ningxia",
+      "x": 7899,
+      "y": 1217,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 120,
+      "center": true,
+      "name": "Kunlun_Shan",
+      "x": 7506,
+      "y": 1189,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 121,
+      "center": true,
+      "name": "Chungcheong-Jeolla",
+      "x": 8523,
+      "y": 1310,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 122,
+      "center": true,
+      "name": "Western_Visayas",
+      "x": 8408,
+      "y": 2026,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 123,
+      "center": true,
+      "name": "Luzon",
+      "x": 8362,
+      "y": 1825,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 124,
+      "center": true,
+      "name": "Jinan",
+      "x": 8239,
+      "y": 1296,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 125,
+      "center": true,
+      "name": "Guangdong",
+      "x": 8171,
+      "y": 1647,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 126,
+      "center": true,
+      "name": "Yarkand",
+      "x": 7126,
+      "y": 1200,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 127,
+      "center": true,
+      "name": "Brunei",
+      "x": 8170,
+      "y": 2176,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 128,
+      "center": true,
+      "name": "Hokkaido",
+      "x": 8951,
+      "y": 1080,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 129,
+      "center": true,
+      "name": "Liaoning",
+      "x": 8413,
+      "y": 1150,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 130,
+      "center": true,
+      "name": "Tokai",
+      "x": 8817,
+      "y": 1325,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 131,
+      "center": true,
+      "name": "Jiangsu",
+      "x": 8291,
+      "y": 1371,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 132,
+      "center": true,
+      "name": "Ngari",
+      "x": 7267,
+      "y": 1394,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 133,
+      "center": true,
+      "name": "Chahar",
+      "x": 8175,
+      "y": 1115,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 134,
+      "center": true,
+      "name": "Guyuan",
+      "x": 7939,
+      "y": 1287,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 135,
+      "center": true,
+      "name": "Shaanbei",
+      "x": 8009,
+      "y": 1281,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 136,
+      "center": true,
+      "name": "Zamboanga",
+      "x": 8406,
+      "y": 2083,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 137,
+      "center": true,
+      "name": "Liangshan",
+      "x": 7834,
+      "y": 1532,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 138,
+      "center": true,
+      "name": "Qingdao",
+      "x": 8330,
+      "y": 1293,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 139,
+      "center": true,
+      "name": "Xilingol",
+      "x": 8206,
+      "y": 1039,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 140,
+      "center": true,
+      "name": "Hebei",
+      "x": 8186,
+      "y": 1252,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 141,
+      "center": true,
+      "name": "Gangwon",
+      "x": 8557,
+      "y": 1255,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 142,
+      "center": true,
+      "name": "Sichuan",
+      "x": 7982,
+      "y": 1453,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 143,
+      "center": true,
+      "name": "Pailingmiao",
+      "x": 8087,
+      "y": 1117,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 144,
+      "center": true,
+      "name": "Qinghai",
+      "x": 7592,
+      "y": 1351,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 145,
+      "center": true,
+      "name": "Dalian",
+      "x": 8374,
+      "y": 1208,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 146,
+      "center": true,
+      "name": "Gyeonggi",
+      "x": 8527,
+      "y": 1262,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 147,
+      "center": true,
+      "name": "Nanning",
+      "x": 7985,
+      "y": 1666,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 148,
+      "center": true,
+      "name": "Alxa",
+      "x": 7801,
+      "y": 1148,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 149,
+      "center": true,
+      "name": "San’yo",
+      "x": 8677,
+      "y": 1349,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 150,
+      "center": true,
+      "name": "Davao",
+      "x": 8471,
+      "y": 2108,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 151,
+      "center": true,
+      "name": "Shandong",
+      "x": 8323,
+      "y": 1280,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 152,
+      "center": true,
+      "name": "Pyongan-Hwanghae",
+      "x": 8489,
+      "y": 1202,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 153,
+      "center": true,
+      "name": "Kansai",
+      "x": 8758,
+      "y": 1342,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 154,
+      "center": true,
+      "name": "Liaobei",
+      "x": 8372,
+      "y": 1045,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 155,
+      "center": true,
+      "name": "Yulin",
+      "x": 8046,
+      "y": 1239,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 156,
+      "center": true,
+      "name": "Gyeongsang",
+      "x": 8563,
+      "y": 1313,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 157,
+      "center": true,
+      "name": "Hokuriku",
+      "x": 8790,
+      "y": 1293,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 158,
+      "center": true,
+      "name": "Zunyi",
+      "x": 7960,
+      "y": 1537,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 159,
+      "center": true,
+      "name": "Chamdo",
+      "x": 7647,
+      "y": 1464,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 160,
+      "center": true,
+      "name": "Interior_Borneo",
+      "x": 8146,
+      "y": 2279,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 161,
+      "center": true,
+      "name": "Kitakyūshū",
+      "x": 8624,
+      "y": 1389,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 162,
+      "center": true,
+      "name": "Gannan",
+      "x": 7840,
+      "y": 1404,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 163,
+      "center": true,
+      "name": "Minami_Tohoku",
+      "x": 8887,
+      "y": 1249,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 164,
+      "center": true,
+      "name": "Anhui",
+      "x": 8227,
+      "y": 1425,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 165,
+      "center": true,
+      "name": "Sungkiang",
+      "x": 8634,
+      "y": 1014,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 166,
+      "center": true,
+      "name": "Northern_Mindanao",
+      "x": 8467,
+      "y": 2072,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 167,
+      "center": true,
+      "name": "Zhejiang",
+      "x": 8326,
+      "y": 1503,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 168,
+      "center": true,
+      "name": "Wuhan",
+      "x": 8158,
+      "y": 1475,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 169,
+      "center": true,
+      "name": "Hong_Kong",
+      "x": 8159,
+      "y": 1689,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 170,
+      "center": true,
+      "name": "Huangshan",
+      "x": 8269,
+      "y": 1476,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 171,
+      "center": true,
+      "name": "Guangxi",
+      "x": 8041,
+      "y": 1632,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 172,
+      "center": true,
+      "name": "Hyderabad",
+      "x": 7152,
+      "y": 1804,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 173,
+      "center": true,
+      "name": "Central_Provinces",
+      "x": 7207,
+      "y": 1705,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 174,
+      "center": true,
+      "name": "Mysore",
+      "x": 7113,
+      "y": 1933,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 175,
+      "center": true,
+      "name": "Northern_Kashmir",
+      "x": 7076,
+      "y": 1316,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 176,
+      "center": true,
+      "name": "Kashmir",
+      "x": 7142,
+      "y": 1355,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 177,
+      "center": true,
+      "name": "West_Punjab",
+      "x": 7026,
+      "y": 1433,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 178,
+      "center": true,
+      "name": "East_Punjab",
+      "x": 7130,
+      "y": 1451,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 179,
+      "center": true,
+      "name": "Rajahsthan",
+      "x": 7053,
+      "y": 1587,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 180,
+      "center": true,
+      "name": "Central_India",
+      "x": 7109,
+      "y": 1661,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 181,
+      "center": true,
+      "name": "Bombay",
+      "x": 7048,
+      "y": 1772,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 182,
+      "center": true,
+      "name": "Kolhapur_and_Deccan",
+      "x": 7083,
+      "y": 1863,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 183,
+      "center": true,
+      "name": "Southern_Madras",
+      "x": 7152,
+      "y": 1993,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 184,
+      "center": true,
+      "name": "West_Azerbaijan",
+      "x": 6243,
+      "y": 1253,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 185,
+      "center": true,
+      "name": "Gilan",
+      "x": 6345,
+      "y": 1269,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 186,
+      "center": true,
+      "name": "East_Azerbaijan",
+      "x": 6285,
+      "y": 1244,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 187,
+      "center": true,
+      "name": "North_Khorasan",
+      "x": 6586,
+      "y": 1265,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 188,
+      "center": true,
+      "name": "Qataghan",
+      "x": 6960,
+      "y": 1287,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 189,
+      "center": true,
+      "name": "Mosul",
+      "x": 6196,
+      "y": 1315,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 190,
+      "center": true,
+      "name": "Maymanah",
+      "x": 6819,
+      "y": 1296,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 191,
+      "center": true,
+      "name": "Semnan",
+      "x": 6524,
+      "y": 1335,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 192,
+      "center": true,
+      "name": "Khorasan",
+      "x": 6634,
+      "y": 1316,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 193,
+      "center": true,
+      "name": "Peshawar",
+      "x": 6993,
+      "y": 1333,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 194,
+      "center": true,
+      "name": "Kurdistan",
+      "x": 6287,
+      "y": 1329,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 195,
+      "center": true,
+      "name": "Kabul",
+      "x": 6873,
+      "y": 1335,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 196,
+      "center": true,
+      "name": "Hamadan",
+      "x": 6367,
+      "y": 1349,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 197,
+      "center": true,
+      "name": "Herat",
+      "x": 6750,
+      "y": 1359,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 198,
+      "center": true,
+      "name": "Khyber_Pass",
+      "x": 6923,
+      "y": 1373,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 199,
+      "center": true,
+      "name": "Baghdad",
+      "x": 6215,
+      "y": 1392,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 200,
+      "center": true,
+      "name": "Isfahan",
+      "x": 6436,
+      "y": 1397,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 201,
+      "center": true,
+      "name": "Al_Anbar",
+      "x": 6123,
+      "y": 1396,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 202,
+      "center": true,
+      "name": "South_Khorasan",
+      "x": 6623,
+      "y": 1404,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 203,
+      "center": true,
+      "name": "Ilam",
+      "x": 6307,
+      "y": 1388,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 204,
+      "center": true,
+      "name": "Qandahar",
+      "x": 6829,
+      "y": 1434,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 205,
+      "center": true,
+      "name": "Waziristan",
+      "x": 6948,
+      "y": 1424,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 206,
+      "center": true,
+      "name": "Yazd",
+      "x": 6504,
+      "y": 1424,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 207,
+      "center": true,
+      "name": "Farah",
+      "x": 6733,
+      "y": 1434,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 208,
+      "center": true,
+      "name": "Khuzestan",
+      "x": 6362,
+      "y": 1444,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 209,
+      "center": true,
+      "name": "Al_Basrah",
+      "x": 6280,
+      "y": 1440,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 210,
+      "center": true,
+      "name": "Al_Hajara",
+      "x": 6223,
+      "y": 1463,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 211,
+      "center": true,
+      "name": "Kerman",
+      "x": 6592,
+      "y": 1477,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 212,
+      "center": true,
+      "name": "North_Baluchistan",
+      "x": 6807,
+      "y": 1492,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 213,
+      "center": true,
+      "name": "Sistan",
+      "x": 6661,
+      "y": 1545,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 214,
+      "center": true,
+      "name": "Fars",
+      "x": 6492,
+      "y": 1511,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 215,
+      "center": true,
+      "name": "Sibi",
+      "x": 6914,
+      "y": 1491,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 216,
+      "center": true,
+      "name": "Bahawalpur",
+      "x": 7000,
+      "y": 1526,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 217,
+      "center": true,
+      "name": "Kuwait",
+      "x": 6306,
+      "y": 1493,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 218,
+      "center": true,
+      "name": "Kalat",
+      "x": 6845,
+      "y": 1542,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 219,
+      "center": true,
+      "name": "South_Baluchistan",
+      "x": 6775,
+      "y": 1575,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 220,
+      "center": true,
+      "name": "Sind",
+      "x": 6905,
+      "y": 1590,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 221,
+      "center": true,
+      "name": "Bahrain",
+      "x": 6391,
+      "y": 1589,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 222,
+      "center": true,
+      "name": "Abu_Dhabi",
+      "x": 6499,
+      "y": 1650,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 223,
+      "center": true,
+      "name": "Musandam",
+      "x": 6549,
+      "y": 1591,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 224,
+      "center": true,
+      "name": "Muscat",
+      "x": 6582,
+      "y": 1722,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 225,
+      "center": true,
+      "name": "Gujarat",
+      "x": 6968,
+      "y": 1674,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 226,
+      "center": true,
+      "name": "Oman",
+      "x": 6547,
+      "y": 1726,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 227,
+      "center": true,
+      "name": "Dhofar",
+      "x": 6479,
+      "y": 1807,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 228,
+      "center": true,
+      "name": "South_Yemen",
+      "x": 6362,
+      "y": 1854,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 229,
+      "center": true,
+      "name": "North_Yemen",
+      "x": 6228,
+      "y": 1877,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 230,
+      "center": true,
+      "name": "Goa",
+      "x": 7045,
+      "y": 1882,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 231,
+      "center": true,
+      "name": "Province_of_Aden",
+      "x": 6247,
+      "y": 1933,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 232,
+      "center": true,
+      "name": "United_Provinces",
+      "x": 7228,
+      "y": 1568,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 233,
+      "center": true,
+      "name": "Delhi",
+      "x": 7139,
+      "y": 1508,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 234,
+      "center": true,
+      "name": "Sagaing",
+      "x": 7669,
+      "y": 1610,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 235,
+      "center": true,
+      "name": "Sikkim",
+      "x": 7447,
+      "y": 1551,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 236,
+      "center": true,
+      "name": "Manipur",
+      "x": 7614,
+      "y": 1579,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 237,
+      "center": true,
+      "name": "Assam",
+      "x": 7553,
+      "y": 1617,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 238,
+      "center": true,
+      "name": "Bihar",
+      "x": 7350,
+      "y": 1623,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 239,
+      "center": true,
+      "name": "Gwalior",
+      "x": 7162,
+      "y": 1601,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 240,
+      "center": true,
+      "name": "West_Bengal",
+      "x": 7426,
+      "y": 1639,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 241,
+      "center": true,
+      "name": "East_Bengal",
+      "x": 7492,
+      "y": 1650,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 242,
+      "center": true,
+      "name": "Federated_Shan_States",
+      "x": 7708,
+      "y": 1709,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 243,
+      "center": true,
+      "name": "Magwe",
+      "x": 7613,
+      "y": 1708,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 244,
+      "center": true,
+      "name": "Mandalay",
+      "x": 7669,
+      "y": 1707,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 245,
+      "center": true,
+      "name": "Orissa",
+      "x": 7328,
+      "y": 1755,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 246,
+      "center": true,
+      "name": "Kentung_and_Yawnghwe",
+      "x": 7754,
+      "y": 1722,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 247,
+      "center": true,
+      "name": "Arakan",
+      "x": 7598,
+      "y": 1757,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 248,
+      "center": true,
+      "name": "Bastar",
+      "x": 7250,
+      "y": 1755,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 249,
+      "center": true,
+      "name": "Pegu",
+      "x": 7656,
+      "y": 1803,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 250,
+      "center": true,
+      "name": "Tenasserim",
+      "x": 7712,
+      "y": 1880,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 251,
+      "center": true,
+      "name": "Irrawaddy",
+      "x": 7635,
+      "y": 1840,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 252,
+      "center": true,
+      "name": "Northern_Madras",
+      "x": 7191,
+      "y": 1888,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 253,
+      "center": true,
+      "name": "French_India",
+      "x": 7203,
+      "y": 1970,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 254,
+      "center": true,
+      "name": "Madras_States",
+      "x": 7143,
+      "y": 2040,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 255,
+      "center": true,
+      "name": "Steiermark_Kärnten",
+      "x": 5400,
+      "y": 962,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 256,
+      "center": true,
+      "name": "Oberösterreich",
+      "x": 5369,
+      "y": 935,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 257,
+      "center": true,
+      "name": "Burgenland",
+      "x": 5445,
+      "y": 946,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 258,
+      "center": true,
+      "name": "Niederösterreich",
+      "x": 5419,
+      "y": 921,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 259,
+      "center": true,
+      "name": "Millerovo",
+      "x": 6143,
+      "y": 913,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 260,
+      "center": true,
+      "name": "Ayaguz",
+      "x": 7161,
+      "y": 975,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 261,
+      "center": true,
+      "name": "Pamir",
+      "x": 7061,
+      "y": 1144,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 262,
+      "center": true,
+      "name": "Yamalia",
+      "x": 7163,
+      "y": 227,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 263,
+      "center": true,
+      "name": "Surgut",
+      "x": 7172,
+      "y": 461,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 264,
+      "center": true,
+      "name": "Tomsk",
+      "x": 7282,
+      "y": 581,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 265,
+      "center": true,
+      "name": "Omsk",
+      "x": 7035,
+      "y": 659,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 266,
+      "center": true,
+      "name": "Novosibirsk",
+      "x": 7207,
+      "y": 684,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 267,
+      "center": true,
+      "name": "Pavlodar",
+      "x": 7104,
+      "y": 787,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 268,
+      "center": true,
+      "name": "Semipalatinsk",
+      "x": 7237,
+      "y": 887,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 269,
+      "center": true,
+      "name": "Alma_Ata",
+      "x": 7083,
+      "y": 1074,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 270,
+      "center": true,
+      "name": "Kerguelen",
+      "x": 7081,
+      "y": 3287,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 271,
+      "center": true,
+      "name": "Greenland",
+      "x": 3739,
+      "y": 120,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 272,
+      "center": true,
+      "name": "Nenets",
+      "x": 6522,
+      "y": 198,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 273,
+      "center": true,
+      "name": "Salekhard",
+      "x": 6917,
+      "y": 215,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 274,
+      "center": true,
+      "name": "Jan_Mayen",
+      "x": 4735,
+      "y": 24,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 275,
+      "center": true,
+      "name": "Finnmark",
+      "x": 5711,
+      "y": 98,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 276,
+      "center": true,
+      "name": "Troms",
+      "x": 5549,
+      "y": 125,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 277,
+      "center": true,
+      "name": "Lappi",
+      "x": 5716,
+      "y": 194,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 278,
+      "center": true,
+      "name": "Murmansk",
+      "x": 5962,
+      "y": 196,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 279,
+      "center": true,
+      "name": "Petsamo",
+      "x": 5820,
+      "y": 142,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 280,
+      "center": true,
+      "name": "Nordland",
+      "x": 5435,
+      "y": 185,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 281,
+      "center": true,
+      "name": "Norrbotten",
+      "x": 5556,
+      "y": 219,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 282,
+      "center": true,
+      "name": "Iceland",
+      "x": 4469,
+      "y": 242,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 283,
+      "center": true,
+      "name": "Pechora",
+      "x": 6454,
+      "y": 296,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 284,
+      "center": true,
+      "name": "Salla",
+      "x": 5818,
+      "y": 240,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 285,
+      "center": true,
+      "name": "Northern_Urals",
+      "x": 6676,
+      "y": 313,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 286,
+      "center": true,
+      "name": "Helgeland",
+      "x": 5368,
+      "y": 272,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 287,
+      "center": true,
+      "name": "Västerbotten",
+      "x": 5486,
+      "y": 304,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 288,
+      "center": true,
+      "name": "Arkhangelsk",
+      "x": 6139,
+      "y": 334,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 289,
+      "center": true,
+      "name": "Oulu",
+      "x": 5750,
+      "y": 317,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 290,
+      "center": true,
+      "name": "Onega",
+      "x": 5897,
+      "y": 330,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 291,
+      "center": true,
+      "name": "Syktyvkar",
+      "x": 6444,
+      "y": 412,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 292,
+      "center": true,
+      "name": "Trøndelag",
+      "x": 5308,
+      "y": 360,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 293,
+      "center": true,
+      "name": "Jämtland",
+      "x": 5381,
+      "y": 376,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 294,
+      "center": true,
+      "name": "Tobolsk",
+      "x": 6827,
+      "y": 432,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 295,
+      "center": true,
+      "name": "Gävleborg",
+      "x": 5450,
+      "y": 412,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 296,
+      "center": true,
+      "name": "Kuopio",
+      "x": 5780,
+      "y": 392,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 297,
+      "center": true,
+      "name": "Vaasa",
+      "x": 5643,
+      "y": 398,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 298,
+      "center": true,
+      "name": "Kotlas",
+      "x": 6220,
+      "y": 425,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 299,
+      "center": true,
+      "name": "Vestlandet",
+      "x": 5178,
+      "y": 464,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 300,
+      "center": true,
+      "name": "Kargopol",
+      "x": 6062,
+      "y": 433,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 301,
+      "center": true,
+      "name": "Faroe_Islands",
+      "x": 4774,
+      "y": 408,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 302,
+      "center": true,
+      "name": "Karjala",
+      "x": 5836,
+      "y": 454,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 303,
+      "center": true,
+      "name": "Olonets",
+      "x": 5923,
+      "y": 443,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 304,
+      "center": true,
+      "name": "Dalarna",
+      "x": 5374,
+      "y": 462,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 305,
+      "center": true,
+      "name": "Opplandene",
+      "x": 5278,
+      "y": 456,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 306,
+      "center": true,
+      "name": "Mikkeli",
+      "x": 5742,
+      "y": 441,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 307,
+      "center": true,
+      "name": "Perm",
+      "x": 6559,
+      "y": 527,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 308,
+      "center": true,
+      "name": "Häme",
+      "x": 5662,
+      "y": 456,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 309,
+      "center": true,
+      "name": "Turku",
+      "x": 5609,
+      "y": 467,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 310,
+      "center": true,
+      "name": "Kymi",
+      "x": 5767,
+      "y": 467,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 311,
+      "center": true,
+      "name": "Sverdlovsk",
+      "x": 6714,
+      "y": 562,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 312,
+      "center": true,
+      "name": "Vologda",
+      "x": 6119,
+      "y": 526,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 313,
+      "center": true,
+      "name": "Shetland_Islands",
+      "x": 4934,
+      "y": 475,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 314,
+      "center": true,
+      "name": "Värmland",
+      "x": 5347,
+      "y": 520,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 315,
+      "center": true,
+      "name": "Uusimaa",
+      "x": 5682,
+      "y": 492,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 316,
+      "center": true,
+      "name": "Tikhvin",
+      "x": 5954,
+      "y": 532,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 317,
+      "center": true,
+      "name": "Kirov",
+      "x": 6350,
+      "y": 550,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 318,
+      "center": true,
+      "name": "Telemark",
+      "x": 5229,
+      "y": 515,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 319,
+      "center": true,
+      "name": "Oslofjord",
+      "x": 5289,
+      "y": 519,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 320,
+      "center": true,
+      "name": "Aland_Islands",
+      "x": 5555,
+      "y": 492,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 321,
+      "center": true,
+      "name": "Södermanland",
+      "x": 5447,
+      "y": 527,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 322,
+      "center": true,
+      "name": "Leningrad",
+      "x": 5839,
+      "y": 515,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 323,
+      "center": true,
+      "name": "Volkhov",
+      "x": 5885,
+      "y": 532,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 324,
+      "center": true,
+      "name": "Tyumen",
+      "x": 6918,
+      "y": 592,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 325,
+      "center": true,
+      "name": "Luga",
+      "x": 5805,
+      "y": 540,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 326,
+      "center": true,
+      "name": "Scottish_Highlands",
+      "x": 4835,
+      "y": 587,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 327,
+      "center": true,
+      "name": "Agder",
+      "x": 5201,
+      "y": 557,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 328,
+      "center": true,
+      "name": "Harju",
+      "x": 5677,
+      "y": 540,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 329,
+      "center": true,
+      "name": "Virumaa",
+      "x": 5727,
+      "y": 546,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 330,
+      "center": true,
+      "name": "Bohuslän",
+      "x": 5309,
+      "y": 571,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 331,
+      "center": true,
+      "name": "Saaremaa",
+      "x": 5612,
+      "y": 572,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 332,
+      "center": true,
+      "name": "Pärnu",
+      "x": 5672,
+      "y": 567,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 333,
+      "center": true,
+      "name": "Pskov",
+      "x": 5789,
+      "y": 590,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 334,
+      "center": true,
+      "name": "Novgorod",
+      "x": 5866,
+      "y": 583,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 335,
+      "center": true,
+      "name": "Västergötland",
+      "x": 5349,
+      "y": 581,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 336,
+      "center": true,
+      "name": "Östergötland",
+      "x": 5419,
+      "y": 580,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 337,
+      "center": true,
+      "name": "Yaroslavl",
+      "x": 6083,
+      "y": 594,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 338,
+      "center": true,
+      "name": "Zlatoust",
+      "x": 6619,
+      "y": 625,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 339,
+      "center": true,
+      "name": "Tartu",
+      "x": 5727,
+      "y": 583,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 340,
+      "center": true,
+      "name": "Kalinin",
+      "x": 5998,
+      "y": 606,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 341,
+      "center": true,
+      "name": "Udmurtia",
+      "x": 6451,
+      "y": 621,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 342,
+      "center": true,
+      "name": "Aberdeenshire",
+      "x": 4882,
+      "y": 599,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 343,
+      "center": true,
+      "name": "Gotland",
+      "x": 5502,
+      "y": 606,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 344,
+      "center": true,
+      "name": "Rzhev",
+      "x": 5919,
+      "y": 634,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 345,
+      "center": true,
+      "name": "Vidzeme",
+      "x": 5697,
+      "y": 604,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 346,
+      "center": true,
+      "name": "Småland",
+      "x": 5398,
+      "y": 621,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 347,
+      "center": true,
+      "name": "Jylland",
+      "x": 5247,
+      "y": 644,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 348,
+      "center": true,
+      "name": "Kurzeme",
+      "x": 5597,
+      "y": 625,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 349,
+      "center": true,
+      "name": "Gorky",
+      "x": 6213,
+      "y": 661,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 350,
+      "center": true,
+      "name": "Ivanovo",
+      "x": 6127,
+      "y": 643,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 351,
+      "center": true,
+      "name": "Latgale",
+      "x": 5739,
+      "y": 636,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 352,
+      "center": true,
+      "name": "Mari_El",
+      "x": 6310,
+      "y": 635,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 353,
+      "center": true,
+      "name": "Zemgale",
+      "x": 5665,
+      "y": 641,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 354,
+      "center": true,
+      "name": "Rīga",
+      "x": 5678,
+      "y": 623,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 355,
+      "center": true,
+      "name": "Skåne",
+      "x": 5366,
+      "y": 650,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 356,
+      "center": true,
+      "name": "Nevel",
+      "x": 5819,
+      "y": 643,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 357,
+      "center": true,
+      "name": "Lanark",
+      "x": 4852,
+      "y": 658,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 358,
+      "center": true,
+      "name": "Lothian",
+      "x": 4880,
+      "y": 643,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 359,
+      "center": true,
+      "name": "Moscow",
+      "x": 6031,
+      "y": 675,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 360,
+      "center": true,
+      "name": "Chelyabinsk",
+      "x": 6753,
+      "y": 682,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 361,
+      "center": true,
+      "name": "Aukštaitija",
+      "x": 5670,
+      "y": 666,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 362,
+      "center": true,
+      "name": "Kazan",
+      "x": 6397,
+      "y": 687,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 363,
+      "center": true,
+      "name": "Ufa",
+      "x": 6535,
+      "y": 707,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 364,
+      "center": true,
+      "name": "Žemaitija",
+      "x": 5605,
+      "y": 665,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 365,
+      "center": true,
+      "name": "Northumberland",
+      "x": 4918,
+      "y": 672,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 366,
+      "center": true,
+      "name": "Sjaelland",
+      "x": 5316,
+      "y": 673,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 367,
+      "center": true,
+      "name": "Vitebsk",
+      "x": 5804,
+      "y": 691,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 368,
+      "center": true,
+      "name": "Chuvashia",
+      "x": 6291,
+      "y": 685,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 369,
+      "center": true,
+      "name": "Connaught",
+      "x": 4728,
+      "y": 710,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 370,
+      "center": true,
+      "name": "Smolensk",
+      "x": 5907,
+      "y": 690,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 371,
+      "center": true,
+      "name": "Cumbria",
+      "x": 4891,
+      "y": 687,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 372,
+      "center": true,
+      "name": "Klaipeda",
+      "x": 5586,
+      "y": 681,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 373,
+      "center": true,
+      "name": "Wilejka",
+      "x": 5737,
+      "y": 699,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 374,
+      "center": true,
+      "name": "Northern_Ireland",
+      "x": 4782,
+      "y": 689,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 375,
+      "center": true,
+      "name": "Kaunas",
+      "x": 5660,
+      "y": 694,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 376,
+      "center": true,
+      "name": "Akmolinsk",
+      "x": 6943,
+      "y": 789,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 377,
+      "center": true,
+      "name": "Fyn",
+      "x": 5274,
+      "y": 683,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 378,
+      "center": true,
+      "name": "Sønderjylland",
+      "x": 5240,
+      "y": 687,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 379,
+      "center": true,
+      "name": "Wilno",
+      "x": 5691,
+      "y": 707,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 380,
+      "center": true,
+      "name": "Königsberg",
+      "x": 5581,
+      "y": 705,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 381,
+      "center": true,
+      "name": "Bornholm",
+      "x": 5400,
+      "y": 690,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 382,
+      "center": true,
+      "name": "Kaluga",
+      "x": 5970,
+      "y": 721,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 383,
+      "center": true,
+      "name": "Yorkshire",
+      "x": 4931,
+      "y": 712,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 384,
+      "center": true,
+      "name": "Ryazan",
+      "x": 6111,
+      "y": 724,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 385,
+      "center": true,
+      "name": "Sūduva",
+      "x": 5637,
+      "y": 710,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 386,
+      "center": true,
+      "name": "Schleswig",
+      "x": 5243,
+      "y": 711,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 387,
+      "center": true,
+      "name": "Ulyanovsky",
+      "x": 6302,
+      "y": 737,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 388,
+      "center": true,
+      "name": "Leinster",
+      "x": 4775,
+      "y": 734,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 389,
+      "center": true,
+      "name": "Isle_of_Man",
+      "x": 4843,
+      "y": 702,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 390,
+      "center": true,
+      "name": "Minsk",
+      "x": 5784,
+      "y": 733,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 391,
+      "center": true,
+      "name": "Magnitogorsk",
+      "x": 6624,
+      "y": 777,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 392,
+      "center": true,
+      "name": "Roslavl",
+      "x": 5892,
+      "y": 724,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 393,
+      "center": true,
+      "name": "Hinterpommern",
+      "x": 5436,
+      "y": 736,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 394,
+      "center": true,
+      "name": "Gdynia",
+      "x": 5499,
+      "y": 746,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 395,
+      "center": true,
+      "name": "Kostanay",
+      "x": 6763,
+      "y": 813,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 396,
+      "center": true,
+      "name": "Lancashire",
+      "x": 4897,
+      "y": 723,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 397,
+      "center": true,
+      "name": "Penza",
+      "x": 6216,
+      "y": 753,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 398,
+      "center": true,
+      "name": "Vorpommern",
+      "x": 5361,
+      "y": 743,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 399,
+      "center": true,
+      "name": "Tula",
+      "x": 6026,
+      "y": 739,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 400,
+      "center": true,
+      "name": "Holstein",
+      "x": 5268,
+      "y": 732,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 401,
+      "center": true,
+      "name": "Danzig",
+      "x": 5512,
+      "y": 720,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 402,
+      "center": true,
+      "name": "Ermland_Masuren",
+      "x": 5564,
+      "y": 733,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 403,
+      "center": true,
+      "name": "Gomel",
+      "x": 5852,
+      "y": 759,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 404,
+      "center": true,
+      "name": "Mecklenburg",
+      "x": 5316,
+      "y": 741,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 405,
+      "center": true,
+      "name": "Kuybyshev",
+      "x": 6386,
+      "y": 759,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 406,
+      "center": true,
+      "name": "Białystok",
+      "x": 5623,
+      "y": 756,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 407,
+      "center": true,
+      "name": "Nowogródek",
+      "x": 5691,
+      "y": 748,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 408,
+      "center": true,
+      "name": "East_Midlands",
+      "x": 4949,
+      "y": 749,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 409,
+      "center": true,
+      "name": "Weser_Ems",
+      "x": 5207,
+      "y": 770,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 410,
+      "center": true,
+      "name": "Orenburg",
+      "x": 6483,
+      "y": 791,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 411,
+      "center": true,
+      "name": "Wales",
+      "x": 4863,
+      "y": 769,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 412,
+      "center": true,
+      "name": "Bryansk",
+      "x": 5914,
+      "y": 773,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 413,
+      "center": true,
+      "name": "Hannover",
+      "x": 5266,
+      "y": 777,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 414,
+      "center": true,
+      "name": "West_Midlands",
+      "x": 4905,
+      "y": 762,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 415,
+      "center": true,
+      "name": "Munster",
+      "x": 4726,
+      "y": 768,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 416,
+      "center": true,
+      "name": "Tambov",
+      "x": 6139,
+      "y": 782,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 417,
+      "center": true,
+      "name": "Bobruysk",
+      "x": 5776,
+      "y": 765,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 418,
+      "center": true,
+      "name": "East_Anglia",
+      "x": 4986,
+      "y": 767,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 419,
+      "center": true,
+      "name": "Friesland",
+      "x": 5161,
+      "y": 776,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 420,
+      "center": true,
+      "name": "Płock",
+      "x": 5549,
+      "y": 771,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 421,
+      "center": true,
+      "name": "Orel",
+      "x": 5998,
+      "y": 778,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 422,
+      "center": true,
+      "name": "Lipetsk",
+      "x": 6072,
+      "y": 783,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 423,
+      "center": true,
+      "name": "Brandenburg",
+      "x": 5344,
+      "y": 784,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 424,
+      "center": true,
+      "name": "Poznan",
+      "x": 5461,
+      "y": 786,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 425,
+      "center": true,
+      "name": "Ostmark",
+      "x": 5408,
+      "y": 779,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 426,
+      "center": true,
+      "name": "Holland",
+      "x": 5118,
+      "y": 793,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 427,
+      "center": true,
+      "name": "Polesie",
+      "x": 5696,
+      "y": 795,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 428,
+      "center": true,
+      "name": "Gloucestershire",
+      "x": 4910,
+      "y": 795,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 429,
+      "center": true,
+      "name": "Greater_London_Area",
+      "x": 4962,
+      "y": 791,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 430,
+      "center": true,
+      "name": "Mozyr",
+      "x": 5797,
+      "y": 802,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 431,
+      "center": true,
+      "name": "Lodz",
+      "x": 5510,
+      "y": 807,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 432,
+      "center": true,
+      "name": "Warszawa",
+      "x": 5570,
+      "y": 799,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 433,
+      "center": true,
+      "name": "Saratov",
+      "x": 6238,
+      "y": 809,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 434,
+      "center": true,
+      "name": "Westfalen",
+      "x": 5213,
+      "y": 808,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 435,
+      "center": true,
+      "name": "Balakovo",
+      "x": 6333,
+      "y": 826,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 436,
+      "center": true,
+      "name": "Lublin",
+      "x": 5622,
+      "y": 822,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 437,
+      "center": true,
+      "name": "Chernigov",
+      "x": 5877,
+      "y": 828,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 438,
+      "center": true,
+      "name": "Sumy",
+      "x": 5933,
+      "y": 833,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 439,
+      "center": true,
+      "name": "Kursk",
+      "x": 5987,
+      "y": 816,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 440,
+      "center": true,
+      "name": "Niederschlesien",
+      "x": 5441,
+      "y": 821,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 441,
+      "center": true,
+      "name": "Sussex",
+      "x": 4959,
+      "y": 811,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 442,
+      "center": true,
+      "name": "Sachsen",
+      "x": 5356,
+      "y": 822,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 443,
+      "center": true,
+      "name": "Brabant",
+      "x": 5132,
+      "y": 816,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 444,
+      "center": true,
+      "name": "Rhineland",
+      "x": 5176,
+      "y": 831,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 445,
+      "center": true,
+      "name": "Voronezh",
+      "x": 6101,
+      "y": 840,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 446,
+      "center": true,
+      "name": "South_West_England",
+      "x": 4863,
+      "y": 822,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 447,
+      "center": true,
+      "name": "Thüringen",
+      "x": 5299,
+      "y": 828,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 448,
+      "center": true,
+      "name": "Hessen",
+      "x": 5232,
+      "y": 847,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 449,
+      "center": true,
+      "name": "Kielce",
+      "x": 5559,
+      "y": 837,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 450,
+      "center": true,
+      "name": "Engels_Marxstadt",
+      "x": 6267,
+      "y": 852,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 451,
+      "center": true,
+      "name": "Ural’sk",
+      "x": 6408,
+      "y": 877,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 452,
+      "center": true,
+      "name": "Wołyn",
+      "x": 5699,
+      "y": 839,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 453,
+      "center": true,
+      "name": "Vlaanderen",
+      "x": 5084,
+      "y": 836,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 454,
+      "center": true,
+      "name": "Antwerpen",
+      "x": 5121,
+      "y": 828,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 455,
+      "center": true,
+      "name": "Zhytomyr",
+      "x": 5779,
+      "y": 851,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 456,
+      "center": true,
+      "name": "Oberschlesien",
+      "x": 5489,
+      "y": 843,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 457,
+      "center": true,
+      "name": "Kyiv",
+      "x": 5834,
+      "y": 861,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 458,
+      "center": true,
+      "name": "South_Sudetenland",
+      "x": 5401,
+      "y": 898,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 459,
+      "center": true,
+      "name": "North_Sudetenland",
+      "x": 5369,
+      "y": 847,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 460,
+      "center": true,
+      "name": "Belgorod",
+      "x": 6026,
+      "y": 849,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 461,
+      "center": true,
+      "name": "Akhtubinsk",
+      "x": 6649,
+      "y": 938,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 462,
+      "center": true,
+      "name": "Nord_Pas_de_Calais",
+      "x": 5060,
+      "y": 853,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 463,
+      "center": true,
+      "name": "Mikhaylovka",
+      "x": 6184,
+      "y": 864,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 464,
+      "center": true,
+      "name": "Katowice",
+      "x": 5511,
+      "y": 852,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 465,
+      "center": true,
+      "name": "Ardennes",
+      "x": 5139,
+      "y": 861,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 466,
+      "center": true,
+      "name": "Wallonie",
+      "x": 5113,
+      "y": 851,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 467,
+      "center": true,
+      "name": "Franken",
+      "x": 5281,
+      "y": 868,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 468,
+      "center": true,
+      "name": "Bohemia",
+      "x": 5397,
+      "y": 868,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 469,
+      "center": true,
+      "name": "Kraków",
+      "x": 5575,
+      "y": 869,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 470,
+      "center": true,
+      "name": "Karagandy",
+      "x": 6929,
+      "y": 949,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 471,
+      "center": true,
+      "name": "Czeské_Slezsko",
+      "x": 5468,
+      "y": 864,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 472,
+      "center": true,
+      "name": "Lwów",
+      "x": 5678,
+      "y": 878,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 473,
+      "center": true,
+      "name": "Moselland",
+      "x": 5188,
+      "y": 877,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 474,
+      "center": true,
+      "name": "Proskuriv",
+      "x": 5736,
+      "y": 885,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 475,
+      "center": true,
+      "name": "Poltava",
+      "x": 5928,
+      "y": 880,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 476,
+      "center": true,
+      "name": "Picardy",
+      "x": 5066,
+      "y": 880,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 477,
+      "center": true,
+      "name": "Kharkov",
+      "x": 6001,
+      "y": 884,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 478,
+      "center": true,
+      "name": "Niederbayern",
+      "x": 5331,
+      "y": 895,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 479,
+      "center": true,
+      "name": "Luxembourg",
+      "x": 5154,
+      "y": 874,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 480,
+      "center": true,
+      "name": "Cherkasy",
+      "x": 5866,
+      "y": 903,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 481,
+      "center": true,
+      "name": "Normandy",
+      "x": 4990,
+      "y": 895,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 482,
+      "center": true,
+      "name": "Champagne",
+      "x": 5116,
+      "y": 906,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 483,
+      "center": true,
+      "name": "Tešínsko",
+      "x": 5504,
+      "y": 878,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 484,
+      "center": true,
+      "name": "Voroshilovgrad",
+      "x": 6069,
+      "y": 902,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 485,
+      "center": true,
+      "name": "Moravia",
+      "x": 5456,
+      "y": 886,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 486,
+      "center": true,
+      "name": "Baden",
+      "x": 5217,
+      "y": 922,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 487,
+      "center": true,
+      "name": "Württemberg",
+      "x": 5249,
+      "y": 914,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 488,
+      "center": true,
+      "name": "Stanisławów",
+      "x": 5661,
+      "y": 905,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 489,
+      "center": true,
+      "name": "Vinnytsia",
+      "x": 5782,
+      "y": 905,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 490,
+      "center": true,
+      "name": "Stalingrad",
+      "x": 6228,
+      "y": 912,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 491,
+      "center": true,
+      "name": "Eastern_Slovakia",
+      "x": 5562,
+      "y": 899,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 492,
+      "center": true,
+      "name": "Alsace_Lorraine",
+      "x": 5182,
+      "y": 912,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 493,
+      "center": true,
+      "name": "Western_Slovakia",
+      "x": 5494,
+      "y": 909,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 494,
+      "center": true,
+      "name": "Ile_de_France",
+      "x": 5046,
+      "y": 912,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 495,
+      "center": true,
+      "name": "Guryev",
+      "x": 6425,
+      "y": 942,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 496,
+      "center": true,
+      "name": "Stalino",
+      "x": 6032,
+      "y": 932,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 497,
+      "center": true,
+      "name": "Oberbayern",
+      "x": 5301,
+      "y": 928,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 498,
+      "center": true,
+      "name": "Podkarpatská_Rus",
+      "x": 5634,
+      "y": 919,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 499,
+      "center": true,
+      "name": "Dnipropetrovsk",
+      "x": 5953,
+      "y": 925,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 500,
+      "center": true,
+      "name": "Franche_Comte",
+      "x": 5159,
+      "y": 940,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 501,
+      "center": true,
+      "name": "Brittany",
+      "x": 4903,
+      "y": 926,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 502,
+      "center": true,
+      "name": "Southern_Slovakia",
+      "x": 5527,
+      "y": 923,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 503,
+      "center": true,
+      "name": "Astrakhan",
+      "x": 6297,
+      "y": 956,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 504,
+      "center": true,
+      "name": "Bucovina",
+      "x": 5698,
+      "y": 928,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 505,
+      "center": true,
+      "name": "Northern_Hungary",
+      "x": 5547,
+      "y": 940,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 506,
+      "center": true,
+      "name": "Mykolaiv",
+      "x": 5879,
+      "y": 944,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 507,
+      "center": true,
+      "name": "Loire",
+      "x": 4966,
+      "y": 941,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 508,
+      "center": true,
+      "name": "Bessarabia",
+      "x": 5770,
+      "y": 955,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 509,
+      "center": true,
+      "name": "Bourgogne",
+      "x": 5099,
+      "y": 956,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 510,
+      "center": true,
+      "name": "Bács_Kiskun",
+      "x": 5526,
+      "y": 983,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 511,
+      "center": true,
+      "name": "Tiszántúl",
+      "x": 5579,
+      "y": 956,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 512,
+      "center": true,
+      "name": "Rostov",
+      "x": 6088,
+      "y": 950,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 513,
+      "center": true,
+      "name": "Centre",
+      "x": 5036,
+      "y": 945,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 514,
+      "center": true,
+      "name": "Balta_Tiraspol",
+      "x": 5809,
+      "y": 948,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 515,
+      "center": true,
+      "name": "Moldova",
+      "x": 5733,
+      "y": 973,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 516,
+      "center": true,
+      "name": "Odessa",
+      "x": 5843,
+      "y": 959,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 517,
+      "center": true,
+      "name": "Kalmykia",
+      "x": 6251,
+      "y": 986,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 518,
+      "center": true,
+      "name": "South_Transdanubia",
+      "x": 5489,
+      "y": 987,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 519,
+      "center": true,
+      "name": "North_Transdanubia",
+      "x": 5475,
+      "y": 957,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 520,
+      "center": true,
+      "name": "North_Transylvania",
+      "x": 5659,
+      "y": 964,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 521,
+      "center": true,
+      "name": "Zaporozhe",
+      "x": 5978,
+      "y": 957,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 522,
+      "center": true,
+      "name": "Kyzyl_Orda",
+      "x": 6861,
+      "y": 1055,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 523,
+      "center": true,
+      "name": "Tyrol",
+      "x": 5324,
+      "y": 961,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 524,
+      "center": true,
+      "name": "Volgodonsk",
+      "x": 6158,
+      "y": 973,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 525,
+      "center": true,
+      "name": "Swiss_Plateau",
+      "x": 5211,
+      "y": 964,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 526,
+      "center": true,
+      "name": "Vorarlberg",
+      "x": 5263,
+      "y": 960,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 527,
+      "center": true,
+      "name": "Jura_Mountains",
+      "x": 5181,
+      "y": 966,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 528,
+      "center": true,
+      "name": "Kherson",
+      "x": 5921,
+      "y": 976,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 529,
+      "center": true,
+      "name": "Centre_Sud",
+      "x": 5032,
+      "y": 979,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 530,
+      "center": true,
+      "name": "Poitou",
+      "x": 4973,
+      "y": 986,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 531,
+      "center": true,
+      "name": "Ust_Urt",
+      "x": 6496,
+      "y": 1038,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 532,
+      "center": true,
+      "name": "Eastern_Swiss_Alps",
+      "x": 5247,
+      "y": 974,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 533,
+      "center": true,
+      "name": "Alto_Adige",
+      "x": 5306,
+      "y": 980,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 534,
+      "center": true,
+      "name": "Crisana",
+      "x": 5597,
+      "y": 983,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 535,
+      "center": true,
+      "name": "Rhone",
+      "x": 5116,
+      "y": 1007,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 536,
+      "center": true,
+      "name": "Transylvania",
+      "x": 5654,
+      "y": 998,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 537,
+      "center": true,
+      "name": "Krasnodar",
+      "x": 6083,
+      "y": 1019,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 538,
+      "center": true,
+      "name": "Western_Swiss_Alps",
+      "x": 5199,
+      "y": 987,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 539,
+      "center": true,
+      "name": "North_Slovenia",
+      "x": 5411,
+      "y": 987,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 540,
+      "center": true,
+      "name": "Auvergne",
+      "x": 5070,
+      "y": 1008,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 541,
+      "center": true,
+      "name": "Veneto",
+      "x": 5325,
+      "y": 1004,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 542,
+      "center": true,
+      "name": "Ticino",
+      "x": 5231,
+      "y": 988,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 543,
+      "center": true,
+      "name": "Lombardia",
+      "x": 5263,
+      "y": 1008,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 544,
+      "center": true,
+      "name": "Southern_Bessarabia",
+      "x": 5802,
+      "y": 1000,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 545,
+      "center": true,
+      "name": "Litorale",
+      "x": 5370,
+      "y": 1001,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 546,
+      "center": true,
+      "name": "Piemonte",
+      "x": 5210,
+      "y": 1028,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 547,
+      "center": true,
+      "name": "Trentino",
+      "x": 5291,
+      "y": 997,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 548,
+      "center": true,
+      "name": "Savoy",
+      "x": 5169,
+      "y": 1029,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 549,
+      "center": true,
+      "name": "Croatia",
+      "x": 5470,
+      "y": 1013,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 550,
+      "center": true,
+      "name": "Limousin",
+      "x": 5014,
+      "y": 1025,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 551,
+      "center": true,
+      "name": "West_Banat",
+      "x": 5559,
+      "y": 1019,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 552,
+      "center": true,
+      "name": "Banat",
+      "x": 5590,
+      "y": 1014,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 553,
+      "center": true,
+      "name": "Crimea",
+      "x": 5942,
+      "y": 1019,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 554,
+      "center": true,
+      "name": "Ljubljana",
+      "x": 5400,
+      "y": 1004,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 555,
+      "center": true,
+      "name": "Backa",
+      "x": 5527,
+      "y": 1009,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 556,
+      "center": true,
+      "name": "Stavropol",
+      "x": 6188,
+      "y": 1035,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 557,
+      "center": true,
+      "name": "Alpes",
+      "x": 5135,
+      "y": 1026,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 558,
+      "center": true,
+      "name": "Karakalpakstan",
+      "x": 6693,
+      "y": 1094,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 559,
+      "center": true,
+      "name": "Dalmatia",
+      "x": 5433,
+      "y": 1054,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 560,
+      "center": true,
+      "name": "Northern_Dobruja",
+      "x": 5781,
+      "y": 1038,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 561,
+      "center": true,
+      "name": "Muntenia",
+      "x": 5710,
+      "y": 1039,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 562,
+      "center": true,
+      "name": "Istria",
+      "x": 5377,
+      "y": 1021,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 563,
+      "center": true,
+      "name": "Aquitaine",
+      "x": 4965,
+      "y": 1039,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 564,
+      "center": true,
+      "name": "Oltenia",
+      "x": 5642,
+      "y": 1042,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 565,
+      "center": true,
+      "name": "Bosnia",
+      "x": 5480,
+      "y": 1048,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 566,
+      "center": true,
+      "name": "Emilia_Romagna",
+      "x": 5291,
+      "y": 1043,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 567,
+      "center": true,
+      "name": "Dagestan",
+      "x": 6291,
+      "y": 1084,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 568,
+      "center": true,
+      "name": "Languedoc",
+      "x": 5076,
+      "y": 1059,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 569,
+      "center": true,
+      "name": "Serbia",
+      "x": 5551,
+      "y": 1050,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 570,
+      "center": true,
+      "name": "Bouches_du_Rhone",
+      "x": 5136,
+      "y": 1063,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 571,
+      "center": true,
+      "name": "Morava",
+      "x": 5580,
+      "y": 1072,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 572,
+      "center": true,
+      "name": "Toscana",
+      "x": 5299,
+      "y": 1078,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 573,
+      "center": true,
+      "name": "Midi_Pyrenees",
+      "x": 5019,
+      "y": 1080,
+      "owner": null,
+      "borders": [
+        602,
+        603
+      ]
+    },
+    {
+      "id": 574,
+      "center": true,
+      "name": "Sochi",
+      "x": 6124,
+      "y": 1068,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 575,
+      "center": true,
+      "name": "Var",
+      "x": 5161,
+      "y": 1072,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 576,
+      "center": true,
+      "name": "Sofia",
+      "x": 5634,
+      "y": 1090,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 577,
+      "center": true,
+      "name": "Zara",
+      "x": 5422,
+      "y": 1069,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 578,
+      "center": true,
+      "name": "Dobrudja",
+      "x": 5754,
+      "y": 1068,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 579,
+      "center": true,
+      "name": "Pyrénées_Atlantiques",
+      "x": 4959,
+      "y": 1077,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 580,
+      "center": true,
+      "name": "Moesia",
+      "x": 5689,
+      "y": 1083,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 581,
+      "center": true,
+      "name": "Khiva",
+      "x": 6622,
+      "y": 1109,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 582,
+      "center": true,
+      "name": "Abruzzo",
+      "x": 5363,
+      "y": 1100,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 583,
+      "center": true,
+      "name": "Herzegovina",
+      "x": 5487,
+      "y": 1080,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 584,
+      "center": true,
+      "name": "Burgas",
+      "x": 5736,
+      "y": 1096,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 585,
+      "center": true,
+      "name": "North_Ossetia",
+      "x": 6226,
+      "y": 1089,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 586,
+      "center": true,
+      "name": "Galicia",
+      "x": 4766,
+      "y": 1099,
+      "owner": 2,
+      "borders": [
+        588,
+        596,
+        613
+      ]
+    },
+    {
+      "id": 587,
+      "center": true,
+      "name": "Kabardino_Balkaria",
+      "x": 6195,
+      "y": 1089,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 588,
+      "center": true,
+      "name": "Asturias",
+      "x": 4837,
+      "y": 1083,
+      "owner": null,
+      "borders": [
+        586,
+        1099
+      ]
+    },
+    {
+      "id": 589,
+      "center": true,
+      "name": "Chechnya_Ingushetia",
+      "x": 6260,
+      "y": 1096,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 590,
+      "center": true,
+      "name": "Abkhazia",
+      "x": 6138,
+      "y": 1092,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 591,
+      "center": true,
+      "name": "Montenegro",
+      "x": 5522,
+      "y": 1098,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 592,
+      "center": true,
+      "name": "Southern_Serbia",
+      "x": 5605,
+      "y": 1099,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 593,
+      "center": true,
+      "name": "País_Vasco",
+      "x": 4913,
+      "y": 1090,
+      "owner": null,
+      "borders": [
+        595,
+        597,
+        1099
+      ]
+    },
+    {
+      "id": 594,
+      "center": true,
+      "name": "Navoi",
+      "x": 6786,
+      "y": 1124,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 595,
+      "center": true,
+      "name": "Navarra",
+      "x": 4941,
+      "y": 1100,
+      "owner": null,
+      "borders": [
+        593,
+        600
+      ]
+    },
+    {
+      "id": 596,
+      "center": true,
+      "name": "León",
+      "x": 4823,
+      "y": 1115,
+      "owner": null,
+      "borders": [
+        586,
+        599,
+        625
+      ]
+    },
+    {
+      "id": 597,
+      "center": true,
+      "name": "Burgos",
+      "x": 4905,
+      "y": 1120,
+      "owner": null,
+      "borders": [
+        593,
+        599,
+        600,
+        626
+      ]
+    },
+    {
+      "id": 598,
+      "center": true,
+      "name": "Kosovo",
+      "x": 5568,
+      "y": 1103,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 599,
+      "center": true,
+      "name": "Valladolid",
+      "x": 4863,
+      "y": 1127,
+      "owner": null,
+      "borders": [
+        596,
+        597,
+        626,
+        631,
+        1096,
+        1099
+      ]
+    },
+    {
+      "id": 600,
+      "center": true,
+      "name": "Western_Aragón",
+      "x": 4954,
+      "y": 1137,
+      "owner": null,
+      "borders": [
+        595,
+        597,
+        602,
+        626
+      ]
+    },
+    {
+      "id": 601,
+      "center": true,
+      "name": "Corsica",
+      "x": 5239,
+      "y": 1116,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 602,
+      "center": true,
+      "name": "Eastern_Aragón",
+      "x": 4989,
+      "y": 1118,
+      "owner": null,
+      "borders": [
+        573,
+        600,
+        603
+      ]
+    },
+    {
+      "id": 603,
+      "center": true,
+      "name": "Cataluña",
+      "x": 5029,
+      "y": 1126,
+      "owner": null,
+      "borders": [
+        573,
+        602
+      ]
+    },
+    {
+      "id": 604,
+      "center": true,
+      "name": "Lazio",
+      "x": 5343,
+      "y": 1121,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 605,
+      "center": true,
+      "name": "Georgia",
+      "x": 6209,
+      "y": 1127,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 606,
+      "center": true,
+      "name": "Plovdiv",
+      "x": 5674,
+      "y": 1123,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 607,
+      "center": true,
+      "name": "Shkodër",
+      "x": 5542,
+      "y": 1123,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 608,
+      "center": true,
+      "name": "Ashkhabad",
+      "x": 6635,
+      "y": 1224,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 609,
+      "center": true,
+      "name": "Tashauz",
+      "x": 6646,
+      "y": 1166,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 610,
+      "center": true,
+      "name": "Debar",
+      "x": 5569,
+      "y": 1137,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 611,
+      "center": true,
+      "name": "Macedonia",
+      "x": 5599,
+      "y": 1132,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 612,
+      "center": true,
+      "name": "Edirne",
+      "x": 5740,
+      "y": 1145,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 613,
+      "center": true,
+      "name": "Porto",
+      "x": 4774,
+      "y": 1136,
+      "owner": null,
+      "borders": [
+        586,
+        625,
+        630
+      ]
+    },
+    {
+      "id": 614,
+      "center": true,
+      "name": "Kastamonu",
+      "x": 5936,
+      "y": 1151,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 615,
+      "center": true,
+      "name": "Puglia",
+      "x": 5449,
+      "y": 1153,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 616,
+      "center": true,
+      "name": "Thrace",
+      "x": 5688,
+      "y": 1146,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 617,
+      "center": true,
+      "name": "Tashkent",
+      "x": 6899,
+      "y": 1168,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 618,
+      "center": true,
+      "name": "Izmit",
+      "x": 5859,
+      "y": 1156,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 619,
+      "center": true,
+      "name": "Samsun",
+      "x": 6011,
+      "y": 1161,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 620,
+      "center": true,
+      "name": "Albania",
+      "x": 5541,
+      "y": 1156,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 621,
+      "center": true,
+      "name": "Trabzon",
+      "x": 6135,
+      "y": 1165,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 622,
+      "center": true,
+      "name": "Campania",
+      "x": 5414,
+      "y": 1161,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 623,
+      "center": true,
+      "name": "Istanbul",
+      "x": 5806,
+      "y": 1152,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 624,
+      "center": true,
+      "name": "Central_Macedonia",
+      "x": 5620,
+      "y": 1161,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 625,
+      "center": true,
+      "name": "Salamanca",
+      "x": 4816,
+      "y": 1160,
+      "owner": null,
+      "borders": [
+        596,
+        613,
+        630,
+        631,
+        640,
+        1096
+      ]
+    },
+    {
+      "id": 626,
+      "center": true,
+      "name": "Guadalajara",
+      "x": 4918,
+      "y": 1175,
+      "owner": 2,
+      "borders": [
+        597,
+        599,
+        600,
+        631,
+        636,
+        650,
+        651
+      ]
+    },
+    {
+      "id": 627,
+      "center": true,
+      "name": "Armenia",
+      "x": 6237,
+      "y": 1178,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 628,
+      "center": true,
+      "name": "Sardegna",
+      "x": 5237,
+      "y": 1180,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 629,
+      "center": true,
+      "name": "Lisbon",
+      "x": 4744,
+      "y": 1184,
+      "owner": null,
+      "borders": [
+        630
+      ]
+    },
+    {
+      "id": 630,
+      "center": true,
+      "name": "Guarda",
+      "x": 4776,
+      "y": 1171,
+      "owner": null,
+      "borders": [
+        613,
+        625,
+        629,
+        640,
+        649
+      ]
+    },
+    {
+      "id": 631,
+      "center": true,
+      "name": "Madrid",
+      "x": 4865,
+      "y": 1177,
+      "owner": null,
+      "borders": [
+        599,
+        625,
+        626,
+        640
+      ]
+    },
+    {
+      "id": 632,
+      "center": true,
+      "name": "Epirus",
+      "x": 5575,
+      "y": 1197,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 633,
+      "center": true,
+      "name": "Bukhara",
+      "x": 6810,
+      "y": 1207,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 634,
+      "center": true,
+      "name": "Northern_Epirus",
+      "x": 5552,
+      "y": 1176,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 635,
+      "center": true,
+      "name": "Stalinabad",
+      "x": 6961,
+      "y": 1230,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 636,
+      "center": true,
+      "name": "Valencia",
+      "x": 4971,
+      "y": 1203,
+      "owner": null,
+      "borders": [
+        626,
+        651
+      ]
+    },
+    {
+      "id": 637,
+      "center": true,
+      "name": "Bursa",
+      "x": 5768,
+      "y": 1184,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 638,
+      "center": true,
+      "name": "Ankara",
+      "x": 5878,
+      "y": 1190,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 639,
+      "center": true,
+      "name": "Aegean_Islands",
+      "x": 5714,
+      "y": 1207,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 640,
+      "center": true,
+      "name": "Extremadura",
+      "x": 4815,
+      "y": 1209,
+      "owner": 2,
+      "borders": [
+        625,
+        630,
+        631,
+        649,
+        650,
+        655,
+        663
+      ]
+    },
+    {
+      "id": 641,
+      "center": true,
+      "name": "Sivas",
+      "x": 6032,
+      "y": 1201,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 642,
+      "center": true,
+      "name": "Amasya",
+      "x": 5957,
+      "y": 1200,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 643,
+      "center": true,
+      "name": "Tunceli",
+      "x": 6099,
+      "y": 1208,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 644,
+      "center": true,
+      "name": "Van",
+      "x": 6184,
+      "y": 1203,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 645,
+      "center": true,
+      "name": "Islas_Baleares",
+      "x": 5068,
+      "y": 1195,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 646,
+      "center": true,
+      "name": "Calabria",
+      "x": 5440,
+      "y": 1212,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 647,
+      "center": true,
+      "name": "Attica",
+      "x": 5616,
+      "y": 1216,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 648,
+      "center": true,
+      "name": "Afyon",
+      "x": 5817,
+      "y": 1223,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 649,
+      "center": true,
+      "name": "Santarém",
+      "x": 4764,
+      "y": 1213,
+      "owner": null,
+      "borders": [
+        630,
+        640,
+        655
+      ]
+    },
+    {
+      "id": 650,
+      "center": true,
+      "name": "Ciudad_Real",
+      "x": 4878,
+      "y": 1215,
+      "owner": null,
+      "borders": [
+        626,
+        640,
+        651
+      ]
+    },
+    {
+      "id": 651,
+      "center": true,
+      "name": "Murcia",
+      "x": 4936,
+      "y": 1229,
+      "owner": null,
+      "borders": [
+        626,
+        636,
+        650,
+        657,
+        1097
+      ]
+    },
+    {
+      "id": 652,
+      "center": true,
+      "name": "Izmir",
+      "x": 5759,
+      "y": 1231,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 653,
+      "center": true,
+      "name": "Konya",
+      "x": 5892,
+      "y": 1242,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 654,
+      "center": true,
+      "name": "Kayseri",
+      "x": 5980,
+      "y": 1237,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 655,
+      "center": true,
+      "name": "Beja",
+      "x": 4759,
+      "y": 1248,
+      "owner": null,
+      "borders": [
+        640,
+        649,
+        663
+      ]
+    },
+    {
+      "id": 656,
+      "center": true,
+      "name": "Azores",
+      "x": 4279,
+      "y": 1250,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 657,
+      "center": true,
+      "name": "Córdoba",
+      "x": 4876,
+      "y": 1245,
+      "owner": null,
+      "borders": [
+        651,
+        663,
+        664
+      ]
+    },
+    {
+      "id": 658,
+      "center": true,
+      "name": "Hakkari",
+      "x": 6168,
+      "y": 1245,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 659,
+      "center": true,
+      "name": "Malatya",
+      "x": 6022,
+      "y": 1260,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 660,
+      "center": true,
+      "name": "Diyarbakır",
+      "x": 6094,
+      "y": 1261,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 661,
+      "center": true,
+      "name": "Peloponnese",
+      "x": 5604,
+      "y": 1260,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 662,
+      "center": true,
+      "name": "Sicilia",
+      "x": 5379,
+      "y": 1256,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 663,
+      "center": true,
+      "name": "Sevilla",
+      "x": 4817,
+      "y": 1263,
+      "owner": 2,
+      "borders": [
+        640,
+        655,
+        657,
+        675,
+        1098
+      ]
+    },
+    {
+      "id": 664,
+      "center": true,
+      "name": "Granada",
+      "x": 4892,
+      "y": 1271,
+      "owner": null,
+      "borders": [
+        657,
+        675,
+        1097,
+        1098
+      ]
+    },
+    {
+      "id": 665,
+      "center": true,
+      "name": "Tehran",
+      "x": 6464,
+      "y": 1288,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 666,
+      "center": true,
+      "name": "Antalya",
+      "x": 5806,
+      "y": 1273,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 667,
+      "center": true,
+      "name": "Mersin",
+      "x": 5908,
+      "y": 1279,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 668,
+      "center": true,
+      "name": "Tunisia",
+      "x": 5255,
+      "y": 1306,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 669,
+      "center": true,
+      "name": "Deir_az_Zur",
+      "x": 6086,
+      "y": 1323,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 670,
+      "center": true,
+      "name": "Constantine",
+      "x": 5161,
+      "y": 1298,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 671,
+      "center": true,
+      "name": "Dodecanese",
+      "x": 5763,
+      "y": 1298,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 672,
+      "center": true,
+      "name": "Algiers",
+      "x": 5032,
+      "y": 1305,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 673,
+      "center": true,
+      "name": "Aleppo",
+      "x": 6018,
+      "y": 1317,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 674,
+      "center": true,
+      "name": "Hatay",
+      "x": 5993,
+      "y": 1294,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 675,
+      "center": true,
+      "name": "Gibraltar",
+      "x": 4831,
+      "y": 1295,
+      "owner": null,
+      "borders": [
+        663,
+        664
+      ]
+    },
+    {
+      "id": 676,
+      "center": true,
+      "name": "Malta",
+      "x": 5388,
+      "y": 1307,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 677,
+      "center": true,
+      "name": "Spanish_Africa",
+      "x": 4863,
+      "y": 1330,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 678,
+      "center": true,
+      "name": "Tlemcen",
+      "x": 5075,
+      "y": 1356,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 679,
+      "center": true,
+      "name": "Cyprus",
+      "x": 5910,
+      "y": 1332,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 680,
+      "center": true,
+      "name": "Crete",
+      "x": 5676,
+      "y": 1327,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 681,
+      "center": true,
+      "name": "Casablanca",
+      "x": 4833,
+      "y": 1377,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 682,
+      "center": true,
+      "name": "Gabès",
+      "x": 5253,
+      "y": 1393,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 683,
+      "center": true,
+      "name": "Lebanon",
+      "x": 5983,
+      "y": 1365,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 684,
+      "center": true,
+      "name": "Damascus",
+      "x": 6011,
+      "y": 1381,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 685,
+      "center": true,
+      "name": "Marrakech",
+      "x": 4814,
+      "y": 1448,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 686,
+      "center": true,
+      "name": "Algerian_Desert",
+      "x": 5056,
+      "y": 1567,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 687,
+      "center": true,
+      "name": "Palestine",
+      "x": 5960,
+      "y": 1436,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 688,
+      "center": true,
+      "name": "Tripoli",
+      "x": 5366,
+      "y": 1415,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 689,
+      "center": true,
+      "name": "Jordan",
+      "x": 6005,
+      "y": 1449,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 690,
+      "center": true,
+      "name": "Madeira",
+      "x": 4514,
+      "y": 1399,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 691,
+      "center": true,
+      "name": "Derna",
+      "x": 5623,
+      "y": 1415,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 692,
+      "center": true,
+      "name": "Benghasi",
+      "x": 5550,
+      "y": 1441,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 693,
+      "center": true,
+      "name": "Cyrenaica",
+      "x": 5604,
+      "y": 1444,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 694,
+      "center": true,
+      "name": "Tripolitania",
+      "x": 5348,
+      "y": 1451,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 695,
+      "center": true,
+      "name": "Jawf",
+      "x": 6108,
+      "y": 1475,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 696,
+      "center": true,
+      "name": "Matrouh",
+      "x": 5729,
+      "y": 1460,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 697,
+      "center": true,
+      "name": "Alexandria",
+      "x": 5826,
+      "y": 1454,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 698,
+      "center": true,
+      "name": "El_Agheila",
+      "x": 5481,
+      "y": 1467,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 699,
+      "center": true,
+      "name": "Cairo",
+      "x": 5840,
+      "y": 1493,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 700,
+      "center": true,
+      "name": "Sinai",
+      "x": 5928,
+      "y": 1490,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 701,
+      "center": true,
+      "name": "Suez",
+      "x": 5892,
+      "y": 1465,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 702,
+      "center": true,
+      "name": "Libyan_Desert",
+      "x": 5489,
+      "y": 1602,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 703,
+      "center": true,
+      "name": "Sirte",
+      "x": 5504,
+      "y": 1493,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 704,
+      "center": true,
+      "name": "Western_Desert",
+      "x": 5760,
+      "y": 1596,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 705,
+      "center": true,
+      "name": "Al_Qassim",
+      "x": 6207,
+      "y": 1558,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 706,
+      "center": true,
+      "name": "Sidi_Ifni",
+      "x": 4706,
+      "y": 1498,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 707,
+      "center": true,
+      "name": "Eastern_Desert",
+      "x": 5922,
+      "y": 1606,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 708,
+      "center": true,
+      "name": "Tabuk",
+      "x": 6048,
+      "y": 1546,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 709,
+      "center": true,
+      "name": "Islas_Canarias",
+      "x": 4526,
+      "y": 1527,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 710,
+      "center": true,
+      "name": "Dammam",
+      "x": 6336,
+      "y": 1572,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 711,
+      "center": true,
+      "name": "Rio_de_Oro",
+      "x": 4628,
+      "y": 1618,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 712,
+      "center": true,
+      "name": "Aswan",
+      "x": 5878,
+      "y": 1622,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 713,
+      "center": true,
+      "name": "Madinah",
+      "x": 6098,
+      "y": 1628,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 714,
+      "center": true,
+      "name": "Mauritanian_Desert",
+      "x": 4730,
+      "y": 1726,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 715,
+      "center": true,
+      "name": "Nejd",
+      "x": 6263,
+      "y": 1658,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 716,
+      "center": true,
+      "name": "Qatar",
+      "x": 6409,
+      "y": 1612,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 717,
+      "center": true,
+      "name": "Tombouctou",
+      "x": 4926,
+      "y": 1744,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 718,
+      "center": true,
+      "name": "Rub_al_Khali",
+      "x": 6422,
+      "y": 1713,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 719,
+      "center": true,
+      "name": "Southern_Sahara",
+      "x": 5268,
+      "y": 1818,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 720,
+      "center": true,
+      "name": "Kassala",
+      "x": 5986,
+      "y": 1770,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 721,
+      "center": true,
+      "name": "Asir_Makkah",
+      "x": 6154,
+      "y": 1748,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 722,
+      "center": true,
+      "name": "Borkou_Ennedi_Tibesti",
+      "x": 5519,
+      "y": 1815,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 723,
+      "center": true,
+      "name": "North_Darfur",
+      "x": 5730,
+      "y": 1798,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 724,
+      "center": true,
+      "name": "Khartoum",
+      "x": 5877,
+      "y": 1802,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 725,
+      "center": true,
+      "name": "Mauritania",
+      "x": 4602,
+      "y": 1802,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 726,
+      "center": true,
+      "name": "Najiran",
+      "x": 6289,
+      "y": 1784,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 727,
+      "center": true,
+      "name": "Gao",
+      "x": 4948,
+      "y": 1856,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 728,
+      "center": true,
+      "name": "Eritrea",
+      "x": 6062,
+      "y": 1875,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 729,
+      "center": true,
+      "name": "Cabo_Verde",
+      "x": 4318,
+      "y": 1887,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 730,
+      "center": true,
+      "name": "Senegal",
+      "x": 4583,
+      "y": 1905,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 731,
+      "center": true,
+      "name": "Blue_Nile",
+      "x": 5938,
+      "y": 1934,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 732,
+      "center": true,
+      "name": "Kayes_Koulikoro",
+      "x": 4748,
+      "y": 1911,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 733,
+      "center": true,
+      "name": "South_Darfur",
+      "x": 5659,
+      "y": 1960,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 734,
+      "center": true,
+      "name": "Niger",
+      "x": 5058,
+      "y": 1924,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 735,
+      "center": true,
+      "name": "Chad",
+      "x": 5492,
+      "y": 1974,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 736,
+      "center": true,
+      "name": "Kurdufan",
+      "x": 5786,
+      "y": 1975,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 737,
+      "center": true,
+      "name": "Upper_Volta",
+      "x": 4938,
+      "y": 1964,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 738,
+      "center": true,
+      "name": "Tigray",
+      "x": 6076,
+      "y": 1919,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 739,
+      "center": true,
+      "name": "Bamako",
+      "x": 4819,
+      "y": 1962,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 740,
+      "center": true,
+      "name": "Begemder",
+      "x": 6022,
+      "y": 1949,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 741,
+      "center": true,
+      "name": "Afar",
+      "x": 6127,
+      "y": 1962,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 742,
+      "center": true,
+      "name": "Sokoto",
+      "x": 5187,
+      "y": 1997,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 743,
+      "center": true,
+      "name": "Gambia",
+      "x": 4560,
+      "y": 1935,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 744,
+      "center": true,
+      "name": "Borno",
+      "x": 5316,
+      "y": 1993,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 745,
+      "center": true,
+      "name": "Wello",
+      "x": 6077,
+      "y": 1977,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 746,
+      "center": true,
+      "name": "Cameroon",
+      "x": 5343,
+      "y": 2134,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 747,
+      "center": true,
+      "name": "French_Somaliland",
+      "x": 6170,
+      "y": 1975,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 748,
+      "center": true,
+      "name": "Socotra",
+      "x": 6483,
+      "y": 1956,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 749,
+      "center": true,
+      "name": "Portuguese_Guinea",
+      "x": 4567,
+      "y": 1968,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 750,
+      "center": true,
+      "name": "Guinea",
+      "x": 4683,
+      "y": 2010,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 751,
+      "center": true,
+      "name": "Dahomey",
+      "x": 5053,
+      "y": 2032,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 752,
+      "center": true,
+      "name": "Gojjam",
+      "x": 6003,
+      "y": 1997,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 753,
+      "center": true,
+      "name": "Somaliland",
+      "x": 6282,
+      "y": 2138,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 754,
+      "center": true,
+      "name": "Lagos",
+      "x": 5118,
+      "y": 2081,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 755,
+      "center": true,
+      "name": "British_Somaliland",
+      "x": 6272,
+      "y": 2030,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 756,
+      "center": true,
+      "name": "Welega",
+      "x": 5979,
+      "y": 2039,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 757,
+      "center": true,
+      "name": "Ghana",
+      "x": 4955,
+      "y": 2076,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 758,
+      "center": true,
+      "name": "Hararghe",
+      "x": 6191,
+      "y": 2072,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 759,
+      "center": true,
+      "name": "Togo",
+      "x": 5016,
+      "y": 2062,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 760,
+      "center": true,
+      "name": "Equatorial_Africa",
+      "x": 5555,
+      "y": 2111,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 761,
+      "center": true,
+      "name": "Upper_Nile",
+      "x": 5896,
+      "y": 2097,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 762,
+      "center": true,
+      "name": "Shewa",
+      "x": 6069,
+      "y": 2057,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 763,
+      "center": true,
+      "name": "Ivory_Coast",
+      "x": 4834,
+      "y": 2085,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 764,
+      "center": true,
+      "name": "Sierra_Leone",
+      "x": 4658,
+      "y": 2059,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 765,
+      "center": true,
+      "name": "Benue",
+      "x": 5242,
+      "y": 2103,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 766,
+      "center": true,
+      "name": "Bahr_al_Ghazal",
+      "x": 5788,
+      "y": 2113,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 767,
+      "center": true,
+      "name": "Illubabor_Kaffa",
+      "x": 5971,
+      "y": 2093,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 768,
+      "center": true,
+      "name": "Liberia",
+      "x": 4729,
+      "y": 2117,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 769,
+      "center": true,
+      "name": "Bale",
+      "x": 6141,
+      "y": 2125,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 770,
+      "center": true,
+      "name": "Sidamo",
+      "x": 6058,
+      "y": 2149,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 771,
+      "center": true,
+      "name": "Maldives",
+      "x": 7011,
+      "y": 2123,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 772,
+      "center": true,
+      "name": "Stanleyville",
+      "x": 5725,
+      "y": 2216,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 773,
+      "center": true,
+      "name": "Coquilhatville",
+      "x": 5575,
+      "y": 2267,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 774,
+      "center": true,
+      "name": "Nyanza_Rift_Valley",
+      "x": 5968,
+      "y": 2247,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 775,
+      "center": true,
+      "name": "Nairobi",
+      "x": 6027,
+      "y": 2243,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 776,
+      "center": true,
+      "name": "Uganda",
+      "x": 5885,
+      "y": 2242,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 777,
+      "center": true,
+      "name": "Garissa",
+      "x": 6101,
+      "y": 2255,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 778,
+      "center": true,
+      "name": "Jubaland",
+      "x": 6147,
+      "y": 2250,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 779,
+      "center": true,
+      "name": "Middle_Congo",
+      "x": 5413,
+      "y": 2300,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 780,
+      "center": true,
+      "name": "Equatorial_Guinea",
+      "x": 5278,
+      "y": 2241,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 781,
+      "center": true,
+      "name": "Costermansville",
+      "x": 5764,
+      "y": 2344,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 782,
+      "center": true,
+      "name": "Gabon",
+      "x": 5315,
+      "y": 2300,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 783,
+      "center": true,
+      "name": "Sao_Tome",
+      "x": 5170,
+      "y": 2277,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 784,
+      "center": true,
+      "name": "Mombasa",
+      "x": 6059,
+      "y": 2343,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 785,
+      "center": true,
+      "name": "Tanganyika",
+      "x": 5959,
+      "y": 2453,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 786,
+      "center": true,
+      "name": "Rwanda",
+      "x": 5821,
+      "y": 2332,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 787,
+      "center": true,
+      "name": "Leopoldville",
+      "x": 5477,
+      "y": 2405,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 788,
+      "center": true,
+      "name": "Lusambo",
+      "x": 5637,
+      "y": 2419,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 789,
+      "center": true,
+      "name": "Burundi",
+      "x": 5818,
+      "y": 2368,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 790,
+      "center": true,
+      "name": "Cabinda",
+      "x": 5335,
+      "y": 2414,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 791,
+      "center": true,
+      "name": "Seychelles",
+      "x": 6550,
+      "y": 2406,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 792,
+      "center": true,
+      "name": "Ascension",
+      "x": 4562,
+      "y": 2410,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 793,
+      "center": true,
+      "name": "Elisabethville",
+      "x": 5716,
+      "y": 2525,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 794,
+      "center": true,
+      "name": "Luanda",
+      "x": 5463,
+      "y": 2514,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 795,
+      "center": true,
+      "name": "Diego_Garcia",
+      "x": 7059,
+      "y": 2500,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 796,
+      "center": true,
+      "name": "Barotziland",
+      "x": 5683,
+      "y": 2669,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 797,
+      "center": true,
+      "name": "Northeast_Rhodesia",
+      "x": 5829,
+      "y": 2603,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 798,
+      "center": true,
+      "name": "Malawi",
+      "x": 5940,
+      "y": 2638,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 799,
+      "center": true,
+      "name": "Zambesi",
+      "x": 5550,
+      "y": 2650,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 800,
+      "center": true,
+      "name": "South_West_Angola",
+      "x": 5409,
+      "y": 2662,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 801,
+      "center": true,
+      "name": "Zambezia_Moçambique",
+      "x": 6036,
+      "y": 2660,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 802,
+      "center": true,
+      "name": "Comoro_Islands",
+      "x": 6191,
+      "y": 2587,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 803,
+      "center": true,
+      "name": "Madagascar",
+      "x": 6283,
+      "y": 2795,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 804,
+      "center": true,
+      "name": "Manica_e_Sofala",
+      "x": 5918,
+      "y": 2741,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 805,
+      "center": true,
+      "name": "Saint_Helena",
+      "x": 4836,
+      "y": 2699,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 806,
+      "center": true,
+      "name": "Rhodesia",
+      "x": 5815,
+      "y": 2780,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 807,
+      "center": true,
+      "name": "Kunene",
+      "x": 5405,
+      "y": 2810,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 808,
+      "center": true,
+      "name": "Otjozondjupa",
+      "x": 5493,
+      "y": 2770,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 809,
+      "center": true,
+      "name": "Bechuanaland",
+      "x": 5647,
+      "y": 2868,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 810,
+      "center": true,
+      "name": "Mauritius",
+      "x": 6598,
+      "y": 2806,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 811,
+      "center": true,
+      "name": "Khomas",
+      "x": 5487,
+      "y": 2878,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 812,
+      "center": true,
+      "name": "Reunion",
+      "x": 6525,
+      "y": 2835,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 813,
+      "center": true,
+      "name": "Lourenço_Marques",
+      "x": 5916,
+      "y": 2901,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 814,
+      "center": true,
+      "name": "Transvaal",
+      "x": 5751,
+      "y": 2979,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 815,
+      "center": true,
+      "name": "Karas",
+      "x": 5476,
+      "y": 2979,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 816,
+      "center": true,
+      "name": "Cape",
+      "x": 5577,
+      "y": 3108,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 817,
+      "center": true,
+      "name": "Natal",
+      "x": 5782,
+      "y": 3095,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 818,
+      "center": true,
+      "name": "Chukchi_Peninsula",
+      "x": 73,
+      "y": 29,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 819,
+      "center": true,
+      "name": "Alaska",
+      "x": 720,
+      "y": 103,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 820,
+      "center": true,
+      "name": "Yukon_Territory",
+      "x": 1246,
+      "y": 83,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 821,
+      "center": true,
+      "name": "Northwest_Territories",
+      "x": 1755,
+      "y": 104,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 822,
+      "center": true,
+      "name": "Nunavut",
+      "x": 2262,
+      "y": 63,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 823,
+      "center": true,
+      "name": "Nord_du_Quebec",
+      "x": 2953,
+      "y": 258,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 824,
+      "center": true,
+      "name": "Northern_Saskatchewan",
+      "x": 2041,
+      "y": 258,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 825,
+      "center": true,
+      "name": "Upper_British_Columbia",
+      "x": 1450,
+      "y": 263,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 826,
+      "center": true,
+      "name": "Northern_Manitoba",
+      "x": 2286,
+      "y": 273,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 827,
+      "center": true,
+      "name": "Alberta",
+      "x": 1811,
+      "y": 356,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 828,
+      "center": true,
+      "name": "Districts_of_Ontario",
+      "x": 2527,
+      "y": 385,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 829,
+      "center": true,
+      "name": "Labrador",
+      "x": 3258,
+      "y": 353,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 830,
+      "center": true,
+      "name": "Saskatchewan",
+      "x": 2033,
+      "y": 445,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 831,
+      "center": true,
+      "name": "Saguenay",
+      "x": 3018,
+      "y": 395,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 832,
+      "center": true,
+      "name": "Cote_Nord",
+      "x": 3163,
+      "y": 453,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 833,
+      "center": true,
+      "name": "British_Columbia",
+      "x": 1604,
+      "y": 459,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 834,
+      "center": true,
+      "name": "Manitoba",
+      "x": 2232,
+      "y": 475,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 835,
+      "center": true,
+      "name": "Haida_Gwaii",
+      "x": 1305,
+      "y": 387,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 836,
+      "center": true,
+      "name": "Northern_Ontario",
+      "x": 2587,
+      "y": 525,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 837,
+      "center": true,
+      "name": "Ouest_du_Quebec",
+      "x": 2850,
+      "y": 561,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 838,
+      "center": true,
+      "name": "Newfoundland",
+      "x": 3422,
+      "y": 547,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 839,
+      "center": true,
+      "name": "Maurice",
+      "x": 2982,
+      "y": 543,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 840,
+      "center": true,
+      "name": "Vancouver_Island",
+      "x": 1484,
+      "y": 517,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 841,
+      "center": true,
+      "name": "Minnesota",
+      "x": 2359,
+      "y": 625,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 842,
+      "center": true,
+      "name": "Saint_Lawrence",
+      "x": 3025,
+      "y": 603,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 843,
+      "center": true,
+      "name": "Montana",
+      "x": 1933,
+      "y": 604,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 844,
+      "center": true,
+      "name": "Washington",
+      "x": 1632,
+      "y": 594,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 845,
+      "center": true,
+      "name": "Idaho",
+      "x": 1792,
+      "y": 687,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 846,
+      "center": true,
+      "name": "North_Dakota",
+      "x": 2187,
+      "y": 591,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 847,
+      "center": true,
+      "name": "New_Brunswick",
+      "x": 3134,
+      "y": 616,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 848,
+      "center": true,
+      "name": "Nova_Scotia",
+      "x": 3221,
+      "y": 664,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 849,
+      "center": true,
+      "name": "New_England",
+      "x": 3017,
+      "y": 692,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 850,
+      "center": true,
+      "name": "Michigan",
+      "x": 2626,
+      "y": 718,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 851,
+      "center": true,
+      "name": "Saint_Pierre_and_Miquelon",
+      "x": 3411,
+      "y": 603,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 852,
+      "center": true,
+      "name": "Wisconsin",
+      "x": 2497,
+      "y": 692,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 853,
+      "center": true,
+      "name": "Southern_Ontario",
+      "x": 2787,
+      "y": 683,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 854,
+      "center": true,
+      "name": "Oregon",
+      "x": 1629,
+      "y": 704,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 855,
+      "center": true,
+      "name": "South_Dakota",
+      "x": 2194,
+      "y": 688,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 856,
+      "center": true,
+      "name": "New_York",
+      "x": 2880,
+      "y": 734,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 857,
+      "center": true,
+      "name": "Wyoming",
+      "x": 1990,
+      "y": 733,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 858,
+      "center": true,
+      "name": "Iowa",
+      "x": 2380,
+      "y": 762,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 859,
+      "center": true,
+      "name": "Nebraska",
+      "x": 2205,
+      "y": 779,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 860,
+      "center": true,
+      "name": "Illinois",
+      "x": 2500,
+      "y": 824,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 861,
+      "center": true,
+      "name": "Pennsylvania",
+      "x": 2817,
+      "y": 799,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 862,
+      "center": true,
+      "name": "Ohio",
+      "x": 2679,
+      "y": 817,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 863,
+      "center": true,
+      "name": "California",
+      "x": 1655,
+      "y": 908,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 864,
+      "center": true,
+      "name": "Nevada",
+      "x": 1736,
+      "y": 845,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 865,
+      "center": true,
+      "name": "Utah",
+      "x": 1875,
+      "y": 846,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 866,
+      "center": true,
+      "name": "Indiana",
+      "x": 2582,
+      "y": 830,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 867,
+      "center": true,
+      "name": "New_Jersey",
+      "x": 2904,
+      "y": 820,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 868,
+      "center": true,
+      "name": "Colorado",
+      "x": 2046,
+      "y": 857,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 869,
+      "center": true,
+      "name": "Missouri",
+      "x": 2409,
+      "y": 876,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 870,
+      "center": true,
+      "name": "West_Virginia",
+      "x": 2733,
+      "y": 870,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 871,
+      "center": true,
+      "name": "Kansas",
+      "x": 2245,
+      "y": 873,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 872,
+      "center": true,
+      "name": "Maryland",
+      "x": 2847,
+      "y": 854,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 873,
+      "center": true,
+      "name": "Virginia",
+      "x": 2786,
+      "y": 902,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 874,
+      "center": true,
+      "name": "Kentucky",
+      "x": 2608,
+      "y": 902,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 875,
+      "center": true,
+      "name": "Arizona",
+      "x": 1876,
+      "y": 997,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 876,
+      "center": true,
+      "name": "New_Mexico",
+      "x": 2031,
+      "y": 994,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 877,
+      "center": true,
+      "name": "Oklahoma",
+      "x": 2268,
+      "y": 959,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 878,
+      "center": true,
+      "name": "Tennessee",
+      "x": 2579,
+      "y": 952,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 879,
+      "center": true,
+      "name": "North_Carolina",
+      "x": 2773,
+      "y": 960,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 880,
+      "center": true,
+      "name": "Arkansas",
+      "x": 2405,
+      "y": 984,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 881,
+      "center": true,
+      "name": "Texas",
+      "x": 2219,
+      "y": 1077,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 882,
+      "center": true,
+      "name": "South_Carolina",
+      "x": 2730,
+      "y": 1008,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 883,
+      "center": true,
+      "name": "Mississippi",
+      "x": 2487,
+      "y": 1042,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 884,
+      "center": true,
+      "name": "Alabama",
+      "x": 2566,
+      "y": 1041,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 885,
+      "center": true,
+      "name": "Georgia_US",
+      "x": 2660,
+      "y": 1045,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 886,
+      "center": true,
+      "name": "Bermuda",
+      "x": 3237,
+      "y": 1040,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 887,
+      "center": true,
+      "name": "Louisiana",
+      "x": 2422,
+      "y": 1091,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 888,
+      "center": true,
+      "name": "Baja_California",
+      "x": 1821,
+      "y": 1168,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 889,
+      "center": true,
+      "name": "Sonora",
+      "x": 1900,
+      "y": 1130,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 890,
+      "center": true,
+      "name": "Chihuahua",
+      "x": 2023,
+      "y": 1123,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 891,
+      "center": true,
+      "name": "Florida",
+      "x": 2686,
+      "y": 1159,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 892,
+      "center": true,
+      "name": "Coahuila",
+      "x": 2155,
+      "y": 1213,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 893,
+      "center": true,
+      "name": "Durango",
+      "x": 2046,
+      "y": 1270,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 894,
+      "center": true,
+      "name": "Northern_Bahamas",
+      "x": 2810,
+      "y": 1270,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 895,
+      "center": true,
+      "name": "Tamaulipas",
+      "x": 2213,
+      "y": 1300,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 896,
+      "center": true,
+      "name": "Southern_Bahamas",
+      "x": 2940,
+      "y": 1370,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 897,
+      "center": true,
+      "name": "Cuba",
+      "x": 2783,
+      "y": 1355,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 898,
+      "center": true,
+      "name": "Jalisco",
+      "x": 2099,
+      "y": 1368,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 899,
+      "center": true,
+      "name": "Veracruz",
+      "x": 2266,
+      "y": 1409,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 900,
+      "center": true,
+      "name": "Mexico_City",
+      "x": 2198,
+      "y": 1388,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 901,
+      "center": true,
+      "name": "Yucatan",
+      "x": 2502,
+      "y": 1406,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 902,
+      "center": true,
+      "name": "Guerrero",
+      "x": 2177,
+      "y": 1445,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 903,
+      "center": true,
+      "name": "Haiti",
+      "x": 2959,
+      "y": 1427,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 904,
+      "center": true,
+      "name": "Dominican_Republic",
+      "x": 3020,
+      "y": 1429,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 905,
+      "center": true,
+      "name": "Jamaica",
+      "x": 2830,
+      "y": 1449,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 906,
+      "center": true,
+      "name": "Oaxaca",
+      "x": 2314,
+      "y": 1474,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 907,
+      "center": true,
+      "name": "Chiapas",
+      "x": 2411,
+      "y": 1484,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 908,
+      "center": true,
+      "name": "Puerto_Rico",
+      "x": 3131,
+      "y": 1447,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 909,
+      "center": true,
+      "name": "British_Honduras",
+      "x": 2514,
+      "y": 1473,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 910,
+      "center": true,
+      "name": "French_Caribbean",
+      "x": 3268,
+      "y": 1501,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 911,
+      "center": true,
+      "name": "Guatemala",
+      "x": 2467,
+      "y": 1513,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 912,
+      "center": true,
+      "name": "Leeward_Islands",
+      "x": 3274,
+      "y": 1522,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 913,
+      "center": true,
+      "name": "Honduras",
+      "x": 2572,
+      "y": 1537,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 914,
+      "center": true,
+      "name": "Midway_Island",
+      "x": 40,
+      "y": 1521,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 915,
+      "center": true,
+      "name": "Nicaragua",
+      "x": 2616,
+      "y": 1587,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 916,
+      "center": true,
+      "name": "El_Salvador",
+      "x": 2509,
+      "y": 1566,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 917,
+      "center": true,
+      "name": "Windward_Islands",
+      "x": 3286,
+      "y": 1563,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 918,
+      "center": true,
+      "name": "Curaçao",
+      "x": 3037,
+      "y": 1597,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 919,
+      "center": true,
+      "name": "La_Libertad",
+      "x": 2894,
+      "y": 1718,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 920,
+      "center": true,
+      "name": "Zulia",
+      "x": 3012,
+      "y": 1669,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 921,
+      "center": true,
+      "name": "Trinidad",
+      "x": 3276,
+      "y": 1655,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 922,
+      "center": true,
+      "name": "Costa_Rica",
+      "x": 2638,
+      "y": 1665,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 923,
+      "center": true,
+      "name": "Miranda",
+      "x": 3130,
+      "y": 1702,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 924,
+      "center": true,
+      "name": "Hawaii",
+      "x": 751,
+      "y": 1729,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 925,
+      "center": true,
+      "name": "Panamá",
+      "x": 2716,
+      "y": 1707,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 926,
+      "center": true,
+      "name": "Panamá_Canal",
+      "x": 2757,
+      "y": 1691,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 927,
+      "center": true,
+      "name": "Bolivar",
+      "x": 3188,
+      "y": 1792,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 928,
+      "center": true,
+      "name": "British_Guyana",
+      "x": 3339,
+      "y": 1801,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 929,
+      "center": true,
+      "name": "Cundinamarca",
+      "x": 2887,
+      "y": 1829,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 930,
+      "center": true,
+      "name": "Loreto",
+      "x": 2913,
+      "y": 2048,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 931,
+      "center": true,
+      "name": "Meta",
+      "x": 2995,
+      "y": 1872,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 932,
+      "center": true,
+      "name": "Suriname",
+      "x": 3425,
+      "y": 1817,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 933,
+      "center": true,
+      "name": "French_Guiana",
+      "x": 3498,
+      "y": 1824,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 934,
+      "center": true,
+      "name": "Guaporé",
+      "x": 3231,
+      "y": 2211,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 935,
+      "center": true,
+      "name": "Amazon_impassable_1",
+      "x": 3168,
+      "y": 1969,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 936,
+      "center": true,
+      "name": "Amazon_impassable_7",
+      "x": 3224,
+      "y": 1880,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 937,
+      "center": true,
+      "name": "Amazon_impassable_4",
+      "x": 3066,
+      "y": 2081,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 938,
+      "center": true,
+      "name": "Acre",
+      "x": 3020,
+      "y": 2167,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 939,
+      "center": true,
+      "name": "Amazon_impassable_3",
+      "x": 3178,
+      "y": 2138,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 940,
+      "center": true,
+      "name": "Amazon_impassable_5",
+      "x": 3321,
+      "y": 2148,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 941,
+      "center": true,
+      "name": "Amazonas",
+      "x": 3232,
+      "y": 2018,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 942,
+      "center": true,
+      "name": "Amazon_impassable_6",
+      "x": 3459,
+      "y": 2110,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 943,
+      "center": true,
+      "name": "Pará",
+      "x": 3578,
+      "y": 2042,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 944,
+      "center": true,
+      "name": "Amapá",
+      "x": 3545,
+      "y": 1897,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 945,
+      "center": true,
+      "name": "Amazon_impassable_8",
+      "x": 3407,
+      "y": 1922,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 946,
+      "center": true,
+      "name": "Rio_Branco",
+      "x": 3284,
+      "y": 1840,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 947,
+      "center": true,
+      "name": "Johnston_Atoll",
+      "x": 265,
+      "y": 1852,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 948,
+      "center": true,
+      "name": "Ecuador",
+      "x": 2799,
+      "y": 1964,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 949,
+      "center": true,
+      "name": "Piauí",
+      "x": 3777,
+      "y": 2123,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 950,
+      "center": true,
+      "name": "Maranhão",
+      "x": 3723,
+      "y": 2052,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 951,
+      "center": true,
+      "name": "Galapagos_Islands",
+      "x": 2442,
+      "y": 1980,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 952,
+      "center": true,
+      "name": "Pastaza",
+      "x": 2868,
+      "y": 2019,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 953,
+      "center": true,
+      "name": "Pernambuco",
+      "x": 3932,
+      "y": 2130,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 954,
+      "center": true,
+      "name": "Rio_Grande_do_Norte",
+      "x": 3954,
+      "y": 2069,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 955,
+      "center": true,
+      "name": "Ceará",
+      "x": 3873,
+      "y": 2044,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 956,
+      "center": true,
+      "name": "Lima",
+      "x": 2823,
+      "y": 2154,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 957,
+      "center": true,
+      "name": "Goiás",
+      "x": 3563,
+      "y": 2348,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 958,
+      "center": true,
+      "name": "Tocantins",
+      "x": 3638,
+      "y": 2209,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 959,
+      "center": true,
+      "name": "Ucayali",
+      "x": 2966,
+      "y": 2216,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 960,
+      "center": true,
+      "name": "Line_Islands",
+      "x": 531,
+      "y": 2184,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 961,
+      "center": true,
+      "name": "Mato_Grosso",
+      "x": 3435,
+      "y": 2308,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 962,
+      "center": true,
+      "name": "Bahia",
+      "x": 3824,
+      "y": 2251,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 963,
+      "center": true,
+      "name": "Santa_Cruz",
+      "x": 3209,
+      "y": 2327,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 964,
+      "center": true,
+      "name": "Tacna_Moquegua",
+      "x": 3016,
+      "y": 2379,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 965,
+      "center": true,
+      "name": "Arequipa",
+      "x": 2954,
+      "y": 2313,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 966,
+      "center": true,
+      "name": "La_Paz",
+      "x": 3137,
+      "y": 2431,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 967,
+      "center": true,
+      "name": "Punta_Porá",
+      "x": 3439,
+      "y": 2498,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 968,
+      "center": true,
+      "name": "Espírito_Santo",
+      "x": 3849,
+      "y": 2437,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 969,
+      "center": true,
+      "name": "Minas_Gerais",
+      "x": 3734,
+      "y": 2416,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 970,
+      "center": true,
+      "name": "Phoenix_Island",
+      "x": 168,
+      "y": 2352,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 971,
+      "center": true,
+      "name": "Atacama",
+      "x": 3037,
+      "y": 2663,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 972,
+      "center": true,
+      "name": "Antofagasta",
+      "x": 3060,
+      "y": 2552,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 973,
+      "center": true,
+      "name": "Arica_y_Tarapacá",
+      "x": 3050,
+      "y": 2449,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 974,
+      "center": true,
+      "name": "Chaco_Boreal",
+      "x": 3318,
+      "y": 2509,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 975,
+      "center": true,
+      "name": "São_Paulo",
+      "x": 3620,
+      "y": 2517,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 976,
+      "center": true,
+      "name": "Rio_de_Janeiro",
+      "x": 3791,
+      "y": 2514,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 977,
+      "center": true,
+      "name": "San_Juan_y_La_Rioja",
+      "x": 3101,
+      "y": 2691,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 978,
+      "center": true,
+      "name": "Tucumán",
+      "x": 3136,
+      "y": 2619,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 979,
+      "center": true,
+      "name": "Los_Andes",
+      "x": 3154,
+      "y": 2561,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 980,
+      "center": true,
+      "name": "Chaco_Austral",
+      "x": 3253,
+      "y": 2651,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 981,
+      "center": true,
+      "name": "Formosa",
+      "x": 3284,
+      "y": 2571,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 982,
+      "center": true,
+      "name": "Paraguay",
+      "x": 3414,
+      "y": 2594,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 983,
+      "center": true,
+      "name": "Santa_Catarina",
+      "x": 3556,
+      "y": 2652,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 984,
+      "center": true,
+      "name": "Paraná",
+      "x": 3552,
+      "y": 2584,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 985,
+      "center": true,
+      "name": "Santa_Fe",
+      "x": 3254,
+      "y": 2779,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 986,
+      "center": true,
+      "name": "Región_Mesopotámica",
+      "x": 3364,
+      "y": 2731,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 987,
+      "center": true,
+      "name": "American_Samoa",
+      "x": 219,
+      "y": 2656,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 988,
+      "center": true,
+      "name": "Samoa",
+      "x": 170,
+      "y": 2639,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 989,
+      "center": true,
+      "name": "Rio_Grande_do_Sul",
+      "x": 3494,
+      "y": 2719,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 990,
+      "center": true,
+      "name": "Mendoza",
+      "x": 3069,
+      "y": 2821,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 991,
+      "center": true,
+      "name": "San_Luis_y_La_Pampa",
+      "x": 3152,
+      "y": 2812,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 992,
+      "center": true,
+      "name": "Tahiti",
+      "x": 807,
+      "y": 2748,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 993,
+      "center": true,
+      "name": "Araucanía",
+      "x": 3003,
+      "y": 2982,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 994,
+      "center": true,
+      "name": "Santiago",
+      "x": 3015,
+      "y": 2834,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 995,
+      "center": true,
+      "name": "Montevideo",
+      "x": 3401,
+      "y": 2849,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 996,
+      "center": true,
+      "name": "Cerro_Largo",
+      "x": 3458,
+      "y": 2821,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 997,
+      "center": true,
+      "name": "Paysandú",
+      "x": 3403,
+      "y": 2784,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 998,
+      "center": true,
+      "name": "Pitcairn_Island",
+      "x": 1860,
+      "y": 2831,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 999,
+      "center": true,
+      "name": "Buenos_Aires",
+      "x": 3276,
+      "y": 2920,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1000,
+      "center": true,
+      "name": "Tierra_del_Fuego",
+      "x": 3121,
+      "y": 3285,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1001,
+      "center": true,
+      "name": "Santa_Cruz_AR",
+      "x": 3074,
+      "y": 3174,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1002,
+      "center": true,
+      "name": "Chubut",
+      "x": 3098,
+      "y": 3076,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1003,
+      "center": true,
+      "name": "Río_Negro",
+      "x": 3117,
+      "y": 2978,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1004,
+      "center": true,
+      "name": "Magallanes",
+      "x": 3044,
+      "y": 3248,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1005,
+      "center": true,
+      "name": "Aysén",
+      "x": 3007,
+      "y": 3120,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1006,
+      "center": true,
+      "name": "Falkland_Islands",
+      "x": 3371,
+      "y": 3220,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1007,
+      "center": true,
+      "name": "South_Georgia",
+      "x": 3962,
+      "y": 3287,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1008,
+      "center": true,
+      "name": "Dudinka",
+      "x": 7521,
+      "y": 159,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1009,
+      "center": true,
+      "name": "Khatangsky",
+      "x": 7930,
+      "y": 193,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1010,
+      "center": true,
+      "name": "Udachny",
+      "x": 8286,
+      "y": 180,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1011,
+      "center": true,
+      "name": "Verkhoyansk",
+      "x": 8641,
+      "y": 218,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1012,
+      "center": true,
+      "name": "Kolyma",
+      "x": 9084,
+      "y": 160,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1013,
+      "center": true,
+      "name": "Chukotka",
+      "x": 9680,
+      "y": 148,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1014,
+      "center": true,
+      "name": "Magadan",
+      "x": 9329,
+      "y": 391,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1015,
+      "center": true,
+      "name": "Kirensk",
+      "x": 8059,
+      "y": 462,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1016,
+      "center": true,
+      "name": "Okhotsk",
+      "x": 8894,
+      "y": 488,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1017,
+      "center": true,
+      "name": "Kamchatka",
+      "x": 9463,
+      "y": 558,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1018,
+      "center": true,
+      "name": "Yeniseisk",
+      "x": 7640,
+      "y": 460,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1019,
+      "center": true,
+      "name": "Yakutsk",
+      "x": 8484,
+      "y": 500,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1020,
+      "center": true,
+      "name": "Bodaybo",
+      "x": 8195,
+      "y": 597,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1021,
+      "center": true,
+      "name": "Bratsk",
+      "x": 7790,
+      "y": 641,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1022,
+      "center": true,
+      "name": "Krasnoyarsk",
+      "x": 7581,
+      "y": 671,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1023,
+      "center": true,
+      "name": "Chita",
+      "x": 8215,
+      "y": 781,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1024,
+      "center": true,
+      "name": "Buryatia",
+      "x": 8005,
+      "y": 765,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1025,
+      "center": true,
+      "name": "Attu_Island",
+      "x": 9785,
+      "y": 637,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1026,
+      "center": true,
+      "name": "Khakassia",
+      "x": 7437,
+      "y": 716,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1027,
+      "center": true,
+      "name": "Irkutsk",
+      "x": 7897,
+      "y": 729,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1028,
+      "center": true,
+      "name": "Amur",
+      "x": 8501,
+      "y": 720,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1029,
+      "center": true,
+      "name": "Nikolayevsk",
+      "x": 8760,
+      "y": 759,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1030,
+      "center": true,
+      "name": "Altai_Krai",
+      "x": 7286,
+      "y": 775,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1031,
+      "center": true,
+      "name": "North_Sakhalin",
+      "x": 8954,
+      "y": 805,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1032,
+      "center": true,
+      "name": "Tannu_Tuva",
+      "x": 7622,
+      "y": 811,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1033,
+      "center": true,
+      "name": "Heilungkiang",
+      "x": 8482,
+      "y": 913,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1034,
+      "center": true,
+      "name": "Hulunbuir",
+      "x": 8333,
+      "y": 870,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1035,
+      "center": true,
+      "name": "Khabarovsk",
+      "x": 8830,
+      "y": 890,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1036,
+      "center": true,
+      "name": "Birobidzhan",
+      "x": 8654,
+      "y": 859,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1037,
+      "center": true,
+      "name": "Oyrot_Region",
+      "x": 7408,
+      "y": 841,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1038,
+      "center": true,
+      "name": "Khövsgöl",
+      "x": 7768,
+      "y": 864,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1039,
+      "center": true,
+      "name": "Khovd",
+      "x": 7548,
+      "y": 927,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1040,
+      "center": true,
+      "name": "Ulaanbaatar",
+      "x": 7849,
+      "y": 938,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1041,
+      "center": true,
+      "name": "Dornod",
+      "x": 8148,
+      "y": 945,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1042,
+      "center": true,
+      "name": "South_Sakhalin",
+      "x": 8954,
+      "y": 919,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1043,
+      "center": true,
+      "name": "Kuril_Islands",
+      "x": 9097,
+      "y": 1028,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1044,
+      "center": true,
+      "name": "Dzungaria",
+      "x": 7392,
+      "y": 1003,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1045,
+      "center": true,
+      "name": "Gobi",
+      "x": 7856,
+      "y": 1041,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1046,
+      "center": true,
+      "name": "Kirin",
+      "x": 8508,
+      "y": 1078,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1047,
+      "center": true,
+      "name": "Urumqi",
+      "x": 7343,
+      "y": 1111,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1048,
+      "center": true,
+      "name": "Dabancheng",
+      "x": 7565,
+      "y": 1093,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1049,
+      "center": true,
+      "name": "Shigatse",
+      "x": 7431,
+      "y": 1499,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1050,
+      "center": true,
+      "name": "Nepal",
+      "x": 7324,
+      "y": 1527,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1051,
+      "center": true,
+      "name": "Arunachal_Pradesh",
+      "x": 7619,
+      "y": 1533,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1052,
+      "center": true,
+      "name": "Dali",
+      "x": 7759,
+      "y": 1603,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1053,
+      "center": true,
+      "name": "Okinawa",
+      "x": 8524,
+      "y": 1595,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1054,
+      "center": true,
+      "name": "Bhutan",
+      "x": 7501,
+      "y": 1553,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1055,
+      "center": true,
+      "name": "Iwo_Jima",
+      "x": 8939,
+      "y": 1614,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1056,
+      "center": true,
+      "name": "Taiwan",
+      "x": 8350,
+      "y": 1654,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1057,
+      "center": true,
+      "name": "Marcus_Island",
+      "x": 9274,
+      "y": 1644,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1058,
+      "center": true,
+      "name": "Tonkin",
+      "x": 7911,
+      "y": 1712,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1059,
+      "center": true,
+      "name": "Lanna",
+      "x": 7751,
+      "y": 1790,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1060,
+      "center": true,
+      "name": "Wake_Island",
+      "x": 9620,
+      "y": 1770,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1061,
+      "center": true,
+      "name": "Isan",
+      "x": 7856,
+      "y": 1864,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1062,
+      "center": true,
+      "name": "Saipan",
+      "x": 9047,
+      "y": 1855,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1063,
+      "center": true,
+      "name": "Central_Islands",
+      "x": 8423,
+      "y": 1938,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1064,
+      "center": true,
+      "name": "Guam",
+      "x": 9005,
+      "y": 1940,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1065,
+      "center": true,
+      "name": "Andaman",
+      "x": 7568,
+      "y": 1958,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1066,
+      "center": true,
+      "name": "Palawan",
+      "x": 8283,
+      "y": 2033,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1067,
+      "center": true,
+      "name": "Marshall_Islands",
+      "x": 9639,
+      "y": 2042,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1068,
+      "center": true,
+      "name": "Caroline_Islands",
+      "x": 9500,
+      "y": 2167,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1069,
+      "center": true,
+      "name": "Ceylon",
+      "x": 7231,
+      "y": 2091,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1070,
+      "center": true,
+      "name": "Palau",
+      "x": 8703,
+      "y": 2091,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1071,
+      "center": true,
+      "name": "The_Moluccas",
+      "x": 8586,
+      "y": 2366,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1072,
+      "center": true,
+      "name": "Gilbert_Islands",
+      "x": 9799,
+      "y": 2253,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1073,
+      "center": true,
+      "name": "Nauru",
+      "x": 9627,
+      "y": 2296,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1074,
+      "center": true,
+      "name": "Bismarck",
+      "x": 9176,
+      "y": 2427,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1075,
+      "center": true,
+      "name": "Solomon_Islands",
+      "x": 9418,
+      "y": 2542,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1076,
+      "center": true,
+      "name": "Bougainville",
+      "x": 9297,
+      "y": 2444,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1077,
+      "center": true,
+      "name": "Ellice_Islands",
+      "x": 9964,
+      "y": 2504,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1078,
+      "center": true,
+      "name": "Christmas_Island",
+      "x": 7930,
+      "y": 2558,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1079,
+      "center": true,
+      "name": "Nendo",
+      "x": 9603,
+      "y": 2564,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1080,
+      "center": true,
+      "name": "North_West_Australia",
+      "x": 8476,
+      "y": 2738,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1081,
+      "center": true,
+      "name": "Cocos_Islands",
+      "x": 7663,
+      "y": 2671,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1082,
+      "center": true,
+      "name": "Fiji",
+      "x": 9935,
+      "y": 2751,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1083,
+      "center": true,
+      "name": "Western_Australia",
+      "x": 8306,
+      "y": 2958,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1084,
+      "center": true,
+      "name": "South_West_Australia",
+      "x": 8457,
+      "y": 3037,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1085,
+      "center": true,
+      "name": "South_Australia",
+      "x": 8767,
+      "y": 3068,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1086,
+      "center": true,
+      "name": "New_South_Wales",
+      "x": 9032,
+      "y": 3074,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1087,
+      "center": true,
+      "name": "Victoria",
+      "x": 8968,
+      "y": 3188,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1088,
+      "center": true,
+      "name": "Tasmania",
+      "x": 9024,
+      "y": 3301,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1089,
+      "center": true,
+      "name": "Amazon_impassable_2",
+      "x": 3281,
+      "y": 2049,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1090,
+      "center": true,
+      "name": "Easter_Island",
+      "x": 2459,
+      "y": 2790,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1091,
+      "center": true,
+      "name": "Azerbaijan",
+      "x": 6315,
+      "y": 1173,
+      "owner": null,
+      "borders": []
+    },
+    {
+      "id": 1096,
+      "center": false,
+      "name": "Point 1096",
+      "x": 4842,
+      "y": 1147,
+      "owner": null,
+      "borders": [
+        599,
+        625
+      ]
+    },
+    {
+      "id": 1097,
+      "center": false,
+      "name": "Point 1097",
+      "x": 4924,
+      "y": 1264,
+      "owner": null,
+      "borders": [
+        651,
+        664
+      ]
+    },
+    {
+      "id": 1098,
+      "center": false,
+      "name": "Point 1098",
+      "x": 4846,
+      "y": 1273,
+      "owner": null,
+      "borders": [
+        663,
+        664
+      ]
+    },
+    {
+      "id": 1099,
+      "center": false,
+      "name": "Point 1099",
+      "x": 4863,
+      "y": 1087,
+      "owner": null,
+      "borders": [
+        588,
+        593,
+        599
+      ]
+    }
+  ]
+}

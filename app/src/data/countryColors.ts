@@ -14,7 +14,7 @@ export const MAP_THEME = {
 } as const
 
 const defaultCountryColors: CountryColorSet = {
-  province: '#94a3b8',
+  province: '#f0cf9d',
   battalion: '#94a3b8',
   division: '#64748b',
   divisionSelected: '#475569',

@@ -1,0 +1,7611 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-17T00:04:03.905Z",
+  "width": 20000,
+  "height": 7858,
+  "overlayImage": null,
+  "points": [
+    {
+      "id": 4,
+      "name": "pattern3",
+      "center": true,
+      "x": 29,
+      "y": 26
+    },
+    {
+      "id": 5,
+      "name": "pattern4",
+      "center": true,
+      "x": 286,
+      "y": 262
+    },
+    {
+      "id": 6,
+      "name": "pattern5",
+      "center": true,
+      "x": 21,
+      "y": 46
+    },
+    {
+      "id": 9,
+      "name": "pattern3",
+      "center": true,
+      "x": 29,
+      "y": 26
+    },
+    {
+      "id": 10,
+      "name": "pattern5",
+      "center": true,
+      "x": 21,
+      "y": 46
+    },
+    {
+      "id": 11,
+      "name": "West_Papua",
+      "center": true,
+      "x": 17548,
+      "y": 4711
+    },
+    {
+      "id": 12,
+      "name": "Ajteh",
+      "center": true,
+      "x": 15362,
+      "y": 4353
+    },
+    {
+      "id": 13,
+      "name": "Aru_Islands",
+      "center": true,
+      "x": 17446,
+      "y": 4886
+    },
+    {
+      "id": 14,
+      "name": "Auckland",
+      "center": true,
+      "x": 19810,
+      "y": 6101
+    },
+    {
+      "id": 15,
+      "name": "Bali",
+      "center": true,
+      "x": 16374,
+      "y": 5000
+    },
+    {
+      "id": 16,
+      "name": "Bangka-Belitung",
+      "center": true,
+      "x": 15867,
+      "y": 4683
+    },
+    {
+      "id": 17,
+      "name": "Bangkok",
+      "center": true,
+      "x": 15570,
+      "y": 3842
+    },
+    {
+      "id": 18,
+      "name": "Bassac",
+      "center": true,
+      "x": 15893,
+      "y": 3775
+    },
+    {
+      "id": 19,
+      "name": "Batavia",
+      "center": true,
+      "x": 15931,
+      "y": 4899
+    },
+    {
+      "id": 20,
+      "name": "Battambang",
+      "center": true,
+      "x": 15752,
+      "y": 3857
+    },
+    {
+      "id": 21,
+      "name": "Cambodia",
+      "center": true,
+      "x": 15822,
+      "y": 3927
+    },
+    {
+      "id": 22,
+      "name": "Central_Australia",
+      "center": true,
+      "x": 17419,
+      "y": 5719
+    },
+    {
+      "id": 23,
+      "name": "Central_Siam",
+      "center": true,
+      "x": 15558,
+      "y": 3711
+    },
+    {
+      "id": 24,
+      "name": "Central_West_Australia",
+      "center": true,
+      "x": 16992,
+      "y": 5761
+    },
+    {
+      "id": 25,
+      "name": "Champa",
+      "center": true,
+      "x": 15991,
+      "y": 3872
+    },
+    {
+      "id": 26,
+      "name": "Dutch_Southern_New_Guinea",
+      "center": true,
+      "x": 17721,
+      "y": 4886
+    },
+    {
+      "id": 27,
+      "name": "Dutch_Timor",
+      "center": true,
+      "x": 16886,
+      "y": 5074
+    },
+    {
+      "id": 28,
+      "name": "East_Java",
+      "center": true,
+      "x": 16187,
+      "y": 4962
+    },
+    {
+      "id": 29,
+      "name": "East_Nusa_Tenggara",
+      "center": true,
+      "x": 16711,
+      "y": 5012
+    },
+    {
+      "id": 30,
+      "name": "East_Timor",
+      "center": true,
+      "x": 16977,
+      "y": 5022
+    },
+    {
+      "id": 31,
+      "name": "Eastern_Kalimantan",
+      "center": true,
+      "x": 16431,
+      "y": 4583
+    },
+    {
+      "id": 32,
+      "name": "Eastern_Siam",
+      "center": true,
+      "x": 15636,
+      "y": 3874
+    },
+    {
+      "id": 33,
+      "name": "Interior_Papua",
+      "center": true,
+      "x": 17948,
+      "y": 4880
+    },
+    {
+      "id": 34,
+      "name": "Java",
+      "center": true,
+      "x": 15961,
+      "y": 4930
+    },
+    {
+      "id": 35,
+      "name": "Johor",
+      "center": true,
+      "x": 15715,
+      "y": 4473
+    },
+    {
+      "id": 36,
+      "name": "Kaiser-Wilhelmsland",
+      "center": true,
+      "x": 18030,
+      "y": 4830
+    },
+    {
+      "id": 37,
+      "name": "Kalimantan",
+      "center": true,
+      "x": 16125,
+      "y": 4629
+    },
+    {
+      "id": 38,
+      "name": "Kelantan",
+      "center": true,
+      "x": 15673,
+      "y": 4317
+    },
+    {
+      "id": 39,
+      "name": "Lan_Chang",
+      "center": true,
+      "x": 15607,
+      "y": 3571
+    },
+    {
+      "id": 40,
+      "name": "Laos",
+      "center": true,
+      "x": 15720,
+      "y": 3548
+    },
+    {
+      "id": 41,
+      "name": "Lesser_Sunda_Islands",
+      "center": true,
+      "x": 16646,
+      "y": 5075
+    },
+    {
+      "id": 42,
+      "name": "Limbang",
+      "center": true,
+      "x": 16376,
+      "y": 4367
+    },
+    {
+      "id": 43,
+      "name": "Malaya",
+      "center": true,
+      "x": 15630,
+      "y": 4419
+    },
+    {
+      "id": 44,
+      "name": "Manado",
+      "center": true,
+      "x": 16721,
+      "y": 4620
+    },
+    {
+      "id": 45,
+      "name": "Marlborough",
+      "center": true,
+      "x": 19633,
+      "y": 6360
+    },
+    {
+      "id": 46,
+      "name": "Medan_and_Riouw",
+      "center": true,
+      "x": 15611,
+      "y": 4530
+    },
+    {
+      "id": 47,
+      "name": "Mekong_Delta",
+      "center": true,
+      "x": 15873,
+      "y": 4031
+    },
+    {
+      "id": 48,
+      "name": "New_Caledonia",
+      "center": true,
+      "x": 19175,
+      "y": 5691
+    },
+    {
+      "id": 49,
+      "name": "North_Island",
+      "center": true,
+      "x": 19792,
+      "y": 6241
+    },
+    {
+      "id": 50,
+      "name": "North_Queensland",
+      "center": true,
+      "x": 17859,
+      "y": 5404
+    },
+    {
+      "id": 51,
+      "name": "Northern_Malay",
+      "center": true,
+      "x": 15521,
+      "y": 4155
+    },
+    {
+      "id": 52,
+      "name": "Northern_Territory",
+      "center": true,
+      "x": 17411,
+      "y": 5329
+    },
+    {
+      "id": 53,
+      "name": "Otago",
+      "center": true,
+      "x": 19410,
+      "y": 6580
+    },
+    {
+      "id": 54,
+      "name": "Padang",
+      "center": true,
+      "x": 15560,
+      "y": 4576
+    },
+    {
+      "id": 55,
+      "name": "Pahang",
+      "center": true,
+      "x": 15690,
+      "y": 4403
+    },
+    {
+      "id": 56,
+      "name": "Papua",
+      "center": true,
+      "x": 18067,
+      "y": 4976
+    },
+    {
+      "id": 57,
+      "name": "Penang",
+      "center": true,
+      "x": 15564,
+      "y": 4304
+    },
+    {
+      "id": 58,
+      "name": "Perak",
+      "center": true,
+      "x": 15606,
+      "y": 4337
+    },
+    {
+      "id": 59,
+      "name": "Perlis_Kedah",
+      "center": true,
+      "x": 15571,
+      "y": 4271
+    },
+    {
+      "id": 60,
+      "name": "Queensland",
+      "center": true,
+      "x": 18160,
+      "y": 5761
+    },
+    {
+      "id": 61,
+      "name": "Sarawak",
+      "center": true,
+      "x": 16253,
+      "y": 4455
+    },
+    {
+      "id": 62,
+      "name": "Siam",
+      "center": true,
+      "x": 15498,
+      "y": 3797
+    },
+    {
+      "id": 63,
+      "name": "South_Island",
+      "center": true,
+      "x": 19517,
+      "y": 6484
+    },
+    {
+      "id": 64,
+      "name": "South_West_Queensland",
+      "center": true,
+      "x": 17960,
+      "y": 5861
+    },
+    {
+      "id": 65,
+      "name": "Sulawesi",
+      "center": true,
+      "x": 16667,
+      "y": 4744
+    },
+    {
+      "id": 66,
+      "name": "Sumatra",
+      "center": true,
+      "x": 15766,
+      "y": 4761
+    },
+    {
+      "id": 67,
+      "name": "Trung_Bo",
+      "center": true,
+      "x": 15855,
+      "y": 3598
+    },
+    {
+      "id": 68,
+      "name": "Vanuatu",
+      "center": true,
+      "x": 19251,
+      "y": 5364
+    },
+    {
+      "id": 69,
+      "name": "West_Queensland",
+      "center": true,
+      "x": 17752,
+      "y": 5775
+    },
+    {
+      "id": 70,
+      "name": "Hebei-Chahar",
+      "center": true,
+      "x": 16374,
+      "y": 2343
+    },
+    {
+      "id": 71,
+      "name": "Vladivostok",
+      "center": true,
+      "x": 17454,
+      "y": 2055
+    },
+    {
+      "id": 72,
+      "name": "Macau",
+      "center": true,
+      "x": 16276,
+      "y": 3385
+    },
+    {
+      "id": 73,
+      "name": "Sabah",
+      "center": true,
+      "x": 16488,
+      "y": 4301
+    },
+    {
+      "id": 74,
+      "name": "East_Hebei",
+      "center": true,
+      "x": 16549,
+      "y": 2368
+    },
+    {
+      "id": 75,
+      "name": "Hainan",
+      "center": true,
+      "x": 16078,
+      "y": 3558
+    },
+    {
+      "id": 76,
+      "name": "Jiangxi",
+      "center": true,
+      "x": 16402,
+      "y": 3104
+    },
+    {
+      "id": 77,
+      "name": "Manila",
+      "center": true,
+      "x": 16720,
+      "y": 3790
+    },
+    {
+      "id": 78,
+      "name": "Wuwei",
+      "center": true,
+      "x": 15662,
+      "y": 2486
+    },
+    {
+      "id": 79,
+      "name": "Yunnan",
+      "center": true,
+      "x": 15697,
+      "y": 3267
+    },
+    {
+      "id": 80,
+      "name": "Changde",
+      "center": true,
+      "x": 16111,
+      "y": 2983
+    },
+    {
+      "id": 81,
+      "name": "Gansu",
+      "center": true,
+      "x": 15797,
+      "y": 2678
+    },
+    {
+      "id": 82,
+      "name": "Kanto",
+      "center": true,
+      "x": 17740,
+      "y": 2601
+    },
+    {
+      "id": 83,
+      "name": "Henan",
+      "center": true,
+      "x": 16286,
+      "y": 2728
+    },
+    {
+      "id": 84,
+      "name": "Suzhou",
+      "center": true,
+      "x": 16660,
+      "y": 2849
+    },
+    {
+      "id": 85,
+      "name": "Jehol",
+      "center": true,
+      "x": 16587,
+      "y": 2242
+    },
+    {
+      "id": 86,
+      "name": "Jiuquan",
+      "center": true,
+      "x": 15347,
+      "y": 2348
+    },
+    {
+      "id": 87,
+      "name": "Haixi",
+      "center": true,
+      "x": 15289,
+      "y": 2518
+    },
+    {
+      "id": 88,
+      "name": "Eastern_Visayas",
+      "center": true,
+      "x": 16923,
+      "y": 3971
+    },
+    {
+      "id": 89,
+      "name": "Hubei",
+      "center": true,
+      "x": 16209,
+      "y": 2874
+    },
+    {
+      "id": 90,
+      "name": "Nanjing",
+      "center": true,
+      "x": 16572,
+      "y": 2842
+    },
+    {
+      "id": 91,
+      "name": "Guangzhou",
+      "center": true,
+      "x": 16206,
+      "y": 3371
+    },
+    {
+      "id": 92,
+      "name": "Xian",
+      "center": true,
+      "x": 15996,
+      "y": 2762
+    },
+    {
+      "id": 93,
+      "name": "Koshinetsu",
+      "center": true,
+      "x": 17676,
+      "y": 2549
+    },
+    {
+      "id": 94,
+      "name": "Chengdu",
+      "center": true,
+      "x": 15787,
+      "y": 2925
+    },
+    {
+      "id": 95,
+      "name": "Ganzi",
+      "center": true,
+      "x": 15542,
+      "y": 2913
+    },
+    {
+      "id": 96,
+      "name": "Singapore",
+      "center": true,
+      "x": 15743,
+      "y": 4509
+    },
+    {
+      "id": 97,
+      "name": "Yan’an",
+      "center": true,
+      "x": 16018,
+      "y": 2656
+    },
+    {
+      "id": 98,
+      "name": "Fujian",
+      "center": true,
+      "x": 16535,
+      "y": 3183
+    },
+    {
+      "id": 99,
+      "name": "Khotan",
+      "center": true,
+      "x": 14662,
+      "y": 2546
+    },
+    {
+      "id": 100,
+      "name": "Bataan",
+      "center": true,
+      "x": 16677,
+      "y": 3743
+    },
+    {
+      "id": 101,
+      "name": "Suiyuan",
+      "center": true,
+      "x": 16062,
+      "y": 2296
+    },
+    {
+      "id": 102,
+      "name": "Hamgyong",
+      "center": true,
+      "x": 17101,
+      "y": 2317
+    },
+    {
+      "id": 103,
+      "name": "Shanghai",
+      "center": true,
+      "x": 16707,
+      "y": 2886
+    },
+    {
+      "id": 104,
+      "name": "Nanlu",
+      "center": true,
+      "x": 16053,
+      "y": 3420
+    },
+    {
+      "id": 105,
+      "name": "Taklamakan",
+      "center": true,
+      "x": 14570,
+      "y": 2418
+    },
+    {
+      "id": 106,
+      "name": "Golog",
+      "center": true,
+      "x": 15558,
+      "y": 2647
+    },
+    {
+      "id": 107,
+      "name": "Ordos",
+      "center": true,
+      "x": 16011,
+      "y": 2406
+    },
+    {
+      "id": 108,
+      "name": "Shikoku",
+      "center": true,
+      "x": 17395,
+      "y": 2750
+    },
+    {
+      "id": 109,
+      "name": "Chongqing",
+      "center": true,
+      "x": 15844,
+      "y": 3010
+    },
+    {
+      "id": 110,
+      "name": "Beiping",
+      "center": true,
+      "x": 16432,
+      "y": 2403
+    },
+    {
+      "id": 111,
+      "name": "Hunan",
+      "center": true,
+      "x": 16202,
+      "y": 3115
+    },
+    {
+      "id": 112,
+      "name": "Kita-Tohoku",
+      "center": true,
+      "x": 17808,
+      "y": 2375
+    },
+    {
+      "id": 113,
+      "name": "Guangzhouwan",
+      "center": true,
+      "x": 16118,
+      "y": 3443
+    },
+    {
+      "id": 114,
+      "name": "Guizhou",
+      "center": true,
+      "x": 15915,
+      "y": 3169
+    },
+    {
+      "id": 115,
+      "name": "Nagqu",
+      "center": true,
+      "x": 14875,
+      "y": 2790
+    },
+    {
+      "id": 116,
+      "name": "Shanxi",
+      "center": true,
+      "x": 16214,
+      "y": 2511
+    },
+    {
+      "id": 117,
+      "name": "San’in",
+      "center": true,
+      "x": 17372,
+      "y": 2665
+    },
+    {
+      "id": 118,
+      "name": "Minami_Kyūshū",
+      "center": true,
+      "x": 17253,
+      "y": 2849
+    },
+    {
+      "id": 119,
+      "name": "Ningxia",
+      "center": true,
+      "x": 15797,
+      "y": 2434
+    },
+    {
+      "id": 120,
+      "name": "Kunlun_Shan",
+      "center": true,
+      "x": 15012,
+      "y": 2377
+    },
+    {
+      "id": 121,
+      "name": "Chungcheong-Jeolla",
+      "center": true,
+      "x": 17045,
+      "y": 2619
+    },
+    {
+      "id": 122,
+      "name": "Western_Visayas",
+      "center": true,
+      "x": 16815,
+      "y": 4051
+    },
+    {
+      "id": 123,
+      "name": "Luzon",
+      "center": true,
+      "x": 16725,
+      "y": 3651
+    },
+    {
+      "id": 124,
+      "name": "Jinan",
+      "center": true,
+      "x": 16478,
+      "y": 2591
+    },
+    {
+      "id": 125,
+      "name": "Guangdong",
+      "center": true,
+      "x": 16341,
+      "y": 3295
+    },
+    {
+      "id": 126,
+      "name": "Yarkand",
+      "center": true,
+      "x": 14252,
+      "y": 2400
+    },
+    {
+      "id": 127,
+      "name": "Brunei",
+      "center": true,
+      "x": 16340,
+      "y": 4352
+    },
+    {
+      "id": 128,
+      "name": "Hokkaido",
+      "center": true,
+      "x": 17901,
+      "y": 2160
+    },
+    {
+      "id": 129,
+      "name": "Liaoning",
+      "center": true,
+      "x": 16825,
+      "y": 2299
+    },
+    {
+      "id": 130,
+      "name": "Tokai",
+      "center": true,
+      "x": 17634,
+      "y": 2650
+    },
+    {
+      "id": 131,
+      "name": "Jiangsu",
+      "center": true,
+      "x": 16582,
+      "y": 2741
+    },
+    {
+      "id": 132,
+      "name": "Ngari",
+      "center": true,
+      "x": 14534,
+      "y": 2788
+    },
+    {
+      "id": 133,
+      "name": "Chahar",
+      "center": true,
+      "x": 16349,
+      "y": 2231
+    },
+    {
+      "id": 134,
+      "name": "Guyuan",
+      "center": true,
+      "x": 15878,
+      "y": 2573
+    },
+    {
+      "id": 135,
+      "name": "Shaanbei",
+      "center": true,
+      "x": 16018,
+      "y": 2562
+    },
+    {
+      "id": 136,
+      "name": "Zamboanga",
+      "center": true,
+      "x": 16812,
+      "y": 4166
+    },
+    {
+      "id": 137,
+      "name": "Liangshan",
+      "center": true,
+      "x": 15668,
+      "y": 3064
+    },
+    {
+      "id": 138,
+      "name": "Qingdao",
+      "center": true,
+      "x": 16660,
+      "y": 2586
+    },
+    {
+      "id": 139,
+      "name": "Xilingol",
+      "center": true,
+      "x": 16413,
+      "y": 2079
+    },
+    {
+      "id": 140,
+      "name": "Hebei",
+      "center": true,
+      "x": 16371,
+      "y": 2504
+    },
+    {
+      "id": 141,
+      "name": "Gangwon",
+      "center": true,
+      "x": 17113,
+      "y": 2510
+    },
+    {
+      "id": 142,
+      "name": "Sichuan",
+      "center": true,
+      "x": 15964,
+      "y": 2906
+    },
+    {
+      "id": 143,
+      "name": "Pailingmiao",
+      "center": true,
+      "x": 16175,
+      "y": 2234
+    },
+    {
+      "id": 144,
+      "name": "Qinghai",
+      "center": true,
+      "x": 15183,
+      "y": 2701
+    },
+    {
+      "id": 145,
+      "name": "Dalian",
+      "center": true,
+      "x": 16747,
+      "y": 2416
+    },
+    {
+      "id": 146,
+      "name": "Gyeonggi",
+      "center": true,
+      "x": 17054,
+      "y": 2524
+    },
+    {
+      "id": 147,
+      "name": "Nanning",
+      "center": true,
+      "x": 15970,
+      "y": 3332
+    },
+    {
+      "id": 148,
+      "name": "Alxa",
+      "center": true,
+      "x": 15602,
+      "y": 2296
+    },
+    {
+      "id": 149,
+      "name": "San’yo",
+      "center": true,
+      "x": 17354,
+      "y": 2698
+    },
+    {
+      "id": 150,
+      "name": "Davao",
+      "center": true,
+      "x": 16942,
+      "y": 4216
+    },
+    {
+      "id": 151,
+      "name": "Shandong",
+      "center": true,
+      "x": 16646,
+      "y": 2560
+    },
+    {
+      "id": 152,
+      "name": "Pyongan-Hwanghae",
+      "center": true,
+      "x": 16979,
+      "y": 2404
+    },
+    {
+      "id": 153,
+      "name": "Kansai",
+      "center": true,
+      "x": 17515,
+      "y": 2685
+    },
+    {
+      "id": 154,
+      "name": "Liaobei",
+      "center": true,
+      "x": 16745,
+      "y": 2091
+    },
+    {
+      "id": 155,
+      "name": "Yulin",
+      "center": true,
+      "x": 16091,
+      "y": 2477
+    },
+    {
+      "id": 156,
+      "name": "Gyeongsang",
+      "center": true,
+      "x": 17125,
+      "y": 2626
+    },
+    {
+      "id": 157,
+      "name": "Hokuriku",
+      "center": true,
+      "x": 17580,
+      "y": 2586
+    },
+    {
+      "id": 158,
+      "name": "Zunyi",
+      "center": true,
+      "x": 15921,
+      "y": 3073
+    },
+    {
+      "id": 159,
+      "name": "Chamdo",
+      "center": true,
+      "x": 15295,
+      "y": 2928
+    },
+    {
+      "id": 160,
+      "name": "Interior_Borneo",
+      "center": true,
+      "x": 16293,
+      "y": 4558
+    },
+    {
+      "id": 161,
+      "name": "Kitakyūshū",
+      "center": true,
+      "x": 17249,
+      "y": 2778
+    },
+    {
+      "id": 162,
+      "name": "Gannan",
+      "center": true,
+      "x": 15681,
+      "y": 2808
+    },
+    {
+      "id": 163,
+      "name": "Minami_Tohoku",
+      "center": true,
+      "x": 17775,
+      "y": 2497
+    },
+    {
+      "id": 164,
+      "name": "Anhui",
+      "center": true,
+      "x": 16453,
+      "y": 2851
+    },
+    {
+      "id": 165,
+      "name": "Sungkiang",
+      "center": true,
+      "x": 17268,
+      "y": 2029
+    },
+    {
+      "id": 166,
+      "name": "Northern_Mindanao",
+      "center": true,
+      "x": 16933,
+      "y": 4145
+    },
+    {
+      "id": 167,
+      "name": "Zhejiang",
+      "center": true,
+      "x": 16651,
+      "y": 3006
+    },
+    {
+      "id": 168,
+      "name": "Wuhan",
+      "center": true,
+      "x": 16315,
+      "y": 2950
+    },
+    {
+      "id": 169,
+      "name": "Hong_Kong",
+      "center": true,
+      "x": 16319,
+      "y": 3378
+    },
+    {
+      "id": 170,
+      "name": "Huangshan",
+      "center": true,
+      "x": 16538,
+      "y": 2952
+    },
+    {
+      "id": 171,
+      "name": "Guangxi",
+      "center": true,
+      "x": 16081,
+      "y": 3263
+    },
+    {
+      "id": 172,
+      "name": "Hyderabad",
+      "center": true,
+      "x": 14304,
+      "y": 3607
+    },
+    {
+      "id": 173,
+      "name": "Central_Provinces",
+      "center": true,
+      "x": 14415,
+      "y": 3410
+    },
+    {
+      "id": 174,
+      "name": "Mysore",
+      "center": true,
+      "x": 14226,
+      "y": 3865
+    },
+    {
+      "id": 175,
+      "name": "Northern_Kashmir",
+      "center": true,
+      "x": 14153,
+      "y": 2632
+    },
+    {
+      "id": 176,
+      "name": "Kashmir",
+      "center": true,
+      "x": 14284,
+      "y": 2709
+    },
+    {
+      "id": 177,
+      "name": "West_Punjab",
+      "center": true,
+      "x": 14052,
+      "y": 2867
+    },
+    {
+      "id": 178,
+      "name": "East_Punjab",
+      "center": true,
+      "x": 14260,
+      "y": 2903
+    },
+    {
+      "id": 179,
+      "name": "Rajahsthan",
+      "center": true,
+      "x": 14105,
+      "y": 3174
+    },
+    {
+      "id": 180,
+      "name": "Central_India",
+      "center": true,
+      "x": 14219,
+      "y": 3323
+    },
+    {
+      "id": 181,
+      "name": "Bombay",
+      "center": true,
+      "x": 14096,
+      "y": 3544
+    },
+    {
+      "id": 182,
+      "name": "Kolhapur_and_Deccan",
+      "center": true,
+      "x": 14166,
+      "y": 3727
+    },
+    {
+      "id": 183,
+      "name": "Southern_Madras",
+      "center": true,
+      "x": 14305,
+      "y": 3986
+    },
+    {
+      "id": 184,
+      "name": "West_Azerbaijan",
+      "center": true,
+      "x": 12486,
+      "y": 2505
+    },
+    {
+      "id": 185,
+      "name": "Gilan",
+      "center": true,
+      "x": 12689,
+      "y": 2539
+    },
+    {
+      "id": 186,
+      "name": "East_Azerbaijan",
+      "center": true,
+      "x": 12570,
+      "y": 2487
+    },
+    {
+      "id": 187,
+      "name": "North_Khorasan",
+      "center": true,
+      "x": 13171,
+      "y": 2529
+    },
+    {
+      "id": 188,
+      "name": "Qataghan",
+      "center": true,
+      "x": 13920,
+      "y": 2575
+    },
+    {
+      "id": 189,
+      "name": "Mosul",
+      "center": true,
+      "x": 12392,
+      "y": 2631
+    },
+    {
+      "id": 190,
+      "name": "Maymanah",
+      "center": true,
+      "x": 13638,
+      "y": 2591
+    },
+    {
+      "id": 191,
+      "name": "Semnan",
+      "center": true,
+      "x": 13047,
+      "y": 2670
+    },
+    {
+      "id": 192,
+      "name": "Khorasan",
+      "center": true,
+      "x": 13269,
+      "y": 2633
+    },
+    {
+      "id": 193,
+      "name": "Peshawar",
+      "center": true,
+      "x": 13986,
+      "y": 2667
+    },
+    {
+      "id": 194,
+      "name": "Kurdistan",
+      "center": true,
+      "x": 12575,
+      "y": 2658
+    },
+    {
+      "id": 195,
+      "name": "Kabul",
+      "center": true,
+      "x": 13746,
+      "y": 2671
+    },
+    {
+      "id": 196,
+      "name": "Hamadan",
+      "center": true,
+      "x": 12733,
+      "y": 2697
+    },
+    {
+      "id": 197,
+      "name": "Herat",
+      "center": true,
+      "x": 13500,
+      "y": 2718
+    },
+    {
+      "id": 198,
+      "name": "Khyber_Pass",
+      "center": true,
+      "x": 13847,
+      "y": 2746
+    },
+    {
+      "id": 199,
+      "name": "Baghdad",
+      "center": true,
+      "x": 12430,
+      "y": 2785
+    },
+    {
+      "id": 200,
+      "name": "Isfahan",
+      "center": true,
+      "x": 12871,
+      "y": 2794
+    },
+    {
+      "id": 201,
+      "name": "Al_Anbar",
+      "center": true,
+      "x": 12245,
+      "y": 2791
+    },
+    {
+      "id": 202,
+      "name": "South_Khorasan",
+      "center": true,
+      "x": 13245,
+      "y": 2808
+    },
+    {
+      "id": 203,
+      "name": "Ilam",
+      "center": true,
+      "x": 12613,
+      "y": 2776
+    },
+    {
+      "id": 204,
+      "name": "Qandahar",
+      "center": true,
+      "x": 13658,
+      "y": 2868
+    },
+    {
+      "id": 205,
+      "name": "Waziristan",
+      "center": true,
+      "x": 13896,
+      "y": 2849
+    },
+    {
+      "id": 206,
+      "name": "Yazd",
+      "center": true,
+      "x": 13008,
+      "y": 2848
+    },
+    {
+      "id": 207,
+      "name": "Farah",
+      "center": true,
+      "x": 13466,
+      "y": 2867
+    },
+    {
+      "id": 208,
+      "name": "Khuzestan",
+      "center": true,
+      "x": 12725,
+      "y": 2889
+    },
+    {
+      "id": 209,
+      "name": "Al_Basrah",
+      "center": true,
+      "x": 12560,
+      "y": 2881
+    },
+    {
+      "id": 210,
+      "name": "Al_Hajara",
+      "center": true,
+      "x": 12446,
+      "y": 2925
+    },
+    {
+      "id": 211,
+      "name": "Kerman",
+      "center": true,
+      "x": 13183,
+      "y": 2954
+    },
+    {
+      "id": 212,
+      "name": "North_Baluchistan",
+      "center": true,
+      "x": 13614,
+      "y": 2983
+    },
+    {
+      "id": 213,
+      "name": "Sistan",
+      "center": true,
+      "x": 13322,
+      "y": 3090
+    },
+    {
+      "id": 214,
+      "name": "Fars",
+      "center": true,
+      "x": 12985,
+      "y": 3023
+    },
+    {
+      "id": 215,
+      "name": "Sibi",
+      "center": true,
+      "x": 13829,
+      "y": 2981
+    },
+    {
+      "id": 216,
+      "name": "Bahawalpur",
+      "center": true,
+      "x": 14001,
+      "y": 3051
+    },
+    {
+      "id": 217,
+      "name": "Kuwait",
+      "center": true,
+      "x": 12612,
+      "y": 2986
+    },
+    {
+      "id": 218,
+      "name": "Kalat",
+      "center": true,
+      "x": 13689,
+      "y": 3085
+    },
+    {
+      "id": 219,
+      "name": "South_Baluchistan",
+      "center": true,
+      "x": 13549,
+      "y": 3149
+    },
+    {
+      "id": 220,
+      "name": "Sind",
+      "center": true,
+      "x": 13809,
+      "y": 3179
+    },
+    {
+      "id": 221,
+      "name": "Bahrain",
+      "center": true,
+      "x": 12782,
+      "y": 3177
+    },
+    {
+      "id": 222,
+      "name": "Abu_Dhabi",
+      "center": true,
+      "x": 12997,
+      "y": 3299
+    },
+    {
+      "id": 223,
+      "name": "Musandam",
+      "center": true,
+      "x": 13099,
+      "y": 3182
+    },
+    {
+      "id": 224,
+      "name": "Muscat",
+      "center": true,
+      "x": 13164,
+      "y": 3443
+    },
+    {
+      "id": 225,
+      "name": "Gujarat",
+      "center": true,
+      "x": 13935,
+      "y": 3349
+    },
+    {
+      "id": 226,
+      "name": "Oman",
+      "center": true,
+      "x": 13094,
+      "y": 3452
+    },
+    {
+      "id": 227,
+      "name": "Dhofar",
+      "center": true,
+      "x": 12958,
+      "y": 3614
+    },
+    {
+      "id": 228,
+      "name": "South_Yemen",
+      "center": true,
+      "x": 12724,
+      "y": 3708
+    },
+    {
+      "id": 229,
+      "name": "North_Yemen",
+      "center": true,
+      "x": 12455,
+      "y": 3754
+    },
+    {
+      "id": 230,
+      "name": "Goa",
+      "center": true,
+      "x": 14090,
+      "y": 3765
+    },
+    {
+      "id": 231,
+      "name": "Province_of_Aden",
+      "center": true,
+      "x": 12494,
+      "y": 3865
+    },
+    {
+      "id": 232,
+      "name": "United_Provinces",
+      "center": true,
+      "x": 14455,
+      "y": 3137
+    },
+    {
+      "id": 233,
+      "name": "Delhi",
+      "center": true,
+      "x": 14279,
+      "y": 3016
+    },
+    {
+      "id": 234,
+      "name": "Sagaing",
+      "center": true,
+      "x": 15339,
+      "y": 3219
+    },
+    {
+      "id": 235,
+      "name": "Sikkim",
+      "center": true,
+      "x": 14894,
+      "y": 3103
+    },
+    {
+      "id": 236,
+      "name": "Manipur",
+      "center": true,
+      "x": 15227,
+      "y": 3158
+    },
+    {
+      "id": 237,
+      "name": "Assam",
+      "center": true,
+      "x": 15106,
+      "y": 3234
+    },
+    {
+      "id": 238,
+      "name": "Bihar",
+      "center": true,
+      "x": 14699,
+      "y": 3246
+    },
+    {
+      "id": 239,
+      "name": "Gwalior",
+      "center": true,
+      "x": 14323,
+      "y": 3202
+    },
+    {
+      "id": 240,
+      "name": "West_Bengal",
+      "center": true,
+      "x": 14853,
+      "y": 3277
+    },
+    {
+      "id": 241,
+      "name": "East_Bengal",
+      "center": true,
+      "x": 14985,
+      "y": 3299
+    },
+    {
+      "id": 242,
+      "name": "Federated_Shan_States",
+      "center": true,
+      "x": 15416,
+      "y": 3418
+    },
+    {
+      "id": 243,
+      "name": "Magwe",
+      "center": true,
+      "x": 15227,
+      "y": 3415
+    },
+    {
+      "id": 244,
+      "name": "Mandalay",
+      "center": true,
+      "x": 15338,
+      "y": 3413
+    },
+    {
+      "id": 245,
+      "name": "Orissa",
+      "center": true,
+      "x": 14656,
+      "y": 3511
+    },
+    {
+      "id": 246,
+      "name": "Kentung_and_Yawnghwe",
+      "center": true,
+      "x": 15508,
+      "y": 3444
+    },
+    {
+      "id": 247,
+      "name": "Arakan",
+      "center": true,
+      "x": 15197,
+      "y": 3515
+    },
+    {
+      "id": 248,
+      "name": "Bastar",
+      "center": true,
+      "x": 14501,
+      "y": 3510
+    },
+    {
+      "id": 249,
+      "name": "Pegu",
+      "center": true,
+      "x": 15311,
+      "y": 3605
+    },
+    {
+      "id": 250,
+      "name": "Tenasserim",
+      "center": true,
+      "x": 15425,
+      "y": 3761
+    },
+    {
+      "id": 251,
+      "name": "Irrawaddy",
+      "center": true,
+      "x": 15269,
+      "y": 3681
+    },
+    {
+      "id": 252,
+      "name": "Northern_Madras",
+      "center": true,
+      "x": 14382,
+      "y": 3775
+    },
+    {
+      "id": 253,
+      "name": "French_India",
+      "center": true,
+      "x": 14405,
+      "y": 3940
+    },
+    {
+      "id": 254,
+      "name": "Madras_States",
+      "center": true,
+      "x": 14285,
+      "y": 4079
+    },
+    {
+      "id": 255,
+      "name": "Steiermark_Kärnten",
+      "center": true,
+      "x": 10799,
+      "y": 1923
+    },
+    {
+      "id": 256,
+      "name": "Oberösterreich",
+      "center": true,
+      "x": 10737,
+      "y": 1871
+    },
+    {
+      "id": 257,
+      "name": "Burgenland",
+      "center": true,
+      "x": 10890,
+      "y": 1891
+    },
+    {
+      "id": 258,
+      "name": "Niederösterreich",
+      "center": true,
+      "x": 10838,
+      "y": 1841
+    },
+    {
+      "id": 259,
+      "name": "Millerovo",
+      "center": true,
+      "x": 12285,
+      "y": 1825
+    },
+    {
+      "id": 260,
+      "name": "Ayaguz",
+      "center": true,
+      "x": 14322,
+      "y": 1950
+    },
+    {
+      "id": 261,
+      "name": "Pamir",
+      "center": true,
+      "x": 14123,
+      "y": 2288
+    },
+    {
+      "id": 262,
+      "name": "Yamalia",
+      "center": true,
+      "x": 14327,
+      "y": 454
+    },
+    {
+      "id": 263,
+      "name": "Surgut",
+      "center": true,
+      "x": 14345,
+      "y": 922
+    },
+    {
+      "id": 264,
+      "name": "Tomsk",
+      "center": true,
+      "x": 14565,
+      "y": 1161
+    },
+    {
+      "id": 265,
+      "name": "Omsk",
+      "center": true,
+      "x": 14069,
+      "y": 1317
+    },
+    {
+      "id": 266,
+      "name": "Novosibirsk",
+      "center": true,
+      "x": 14414,
+      "y": 1367
+    },
+    {
+      "id": 267,
+      "name": "Pavlodar",
+      "center": true,
+      "x": 14207,
+      "y": 1574
+    },
+    {
+      "id": 268,
+      "name": "Semipalatinsk",
+      "center": true,
+      "x": 14473,
+      "y": 1773
+    },
+    {
+      "id": 269,
+      "name": "Alma_Ata",
+      "center": true,
+      "x": 14166,
+      "y": 2148
+    },
+    {
+      "id": 270,
+      "name": "Kerguelen",
+      "center": true,
+      "x": 14161,
+      "y": 6573
+    },
+    {
+      "id": 271,
+      "name": "Greenland",
+      "center": true,
+      "x": 7479,
+      "y": 239
+    },
+    {
+      "id": 272,
+      "name": "Nenets",
+      "center": true,
+      "x": 13044,
+      "y": 396
+    },
+    {
+      "id": 273,
+      "name": "Salekhard",
+      "center": true,
+      "x": 13834,
+      "y": 430
+    },
+    {
+      "id": 274,
+      "name": "Jan_Mayen",
+      "center": true,
+      "x": 9471,
+      "y": 47
+    },
+    {
+      "id": 275,
+      "name": "Finnmark",
+      "center": true,
+      "x": 11423,
+      "y": 195
+    },
+    {
+      "id": 276,
+      "name": "Troms",
+      "center": true,
+      "x": 11098,
+      "y": 250
+    },
+    {
+      "id": 277,
+      "name": "Lappi",
+      "center": true,
+      "x": 11432,
+      "y": 388
+    },
+    {
+      "id": 278,
+      "name": "Murmansk",
+      "center": true,
+      "x": 11924,
+      "y": 391
+    },
+    {
+      "id": 279,
+      "name": "Petsamo",
+      "center": true,
+      "x": 11639,
+      "y": 284
+    },
+    {
+      "id": 280,
+      "name": "Nordland",
+      "center": true,
+      "x": 10870,
+      "y": 369
+    },
+    {
+      "id": 281,
+      "name": "Norrbotten",
+      "center": true,
+      "x": 11112,
+      "y": 438
+    },
+    {
+      "id": 282,
+      "name": "Iceland",
+      "center": true,
+      "x": 8938,
+      "y": 485
+    },
+    {
+      "id": 283,
+      "name": "Pechora",
+      "center": true,
+      "x": 12908,
+      "y": 592
+    },
+    {
+      "id": 284,
+      "name": "Salla",
+      "center": true,
+      "x": 11635,
+      "y": 480
+    },
+    {
+      "id": 285,
+      "name": "Northern_Urals",
+      "center": true,
+      "x": 13351,
+      "y": 626
+    },
+    {
+      "id": 286,
+      "name": "Helgeland",
+      "center": true,
+      "x": 10737,
+      "y": 543
+    },
+    {
+      "id": 287,
+      "name": "Västerbotten",
+      "center": true,
+      "x": 10972,
+      "y": 607
+    },
+    {
+      "id": 288,
+      "name": "Arkhangelsk",
+      "center": true,
+      "x": 12278,
+      "y": 668
+    },
+    {
+      "id": 289,
+      "name": "Oulu",
+      "center": true,
+      "x": 11501,
+      "y": 635
+    },
+    {
+      "id": 290,
+      "name": "Onega",
+      "center": true,
+      "x": 11795,
+      "y": 659
+    },
+    {
+      "id": 291,
+      "name": "Syktyvkar",
+      "center": true,
+      "x": 12887,
+      "y": 824
+    },
+    {
+      "id": 292,
+      "name": "Trøndelag",
+      "center": true,
+      "x": 10617,
+      "y": 719
+    },
+    {
+      "id": 293,
+      "name": "Jämtland",
+      "center": true,
+      "x": 10761,
+      "y": 751
+    },
+    {
+      "id": 294,
+      "name": "Tobolsk",
+      "center": true,
+      "x": 13655,
+      "y": 864
+    },
+    {
+      "id": 295,
+      "name": "Gävleborg",
+      "center": true,
+      "x": 10900,
+      "y": 823
+    },
+    {
+      "id": 296,
+      "name": "Kuopio",
+      "center": true,
+      "x": 11560,
+      "y": 784
+    },
+    {
+      "id": 297,
+      "name": "Vaasa",
+      "center": true,
+      "x": 11287,
+      "y": 795
+    },
+    {
+      "id": 298,
+      "name": "Kotlas",
+      "center": true,
+      "x": 12439,
+      "y": 849
+    },
+    {
+      "id": 299,
+      "name": "Vestlandet",
+      "center": true,
+      "x": 10356,
+      "y": 929
+    },
+    {
+      "id": 300,
+      "name": "Kargopol",
+      "center": true,
+      "x": 12124,
+      "y": 866
+    },
+    {
+      "id": 301,
+      "name": "Faroe_Islands",
+      "center": true,
+      "x": 9547,
+      "y": 815
+    },
+    {
+      "id": 302,
+      "name": "Karjala",
+      "center": true,
+      "x": 11672,
+      "y": 908
+    },
+    {
+      "id": 303,
+      "name": "Olonets",
+      "center": true,
+      "x": 11846,
+      "y": 886
+    },
+    {
+      "id": 304,
+      "name": "Dalarna",
+      "center": true,
+      "x": 10747,
+      "y": 923
+    },
+    {
+      "id": 305,
+      "name": "Opplandene",
+      "center": true,
+      "x": 10557,
+      "y": 911
+    },
+    {
+      "id": 306,
+      "name": "Mikkeli",
+      "center": true,
+      "x": 11484,
+      "y": 882
+    },
+    {
+      "id": 307,
+      "name": "Perm",
+      "center": true,
+      "x": 13118,
+      "y": 1054
+    },
+    {
+      "id": 308,
+      "name": "Häme",
+      "center": true,
+      "x": 11323,
+      "y": 911
+    },
+    {
+      "id": 309,
+      "name": "Turku",
+      "center": true,
+      "x": 11217,
+      "y": 935
+    },
+    {
+      "id": 310,
+      "name": "Kymi",
+      "center": true,
+      "x": 11534,
+      "y": 934
+    },
+    {
+      "id": 311,
+      "name": "Sverdlovsk",
+      "center": true,
+      "x": 13428,
+      "y": 1124
+    },
+    {
+      "id": 312,
+      "name": "Vologda",
+      "center": true,
+      "x": 12237,
+      "y": 1051
+    },
+    {
+      "id": 313,
+      "name": "Shetland_Islands",
+      "center": true,
+      "x": 9867,
+      "y": 951
+    },
+    {
+      "id": 314,
+      "name": "Värmland",
+      "center": true,
+      "x": 10695,
+      "y": 1040
+    },
+    {
+      "id": 315,
+      "name": "Uusimaa",
+      "center": true,
+      "x": 11365,
+      "y": 983
+    },
+    {
+      "id": 316,
+      "name": "Tikhvin",
+      "center": true,
+      "x": 11909,
+      "y": 1063
+    },
+    {
+      "id": 317,
+      "name": "Kirov",
+      "center": true,
+      "x": 12700,
+      "y": 1101
+    },
+    {
+      "id": 318,
+      "name": "Telemark",
+      "center": true,
+      "x": 10458,
+      "y": 1030
+    },
+    {
+      "id": 319,
+      "name": "Oslofjord",
+      "center": true,
+      "x": 10579,
+      "y": 1037
+    },
+    {
+      "id": 320,
+      "name": "Aland_Islands",
+      "center": true,
+      "x": 11110,
+      "y": 985
+    },
+    {
+      "id": 321,
+      "name": "Södermanland",
+      "center": true,
+      "x": 10894,
+      "y": 1055
+    },
+    {
+      "id": 322,
+      "name": "Leningrad",
+      "center": true,
+      "x": 11677,
+      "y": 1031
+    },
+    {
+      "id": 323,
+      "name": "Volkhov",
+      "center": true,
+      "x": 11770,
+      "y": 1063
+    },
+    {
+      "id": 324,
+      "name": "Tyumen",
+      "center": true,
+      "x": 13837,
+      "y": 1185
+    },
+    {
+      "id": 325,
+      "name": "Luga",
+      "center": true,
+      "x": 11610,
+      "y": 1081
+    },
+    {
+      "id": 326,
+      "name": "Scottish_Highlands",
+      "center": true,
+      "x": 9669,
+      "y": 1175
+    },
+    {
+      "id": 327,
+      "name": "Agder",
+      "center": true,
+      "x": 10402,
+      "y": 1114
+    },
+    {
+      "id": 328,
+      "name": "Harju",
+      "center": true,
+      "x": 11355,
+      "y": 1081
+    },
+    {
+      "id": 329,
+      "name": "Virumaa",
+      "center": true,
+      "x": 11454,
+      "y": 1092
+    },
+    {
+      "id": 330,
+      "name": "Bohuslän",
+      "center": true,
+      "x": 10617,
+      "y": 1142
+    },
+    {
+      "id": 331,
+      "name": "Saaremaa",
+      "center": true,
+      "x": 11224,
+      "y": 1143
+    },
+    {
+      "id": 332,
+      "name": "Pärnu",
+      "center": true,
+      "x": 11343,
+      "y": 1134
+    },
+    {
+      "id": 333,
+      "name": "Pskov",
+      "center": true,
+      "x": 11578,
+      "y": 1180
+    },
+    {
+      "id": 334,
+      "name": "Novgorod",
+      "center": true,
+      "x": 11733,
+      "y": 1167
+    },
+    {
+      "id": 335,
+      "name": "Västergötland",
+      "center": true,
+      "x": 10697,
+      "y": 1162
+    },
+    {
+      "id": 336,
+      "name": "Östergötland",
+      "center": true,
+      "x": 10838,
+      "y": 1159
+    },
+    {
+      "id": 337,
+      "name": "Yaroslavl",
+      "center": true,
+      "x": 12166,
+      "y": 1188
+    },
+    {
+      "id": 338,
+      "name": "Zlatoust",
+      "center": true,
+      "x": 13238,
+      "y": 1249
+    },
+    {
+      "id": 339,
+      "name": "Tartu",
+      "center": true,
+      "x": 11455,
+      "y": 1166
+    },
+    {
+      "id": 340,
+      "name": "Kalinin",
+      "center": true,
+      "x": 11996,
+      "y": 1212
+    },
+    {
+      "id": 341,
+      "name": "Udmurtia",
+      "center": true,
+      "x": 12902,
+      "y": 1242
+    },
+    {
+      "id": 342,
+      "name": "Aberdeenshire",
+      "center": true,
+      "x": 9763,
+      "y": 1197
+    },
+    {
+      "id": 343,
+      "name": "Gotland",
+      "center": true,
+      "x": 11003,
+      "y": 1212
+    },
+    {
+      "id": 344,
+      "name": "Rzhev",
+      "center": true,
+      "x": 11837,
+      "y": 1268
+    },
+    {
+      "id": 345,
+      "name": "Vidzeme",
+      "center": true,
+      "x": 11394,
+      "y": 1207
+    },
+    {
+      "id": 346,
+      "name": "Småland",
+      "center": true,
+      "x": 10797,
+      "y": 1242
+    },
+    {
+      "id": 347,
+      "name": "Jylland",
+      "center": true,
+      "x": 10494,
+      "y": 1288
+    },
+    {
+      "id": 348,
+      "name": "Kurzeme",
+      "center": true,
+      "x": 11195,
+      "y": 1251
+    },
+    {
+      "id": 349,
+      "name": "Gorky",
+      "center": true,
+      "x": 12426,
+      "y": 1321
+    },
+    {
+      "id": 350,
+      "name": "Ivanovo",
+      "center": true,
+      "x": 12253,
+      "y": 1287
+    },
+    {
+      "id": 351,
+      "name": "Latgale",
+      "center": true,
+      "x": 11479,
+      "y": 1273
+    },
+    {
+      "id": 352,
+      "name": "Mari_El",
+      "center": true,
+      "x": 12620,
+      "y": 1271
+    },
+    {
+      "id": 353,
+      "name": "Zemgale",
+      "center": true,
+      "x": 11331,
+      "y": 1281
+    },
+    {
+      "id": 354,
+      "name": "Rīga",
+      "center": true,
+      "x": 11356,
+      "y": 1246
+    },
+    {
+      "id": 355,
+      "name": "Skåne",
+      "center": true,
+      "x": 10732,
+      "y": 1301
+    },
+    {
+      "id": 356,
+      "name": "Nevel",
+      "center": true,
+      "x": 11639,
+      "y": 1285
+    },
+    {
+      "id": 357,
+      "name": "Lanark",
+      "center": true,
+      "x": 9704,
+      "y": 1315
+    },
+    {
+      "id": 358,
+      "name": "Lothian",
+      "center": true,
+      "x": 9759,
+      "y": 1285
+    },
+    {
+      "id": 359,
+      "name": "Moscow",
+      "center": true,
+      "x": 12062,
+      "y": 1349
+    },
+    {
+      "id": 360,
+      "name": "Chelyabinsk",
+      "center": true,
+      "x": 13506,
+      "y": 1363
+    },
+    {
+      "id": 361,
+      "name": "Aukštaitija",
+      "center": true,
+      "x": 11340,
+      "y": 1332
+    },
+    {
+      "id": 362,
+      "name": "Kazan",
+      "center": true,
+      "x": 12795,
+      "y": 1374
+    },
+    {
+      "id": 363,
+      "name": "Ufa",
+      "center": true,
+      "x": 13069,
+      "y": 1415
+    },
+    {
+      "id": 364,
+      "name": "Žemaitija",
+      "center": true,
+      "x": 11209,
+      "y": 1330
+    },
+    {
+      "id": 365,
+      "name": "Northumberland",
+      "center": true,
+      "x": 9835,
+      "y": 1343
+    },
+    {
+      "id": 366,
+      "name": "Sjaelland",
+      "center": true,
+      "x": 10632,
+      "y": 1347
+    },
+    {
+      "id": 367,
+      "name": "Vitebsk",
+      "center": true,
+      "x": 11608,
+      "y": 1382
+    },
+    {
+      "id": 368,
+      "name": "Chuvashia",
+      "center": true,
+      "x": 12582,
+      "y": 1369
+    },
+    {
+      "id": 369,
+      "name": "Connaught",
+      "center": true,
+      "x": 9456,
+      "y": 1420
+    },
+    {
+      "id": 370,
+      "name": "Smolensk",
+      "center": true,
+      "x": 11814,
+      "y": 1380
+    },
+    {
+      "id": 371,
+      "name": "Cumbria",
+      "center": true,
+      "x": 9781,
+      "y": 1374
+    },
+    {
+      "id": 372,
+      "name": "Klaipeda",
+      "center": true,
+      "x": 11172,
+      "y": 1361
+    },
+    {
+      "id": 373,
+      "name": "Wilejka",
+      "center": true,
+      "x": 11473,
+      "y": 1398
+    },
+    {
+      "id": 374,
+      "name": "Northern_Ireland",
+      "center": true,
+      "x": 9563,
+      "y": 1377
+    },
+    {
+      "id": 375,
+      "name": "Kaunas",
+      "center": true,
+      "x": 11319,
+      "y": 1387
+    },
+    {
+      "id": 376,
+      "name": "Akmolinsk",
+      "center": true,
+      "x": 13886,
+      "y": 1578
+    },
+    {
+      "id": 377,
+      "name": "Fyn",
+      "center": true,
+      "x": 10549,
+      "y": 1367
+    },
+    {
+      "id": 378,
+      "name": "Sønderjylland",
+      "center": true,
+      "x": 10481,
+      "y": 1374
+    },
+    {
+      "id": 379,
+      "name": "Wilno",
+      "center": true,
+      "x": 11382,
+      "y": 1414
+    },
+    {
+      "id": 380,
+      "name": "Königsberg",
+      "center": true,
+      "x": 11162,
+      "y": 1410
+    },
+    {
+      "id": 381,
+      "name": "Bornholm",
+      "center": true,
+      "x": 10801,
+      "y": 1381
+    },
+    {
+      "id": 382,
+      "name": "Kaluga",
+      "center": true,
+      "x": 11940,
+      "y": 1442
+    },
+    {
+      "id": 383,
+      "name": "Yorkshire",
+      "center": true,
+      "x": 9862,
+      "y": 1425
+    },
+    {
+      "id": 384,
+      "name": "Ryazan",
+      "center": true,
+      "x": 12222,
+      "y": 1448
+    },
+    {
+      "id": 385,
+      "name": "Sūduva",
+      "center": true,
+      "x": 11274,
+      "y": 1419
+    },
+    {
+      "id": 386,
+      "name": "Schleswig",
+      "center": true,
+      "x": 10486,
+      "y": 1422
+    },
+    {
+      "id": 387,
+      "name": "Ulyanovsky",
+      "center": true,
+      "x": 12604,
+      "y": 1474
+    },
+    {
+      "id": 388,
+      "name": "Leinster",
+      "center": true,
+      "x": 9549,
+      "y": 1468
+    },
+    {
+      "id": 389,
+      "name": "Isle_of_Man",
+      "center": true,
+      "x": 9685,
+      "y": 1405
+    },
+    {
+      "id": 390,
+      "name": "Minsk",
+      "center": true,
+      "x": 11569,
+      "y": 1466
+    },
+    {
+      "id": 391,
+      "name": "Magnitogorsk",
+      "center": true,
+      "x": 13249,
+      "y": 1554
+    },
+    {
+      "id": 392,
+      "name": "Roslavl",
+      "center": true,
+      "x": 11785,
+      "y": 1448
+    },
+    {
+      "id": 393,
+      "name": "Hinterpommern",
+      "center": true,
+      "x": 10872,
+      "y": 1473
+    },
+    {
+      "id": 394,
+      "name": "Gdynia",
+      "center": true,
+      "x": 10998,
+      "y": 1491
+    },
+    {
+      "id": 395,
+      "name": "Kostanay",
+      "center": true,
+      "x": 13525,
+      "y": 1626
+    },
+    {
+      "id": 396,
+      "name": "Lancashire",
+      "center": true,
+      "x": 9794,
+      "y": 1445
+    },
+    {
+      "id": 397,
+      "name": "Penza",
+      "center": true,
+      "x": 12433,
+      "y": 1506
+    },
+    {
+      "id": 398,
+      "name": "Vorpommern",
+      "center": true,
+      "x": 10721,
+      "y": 1487
+    },
+    {
+      "id": 399,
+      "name": "Tula",
+      "center": true,
+      "x": 12051,
+      "y": 1477
+    },
+    {
+      "id": 400,
+      "name": "Holstein",
+      "center": true,
+      "x": 10535,
+      "y": 1463
+    },
+    {
+      "id": 401,
+      "name": "Danzig",
+      "center": true,
+      "x": 11023,
+      "y": 1440
+    },
+    {
+      "id": 402,
+      "name": "Ermland_Masuren",
+      "center": true,
+      "x": 11128,
+      "y": 1467
+    },
+    {
+      "id": 403,
+      "name": "Gomel",
+      "center": true,
+      "x": 11704,
+      "y": 1518
+    },
+    {
+      "id": 404,
+      "name": "Mecklenburg",
+      "center": true,
+      "x": 10633,
+      "y": 1482
+    },
+    {
+      "id": 405,
+      "name": "Kuybyshev",
+      "center": true,
+      "x": 12772,
+      "y": 1519
+    },
+    {
+      "id": 406,
+      "name": "Białystok",
+      "center": true,
+      "x": 11247,
+      "y": 1513
+    },
+    {
+      "id": 407,
+      "name": "Nowogródek",
+      "center": true,
+      "x": 11383,
+      "y": 1495
+    },
+    {
+      "id": 408,
+      "name": "East_Midlands",
+      "center": true,
+      "x": 9898,
+      "y": 1498
+    },
+    {
+      "id": 409,
+      "name": "Weser_Ems",
+      "center": true,
+      "x": 10414,
+      "y": 1539
+    },
+    {
+      "id": 410,
+      "name": "Orenburg",
+      "center": true,
+      "x": 12965,
+      "y": 1583
+    },
+    {
+      "id": 411,
+      "name": "Wales",
+      "center": true,
+      "x": 9727,
+      "y": 1538
+    },
+    {
+      "id": 412,
+      "name": "Bryansk",
+      "center": true,
+      "x": 11828,
+      "y": 1545
+    },
+    {
+      "id": 413,
+      "name": "Hannover",
+      "center": true,
+      "x": 10531,
+      "y": 1553
+    },
+    {
+      "id": 414,
+      "name": "West_Midlands",
+      "center": true,
+      "x": 9810,
+      "y": 1524
+    },
+    {
+      "id": 415,
+      "name": "Munster",
+      "center": true,
+      "x": 9452,
+      "y": 1536
+    },
+    {
+      "id": 416,
+      "name": "Tambov",
+      "center": true,
+      "x": 12278,
+      "y": 1565
+    },
+    {
+      "id": 417,
+      "name": "Bobruysk",
+      "center": true,
+      "x": 11552,
+      "y": 1530
+    },
+    {
+      "id": 418,
+      "name": "East_Anglia",
+      "center": true,
+      "x": 9972,
+      "y": 1535
+    },
+    {
+      "id": 419,
+      "name": "Friesland",
+      "center": true,
+      "x": 10322,
+      "y": 1552
+    },
+    {
+      "id": 420,
+      "name": "Płock",
+      "center": true,
+      "x": 11099,
+      "y": 1541
+    },
+    {
+      "id": 421,
+      "name": "Orel",
+      "center": true,
+      "x": 11997,
+      "y": 1557
+    },
+    {
+      "id": 422,
+      "name": "Lipetsk",
+      "center": true,
+      "x": 12144,
+      "y": 1566
+    },
+    {
+      "id": 423,
+      "name": "Brandenburg",
+      "center": true,
+      "x": 10687,
+      "y": 1568
+    },
+    {
+      "id": 424,
+      "name": "Poznan",
+      "center": true,
+      "x": 10922,
+      "y": 1571
+    },
+    {
+      "id": 425,
+      "name": "Ostmark",
+      "center": true,
+      "x": 10815,
+      "y": 1559
+    },
+    {
+      "id": 426,
+      "name": "Holland",
+      "center": true,
+      "x": 10236,
+      "y": 1585
+    },
+    {
+      "id": 427,
+      "name": "Polesie",
+      "center": true,
+      "x": 11392,
+      "y": 1590
+    },
+    {
+      "id": 428,
+      "name": "Gloucestershire",
+      "center": true,
+      "x": 9821,
+      "y": 1590
+    },
+    {
+      "id": 429,
+      "name": "Greater_London_Area",
+      "center": true,
+      "x": 9923,
+      "y": 1582
+    },
+    {
+      "id": 430,
+      "name": "Mozyr",
+      "center": true,
+      "x": 11595,
+      "y": 1604
+    },
+    {
+      "id": 431,
+      "name": "Lodz",
+      "center": true,
+      "x": 11020,
+      "y": 1614
+    },
+    {
+      "id": 432,
+      "name": "Warszawa",
+      "center": true,
+      "x": 11140,
+      "y": 1599
+    },
+    {
+      "id": 433,
+      "name": "Saratov",
+      "center": true,
+      "x": 12475,
+      "y": 1617
+    },
+    {
+      "id": 434,
+      "name": "Westfalen",
+      "center": true,
+      "x": 10425,
+      "y": 1616
+    },
+    {
+      "id": 435,
+      "name": "Balakovo",
+      "center": true,
+      "x": 12667,
+      "y": 1651
+    },
+    {
+      "id": 436,
+      "name": "Lublin",
+      "center": true,
+      "x": 11244,
+      "y": 1644
+    },
+    {
+      "id": 437,
+      "name": "Chernigov",
+      "center": true,
+      "x": 11754,
+      "y": 1656
+    },
+    {
+      "id": 438,
+      "name": "Sumy",
+      "center": true,
+      "x": 11866,
+      "y": 1667
+    },
+    {
+      "id": 439,
+      "name": "Kursk",
+      "center": true,
+      "x": 11975,
+      "y": 1632
+    },
+    {
+      "id": 440,
+      "name": "Niederschlesien",
+      "center": true,
+      "x": 10881,
+      "y": 1643
+    },
+    {
+      "id": 441,
+      "name": "Sussex",
+      "center": true,
+      "x": 9917,
+      "y": 1621
+    },
+    {
+      "id": 442,
+      "name": "Sachsen",
+      "center": true,
+      "x": 10711,
+      "y": 1645
+    },
+    {
+      "id": 443,
+      "name": "Brabant",
+      "center": true,
+      "x": 10265,
+      "y": 1632
+    },
+    {
+      "id": 444,
+      "name": "Rhineland",
+      "center": true,
+      "x": 10351,
+      "y": 1662
+    },
+    {
+      "id": 445,
+      "name": "Voronezh",
+      "center": true,
+      "x": 12202,
+      "y": 1680
+    },
+    {
+      "id": 446,
+      "name": "South_West_England",
+      "center": true,
+      "x": 9727,
+      "y": 1644
+    },
+    {
+      "id": 447,
+      "name": "Thüringen",
+      "center": true,
+      "x": 10597,
+      "y": 1655
+    },
+    {
+      "id": 448,
+      "name": "Hessen",
+      "center": true,
+      "x": 10464,
+      "y": 1694
+    },
+    {
+      "id": 449,
+      "name": "Kielce",
+      "center": true,
+      "x": 11118,
+      "y": 1674
+    },
+    {
+      "id": 450,
+      "name": "Engels_Marxstadt",
+      "center": true,
+      "x": 12534,
+      "y": 1704
+    },
+    {
+      "id": 451,
+      "name": "Ural’sk",
+      "center": true,
+      "x": 12816,
+      "y": 1753
+    },
+    {
+      "id": 452,
+      "name": "Wołyn",
+      "center": true,
+      "x": 11398,
+      "y": 1678
+    },
+    {
+      "id": 453,
+      "name": "Vlaanderen",
+      "center": true,
+      "x": 10168,
+      "y": 1672
+    },
+    {
+      "id": 454,
+      "name": "Antwerpen",
+      "center": true,
+      "x": 10243,
+      "y": 1657
+    },
+    {
+      "id": 455,
+      "name": "Zhytomyr",
+      "center": true,
+      "x": 11558,
+      "y": 1702
+    },
+    {
+      "id": 456,
+      "name": "Oberschlesien",
+      "center": true,
+      "x": 10977,
+      "y": 1686
+    },
+    {
+      "id": 457,
+      "name": "Kyiv",
+      "center": true,
+      "x": 11667,
+      "y": 1721
+    },
+    {
+      "id": 458,
+      "name": "South_Sudetenland",
+      "center": true,
+      "x": 10803,
+      "y": 1797
+    },
+    {
+      "id": 459,
+      "name": "North_Sudetenland",
+      "center": true,
+      "x": 10739,
+      "y": 1694
+    },
+    {
+      "id": 460,
+      "name": "Belgorod",
+      "center": true,
+      "x": 12051,
+      "y": 1699
+    },
+    {
+      "id": 461,
+      "name": "Akhtubinsk",
+      "center": true,
+      "x": 13299,
+      "y": 1875
+    },
+    {
+      "id": 462,
+      "name": "Nord_Pas_de_Calais",
+      "center": true,
+      "x": 10120,
+      "y": 1705
+    },
+    {
+      "id": 463,
+      "name": "Mikhaylovka",
+      "center": true,
+      "x": 12368,
+      "y": 1727
+    },
+    {
+      "id": 464,
+      "name": "Katowice",
+      "center": true,
+      "x": 11022,
+      "y": 1703
+    },
+    {
+      "id": 465,
+      "name": "Ardennes",
+      "center": true,
+      "x": 10279,
+      "y": 1721
+    },
+    {
+      "id": 466,
+      "name": "Wallonie",
+      "center": true,
+      "x": 10227,
+      "y": 1701
+    },
+    {
+      "id": 467,
+      "name": "Franken",
+      "center": true,
+      "x": 10562,
+      "y": 1736
+    },
+    {
+      "id": 468,
+      "name": "Bohemia",
+      "center": true,
+      "x": 10794,
+      "y": 1736
+    },
+    {
+      "id": 469,
+      "name": "Kraków",
+      "center": true,
+      "x": 11150,
+      "y": 1737
+    },
+    {
+      "id": 470,
+      "name": "Karagandy",
+      "center": true,
+      "x": 13858,
+      "y": 1897
+    },
+    {
+      "id": 471,
+      "name": "Czeské_Slezsko",
+      "center": true,
+      "x": 10937,
+      "y": 1728
+    },
+    {
+      "id": 472,
+      "name": "Lwów",
+      "center": true,
+      "x": 11357,
+      "y": 1755
+    },
+    {
+      "id": 473,
+      "name": "Moselland",
+      "center": true,
+      "x": 10376,
+      "y": 1754
+    },
+    {
+      "id": 474,
+      "name": "Proskuriv",
+      "center": true,
+      "x": 11472,
+      "y": 1769
+    },
+    {
+      "id": 475,
+      "name": "Poltava",
+      "center": true,
+      "x": 11857,
+      "y": 1761
+    },
+    {
+      "id": 476,
+      "name": "Picardy",
+      "center": true,
+      "x": 10132,
+      "y": 1759
+    },
+    {
+      "id": 477,
+      "name": "Kharkov",
+      "center": true,
+      "x": 12001,
+      "y": 1767
+    },
+    {
+      "id": 478,
+      "name": "Niederbayern",
+      "center": true,
+      "x": 10663,
+      "y": 1791
+    },
+    {
+      "id": 479,
+      "name": "Luxembourg",
+      "center": true,
+      "x": 10308,
+      "y": 1748
+    },
+    {
+      "id": 480,
+      "name": "Cherkasy",
+      "center": true,
+      "x": 11732,
+      "y": 1806
+    },
+    {
+      "id": 481,
+      "name": "Normandy",
+      "center": true,
+      "x": 9980,
+      "y": 1790
+    },
+    {
+      "id": 482,
+      "name": "Champagne",
+      "center": true,
+      "x": 10232,
+      "y": 1812
+    },
+    {
+      "id": 483,
+      "name": "Tešínsko",
+      "center": true,
+      "x": 11007,
+      "y": 1756
+    },
+    {
+      "id": 484,
+      "name": "Voroshilovgrad",
+      "center": true,
+      "x": 12138,
+      "y": 1805
+    },
+    {
+      "id": 485,
+      "name": "Moravia",
+      "center": true,
+      "x": 10912,
+      "y": 1773
+    },
+    {
+      "id": 486,
+      "name": "Baden",
+      "center": true,
+      "x": 10434,
+      "y": 1845
+    },
+    {
+      "id": 487,
+      "name": "Württemberg",
+      "center": true,
+      "x": 10499,
+      "y": 1827
+    },
+    {
+      "id": 488,
+      "name": "Stanisławów",
+      "center": true,
+      "x": 11323,
+      "y": 1810
+    },
+    {
+      "id": 489,
+      "name": "Vinnytsia",
+      "center": true,
+      "x": 11565,
+      "y": 1811
+    },
+    {
+      "id": 490,
+      "name": "Stalingrad",
+      "center": true,
+      "x": 12457,
+      "y": 1824
+    },
+    {
+      "id": 491,
+      "name": "Eastern_Slovakia",
+      "center": true,
+      "x": 11124,
+      "y": 1797
+    },
+    {
+      "id": 492,
+      "name": "Alsace_Lorraine",
+      "center": true,
+      "x": 10364,
+      "y": 1824
+    },
+    {
+      "id": 493,
+      "name": "Western_Slovakia",
+      "center": true,
+      "x": 10988,
+      "y": 1818
+    },
+    {
+      "id": 494,
+      "name": "Ile_de_France",
+      "center": true,
+      "x": 10092,
+      "y": 1824
+    },
+    {
+      "id": 495,
+      "name": "Guryev",
+      "center": true,
+      "x": 12851,
+      "y": 1884
+    },
+    {
+      "id": 496,
+      "name": "Stalino",
+      "center": true,
+      "x": 12064,
+      "y": 1864
+    },
+    {
+      "id": 497,
+      "name": "Oberbayern",
+      "center": true,
+      "x": 10602,
+      "y": 1857
+    },
+    {
+      "id": 498,
+      "name": "Podkarpatská_Rus",
+      "center": true,
+      "x": 11269,
+      "y": 1838
+    },
+    {
+      "id": 499,
+      "name": "Dnipropetrovsk",
+      "center": true,
+      "x": 11906,
+      "y": 1851
+    },
+    {
+      "id": 500,
+      "name": "Franche_Comte",
+      "center": true,
+      "x": 10319,
+      "y": 1879
+    },
+    {
+      "id": 501,
+      "name": "Brittany",
+      "center": true,
+      "x": 9806,
+      "y": 1852
+    },
+    {
+      "id": 502,
+      "name": "Southern_Slovakia",
+      "center": true,
+      "x": 11054,
+      "y": 1846
+    },
+    {
+      "id": 503,
+      "name": "Astrakhan",
+      "center": true,
+      "x": 12594,
+      "y": 1911
+    },
+    {
+      "id": 504,
+      "name": "Bucovina",
+      "center": true,
+      "x": 11397,
+      "y": 1855
+    },
+    {
+      "id": 505,
+      "name": "Northern_Hungary",
+      "center": true,
+      "x": 11094,
+      "y": 1879
+    },
+    {
+      "id": 506,
+      "name": "Mykolaiv",
+      "center": true,
+      "x": 11759,
+      "y": 1888
+    },
+    {
+      "id": 507,
+      "name": "Loire",
+      "center": true,
+      "x": 9932,
+      "y": 1882
+    },
+    {
+      "id": 508,
+      "name": "Bessarabia",
+      "center": true,
+      "x": 11540,
+      "y": 1909
+    },
+    {
+      "id": 509,
+      "name": "Bourgogne",
+      "center": true,
+      "x": 10199,
+      "y": 1911
+    },
+    {
+      "id": 510,
+      "name": "Bács_Kiskun",
+      "center": true,
+      "x": 11052,
+      "y": 1965
+    },
+    {
+      "id": 511,
+      "name": "Tiszántúl",
+      "center": true,
+      "x": 11157,
+      "y": 1912
+    },
+    {
+      "id": 512,
+      "name": "Rostov",
+      "center": true,
+      "x": 12177,
+      "y": 1900
+    },
+    {
+      "id": 513,
+      "name": "Centre",
+      "center": true,
+      "x": 10073,
+      "y": 1890
+    },
+    {
+      "id": 514,
+      "name": "Balta_Tiraspol",
+      "center": true,
+      "x": 11619,
+      "y": 1897
+    },
+    {
+      "id": 515,
+      "name": "Moldova",
+      "center": true,
+      "x": 11467,
+      "y": 1946
+    },
+    {
+      "id": 516,
+      "name": "Odessa",
+      "center": true,
+      "x": 11686,
+      "y": 1918
+    },
+    {
+      "id": 517,
+      "name": "Kalmykia",
+      "center": true,
+      "x": 12503,
+      "y": 1972
+    },
+    {
+      "id": 518,
+      "name": "South_Transdanubia",
+      "center": true,
+      "x": 10978,
+      "y": 1973
+    },
+    {
+      "id": 519,
+      "name": "North_Transdanubia",
+      "center": true,
+      "x": 10950,
+      "y": 1915
+    },
+    {
+      "id": 520,
+      "name": "North_Transylvania",
+      "center": true,
+      "x": 11317,
+      "y": 1928
+    },
+    {
+      "id": 521,
+      "name": "Zaporozhe",
+      "center": true,
+      "x": 11955,
+      "y": 1914
+    },
+    {
+      "id": 522,
+      "name": "Kyzyl_Orda",
+      "center": true,
+      "x": 13722,
+      "y": 2109
+    },
+    {
+      "id": 523,
+      "name": "Tyrol",
+      "center": true,
+      "x": 10648,
+      "y": 1922
+    },
+    {
+      "id": 524,
+      "name": "Volgodonsk",
+      "center": true,
+      "x": 12315,
+      "y": 1947
+    },
+    {
+      "id": 525,
+      "name": "Swiss_Plateau",
+      "center": true,
+      "x": 10423,
+      "y": 1928
+    },
+    {
+      "id": 526,
+      "name": "Vorarlberg",
+      "center": true,
+      "x": 10526,
+      "y": 1919
+    },
+    {
+      "id": 527,
+      "name": "Jura_Mountains",
+      "center": true,
+      "x": 10361,
+      "y": 1933
+    },
+    {
+      "id": 528,
+      "name": "Kherson",
+      "center": true,
+      "x": 11842,
+      "y": 1952
+    },
+    {
+      "id": 529,
+      "name": "Centre_Sud",
+      "center": true,
+      "x": 10064,
+      "y": 1957
+    },
+    {
+      "id": 530,
+      "name": "Poitou",
+      "center": true,
+      "x": 9947,
+      "y": 1972
+    },
+    {
+      "id": 531,
+      "name": "Ust_Urt",
+      "center": true,
+      "x": 12993,
+      "y": 2076
+    },
+    {
+      "id": 532,
+      "name": "Eastern_Swiss_Alps",
+      "center": true,
+      "x": 10493,
+      "y": 1948
+    },
+    {
+      "id": 533,
+      "name": "Alto_Adige",
+      "center": true,
+      "x": 10612,
+      "y": 1959
+    },
+    {
+      "id": 534,
+      "name": "Crisana",
+      "center": true,
+      "x": 11194,
+      "y": 1966
+    },
+    {
+      "id": 535,
+      "name": "Rhone",
+      "center": true,
+      "x": 10232,
+      "y": 2014
+    },
+    {
+      "id": 536,
+      "name": "Transylvania",
+      "center": true,
+      "x": 11309,
+      "y": 1997
+    },
+    {
+      "id": 537,
+      "name": "Krasnodar",
+      "center": true,
+      "x": 12166,
+      "y": 2037
+    },
+    {
+      "id": 538,
+      "name": "Western_Swiss_Alps",
+      "center": true,
+      "x": 10398,
+      "y": 1975
+    },
+    {
+      "id": 539,
+      "name": "North_Slovenia",
+      "center": true,
+      "x": 10822,
+      "y": 1974
+    },
+    {
+      "id": 540,
+      "name": "Auvergne",
+      "center": true,
+      "x": 10140,
+      "y": 2016
+    },
+    {
+      "id": 541,
+      "name": "Veneto",
+      "center": true,
+      "x": 10649,
+      "y": 2007
+    },
+    {
+      "id": 542,
+      "name": "Ticino",
+      "center": true,
+      "x": 10462,
+      "y": 1975
+    },
+    {
+      "id": 543,
+      "name": "Lombardia",
+      "center": true,
+      "x": 10526,
+      "y": 2016
+    },
+    {
+      "id": 544,
+      "name": "Southern_Bessarabia",
+      "center": true,
+      "x": 11603,
+      "y": 2000
+    },
+    {
+      "id": 545,
+      "name": "Litorale",
+      "center": true,
+      "x": 10739,
+      "y": 2003
+    },
+    {
+      "id": 546,
+      "name": "Piemonte",
+      "center": true,
+      "x": 10420,
+      "y": 2057
+    },
+    {
+      "id": 547,
+      "name": "Trentino",
+      "center": true,
+      "x": 10583,
+      "y": 1994
+    },
+    {
+      "id": 548,
+      "name": "Savoy",
+      "center": true,
+      "x": 10337,
+      "y": 2057
+    },
+    {
+      "id": 549,
+      "name": "Croatia",
+      "center": true,
+      "x": 10940,
+      "y": 2026
+    },
+    {
+      "id": 550,
+      "name": "Limousin",
+      "center": true,
+      "x": 10028,
+      "y": 2050
+    },
+    {
+      "id": 551,
+      "name": "West_Banat",
+      "center": true,
+      "x": 11119,
+      "y": 2038
+    },
+    {
+      "id": 552,
+      "name": "Banat",
+      "center": true,
+      "x": 11179,
+      "y": 2028
+    },
+    {
+      "id": 553,
+      "name": "Crimea",
+      "center": true,
+      "x": 11884,
+      "y": 2038
+    },
+    {
+      "id": 554,
+      "name": "Ljubljana",
+      "center": true,
+      "x": 10799,
+      "y": 2007
+    },
+    {
+      "id": 555,
+      "name": "Backa",
+      "center": true,
+      "x": 11054,
+      "y": 2019
+    },
+    {
+      "id": 556,
+      "name": "Stavropol",
+      "center": true,
+      "x": 12377,
+      "y": 2070
+    },
+    {
+      "id": 557,
+      "name": "Alpes",
+      "center": true,
+      "x": 10270,
+      "y": 2052
+    },
+    {
+      "id": 558,
+      "name": "Karakalpakstan",
+      "center": true,
+      "x": 13386,
+      "y": 2188
+    },
+    {
+      "id": 559,
+      "name": "Dalmatia",
+      "center": true,
+      "x": 10865,
+      "y": 2108
+    },
+    {
+      "id": 560,
+      "name": "Northern_Dobruja",
+      "center": true,
+      "x": 11561,
+      "y": 2075
+    },
+    {
+      "id": 561,
+      "name": "Muntenia",
+      "center": true,
+      "x": 11420,
+      "y": 2078
+    },
+    {
+      "id": 562,
+      "name": "Istria",
+      "center": true,
+      "x": 10755,
+      "y": 2043
+    },
+    {
+      "id": 563,
+      "name": "Aquitaine",
+      "center": true,
+      "x": 9929,
+      "y": 2079
+    },
+    {
+      "id": 564,
+      "name": "Oltenia",
+      "center": true,
+      "x": 11284,
+      "y": 2085
+    },
+    {
+      "id": 565,
+      "name": "Bosnia",
+      "center": true,
+      "x": 10959,
+      "y": 2096
+    },
+    {
+      "id": 566,
+      "name": "Emilia_Romagna",
+      "center": true,
+      "x": 10583,
+      "y": 2086
+    },
+    {
+      "id": 567,
+      "name": "Dagestan",
+      "center": true,
+      "x": 12582,
+      "y": 2169
+    },
+    {
+      "id": 568,
+      "name": "Languedoc",
+      "center": true,
+      "x": 10153,
+      "y": 2119
+    },
+    {
+      "id": 569,
+      "name": "Serbia",
+      "center": true,
+      "x": 11102,
+      "y": 2101
+    },
+    {
+      "id": 570,
+      "name": "Bouches_du_Rhone",
+      "center": true,
+      "x": 10272,
+      "y": 2127
+    },
+    {
+      "id": 571,
+      "name": "Morava",
+      "center": true,
+      "x": 11161,
+      "y": 2144
+    },
+    {
+      "id": 572,
+      "name": "Toscana",
+      "center": true,
+      "x": 10597,
+      "y": 2156
+    },
+    {
+      "id": 573,
+      "name": "Midi_Pyrenees",
+      "center": true,
+      "x": 10038,
+      "y": 2159
+    },
+    {
+      "id": 574,
+      "name": "Sochi",
+      "center": true,
+      "x": 12249,
+      "y": 2136
+    },
+    {
+      "id": 575,
+      "name": "Var",
+      "center": true,
+      "x": 10321,
+      "y": 2144
+    },
+    {
+      "id": 576,
+      "name": "Sofia",
+      "center": true,
+      "x": 11268,
+      "y": 2180
+    },
+    {
+      "id": 577,
+      "name": "Zara",
+      "center": true,
+      "x": 10845,
+      "y": 2137
+    },
+    {
+      "id": 578,
+      "name": "Dobrudja",
+      "center": true,
+      "x": 11507,
+      "y": 2135
+    },
+    {
+      "id": 579,
+      "name": "Pyrénées_Atlantiques",
+      "center": true,
+      "x": 9918,
+      "y": 2153
+    },
+    {
+      "id": 580,
+      "name": "Moesia",
+      "center": true,
+      "x": 11378,
+      "y": 2167
+    },
+    {
+      "id": 581,
+      "name": "Khiva",
+      "center": true,
+      "x": 13244,
+      "y": 2217
+    },
+    {
+      "id": 582,
+      "name": "Abruzzo",
+      "center": true,
+      "x": 10726,
+      "y": 2201
+    },
+    {
+      "id": 583,
+      "name": "Herzegovina",
+      "center": true,
+      "x": 10973,
+      "y": 2160
+    },
+    {
+      "id": 584,
+      "name": "Burgas",
+      "center": true,
+      "x": 11471,
+      "y": 2192
+    },
+    {
+      "id": 585,
+      "name": "North_Ossetia",
+      "center": true,
+      "x": 12451,
+      "y": 2178
+    },
+    {
+      "id": 586,
+      "name": "Galicia",
+      "center": true,
+      "x": 9533,
+      "y": 2198
+    },
+    {
+      "id": 587,
+      "name": "Kabardino_Balkaria",
+      "center": true,
+      "x": 12390,
+      "y": 2177
+    },
+    {
+      "id": 588,
+      "name": "Asturias",
+      "center": true,
+      "x": 9674,
+      "y": 2167
+    },
+    {
+      "id": 589,
+      "name": "Chechnya_Ingushetia",
+      "center": true,
+      "x": 12520,
+      "y": 2192
+    },
+    {
+      "id": 590,
+      "name": "Abkhazia",
+      "center": true,
+      "x": 12276,
+      "y": 2183
+    },
+    {
+      "id": 591,
+      "name": "Montenegro",
+      "center": true,
+      "x": 11045,
+      "y": 2196
+    },
+    {
+      "id": 592,
+      "name": "Southern_Serbia",
+      "center": true,
+      "x": 11209,
+      "y": 2198
+    },
+    {
+      "id": 593,
+      "name": "País_Vasco",
+      "center": true,
+      "x": 9826,
+      "y": 2180
+    },
+    {
+      "id": 594,
+      "name": "Navoi",
+      "center": true,
+      "x": 13572,
+      "y": 2248
+    },
+    {
+      "id": 595,
+      "name": "Navarra",
+      "center": true,
+      "x": 9882,
+      "y": 2201
+    },
+    {
+      "id": 596,
+      "name": "León",
+      "center": true,
+      "x": 9646,
+      "y": 2230
+    },
+    {
+      "id": 597,
+      "name": "Burgos",
+      "center": true,
+      "x": 9810,
+      "y": 2240
+    },
+    {
+      "id": 598,
+      "name": "Kosovo",
+      "center": true,
+      "x": 11137,
+      "y": 2206
+    },
+    {
+      "id": 599,
+      "name": "Valladolid",
+      "center": true,
+      "x": 9725,
+      "y": 2255
+    },
+    {
+      "id": 600,
+      "name": "Western_Aragón",
+      "center": true,
+      "x": 9909,
+      "y": 2274
+    },
+    {
+      "id": 601,
+      "name": "Corsica",
+      "center": true,
+      "x": 10478,
+      "y": 2233
+    },
+    {
+      "id": 602,
+      "name": "Eastern_Aragón",
+      "center": true,
+      "x": 9963,
+      "y": 2278
+    },
+    {
+      "id": 603,
+      "name": "Cataluña",
+      "center": true,
+      "x": 10058,
+      "y": 2251
+    },
+    {
+      "id": 604,
+      "name": "Lazio",
+      "center": true,
+      "x": 10685,
+      "y": 2242
+    },
+    {
+      "id": 605,
+      "name": "Georgia",
+      "center": true,
+      "x": 12418,
+      "y": 2254
+    },
+    {
+      "id": 606,
+      "name": "Plovdiv",
+      "center": true,
+      "x": 11349,
+      "y": 2245
+    },
+    {
+      "id": 607,
+      "name": "Shkodër",
+      "center": true,
+      "x": 11084,
+      "y": 2245
+    },
+    {
+      "id": 608,
+      "name": "Ashkhabad",
+      "center": true,
+      "x": 13269,
+      "y": 2448
+    },
+    {
+      "id": 609,
+      "name": "Tashauz",
+      "center": true,
+      "x": 13292,
+      "y": 2333
+    },
+    {
+      "id": 610,
+      "name": "Debar",
+      "center": true,
+      "x": 11137,
+      "y": 2275
+    },
+    {
+      "id": 611,
+      "name": "Macedonia",
+      "center": true,
+      "x": 11198,
+      "y": 2264
+    },
+    {
+      "id": 612,
+      "name": "Edirne",
+      "center": true,
+      "x": 11481,
+      "y": 2290
+    },
+    {
+      "id": 613,
+      "name": "Porto",
+      "center": true,
+      "x": 9547,
+      "y": 2272
+    },
+    {
+      "id": 614,
+      "name": "Kastamonu",
+      "center": true,
+      "x": 11871,
+      "y": 2302
+    },
+    {
+      "id": 615,
+      "name": "Puglia",
+      "center": true,
+      "x": 10898,
+      "y": 2306
+    },
+    {
+      "id": 616,
+      "name": "Thrace",
+      "center": true,
+      "x": 11376,
+      "y": 2293
+    },
+    {
+      "id": 617,
+      "name": "Tashkent",
+      "center": true,
+      "x": 13799,
+      "y": 2336
+    },
+    {
+      "id": 618,
+      "name": "Izmit",
+      "center": true,
+      "x": 11718,
+      "y": 2313
+    },
+    {
+      "id": 619,
+      "name": "Samsun",
+      "center": true,
+      "x": 12022,
+      "y": 2322
+    },
+    {
+      "id": 620,
+      "name": "Albania",
+      "center": true,
+      "x": 11083,
+      "y": 2312
+    },
+    {
+      "id": 621,
+      "name": "Trabzon",
+      "center": true,
+      "x": 12271,
+      "y": 2330
+    },
+    {
+      "id": 622,
+      "name": "Campania",
+      "center": true,
+      "x": 10827,
+      "y": 2323
+    },
+    {
+      "id": 623,
+      "name": "Istanbul",
+      "center": true,
+      "x": 11612,
+      "y": 2305
+    },
+    {
+      "id": 624,
+      "name": "Central_Macedonia",
+      "center": true,
+      "x": 11241,
+      "y": 2321
+    },
+    {
+      "id": 625,
+      "name": "Salamanca",
+      "center": true,
+      "x": 9632,
+      "y": 2320
+    },
+    {
+      "id": 626,
+      "name": "Guadalajara",
+      "center": true,
+      "x": 9836,
+      "y": 2350
+    },
+    {
+      "id": 627,
+      "name": "Armenia",
+      "center": true,
+      "x": 12473,
+      "y": 2355
+    },
+    {
+      "id": 628,
+      "name": "Sardegna",
+      "center": true,
+      "x": 10474,
+      "y": 2359
+    },
+    {
+      "id": 629,
+      "name": "Lisbon",
+      "center": true,
+      "x": 9488,
+      "y": 2368
+    },
+    {
+      "id": 630,
+      "name": "Guarda",
+      "center": true,
+      "x": 9551,
+      "y": 2343
+    },
+    {
+      "id": 631,
+      "name": "Madrid",
+      "center": true,
+      "x": 9729,
+      "y": 2353
+    },
+    {
+      "id": 632,
+      "name": "Epirus",
+      "center": true,
+      "x": 11150,
+      "y": 2393
+    },
+    {
+      "id": 633,
+      "name": "Bukhara",
+      "center": true,
+      "x": 13620,
+      "y": 2414
+    },
+    {
+      "id": 634,
+      "name": "Northern_Epirus",
+      "center": true,
+      "x": 11104,
+      "y": 2352
+    },
+    {
+      "id": 635,
+      "name": "Stalinabad",
+      "center": true,
+      "x": 13923,
+      "y": 2461
+    },
+    {
+      "id": 636,
+      "name": "Valencia",
+      "center": true,
+      "x": 9942,
+      "y": 2406
+    },
+    {
+      "id": 637,
+      "name": "Bursa",
+      "center": true,
+      "x": 11537,
+      "y": 2368
+    },
+    {
+      "id": 638,
+      "name": "Ankara",
+      "center": true,
+      "x": 11755,
+      "y": 2380
+    },
+    {
+      "id": 639,
+      "name": "Aegean_Islands",
+      "center": true,
+      "x": 11427,
+      "y": 2414
+    },
+    {
+      "id": 640,
+      "name": "Extremadura",
+      "center": true,
+      "x": 9630,
+      "y": 2418
+    },
+    {
+      "id": 641,
+      "name": "Sivas",
+      "center": true,
+      "x": 12065,
+      "y": 2401
+    },
+    {
+      "id": 642,
+      "name": "Amasya",
+      "center": true,
+      "x": 11914,
+      "y": 2400
+    },
+    {
+      "id": 643,
+      "name": "Tunceli",
+      "center": true,
+      "x": 12198,
+      "y": 2416
+    },
+    {
+      "id": 644,
+      "name": "Van",
+      "center": true,
+      "x": 12367,
+      "y": 2407
+    },
+    {
+      "id": 645,
+      "name": "Islas_Baleares",
+      "center": true,
+      "x": 10136,
+      "y": 2389
+    },
+    {
+      "id": 646,
+      "name": "Calabria",
+      "center": true,
+      "x": 10880,
+      "y": 2423
+    },
+    {
+      "id": 647,
+      "name": "Attica",
+      "center": true,
+      "x": 11233,
+      "y": 2432
+    },
+    {
+      "id": 648,
+      "name": "Afyon",
+      "center": true,
+      "x": 11634,
+      "y": 2445
+    },
+    {
+      "id": 649,
+      "name": "Santarém",
+      "center": true,
+      "x": 9528,
+      "y": 2426
+    },
+    {
+      "id": 650,
+      "name": "Ciudad_Real",
+      "center": true,
+      "x": 9756,
+      "y": 2430
+    },
+    {
+      "id": 651,
+      "name": "Murcia",
+      "center": true,
+      "x": 9871,
+      "y": 2458
+    },
+    {
+      "id": 652,
+      "name": "Izmir",
+      "center": true,
+      "x": 11517,
+      "y": 2463
+    },
+    {
+      "id": 653,
+      "name": "Konya",
+      "center": true,
+      "x": 11783,
+      "y": 2483
+    },
+    {
+      "id": 654,
+      "name": "Kayseri",
+      "center": true,
+      "x": 11960,
+      "y": 2473
+    },
+    {
+      "id": 655,
+      "name": "Beja",
+      "center": true,
+      "x": 9519,
+      "y": 2496
+    },
+    {
+      "id": 656,
+      "name": "Azores",
+      "center": true,
+      "x": 8557,
+      "y": 2501
+    },
+    {
+      "id": 657,
+      "name": "Córdoba",
+      "center": true,
+      "x": 9752,
+      "y": 2489
+    },
+    {
+      "id": 658,
+      "name": "Hakkari",
+      "center": true,
+      "x": 12336,
+      "y": 2490
+    },
+    {
+      "id": 659,
+      "name": "Malatya",
+      "center": true,
+      "x": 12043,
+      "y": 2519
+    },
+    {
+      "id": 660,
+      "name": "Diyarbakır",
+      "center": true,
+      "x": 12189,
+      "y": 2522
+    },
+    {
+      "id": 661,
+      "name": "Peloponnese",
+      "center": true,
+      "x": 11209,
+      "y": 2520
+    },
+    {
+      "id": 662,
+      "name": "Sicilia",
+      "center": true,
+      "x": 10758,
+      "y": 2513
+    },
+    {
+      "id": 663,
+      "name": "Sevilla",
+      "center": true,
+      "x": 9635,
+      "y": 2526
+    },
+    {
+      "id": 664,
+      "name": "Granada",
+      "center": true,
+      "x": 9784,
+      "y": 2542
+    },
+    {
+      "id": 665,
+      "name": "Tehran",
+      "center": true,
+      "x": 12928,
+      "y": 2575
+    },
+    {
+      "id": 666,
+      "name": "Antalya",
+      "center": true,
+      "x": 11611,
+      "y": 2547
+    },
+    {
+      "id": 667,
+      "name": "Mersin",
+      "center": true,
+      "x": 11816,
+      "y": 2558
+    },
+    {
+      "id": 668,
+      "name": "Tunisia",
+      "center": true,
+      "x": 10509,
+      "y": 2612
+    },
+    {
+      "id": 669,
+      "name": "Deir_az_Zur",
+      "center": true,
+      "x": 12173,
+      "y": 2647
+    },
+    {
+      "id": 670,
+      "name": "Constantine",
+      "center": true,
+      "x": 10323,
+      "y": 2597
+    },
+    {
+      "id": 671,
+      "name": "Dodecanese",
+      "center": true,
+      "x": 11526,
+      "y": 2596
+    },
+    {
+      "id": 672,
+      "name": "Algiers",
+      "center": true,
+      "x": 10063,
+      "y": 2610
+    },
+    {
+      "id": 673,
+      "name": "Aleppo",
+      "center": true,
+      "x": 12036,
+      "y": 2634
+    },
+    {
+      "id": 674,
+      "name": "Hatay",
+      "center": true,
+      "x": 11986,
+      "y": 2588
+    },
+    {
+      "id": 675,
+      "name": "Gibraltar",
+      "center": true,
+      "x": 9662,
+      "y": 2591
+    },
+    {
+      "id": 676,
+      "name": "Malta",
+      "center": true,
+      "x": 10776,
+      "y": 2614
+    },
+    {
+      "id": 677,
+      "name": "Spanish_Africa",
+      "center": true,
+      "x": 9726,
+      "y": 2660
+    },
+    {
+      "id": 678,
+      "name": "Tlemcen",
+      "center": true,
+      "x": 10150,
+      "y": 2712
+    },
+    {
+      "id": 679,
+      "name": "Cyprus",
+      "center": true,
+      "x": 11820,
+      "y": 2664
+    },
+    {
+      "id": 680,
+      "name": "Crete",
+      "center": true,
+      "x": 11353,
+      "y": 2654
+    },
+    {
+      "id": 681,
+      "name": "Casablanca",
+      "center": true,
+      "x": 9666,
+      "y": 2754
+    },
+    {
+      "id": 682,
+      "name": "Gabès",
+      "center": true,
+      "x": 10505,
+      "y": 2785
+    },
+    {
+      "id": 683,
+      "name": "Lebanon",
+      "center": true,
+      "x": 11965,
+      "y": 2731
+    },
+    {
+      "id": 684,
+      "name": "Damascus",
+      "center": true,
+      "x": 12023,
+      "y": 2762
+    },
+    {
+      "id": 685,
+      "name": "Marrakech",
+      "center": true,
+      "x": 9628,
+      "y": 2895
+    },
+    {
+      "id": 686,
+      "name": "Algerian_Desert",
+      "center": true,
+      "x": 10111,
+      "y": 3134
+    },
+    {
+      "id": 687,
+      "name": "Palestine",
+      "center": true,
+      "x": 11919,
+      "y": 2873
+    },
+    {
+      "id": 688,
+      "name": "Tripoli",
+      "center": true,
+      "x": 10732,
+      "y": 2831
+    },
+    {
+      "id": 689,
+      "name": "Jordan",
+      "center": true,
+      "x": 12010,
+      "y": 2898
+    },
+    {
+      "id": 690,
+      "name": "Madeira",
+      "center": true,
+      "x": 9028,
+      "y": 2798
+    },
+    {
+      "id": 691,
+      "name": "Derna",
+      "center": true,
+      "x": 11246,
+      "y": 2829
+    },
+    {
+      "id": 692,
+      "name": "Benghasi",
+      "center": true,
+      "x": 11101,
+      "y": 2881
+    },
+    {
+      "id": 693,
+      "name": "Cyrenaica",
+      "center": true,
+      "x": 11208,
+      "y": 2887
+    },
+    {
+      "id": 694,
+      "name": "Tripolitania",
+      "center": true,
+      "x": 10695,
+      "y": 2902
+    },
+    {
+      "id": 695,
+      "name": "Jawf",
+      "center": true,
+      "x": 12216,
+      "y": 2950
+    },
+    {
+      "id": 696,
+      "name": "Matrouh",
+      "center": true,
+      "x": 11458,
+      "y": 2919
+    },
+    {
+      "id": 697,
+      "name": "Alexandria",
+      "center": true,
+      "x": 11653,
+      "y": 2908
+    },
+    {
+      "id": 698,
+      "name": "El_Agheila",
+      "center": true,
+      "x": 10962,
+      "y": 2934
+    },
+    {
+      "id": 699,
+      "name": "Cairo",
+      "center": true,
+      "x": 11680,
+      "y": 2985
+    },
+    {
+      "id": 700,
+      "name": "Sinai",
+      "center": true,
+      "x": 11856,
+      "y": 2980
+    },
+    {
+      "id": 701,
+      "name": "Suez",
+      "center": true,
+      "x": 11783,
+      "y": 2930
+    },
+    {
+      "id": 702,
+      "name": "Libyan_Desert",
+      "center": true,
+      "x": 10977,
+      "y": 3204
+    },
+    {
+      "id": 703,
+      "name": "Sirte",
+      "center": true,
+      "x": 11008,
+      "y": 2986
+    },
+    {
+      "id": 704,
+      "name": "Western_Desert",
+      "center": true,
+      "x": 11519,
+      "y": 3193
+    },
+    {
+      "id": 705,
+      "name": "Al_Qassim",
+      "center": true,
+      "x": 12413,
+      "y": 3116
+    },
+    {
+      "id": 706,
+      "name": "Sidi_Ifni",
+      "center": true,
+      "x": 9413,
+      "y": 2996
+    },
+    {
+      "id": 707,
+      "name": "Eastern_Desert",
+      "center": true,
+      "x": 11843,
+      "y": 3211
+    },
+    {
+      "id": 708,
+      "name": "Tabuk",
+      "center": true,
+      "x": 12097,
+      "y": 3093
+    },
+    {
+      "id": 709,
+      "name": "Islas_Canarias",
+      "center": true,
+      "x": 9051,
+      "y": 3053
+    },
+    {
+      "id": 710,
+      "name": "Dammam",
+      "center": true,
+      "x": 12671,
+      "y": 3144
+    },
+    {
+      "id": 711,
+      "name": "Rio_de_Oro",
+      "center": true,
+      "x": 9257,
+      "y": 3236
+    },
+    {
+      "id": 712,
+      "name": "Aswan",
+      "center": true,
+      "x": 11755,
+      "y": 3243
+    },
+    {
+      "id": 713,
+      "name": "Madinah",
+      "center": true,
+      "x": 12195,
+      "y": 3257
+    },
+    {
+      "id": 714,
+      "name": "Mauritanian_Desert",
+      "center": true,
+      "x": 9461,
+      "y": 3451
+    },
+    {
+      "id": 715,
+      "name": "Nejd",
+      "center": true,
+      "x": 12527,
+      "y": 3315
+    },
+    {
+      "id": 716,
+      "name": "Qatar",
+      "center": true,
+      "x": 12818,
+      "y": 3225
+    },
+    {
+      "id": 717,
+      "name": "Tombouctou",
+      "center": true,
+      "x": 9853,
+      "y": 3489
+    },
+    {
+      "id": 718,
+      "name": "Rub_al_Khali",
+      "center": true,
+      "x": 12844,
+      "y": 3427
+    },
+    {
+      "id": 719,
+      "name": "Southern_Sahara",
+      "center": true,
+      "x": 10537,
+      "y": 3636
+    },
+    {
+      "id": 720,
+      "name": "Kassala",
+      "center": true,
+      "x": 11972,
+      "y": 3540
+    },
+    {
+      "id": 721,
+      "name": "Asir_Makkah",
+      "center": true,
+      "x": 12308,
+      "y": 3495
+    },
+    {
+      "id": 722,
+      "name": "Borkou_Ennedi_Tibesti",
+      "center": true,
+      "x": 11038,
+      "y": 3630
+    },
+    {
+      "id": 723,
+      "name": "North_Darfur",
+      "center": true,
+      "x": 11459,
+      "y": 3596
+    },
+    {
+      "id": 724,
+      "name": "Khartoum",
+      "center": true,
+      "x": 11754,
+      "y": 3604
+    },
+    {
+      "id": 725,
+      "name": "Mauritania",
+      "center": true,
+      "x": 9204,
+      "y": 3603
+    },
+    {
+      "id": 726,
+      "name": "Najiran",
+      "center": true,
+      "x": 12577,
+      "y": 3568
+    },
+    {
+      "id": 727,
+      "name": "Gao",
+      "center": true,
+      "x": 9896,
+      "y": 3712
+    },
+    {
+      "id": 728,
+      "name": "Eritrea",
+      "center": true,
+      "x": 12125,
+      "y": 3751
+    },
+    {
+      "id": 729,
+      "name": "Cabo_Verde",
+      "center": true,
+      "x": 8635,
+      "y": 3774
+    },
+    {
+      "id": 730,
+      "name": "Senegal",
+      "center": true,
+      "x": 9167,
+      "y": 3810
+    },
+    {
+      "id": 731,
+      "name": "Blue_Nile",
+      "center": true,
+      "x": 11876,
+      "y": 3869
+    },
+    {
+      "id": 732,
+      "name": "Kayes_Koulikoro",
+      "center": true,
+      "x": 9497,
+      "y": 3823
+    },
+    {
+      "id": 733,
+      "name": "South_Darfur",
+      "center": true,
+      "x": 11318,
+      "y": 3919
+    },
+    {
+      "id": 734,
+      "name": "Niger",
+      "center": true,
+      "x": 10116,
+      "y": 3848
+    },
+    {
+      "id": 735,
+      "name": "Chad",
+      "center": true,
+      "x": 10984,
+      "y": 3948
+    },
+    {
+      "id": 736,
+      "name": "Kurdufan",
+      "center": true,
+      "x": 11571,
+      "y": 3950
+    },
+    {
+      "id": 737,
+      "name": "Upper_Volta",
+      "center": true,
+      "x": 9875,
+      "y": 3928
+    },
+    {
+      "id": 738,
+      "name": "Tigray",
+      "center": true,
+      "x": 12152,
+      "y": 3837
+    },
+    {
+      "id": 739,
+      "name": "Bamako",
+      "center": true,
+      "x": 9638,
+      "y": 3924
+    },
+    {
+      "id": 740,
+      "name": "Begemder",
+      "center": true,
+      "x": 12044,
+      "y": 3899
+    },
+    {
+      "id": 741,
+      "name": "Afar",
+      "center": true,
+      "x": 12254,
+      "y": 3923
+    },
+    {
+      "id": 742,
+      "name": "Sokoto",
+      "center": true,
+      "x": 10374,
+      "y": 3994
+    },
+    {
+      "id": 743,
+      "name": "Gambia",
+      "center": true,
+      "x": 9120,
+      "y": 3871
+    },
+    {
+      "id": 744,
+      "name": "Borno",
+      "center": true,
+      "x": 10632,
+      "y": 3986
+    },
+    {
+      "id": 745,
+      "name": "Wello",
+      "center": true,
+      "x": 12155,
+      "y": 3955
+    },
+    {
+      "id": 746,
+      "name": "Cameroon",
+      "center": true,
+      "x": 10687,
+      "y": 4268
+    },
+    {
+      "id": 747,
+      "name": "French_Somaliland",
+      "center": true,
+      "x": 12340,
+      "y": 3949
+    },
+    {
+      "id": 748,
+      "name": "Socotra",
+      "center": true,
+      "x": 12966,
+      "y": 3912
+    },
+    {
+      "id": 749,
+      "name": "Portuguese_Guinea",
+      "center": true,
+      "x": 9134,
+      "y": 3935
+    },
+    {
+      "id": 750,
+      "name": "Guinea",
+      "center": true,
+      "x": 9366,
+      "y": 4020
+    },
+    {
+      "id": 751,
+      "name": "Dahomey",
+      "center": true,
+      "x": 10106,
+      "y": 4063
+    },
+    {
+      "id": 752,
+      "name": "Gojjam",
+      "center": true,
+      "x": 12007,
+      "y": 3994
+    },
+    {
+      "id": 753,
+      "name": "Somaliland",
+      "center": true,
+      "x": 12563,
+      "y": 4276
+    },
+    {
+      "id": 754,
+      "name": "Lagos",
+      "center": true,
+      "x": 10236,
+      "y": 4162
+    },
+    {
+      "id": 755,
+      "name": "British_Somaliland",
+      "center": true,
+      "x": 12545,
+      "y": 4059
+    },
+    {
+      "id": 756,
+      "name": "Welega",
+      "center": true,
+      "x": 11957,
+      "y": 4077
+    },
+    {
+      "id": 757,
+      "name": "Ghana",
+      "center": true,
+      "x": 9911,
+      "y": 4152
+    },
+    {
+      "id": 758,
+      "name": "Hararghe",
+      "center": true,
+      "x": 12381,
+      "y": 4144
+    },
+    {
+      "id": 759,
+      "name": "Togo",
+      "center": true,
+      "x": 10032,
+      "y": 4124
+    },
+    {
+      "id": 760,
+      "name": "Equatorial_Africa",
+      "center": true,
+      "x": 11110,
+      "y": 4223
+    },
+    {
+      "id": 761,
+      "name": "Upper_Nile",
+      "center": true,
+      "x": 11791,
+      "y": 4195
+    },
+    {
+      "id": 762,
+      "name": "Shewa",
+      "center": true,
+      "x": 12139,
+      "y": 4113
+    },
+    {
+      "id": 763,
+      "name": "Ivory_Coast",
+      "center": true,
+      "x": 9669,
+      "y": 4171
+    },
+    {
+      "id": 764,
+      "name": "Sierra_Leone",
+      "center": true,
+      "x": 9316,
+      "y": 4118
+    },
+    {
+      "id": 765,
+      "name": "Benue",
+      "center": true,
+      "x": 10483,
+      "y": 4207
+    },
+    {
+      "id": 766,
+      "name": "Bahr_al_Ghazal",
+      "center": true,
+      "x": 11576,
+      "y": 4225
+    },
+    {
+      "id": 767,
+      "name": "Illubabor_Kaffa",
+      "center": true,
+      "x": 11942,
+      "y": 4185
+    },
+    {
+      "id": 768,
+      "name": "Liberia",
+      "center": true,
+      "x": 9458,
+      "y": 4233
+    },
+    {
+      "id": 769,
+      "name": "Bale",
+      "center": true,
+      "x": 12282,
+      "y": 4251
+    },
+    {
+      "id": 770,
+      "name": "Sidamo",
+      "center": true,
+      "x": 12115,
+      "y": 4298
+    },
+    {
+      "id": 771,
+      "name": "Maldives",
+      "center": true,
+      "x": 14023,
+      "y": 4246
+    },
+    {
+      "id": 772,
+      "name": "Stanleyville",
+      "center": true,
+      "x": 11450,
+      "y": 4431
+    },
+    {
+      "id": 773,
+      "name": "Coquilhatville",
+      "center": true,
+      "x": 11150,
+      "y": 4533
+    },
+    {
+      "id": 774,
+      "name": "Nyanza_Rift_Valley",
+      "center": true,
+      "x": 11936,
+      "y": 4493
+    },
+    {
+      "id": 775,
+      "name": "Nairobi",
+      "center": true,
+      "x": 12054,
+      "y": 4487
+    },
+    {
+      "id": 776,
+      "name": "Uganda",
+      "center": true,
+      "x": 11770,
+      "y": 4483
+    },
+    {
+      "id": 777,
+      "name": "Garissa",
+      "center": true,
+      "x": 12201,
+      "y": 4509
+    },
+    {
+      "id": 778,
+      "name": "Jubaland",
+      "center": true,
+      "x": 12293,
+      "y": 4500
+    },
+    {
+      "id": 779,
+      "name": "Middle_Congo",
+      "center": true,
+      "x": 10826,
+      "y": 4601
+    },
+    {
+      "id": 780,
+      "name": "Equatorial_Guinea",
+      "center": true,
+      "x": 10556,
+      "y": 4482
+    },
+    {
+      "id": 781,
+      "name": "Costermansville",
+      "center": true,
+      "x": 11529,
+      "y": 4688
+    },
+    {
+      "id": 782,
+      "name": "Gabon",
+      "center": true,
+      "x": 10629,
+      "y": 4599
+    },
+    {
+      "id": 783,
+      "name": "Sao_Tome",
+      "center": true,
+      "x": 10340,
+      "y": 4555
+    },
+    {
+      "id": 784,
+      "name": "Mombasa",
+      "center": true,
+      "x": 12118,
+      "y": 4685
+    },
+    {
+      "id": 785,
+      "name": "Tanganyika",
+      "center": true,
+      "x": 11917,
+      "y": 4906
+    },
+    {
+      "id": 786,
+      "name": "Rwanda",
+      "center": true,
+      "x": 11642,
+      "y": 4665
+    },
+    {
+      "id": 787,
+      "name": "Leopoldville",
+      "center": true,
+      "x": 10954,
+      "y": 4811
+    },
+    {
+      "id": 788,
+      "name": "Lusambo",
+      "center": true,
+      "x": 11274,
+      "y": 4838
+    },
+    {
+      "id": 789,
+      "name": "Burundi",
+      "center": true,
+      "x": 11636,
+      "y": 4737
+    },
+    {
+      "id": 790,
+      "name": "Cabinda",
+      "center": true,
+      "x": 10669,
+      "y": 4829
+    },
+    {
+      "id": 791,
+      "name": "Seychelles",
+      "center": true,
+      "x": 13099,
+      "y": 4813
+    },
+    {
+      "id": 792,
+      "name": "Ascension",
+      "center": true,
+      "x": 9125,
+      "y": 4821
+    },
+    {
+      "id": 793,
+      "name": "Elisabethville",
+      "center": true,
+      "x": 11433,
+      "y": 5050
+    },
+    {
+      "id": 794,
+      "name": "Luanda",
+      "center": true,
+      "x": 10927,
+      "y": 5029
+    },
+    {
+      "id": 795,
+      "name": "Diego_Garcia",
+      "center": true,
+      "x": 14118,
+      "y": 5001
+    },
+    {
+      "id": 796,
+      "name": "Barotziland",
+      "center": true,
+      "x": 11366,
+      "y": 5337
+    },
+    {
+      "id": 797,
+      "name": "Northeast_Rhodesia",
+      "center": true,
+      "x": 11659,
+      "y": 5206
+    },
+    {
+      "id": 798,
+      "name": "Malawi",
+      "center": true,
+      "x": 11881,
+      "y": 5276
+    },
+    {
+      "id": 799,
+      "name": "Zambesi",
+      "center": true,
+      "x": 11099,
+      "y": 5300
+    },
+    {
+      "id": 800,
+      "name": "South_West_Angola",
+      "center": true,
+      "x": 10818,
+      "y": 5324
+    },
+    {
+      "id": 801,
+      "name": "Zambezia_Moçambique",
+      "center": true,
+      "x": 12073,
+      "y": 5320
+    },
+    {
+      "id": 802,
+      "name": "Comoro_Islands",
+      "center": true,
+      "x": 12382,
+      "y": 5175
+    },
+    {
+      "id": 803,
+      "name": "Madagascar",
+      "center": true,
+      "x": 12567,
+      "y": 5590
+    },
+    {
+      "id": 804,
+      "name": "Manica_e_Sofala",
+      "center": true,
+      "x": 11836,
+      "y": 5483
+    },
+    {
+      "id": 805,
+      "name": "Saint_Helena",
+      "center": true,
+      "x": 9671,
+      "y": 5398
+    },
+    {
+      "id": 806,
+      "name": "Rhodesia",
+      "center": true,
+      "x": 11631,
+      "y": 5560
+    },
+    {
+      "id": 807,
+      "name": "Kunene",
+      "center": true,
+      "x": 10809,
+      "y": 5621
+    },
+    {
+      "id": 808,
+      "name": "Otjozondjupa",
+      "center": true,
+      "x": 10986,
+      "y": 5541
+    },
+    {
+      "id": 809,
+      "name": "Bechuanaland",
+      "center": true,
+      "x": 11294,
+      "y": 5737
+    },
+    {
+      "id": 810,
+      "name": "Mauritius",
+      "center": true,
+      "x": 13195,
+      "y": 5612
+    },
+    {
+      "id": 811,
+      "name": "Khomas",
+      "center": true,
+      "x": 10974,
+      "y": 5755
+    },
+    {
+      "id": 812,
+      "name": "Reunion",
+      "center": true,
+      "x": 13050,
+      "y": 5670
+    },
+    {
+      "id": 813,
+      "name": "Lourenço_Marques",
+      "center": true,
+      "x": 11831,
+      "y": 5802
+    },
+    {
+      "id": 814,
+      "name": "Transvaal",
+      "center": true,
+      "x": 11502,
+      "y": 5958
+    },
+    {
+      "id": 815,
+      "name": "Karas",
+      "center": true,
+      "x": 10951,
+      "y": 5959
+    },
+    {
+      "id": 816,
+      "name": "Cape",
+      "center": true,
+      "x": 11154,
+      "y": 6217
+    },
+    {
+      "id": 817,
+      "name": "Natal",
+      "center": true,
+      "x": 11564,
+      "y": 6190
+    },
+    {
+      "id": 818,
+      "name": "Chukchi_Peninsula",
+      "center": true,
+      "x": 145,
+      "y": 58
+    },
+    {
+      "id": 819,
+      "name": "Alaska",
+      "center": true,
+      "x": 1441,
+      "y": 206
+    },
+    {
+      "id": 820,
+      "name": "Yukon_Territory",
+      "center": true,
+      "x": 2492,
+      "y": 165
+    },
+    {
+      "id": 821,
+      "name": "Northwest_Territories",
+      "center": true,
+      "x": 3510,
+      "y": 208
+    },
+    {
+      "id": 822,
+      "name": "Nunavut",
+      "center": true,
+      "x": 4523,
+      "y": 127
+    },
+    {
+      "id": 823,
+      "name": "Nord_du_Quebec",
+      "center": true,
+      "x": 5906,
+      "y": 517
+    },
+    {
+      "id": 824,
+      "name": "Northern_Saskatchewan",
+      "center": true,
+      "x": 4082,
+      "y": 516
+    },
+    {
+      "id": 825,
+      "name": "Upper_British_Columbia",
+      "center": true,
+      "x": 2900,
+      "y": 525
+    },
+    {
+      "id": 826,
+      "name": "Northern_Manitoba",
+      "center": true,
+      "x": 4571,
+      "y": 547
+    },
+    {
+      "id": 827,
+      "name": "Alberta",
+      "center": true,
+      "x": 3623,
+      "y": 712
+    },
+    {
+      "id": 828,
+      "name": "Districts_of_Ontario",
+      "center": true,
+      "x": 5054,
+      "y": 769
+    },
+    {
+      "id": 829,
+      "name": "Labrador",
+      "center": true,
+      "x": 6515,
+      "y": 705
+    },
+    {
+      "id": 830,
+      "name": "Saskatchewan",
+      "center": true,
+      "x": 4065,
+      "y": 890
+    },
+    {
+      "id": 831,
+      "name": "Saguenay",
+      "center": true,
+      "x": 6036,
+      "y": 790
+    },
+    {
+      "id": 832,
+      "name": "Cote_Nord",
+      "center": true,
+      "x": 6325,
+      "y": 906
+    },
+    {
+      "id": 833,
+      "name": "British_Columbia",
+      "center": true,
+      "x": 3209,
+      "y": 918
+    },
+    {
+      "id": 834,
+      "name": "Manitoba",
+      "center": true,
+      "x": 4464,
+      "y": 949
+    },
+    {
+      "id": 835,
+      "name": "Haida_Gwaii",
+      "center": true,
+      "x": 2609,
+      "y": 774
+    },
+    {
+      "id": 836,
+      "name": "Northern_Ontario",
+      "center": true,
+      "x": 5174,
+      "y": 1050
+    },
+    {
+      "id": 837,
+      "name": "Ouest_du_Quebec",
+      "center": true,
+      "x": 5699,
+      "y": 1122
+    },
+    {
+      "id": 838,
+      "name": "Newfoundland",
+      "center": true,
+      "x": 6843,
+      "y": 1095
+    },
+    {
+      "id": 839,
+      "name": "Maurice",
+      "center": true,
+      "x": 5964,
+      "y": 1086
+    },
+    {
+      "id": 840,
+      "name": "Vancouver_Island",
+      "center": true,
+      "x": 2968,
+      "y": 1033
+    },
+    {
+      "id": 841,
+      "name": "Minnesota",
+      "center": true,
+      "x": 4718,
+      "y": 1250
+    },
+    {
+      "id": 842,
+      "name": "Saint_Lawrence",
+      "center": true,
+      "x": 6051,
+      "y": 1206
+    },
+    {
+      "id": 843,
+      "name": "Montana",
+      "center": true,
+      "x": 3866,
+      "y": 1207
+    },
+    {
+      "id": 844,
+      "name": "Washington",
+      "center": true,
+      "x": 3265,
+      "y": 1188
+    },
+    {
+      "id": 845,
+      "name": "Idaho",
+      "center": true,
+      "x": 3584,
+      "y": 1374
+    },
+    {
+      "id": 846,
+      "name": "North_Dakota",
+      "center": true,
+      "x": 4374,
+      "y": 1181
+    },
+    {
+      "id": 847,
+      "name": "New_Brunswick",
+      "center": true,
+      "x": 6269,
+      "y": 1233
+    },
+    {
+      "id": 848,
+      "name": "Nova_Scotia",
+      "center": true,
+      "x": 6442,
+      "y": 1329
+    },
+    {
+      "id": 849,
+      "name": "New_England",
+      "center": true,
+      "x": 6033,
+      "y": 1384
+    },
+    {
+      "id": 850,
+      "name": "Michigan",
+      "center": true,
+      "x": 5252,
+      "y": 1437
+    },
+    {
+      "id": 851,
+      "name": "Saint_Pierre_and_Miquelon",
+      "center": true,
+      "x": 6821,
+      "y": 1206
+    },
+    {
+      "id": 852,
+      "name": "Wisconsin",
+      "center": true,
+      "x": 4995,
+      "y": 1384
+    },
+    {
+      "id": 853,
+      "name": "Southern_Ontario",
+      "center": true,
+      "x": 5574,
+      "y": 1367
+    },
+    {
+      "id": 854,
+      "name": "Oregon",
+      "center": true,
+      "x": 3257,
+      "y": 1409
+    },
+    {
+      "id": 855,
+      "name": "South_Dakota",
+      "center": true,
+      "x": 4388,
+      "y": 1376
+    },
+    {
+      "id": 856,
+      "name": "New_York",
+      "center": true,
+      "x": 5760,
+      "y": 1469
+    },
+    {
+      "id": 857,
+      "name": "Wyoming",
+      "center": true,
+      "x": 3980,
+      "y": 1467
+    },
+    {
+      "id": 858,
+      "name": "Iowa",
+      "center": true,
+      "x": 4760,
+      "y": 1523
+    },
+    {
+      "id": 859,
+      "name": "Nebraska",
+      "center": true,
+      "x": 4410,
+      "y": 1558
+    },
+    {
+      "id": 860,
+      "name": "Illinois",
+      "center": true,
+      "x": 5000,
+      "y": 1647
+    },
+    {
+      "id": 861,
+      "name": "Pennsylvania",
+      "center": true,
+      "x": 5633,
+      "y": 1598
+    },
+    {
+      "id": 862,
+      "name": "Ohio",
+      "center": true,
+      "x": 5358,
+      "y": 1634
+    },
+    {
+      "id": 863,
+      "name": "California",
+      "center": true,
+      "x": 3309,
+      "y": 1816
+    },
+    {
+      "id": 864,
+      "name": "Nevada",
+      "center": true,
+      "x": 3472,
+      "y": 1690
+    },
+    {
+      "id": 865,
+      "name": "Utah",
+      "center": true,
+      "x": 3749,
+      "y": 1693
+    },
+    {
+      "id": 866,
+      "name": "Indiana",
+      "center": true,
+      "x": 5163,
+      "y": 1659
+    },
+    {
+      "id": 867,
+      "name": "New_Jersey",
+      "center": true,
+      "x": 5809,
+      "y": 1641
+    },
+    {
+      "id": 868,
+      "name": "Colorado",
+      "center": true,
+      "x": 4091,
+      "y": 1713
+    },
+    {
+      "id": 869,
+      "name": "Missouri",
+      "center": true,
+      "x": 4818,
+      "y": 1752
+    },
+    {
+      "id": 870,
+      "name": "West_Virginia",
+      "center": true,
+      "x": 5465,
+      "y": 1740
+    },
+    {
+      "id": 871,
+      "name": "Kansas",
+      "center": true,
+      "x": 4490,
+      "y": 1745
+    },
+    {
+      "id": 872,
+      "name": "Maryland",
+      "center": true,
+      "x": 5694,
+      "y": 1708
+    },
+    {
+      "id": 873,
+      "name": "Virginia",
+      "center": true,
+      "x": 5571,
+      "y": 1804
+    },
+    {
+      "id": 874,
+      "name": "Kentucky",
+      "center": true,
+      "x": 5217,
+      "y": 1804
+    },
+    {
+      "id": 875,
+      "name": "Arizona",
+      "center": true,
+      "x": 3752,
+      "y": 1994
+    },
+    {
+      "id": 876,
+      "name": "New_Mexico",
+      "center": true,
+      "x": 4061,
+      "y": 1988
+    },
+    {
+      "id": 877,
+      "name": "Oklahoma",
+      "center": true,
+      "x": 4536,
+      "y": 1919
+    },
+    {
+      "id": 878,
+      "name": "Tennessee",
+      "center": true,
+      "x": 5158,
+      "y": 1904
+    },
+    {
+      "id": 879,
+      "name": "North_Carolina",
+      "center": true,
+      "x": 5546,
+      "y": 1921
+    },
+    {
+      "id": 880,
+      "name": "Arkansas",
+      "center": true,
+      "x": 4811,
+      "y": 1967
+    },
+    {
+      "id": 881,
+      "name": "Texas",
+      "center": true,
+      "x": 4438,
+      "y": 2155
+    },
+    {
+      "id": 882,
+      "name": "South_Carolina",
+      "center": true,
+      "x": 5460,
+      "y": 2016
+    },
+    {
+      "id": 883,
+      "name": "Mississippi",
+      "center": true,
+      "x": 4975,
+      "y": 2084
+    },
+    {
+      "id": 884,
+      "name": "Alabama",
+      "center": true,
+      "x": 5132,
+      "y": 2083
+    },
+    {
+      "id": 885,
+      "name": "Georgia_US",
+      "center": true,
+      "x": 5319,
+      "y": 2090
+    },
+    {
+      "id": 886,
+      "name": "Bermuda",
+      "center": true,
+      "x": 6473,
+      "y": 2079
+    },
+    {
+      "id": 887,
+      "name": "Louisiana",
+      "center": true,
+      "x": 4843,
+      "y": 2182
+    },
+    {
+      "id": 888,
+      "name": "Baja_California",
+      "center": true,
+      "x": 3642,
+      "y": 2336
+    },
+    {
+      "id": 889,
+      "name": "Sonora",
+      "center": true,
+      "x": 3801,
+      "y": 2260
+    },
+    {
+      "id": 890,
+      "name": "Chihuahua",
+      "center": true,
+      "x": 4047,
+      "y": 2246
+    },
+    {
+      "id": 891,
+      "name": "Florida",
+      "center": true,
+      "x": 5371,
+      "y": 2318
+    },
+    {
+      "id": 892,
+      "name": "Coahuila",
+      "center": true,
+      "x": 4310,
+      "y": 2426
+    },
+    {
+      "id": 893,
+      "name": "Durango",
+      "center": true,
+      "x": 4092,
+      "y": 2539
+    },
+    {
+      "id": 894,
+      "name": "Northern_Bahamas",
+      "center": true,
+      "x": 5619,
+      "y": 2540
+    },
+    {
+      "id": 895,
+      "name": "Tamaulipas",
+      "center": true,
+      "x": 4426,
+      "y": 2600
+    },
+    {
+      "id": 896,
+      "name": "Southern_Bahamas",
+      "center": true,
+      "x": 5881,
+      "y": 2740
+    },
+    {
+      "id": 897,
+      "name": "Cuba",
+      "center": true,
+      "x": 5567,
+      "y": 2710
+    },
+    {
+      "id": 898,
+      "name": "Jalisco",
+      "center": true,
+      "x": 4198,
+      "y": 2737
+    },
+    {
+      "id": 899,
+      "name": "Veracruz",
+      "center": true,
+      "x": 4533,
+      "y": 2819
+    },
+    {
+      "id": 900,
+      "name": "Mexico_City",
+      "center": true,
+      "x": 4396,
+      "y": 2776
+    },
+    {
+      "id": 901,
+      "name": "Yucatan",
+      "center": true,
+      "x": 5004,
+      "y": 2812
+    },
+    {
+      "id": 902,
+      "name": "Guerrero",
+      "center": true,
+      "x": 4355,
+      "y": 2889
+    },
+    {
+      "id": 903,
+      "name": "Haiti",
+      "center": true,
+      "x": 5918,
+      "y": 2855
+    },
+    {
+      "id": 904,
+      "name": "Dominican_Republic",
+      "center": true,
+      "x": 6040,
+      "y": 2858
+    },
+    {
+      "id": 905,
+      "name": "Jamaica",
+      "center": true,
+      "x": 5660,
+      "y": 2897
+    },
+    {
+      "id": 906,
+      "name": "Oaxaca",
+      "center": true,
+      "x": 4628,
+      "y": 2948
+    },
+    {
+      "id": 907,
+      "name": "Chiapas",
+      "center": true,
+      "x": 4822,
+      "y": 2968
+    },
+    {
+      "id": 908,
+      "name": "Puerto_Rico",
+      "center": true,
+      "x": 6262,
+      "y": 2893
+    },
+    {
+      "id": 909,
+      "name": "British_Honduras",
+      "center": true,
+      "x": 5028,
+      "y": 2947
+    },
+    {
+      "id": 910,
+      "name": "French_Caribbean",
+      "center": true,
+      "x": 6537,
+      "y": 3002
+    },
+    {
+      "id": 911,
+      "name": "Guatemala",
+      "center": true,
+      "x": 4935,
+      "y": 3025
+    },
+    {
+      "id": 912,
+      "name": "Leeward_Islands",
+      "center": true,
+      "x": 6548,
+      "y": 3043
+    },
+    {
+      "id": 913,
+      "name": "Honduras",
+      "center": true,
+      "x": 5143,
+      "y": 3075
+    },
+    {
+      "id": 914,
+      "name": "Midway_Island",
+      "center": true,
+      "x": 81,
+      "y": 3042
+    },
+    {
+      "id": 915,
+      "name": "Nicaragua",
+      "center": true,
+      "x": 5233,
+      "y": 3174
+    },
+    {
+      "id": 916,
+      "name": "El_Salvador",
+      "center": true,
+      "x": 5019,
+      "y": 3132
+    },
+    {
+      "id": 917,
+      "name": "Windward_Islands",
+      "center": true,
+      "x": 6571,
+      "y": 3126
+    },
+    {
+      "id": 918,
+      "name": "Curaçao",
+      "center": true,
+      "x": 6074,
+      "y": 3194
+    },
+    {
+      "id": 919,
+      "name": "La_Libertad",
+      "center": true,
+      "x": 5789,
+      "y": 3436
+    },
+    {
+      "id": 920,
+      "name": "Zulia",
+      "center": true,
+      "x": 6024,
+      "y": 3339
+    },
+    {
+      "id": 921,
+      "name": "Trinidad",
+      "center": true,
+      "x": 6551,
+      "y": 3309
+    },
+    {
+      "id": 922,
+      "name": "Costa_Rica",
+      "center": true,
+      "x": 5277,
+      "y": 3330
+    },
+    {
+      "id": 923,
+      "name": "Miranda",
+      "center": true,
+      "x": 6260,
+      "y": 3404
+    },
+    {
+      "id": 924,
+      "name": "Hawaii",
+      "center": true,
+      "x": 1501,
+      "y": 3458
+    },
+    {
+      "id": 925,
+      "name": "Panamá",
+      "center": true,
+      "x": 5433,
+      "y": 3414
+    },
+    {
+      "id": 926,
+      "name": "Panamá_Canal",
+      "center": true,
+      "x": 5514,
+      "y": 3383
+    },
+    {
+      "id": 927,
+      "name": "Bolivar",
+      "center": true,
+      "x": 6377,
+      "y": 3585
+    },
+    {
+      "id": 928,
+      "name": "British_Guyana",
+      "center": true,
+      "x": 6678,
+      "y": 3602
+    },
+    {
+      "id": 929,
+      "name": "Cundinamarca",
+      "center": true,
+      "x": 5775,
+      "y": 3658
+    },
+    {
+      "id": 930,
+      "name": "Loreto",
+      "center": true,
+      "x": 5826,
+      "y": 4095
+    },
+    {
+      "id": 931,
+      "name": "Meta",
+      "center": true,
+      "x": 5990,
+      "y": 3745
+    },
+    {
+      "id": 932,
+      "name": "Suriname",
+      "center": true,
+      "x": 6849,
+      "y": 3635
+    },
+    {
+      "id": 933,
+      "name": "French_Guiana",
+      "center": true,
+      "x": 6997,
+      "y": 3648
+    },
+    {
+      "id": 934,
+      "name": "Guaporé",
+      "center": true,
+      "x": 6461,
+      "y": 4422
+    },
+    {
+      "id": 935,
+      "name": "Amazon_impassable_1",
+      "center": true,
+      "x": 6336,
+      "y": 3938
+    },
+    {
+      "id": 936,
+      "name": "Amazon_impassable_7",
+      "center": true,
+      "x": 6448,
+      "y": 3760
+    },
+    {
+      "id": 937,
+      "name": "Amazon_impassable_4",
+      "center": true,
+      "x": 6132,
+      "y": 4161
+    },
+    {
+      "id": 938,
+      "name": "Acre",
+      "center": true,
+      "x": 6040,
+      "y": 4334
+    },
+    {
+      "id": 939,
+      "name": "Amazon_impassable_3",
+      "center": true,
+      "x": 6356,
+      "y": 4276
+    },
+    {
+      "id": 940,
+      "name": "Amazon_impassable_5",
+      "center": true,
+      "x": 6642,
+      "y": 4296
+    },
+    {
+      "id": 941,
+      "name": "Amazonas",
+      "center": true,
+      "x": 6464,
+      "y": 4037
+    },
+    {
+      "id": 942,
+      "name": "Amazon_impassable_6",
+      "center": true,
+      "x": 6919,
+      "y": 4220
+    },
+    {
+      "id": 943,
+      "name": "Pará",
+      "center": true,
+      "x": 7156,
+      "y": 4085
+    },
+    {
+      "id": 944,
+      "name": "Amapá",
+      "center": true,
+      "x": 7090,
+      "y": 3794
+    },
+    {
+      "id": 945,
+      "name": "Amazon_impassable_8",
+      "center": true,
+      "x": 6814,
+      "y": 3843
+    },
+    {
+      "id": 946,
+      "name": "Rio_Branco",
+      "center": true,
+      "x": 6568,
+      "y": 3679
+    },
+    {
+      "id": 947,
+      "name": "Johnston_Atoll",
+      "center": true,
+      "x": 531,
+      "y": 3705
+    },
+    {
+      "id": 948,
+      "name": "Ecuador",
+      "center": true,
+      "x": 5599,
+      "y": 3929
+    },
+    {
+      "id": 949,
+      "name": "Piauí",
+      "center": true,
+      "x": 7554,
+      "y": 4246
+    },
+    {
+      "id": 950,
+      "name": "Maranhão",
+      "center": true,
+      "x": 7447,
+      "y": 4103
+    },
+    {
+      "id": 951,
+      "name": "Galapagos_Islands",
+      "center": true,
+      "x": 4884,
+      "y": 3960
+    },
+    {
+      "id": 952,
+      "name": "Pastaza",
+      "center": true,
+      "x": 5735,
+      "y": 4038
+    },
+    {
+      "id": 953,
+      "name": "Pernambuco",
+      "center": true,
+      "x": 7863,
+      "y": 4260
+    },
+    {
+      "id": 954,
+      "name": "Rio_Grande_do_Norte",
+      "center": true,
+      "x": 7908,
+      "y": 4139
+    },
+    {
+      "id": 955,
+      "name": "Ceará",
+      "center": true,
+      "x": 7747,
+      "y": 4089
+    },
+    {
+      "id": 956,
+      "name": "Lima",
+      "center": true,
+      "x": 5646,
+      "y": 4309
+    },
+    {
+      "id": 957,
+      "name": "Goiás",
+      "center": true,
+      "x": 7127,
+      "y": 4695
+    },
+    {
+      "id": 958,
+      "name": "Tocantins",
+      "center": true,
+      "x": 7276,
+      "y": 4417
+    },
+    {
+      "id": 959,
+      "name": "Ucayali",
+      "center": true,
+      "x": 5933,
+      "y": 4432
+    },
+    {
+      "id": 960,
+      "name": "Line_Islands",
+      "center": true,
+      "x": 1062,
+      "y": 4368
+    },
+    {
+      "id": 961,
+      "name": "Mato_Grosso",
+      "center": true,
+      "x": 6870,
+      "y": 4617
+    },
+    {
+      "id": 962,
+      "name": "Bahia",
+      "center": true,
+      "x": 7648,
+      "y": 4502
+    },
+    {
+      "id": 963,
+      "name": "Santa_Cruz",
+      "center": true,
+      "x": 6418,
+      "y": 4654
+    },
+    {
+      "id": 964,
+      "name": "Tacna_Moquegua",
+      "center": true,
+      "x": 6032,
+      "y": 4759
+    },
+    {
+      "id": 965,
+      "name": "Arequipa",
+      "center": true,
+      "x": 5908,
+      "y": 4627
+    },
+    {
+      "id": 966,
+      "name": "La_Paz",
+      "center": true,
+      "x": 6273,
+      "y": 4863
+    },
+    {
+      "id": 967,
+      "name": "Punta_Porá",
+      "center": true,
+      "x": 6878,
+      "y": 4996
+    },
+    {
+      "id": 968,
+      "name": "Espírito_Santo",
+      "center": true,
+      "x": 7698,
+      "y": 4874
+    },
+    {
+      "id": 969,
+      "name": "Minas_Gerais",
+      "center": true,
+      "x": 7469,
+      "y": 4833
+    },
+    {
+      "id": 970,
+      "name": "Phoenix_Island",
+      "center": true,
+      "x": 336,
+      "y": 4704
+    },
+    {
+      "id": 971,
+      "name": "Atacama",
+      "center": true,
+      "x": 6073,
+      "y": 5327
+    },
+    {
+      "id": 972,
+      "name": "Antofagasta",
+      "center": true,
+      "x": 6120,
+      "y": 5103
+    },
+    {
+      "id": 973,
+      "name": "Arica_y_Tarapacá",
+      "center": true,
+      "x": 6100,
+      "y": 4897
+    },
+    {
+      "id": 974,
+      "name": "Chaco_Boreal",
+      "center": true,
+      "x": 6636,
+      "y": 5017
+    },
+    {
+      "id": 975,
+      "name": "São_Paulo",
+      "center": true,
+      "x": 7240,
+      "y": 5034
+    },
+    {
+      "id": 976,
+      "name": "Rio_de_Janeiro",
+      "center": true,
+      "x": 7582,
+      "y": 5028
+    },
+    {
+      "id": 977,
+      "name": "San_Juan_y_La_Rioja",
+      "center": true,
+      "x": 6202,
+      "y": 5381
+    },
+    {
+      "id": 978,
+      "name": "Tucumán",
+      "center": true,
+      "x": 6272,
+      "y": 5238
+    },
+    {
+      "id": 979,
+      "name": "Los_Andes",
+      "center": true,
+      "x": 6307,
+      "y": 5122
+    },
+    {
+      "id": 980,
+      "name": "Chaco_Austral",
+      "center": true,
+      "x": 6505,
+      "y": 5301
+    },
+    {
+      "id": 981,
+      "name": "Formosa",
+      "center": true,
+      "x": 6569,
+      "y": 5142
+    },
+    {
+      "id": 982,
+      "name": "Paraguay",
+      "center": true,
+      "x": 6827,
+      "y": 5188
+    },
+    {
+      "id": 983,
+      "name": "Santa_Catarina",
+      "center": true,
+      "x": 7111,
+      "y": 5304
+    },
+    {
+      "id": 984,
+      "name": "Paraná",
+      "center": true,
+      "x": 7103,
+      "y": 5168
+    },
+    {
+      "id": 985,
+      "name": "Santa_Fe",
+      "center": true,
+      "x": 6507,
+      "y": 5557
+    },
+    {
+      "id": 986,
+      "name": "Región_Mesopotámica",
+      "center": true,
+      "x": 6729,
+      "y": 5462
+    },
+    {
+      "id": 987,
+      "name": "American_Samoa",
+      "center": true,
+      "x": 437,
+      "y": 5313
+    },
+    {
+      "id": 988,
+      "name": "Samoa",
+      "center": true,
+      "x": 339,
+      "y": 5277
+    },
+    {
+      "id": 989,
+      "name": "Rio_Grande_do_Sul",
+      "center": true,
+      "x": 6987,
+      "y": 5438
+    },
+    {
+      "id": 990,
+      "name": "Mendoza",
+      "center": true,
+      "x": 6138,
+      "y": 5642
+    },
+    {
+      "id": 991,
+      "name": "San_Luis_y_La_Pampa",
+      "center": true,
+      "x": 6304,
+      "y": 5624
+    },
+    {
+      "id": 992,
+      "name": "Tahiti",
+      "center": true,
+      "x": 1614,
+      "y": 5496
+    },
+    {
+      "id": 993,
+      "name": "Araucanía",
+      "center": true,
+      "x": 6006,
+      "y": 5963
+    },
+    {
+      "id": 994,
+      "name": "Santiago",
+      "center": true,
+      "x": 6031,
+      "y": 5667
+    },
+    {
+      "id": 995,
+      "name": "Montevideo",
+      "center": true,
+      "x": 6803,
+      "y": 5698
+    },
+    {
+      "id": 996,
+      "name": "Cerro_Largo",
+      "center": true,
+      "x": 6916,
+      "y": 5641
+    },
+    {
+      "id": 997,
+      "name": "Paysandú",
+      "center": true,
+      "x": 6806,
+      "y": 5567
+    },
+    {
+      "id": 998,
+      "name": "Pitcairn_Island",
+      "center": true,
+      "x": 3721,
+      "y": 5663
+    },
+    {
+      "id": 999,
+      "name": "Buenos_Aires",
+      "center": true,
+      "x": 6552,
+      "y": 5839
+    },
+    {
+      "id": 1000,
+      "name": "Tierra_del_Fuego",
+      "center": true,
+      "x": 6243,
+      "y": 6571
+    },
+    {
+      "id": 1001,
+      "name": "Santa_Cruz_AR",
+      "center": true,
+      "x": 6148,
+      "y": 6349
+    },
+    {
+      "id": 1002,
+      "name": "Chubut",
+      "center": true,
+      "x": 6196,
+      "y": 6152
+    },
+    {
+      "id": 1003,
+      "name": "Río_Negro",
+      "center": true,
+      "x": 6235,
+      "y": 5957
+    },
+    {
+      "id": 1004,
+      "name": "Magallanes",
+      "center": true,
+      "x": 6089,
+      "y": 6497
+    },
+    {
+      "id": 1005,
+      "name": "Aysén",
+      "center": true,
+      "x": 6014,
+      "y": 6240
+    },
+    {
+      "id": 1006,
+      "name": "Falkland_Islands",
+      "center": true,
+      "x": 6742,
+      "y": 6440
+    },
+    {
+      "id": 1007,
+      "name": "South_Georgia",
+      "center": true,
+      "x": 7924,
+      "y": 6574
+    },
+    {
+      "id": 1008,
+      "name": "Dudinka",
+      "center": true,
+      "x": 15043,
+      "y": 319
+    },
+    {
+      "id": 1009,
+      "name": "Khatangsky",
+      "center": true,
+      "x": 15859,
+      "y": 385
+    },
+    {
+      "id": 1010,
+      "name": "Udachny",
+      "center": true,
+      "x": 16572,
+      "y": 359
+    },
+    {
+      "id": 1011,
+      "name": "Verkhoyansk",
+      "center": true,
+      "x": 17281,
+      "y": 437
+    },
+    {
+      "id": 1012,
+      "name": "Kolyma",
+      "center": true,
+      "x": 18169,
+      "y": 320
+    },
+    {
+      "id": 1013,
+      "name": "Chukotka",
+      "center": true,
+      "x": 19360,
+      "y": 296
+    },
+    {
+      "id": 1014,
+      "name": "Magadan",
+      "center": true,
+      "x": 18657,
+      "y": 782
+    },
+    {
+      "id": 1015,
+      "name": "Kirensk",
+      "center": true,
+      "x": 16119,
+      "y": 923
+    },
+    {
+      "id": 1016,
+      "name": "Okhotsk",
+      "center": true,
+      "x": 17789,
+      "y": 977
+    },
+    {
+      "id": 1017,
+      "name": "Kamchatka",
+      "center": true,
+      "x": 18927,
+      "y": 1117
+    },
+    {
+      "id": 1018,
+      "name": "Yeniseisk",
+      "center": true,
+      "x": 15279,
+      "y": 920
+    },
+    {
+      "id": 1019,
+      "name": "Yakutsk",
+      "center": true,
+      "x": 16969,
+      "y": 999
+    },
+    {
+      "id": 1020,
+      "name": "Bodaybo",
+      "center": true,
+      "x": 16390,
+      "y": 1194
+    },
+    {
+      "id": 1021,
+      "name": "Bratsk",
+      "center": true,
+      "x": 15580,
+      "y": 1283
+    },
+    {
+      "id": 1022,
+      "name": "Krasnoyarsk",
+      "center": true,
+      "x": 15162,
+      "y": 1341
+    },
+    {
+      "id": 1023,
+      "name": "Chita",
+      "center": true,
+      "x": 16431,
+      "y": 1561
+    },
+    {
+      "id": 1024,
+      "name": "Buryatia",
+      "center": true,
+      "x": 16009,
+      "y": 1531
+    },
+    {
+      "id": 1025,
+      "name": "Attu_Island",
+      "center": true,
+      "x": 19570,
+      "y": 1274
+    },
+    {
+      "id": 1026,
+      "name": "Khakassia",
+      "center": true,
+      "x": 14873,
+      "y": 1432
+    },
+    {
+      "id": 1027,
+      "name": "Irkutsk",
+      "center": true,
+      "x": 15794,
+      "y": 1457
+    },
+    {
+      "id": 1028,
+      "name": "Amur",
+      "center": true,
+      "x": 17002,
+      "y": 1440
+    },
+    {
+      "id": 1029,
+      "name": "Nikolayevsk",
+      "center": true,
+      "x": 17521,
+      "y": 1518
+    },
+    {
+      "id": 1030,
+      "name": "Altai_Krai",
+      "center": true,
+      "x": 14572,
+      "y": 1551
+    },
+    {
+      "id": 1031,
+      "name": "North_Sakhalin",
+      "center": true,
+      "x": 17908,
+      "y": 1611
+    },
+    {
+      "id": 1032,
+      "name": "Tannu_Tuva",
+      "center": true,
+      "x": 15244,
+      "y": 1622
+    },
+    {
+      "id": 1033,
+      "name": "Heilungkiang",
+      "center": true,
+      "x": 16963,
+      "y": 1826
+    },
+    {
+      "id": 1034,
+      "name": "Hulunbuir",
+      "center": true,
+      "x": 16666,
+      "y": 1740
+    },
+    {
+      "id": 1035,
+      "name": "Khabarovsk",
+      "center": true,
+      "x": 17660,
+      "y": 1780
+    },
+    {
+      "id": 1036,
+      "name": "Birobidzhan",
+      "center": true,
+      "x": 17308,
+      "y": 1717
+    },
+    {
+      "id": 1037,
+      "name": "Oyrot_Region",
+      "center": true,
+      "x": 14817,
+      "y": 1683
+    },
+    {
+      "id": 1038,
+      "name": "Khövsgöl",
+      "center": true,
+      "x": 15535,
+      "y": 1727
+    },
+    {
+      "id": 1039,
+      "name": "Khovd",
+      "center": true,
+      "x": 15097,
+      "y": 1853
+    },
+    {
+      "id": 1040,
+      "name": "Ulaanbaatar",
+      "center": true,
+      "x": 15698,
+      "y": 1876
+    },
+    {
+      "id": 1041,
+      "name": "Dornod",
+      "center": true,
+      "x": 16295,
+      "y": 1890
+    },
+    {
+      "id": 1042,
+      "name": "South_Sakhalin",
+      "center": true,
+      "x": 17909,
+      "y": 1838
+    },
+    {
+      "id": 1043,
+      "name": "Kuril_Islands",
+      "center": true,
+      "x": 18193,
+      "y": 2055
+    },
+    {
+      "id": 1044,
+      "name": "Dzungaria",
+      "center": true,
+      "x": 14784,
+      "y": 2007
+    },
+    {
+      "id": 1045,
+      "name": "Gobi",
+      "center": true,
+      "x": 15713,
+      "y": 2083
+    },
+    {
+      "id": 1046,
+      "name": "Kirin",
+      "center": true,
+      "x": 17015,
+      "y": 2157
+    },
+    {
+      "id": 1047,
+      "name": "Urumqi",
+      "center": true,
+      "x": 14687,
+      "y": 2221
+    },
+    {
+      "id": 1048,
+      "name": "Dabancheng",
+      "center": true,
+      "x": 15130,
+      "y": 2186
+    },
+    {
+      "id": 1049,
+      "name": "Shigatse",
+      "center": true,
+      "x": 14861,
+      "y": 2999
+    },
+    {
+      "id": 1050,
+      "name": "Nepal",
+      "center": true,
+      "x": 14648,
+      "y": 3054
+    },
+    {
+      "id": 1051,
+      "name": "Arunachal_Pradesh",
+      "center": true,
+      "x": 15237,
+      "y": 3067
+    },
+    {
+      "id": 1052,
+      "name": "Dali",
+      "center": true,
+      "x": 15517,
+      "y": 3206
+    },
+    {
+      "id": 1053,
+      "name": "Okinawa",
+      "center": true,
+      "x": 17049,
+      "y": 3189
+    },
+    {
+      "id": 1054,
+      "name": "Bhutan",
+      "center": true,
+      "x": 15002,
+      "y": 3105
+    },
+    {
+      "id": 1055,
+      "name": "Iwo_Jima",
+      "center": true,
+      "x": 17878,
+      "y": 3228
+    },
+    {
+      "id": 1056,
+      "name": "Taiwan",
+      "center": true,
+      "x": 16699,
+      "y": 3307
+    },
+    {
+      "id": 1057,
+      "name": "Marcus_Island",
+      "center": true,
+      "x": 18549,
+      "y": 3288
+    },
+    {
+      "id": 1058,
+      "name": "Tonkin",
+      "center": true,
+      "x": 15822,
+      "y": 3425
+    },
+    {
+      "id": 1059,
+      "name": "Lanna",
+      "center": true,
+      "x": 15503,
+      "y": 3580
+    },
+    {
+      "id": 1060,
+      "name": "Wake_Island",
+      "center": true,
+      "x": 19239,
+      "y": 3540
+    },
+    {
+      "id": 1061,
+      "name": "Isan",
+      "center": true,
+      "x": 15713,
+      "y": 3727
+    },
+    {
+      "id": 1062,
+      "name": "Saipan",
+      "center": true,
+      "x": 18095,
+      "y": 3710
+    },
+    {
+      "id": 1063,
+      "name": "Central_Islands",
+      "center": true,
+      "x": 16846,
+      "y": 3875
+    },
+    {
+      "id": 1064,
+      "name": "Guam",
+      "center": true,
+      "x": 18011,
+      "y": 3880
+    },
+    {
+      "id": 1065,
+      "name": "Andaman",
+      "center": true,
+      "x": 15136,
+      "y": 3915
+    },
+    {
+      "id": 1066,
+      "name": "Palawan",
+      "center": true,
+      "x": 16567,
+      "y": 4065
+    },
+    {
+      "id": 1067,
+      "name": "Marshall_Islands",
+      "center": true,
+      "x": 19278,
+      "y": 4084
+    },
+    {
+      "id": 1068,
+      "name": "Caroline_Islands",
+      "center": true,
+      "x": 19001,
+      "y": 4335
+    },
+    {
+      "id": 1069,
+      "name": "Ceylon",
+      "center": true,
+      "x": 14462,
+      "y": 4182
+    },
+    {
+      "id": 1070,
+      "name": "Palau",
+      "center": true,
+      "x": 17406,
+      "y": 4182
+    },
+    {
+      "id": 1071,
+      "name": "The_Moluccas",
+      "center": true,
+      "x": 17171,
+      "y": 4731
+    },
+    {
+      "id": 1072,
+      "name": "Gilbert_Islands",
+      "center": true,
+      "x": 19599,
+      "y": 4506
+    },
+    {
+      "id": 1073,
+      "name": "Nauru",
+      "center": true,
+      "x": 19254,
+      "y": 4591
+    },
+    {
+      "id": 1074,
+      "name": "Bismarck",
+      "center": true,
+      "x": 18353,
+      "y": 4853
+    },
+    {
+      "id": 1075,
+      "name": "Solomon_Islands",
+      "center": true,
+      "x": 18836,
+      "y": 5084
+    },
+    {
+      "id": 1076,
+      "name": "Bougainville",
+      "center": true,
+      "x": 18595,
+      "y": 4888
+    },
+    {
+      "id": 1077,
+      "name": "Ellice_Islands",
+      "center": true,
+      "x": 19929,
+      "y": 5007
+    },
+    {
+      "id": 1078,
+      "name": "Christmas_Island",
+      "center": true,
+      "x": 15859,
+      "y": 5116
+    },
+    {
+      "id": 1079,
+      "name": "Nendo",
+      "center": true,
+      "x": 19205,
+      "y": 5128
+    },
+    {
+      "id": 1080,
+      "name": "North_West_Australia",
+      "center": true,
+      "x": 16953,
+      "y": 5475
+    },
+    {
+      "id": 1081,
+      "name": "Cocos_Islands",
+      "center": true,
+      "x": 15326,
+      "y": 5342
+    },
+    {
+      "id": 1082,
+      "name": "Fiji",
+      "center": true,
+      "x": 19870,
+      "y": 5502
+    },
+    {
+      "id": 1083,
+      "name": "Western_Australia",
+      "center": true,
+      "x": 16611,
+      "y": 5915
+    },
+    {
+      "id": 1084,
+      "name": "South_West_Australia",
+      "center": true,
+      "x": 16914,
+      "y": 6074
+    },
+    {
+      "id": 1085,
+      "name": "South_Australia",
+      "center": true,
+      "x": 17535,
+      "y": 6136
+    },
+    {
+      "id": 1086,
+      "name": "New_South_Wales",
+      "center": true,
+      "x": 18065,
+      "y": 6149
+    },
+    {
+      "id": 1087,
+      "name": "Victoria",
+      "center": true,
+      "x": 17937,
+      "y": 6375
+    },
+    {
+      "id": 1088,
+      "name": "Tasmania",
+      "center": true,
+      "x": 18048,
+      "y": 6603
+    },
+    {
+      "id": 1089,
+      "name": "Amazon_impassable_2",
+      "center": true,
+      "x": 6563,
+      "y": 4099
+    },
+    {
+      "id": 1090,
+      "name": "Easter_Island",
+      "center": true,
+      "x": 4918,
+      "y": 5580
+    },
+    {
+      "id": 1091,
+      "name": "Azerbaijan",
+      "center": true,
+      "x": 12630,
+      "y": 2345
+    }
+  ]
+}

@@ -28,6 +28,33 @@ interface VisualMapData {
   provinces: VisualProvince[]
 }
 
+interface VisualBounds {
+  minX: number
+  minY: number
+  maxX: number
+  maxY: number
+}
+
+interface VisualProvinceFeature {
+  id: number
+  name: string
+  countryId: number | string | null
+  centerId: number | null
+  vertices: Array<{ x: number; y: number }>
+  fill: string
+  bounds: VisualBounds
+  path: Path2D
+}
+
+interface VisualCountryFeature {
+  countryId: number | string | null
+  fill: string
+  bounds: VisualBounds
+  path: Path2D
+}
+
+type VisualRenderMode = 'country' | 'province-fill' | 'province-detail'
+
 interface ArmyDivision {
   id: number
   name: string
@@ -52,6 +79,13 @@ const errorMessage = ref('')
 const zoom = ref(1)
 const panX = ref(0)
 const panY = ref(0)
+const boardWrapRef = ref<HTMLElement | null>(null)
+const visualMapCanvas = ref<HTMLCanvasElement | null>(null)
+const viewportSize = ref({ width: 0, height: 0 })
+const isPreparingVisualLayer = ref(false)
+const visualProvinceFeatures = ref<VisualProvinceFeature[]>([])
+const visualCountryFeatures = ref<VisualCountryFeature[]>([])
+const visualProvinceSpatialIndex = ref<Map<string, number[]>>(new Map())
 const troops = ref<CombatTroop[]>([])
 const selectedTroopId = ref<number | null>(null)
 const destinationPointId = ref<number | null>(null)
@@ -408,32 +442,373 @@ const divisionRenderItems = computed(() => divisions.value
     }
   })
   .filter((division): division is ArmyDivision & { x: number; y: number } => division !== null))
-const visualProvincePolygons = computed(() => {
-  if (!visualMapData.value) {
-    return []
+const visualRenderMode = computed<VisualRenderMode>(() => {
+  if (zoom.value < 0.55) {
+    return 'country'
   }
 
-  const pointLookup = pointMap.value
+  if (zoom.value < 1.35) {
+    return 'province-fill'
+  }
 
-  return visualMapData.value.provinces
-    .filter((province) => province.vertices.length >= 3)
-    .map((province) => {
-      const centerPoint = province.center_id !== null ? pointLookup.get(province.center_id) : undefined
-      const effectiveCountry = province.country_id
-        ?? centerPoint?.country_id
-        ?? null
-      const resolvedCenterId = centerPoint?.id
-        ?? (province.center_id !== null ? province.center_id : null)
+  return 'province-detail'
+})
+const shouldShowBorderSegments = computed(() => zoom.value >= 1.15 || frontlineSelectionMode.value || isMovementMode.value)
+const shouldShowMapPoints = computed(() => frontlineSelectionMode.value || isMovementMode.value || zoom.value >= 1.7)
+const hasVisualMap = computed(() => visualProvinceFeatures.value.length > 0)
+const visualLayerStatusLabel = computed(() => {
+  if (!isPreparingVisualLayer.value) {
+    return ''
+  }
 
-      return {
-        id: province.id,
-        name: province.name,
-        centerId: resolvedCenterId,
-        vertices: province.vertices,
-        points: province.vertices.map((vertex) => `${vertex.x},${vertex.y}`).join(' '),
-        fill: getPointColor(effectiveCountry),
+  return visualRenderMode.value === 'country'
+    ? 'Preparando cache do mapa...'
+    : 'Otimizando visual do mapa...'
+})
+
+const VISUAL_INDEX_CELL_SIZE = 320
+let visualRenderFrameId: number | null = null
+let boardResizeObserver: ResizeObserver | null = null
+
+function createVisualProvincePath(vertices: Array<{ x: number; y: number }>) {
+  const path = new Path2D()
+
+  vertices.forEach((vertex, index) => {
+    if (index === 0) {
+      path.moveTo(vertex.x, vertex.y)
+      return
+    }
+
+    path.lineTo(vertex.x, vertex.y)
+  })
+
+  path.closePath()
+  return path
+}
+
+function computeVisualBounds(vertices: Array<{ x: number; y: number }>) {
+  let minX = Number.POSITIVE_INFINITY
+  let minY = Number.POSITIVE_INFINITY
+  let maxX = Number.NEGATIVE_INFINITY
+  let maxY = Number.NEGATIVE_INFINITY
+
+  for (const vertex of vertices) {
+    if (vertex.x < minX) {
+      minX = vertex.x
+    }
+
+    if (vertex.y < minY) {
+      minY = vertex.y
+    }
+
+    if (vertex.x > maxX) {
+      maxX = vertex.x
+    }
+
+    if (vertex.y > maxY) {
+      maxY = vertex.y
+    }
+  }
+
+  return { minX, minY, maxX, maxY }
+}
+
+function mergeVisualBounds(target: VisualBounds, source: VisualBounds) {
+  target.minX = Math.min(target.minX, source.minX)
+  target.minY = Math.min(target.minY, source.minY)
+  target.maxX = Math.max(target.maxX, source.maxX)
+  target.maxY = Math.max(target.maxY, source.maxY)
+}
+
+function clearVisualRenderCache() {
+  visualProvinceFeatures.value = []
+  visualCountryFeatures.value = []
+  visualProvinceSpatialIndex.value = new Map()
+  scheduleVisualMapDraw()
+}
+
+function indexVisualProvince(bounds: VisualBounds, provinceIndex: number, indexMap: Map<string, number[]>) {
+  const startX = Math.floor(bounds.minX / VISUAL_INDEX_CELL_SIZE)
+  const endX = Math.floor(bounds.maxX / VISUAL_INDEX_CELL_SIZE)
+  const startY = Math.floor(bounds.minY / VISUAL_INDEX_CELL_SIZE)
+  const endY = Math.floor(bounds.maxY / VISUAL_INDEX_CELL_SIZE)
+
+  for (let cellX = startX; cellX <= endX; cellX += 1) {
+    for (let cellY = startY; cellY <= endY; cellY += 1) {
+      const key = `${cellX}:${cellY}`
+      const bucket = indexMap.get(key) ?? []
+      bucket.push(provinceIndex)
+      indexMap.set(key, bucket)
+    }
+  }
+}
+
+function updateCanvasViewportSize() {
+  const board = boardWrapRef.value
+  if (!board) {
+    return false
+  }
+
+  const width = Math.max(1, Math.round(board.clientWidth))
+  const height = Math.max(1, Math.round(board.clientHeight))
+  const changed = width !== viewportSize.value.width || height !== viewportSize.value.height
+
+  if (changed) {
+    viewportSize.value = { width, height }
+  }
+
+  return changed
+}
+
+function getBoardDisplayMetrics() {
+  const displayWidth = viewportSize.value.width
+  const displayHeight = viewportSize.value.height
+  const contentScale = Math.min(displayWidth / boardWidth.value, displayHeight / boardHeight.value)
+  const contentOffsetX = (displayWidth - boardWidth.value * contentScale) / 2
+  const contentOffsetY = (displayHeight - boardHeight.value * contentScale) / 2
+
+  return {
+    displayWidth,
+    displayHeight,
+    contentScale,
+    contentOffsetX,
+    contentOffsetY,
+  }
+}
+
+function getVisibleWorldBounds() {
+  const width = boardWidth.value
+  const height = boardHeight.value
+  const offsetX = (width - width / zoom.value) / 2 + panX.value
+  const offsetY = (height - height / zoom.value) / 2 + panY.value
+  const metrics = getBoardDisplayMetrics()
+
+  if (metrics.contentScale <= 0) {
+    return {
+      minX: 0,
+      minY: 0,
+      maxX: width,
+      maxY: height,
+    }
+  }
+
+  const visibleMinSvgX = (0 - metrics.contentOffsetX) / metrics.contentScale
+  const visibleMinSvgY = (0 - metrics.contentOffsetY) / metrics.contentScale
+  const visibleMaxSvgX = (metrics.displayWidth - metrics.contentOffsetX) / metrics.contentScale
+  const visibleMaxSvgY = (metrics.displayHeight - metrics.contentOffsetY) / metrics.contentScale
+
+  return {
+    minX: (visibleMinSvgX - offsetX) / zoom.value,
+    minY: (visibleMinSvgY - offsetY) / zoom.value,
+    maxX: (visibleMaxSvgX - offsetX) / zoom.value,
+    maxY: (visibleMaxSvgY - offsetY) / zoom.value,
+  }
+}
+
+function boundsIntersectViewport(bounds: VisualBounds, viewport: VisualBounds) {
+  return !(
+    bounds.maxX < viewport.minX
+    || bounds.minX > viewport.maxX
+    || bounds.maxY < viewport.minY
+    || bounds.minY > viewport.maxY
+  )
+}
+
+function pointInsideBounds(point: { x: number; y: number }, bounds: VisualBounds) {
+  return point.x >= bounds.minX && point.x <= bounds.maxX && point.y >= bounds.minY && point.y <= bounds.maxY
+}
+
+function scheduleVisualMapDraw() {
+  if (visualRenderFrameId !== null) {
+    cancelAnimationFrame(visualRenderFrameId)
+  }
+
+  visualRenderFrameId = requestAnimationFrame(() => {
+    visualRenderFrameId = null
+    drawVisualMapCanvas()
+  })
+}
+
+function drawVisualMapCanvas() {
+  const canvas = visualMapCanvas.value
+  if (!canvas) {
+    return
+  }
+
+  if (updateCanvasViewportSize() && visualRenderFrameId === null) {
+    scheduleVisualMapDraw()
+  }
+
+  const metrics = getBoardDisplayMetrics()
+  const displayWidth = metrics.displayWidth
+  const displayHeight = metrics.displayHeight
+  if (displayWidth <= 0 || displayHeight <= 0) {
+    return
+  }
+
+  const dpr = Math.min(window.devicePixelRatio || 1, 2)
+  const pixelWidth = Math.max(1, Math.round(displayWidth * dpr))
+  const pixelHeight = Math.max(1, Math.round(displayHeight * dpr))
+
+  if (canvas.width !== pixelWidth) {
+    canvas.width = pixelWidth
+  }
+
+  if (canvas.height !== pixelHeight) {
+    canvas.height = pixelHeight
+  }
+
+  const context = canvas.getContext('2d')
+  if (!context) {
+    return
+  }
+
+  context.setTransform(1, 0, 0, 1, 0, 0)
+  context.clearRect(0, 0, pixelWidth, pixelHeight)
+
+  if (!visualProvinceFeatures.value.length) {
+    return
+  }
+
+  const worldViewport = getVisibleWorldBounds()
+  const offsetX = (boardWidth.value - boardWidth.value / zoom.value) / 2 + panX.value
+  const offsetY = (boardHeight.value - boardHeight.value / zoom.value) / 2 + panY.value
+
+  context.setTransform(
+    dpr * metrics.contentScale * zoom.value,
+    0,
+    0,
+    dpr * metrics.contentScale * zoom.value,
+    dpr * (metrics.contentOffsetX + offsetX * metrics.contentScale),
+    dpr * (metrics.contentOffsetY + offsetY * metrics.contentScale),
+  )
+  context.globalAlpha = 0.58
+  context.lineJoin = 'round'
+  context.lineCap = 'round'
+
+  if (visualRenderMode.value === 'country') {
+    for (const country of visualCountryFeatures.value) {
+      if (!boundsIntersectViewport(country.bounds, worldViewport)) {
+        continue
       }
+
+      context.fillStyle = country.fill
+      context.fill(country.path)
+    }
+
+    context.setTransform(1, 0, 0, 1, 0, 0)
+    return
+  }
+
+  const drawStrokes = visualRenderMode.value === 'province-detail'
+
+  for (const province of visualProvinceFeatures.value) {
+    if (!boundsIntersectViewport(province.bounds, worldViewport)) {
+      continue
+    }
+
+    context.fillStyle = province.fill
+    context.fill(province.path)
+
+    if (drawStrokes) {
+      context.strokeStyle = '#0f172a'
+      context.lineWidth = 1.5 / zoom.value
+      context.stroke(province.path)
+    }
+  }
+
+  context.setTransform(1, 0, 0, 1, 0, 0)
+}
+
+async function rebuildVisualRenderCache() {
+  if (!visualMapData.value) {
+    clearVisualRenderCache()
+    return
+  }
+
+  isPreparingVisualLayer.value = true
+  await new Promise<void>((resolve) => {
+    requestAnimationFrame(() => resolve())
+  })
+
+  const pointLookup = pointMap.value
+  const provinces: VisualProvinceFeature[] = []
+  const spatialIndex = new Map<string, number[]>()
+  const countryMap = new Map<string, VisualCountryFeature>()
+
+  for (const province of visualMapData.value.provinces) {
+    if (province.vertices.length < 3) {
+      continue
+    }
+
+    const centerPoint = province.center_id !== null ? pointLookup.get(province.center_id) : undefined
+    const countryId = province.country_id ?? centerPoint?.country_id ?? null
+    const centerId = centerPoint?.id ?? (province.center_id !== null ? province.center_id : null)
+    const bounds = computeVisualBounds(province.vertices)
+    const path = createVisualProvincePath(province.vertices)
+    const feature: VisualProvinceFeature = {
+      id: province.id,
+      name: province.name,
+      countryId,
+      centerId,
+      vertices: province.vertices,
+      fill: getPointColor(countryId),
+      bounds,
+      path,
+    }
+
+    const provinceIndex = provinces.length
+    provinces.push(feature)
+    indexVisualProvince(bounds, provinceIndex, spatialIndex)
+
+    const countryKey = String(countryId ?? 'neutral')
+    const existingCountry = countryMap.get(countryKey)
+    if (existingCountry) {
+      existingCountry.path.addPath(path)
+      mergeVisualBounds(existingCountry.bounds, bounds)
+      continue
+    }
+
+    const countryPath = new Path2D()
+    countryPath.addPath(path)
+    countryMap.set(countryKey, {
+      countryId,
+      fill: feature.fill,
+      bounds: { ...bounds },
+      path: countryPath,
     })
+  }
+
+  visualProvinceFeatures.value = provinces
+  visualProvinceSpatialIndex.value = spatialIndex
+  visualCountryFeatures.value = Array.from(countryMap.values())
+  isPreparingVisualLayer.value = false
+  scheduleVisualMapDraw()
+}
+
+watch(
+  [zoom, panX, panY, visualRenderMode, () => boardWidth.value, () => boardHeight.value],
+  () => {
+    scheduleVisualMapDraw()
+  },
+)
+
+watch(boardWrapRef, (board) => {
+  boardResizeObserver?.disconnect()
+  boardResizeObserver = null
+
+  if (!board) {
+    return
+  }
+
+  updateCanvasViewportSize()
+  scheduleVisualMapDraw()
+
+  boardResizeObserver = new ResizeObserver(() => {
+    updateCanvasViewportSize()
+    scheduleVisualMapDraw()
+  })
+  boardResizeObserver.observe(board)
 })
 const frontlineSegments = computed(() => {
   const points = mapData.value?.points ?? []
@@ -668,8 +1043,22 @@ function isPointInsidePolygon(point: { x: number; y: number }, polygon: Array<{ 
 }
 
 function findCenterIdByWorldPoint(worldPoint: { x: number; y: number }) {
-  for (const province of visualProvincePolygons.value) {
-    if (province.centerId === null || province.vertices.length < 3) {
+  const cellX = Math.floor(worldPoint.x / VISUAL_INDEX_CELL_SIZE)
+  const cellY = Math.floor(worldPoint.y / VISUAL_INDEX_CELL_SIZE)
+  const candidateIndexes = new Set<number>()
+
+  for (let offsetX = -1; offsetX <= 1; offsetX += 1) {
+    for (let offsetY = -1; offsetY <= 1; offsetY += 1) {
+      const bucket = visualProvinceSpatialIndex.value.get(`${cellX + offsetX}:${cellY + offsetY}`) ?? []
+      for (const provinceIndex of bucket) {
+        candidateIndexes.add(provinceIndex)
+      }
+    }
+  }
+
+  for (const provinceIndex of candidateIndexes) {
+    const province = visualProvinceFeatures.value[provinceIndex]
+    if (!province || province.centerId === null || !pointInsideBounds(worldPoint, province.bounds)) {
       continue
     }
 
@@ -704,13 +1093,13 @@ function findNearestPointIdByWorldPoint(worldPoint: { x: number; y: number }) {
 function resolvePointIdFromMouseEvent(event: MouseEvent) {
   const worldPoint = getWorldPointFromMouseEvent(event)
   const fromProvince = findCenterIdByWorldPoint(worldPoint)
-  const hasVisualMap = visualProvincePolygons.value.length > 0
+  const visualMapLoaded = hasVisualMap.value
 
   if (fromProvince !== null) {
     return fromProvince
   }
 
-  if (hasVisualMap) {
+  if (visualMapLoaded) {
     return null
   }
 
@@ -2073,12 +2462,22 @@ async function loadLocalTestData() {
   errorMessage.value = ''
 
   try {
+    const requestOptions = { cache: 'force-cache' as RequestCache }
     const [countriesResponse, mapResponse, troopsResponse, playerResponse, visualResponse] = await Promise.all([
-      fetch('/teste/countries.json'),
-      fetch('/teste/map-teste-dt.json'),
-      fetch('/teste/troops.json'),
-      fetch('/teste/player.json'),
-      fetch('/teste/visual.dt-svg.json'),
+      fetch('/teste/countries.json', requestOptions),
+      // fetch('/teste/centers-medium.json', requestOptions),
+      // fetch('/teste/centers-extra-lg.json', requestOptions),
+      // fetch('/teste/centers-dt-small.json', requestOptions),
+      // fetch('/teste/center-final.json', requestOptions),
+      fetch('/teste/center-mc-small.json', requestOptions),
+      
+      fetch('/teste/troops.json', requestOptions),
+      fetch('/teste/player.json', requestOptions),
+      // fetch('/teste/visual-medium.json', requestOptions),
+      // fetch('/teste/visual-extra-lg.json', requestOptions),
+      // fetch('/teste/visual-dt-small.json', requestOptions),
+      // fetch('/teste/visual-final.json', requestOptions),
+      fetch('/teste/visual-mc-small.json', requestOptions),
     ])
 
     if (!countriesResponse.ok) {
@@ -2118,6 +2517,7 @@ async function loadLocalTestData() {
     const normalizedMap = normalizeMapJson(mapDataPayload)
     mapData.value = normalizedMap
     visualMapData.value = normalizeVisualMap(visualData)
+    await rebuildVisualRenderCache()
 
     const rawTroops = Array.isArray(troopsData)
       ? troopsData
@@ -2148,6 +2548,7 @@ async function loadLocalTestData() {
   } catch (error) {
     mapData.value = null
     visualMapData.value = null
+    clearVisualRenderCache()
     troops.value = []
     divisions.value = []
     errorMessage.value = error instanceof Error ? error.message : 'Erro ao carregar os dados locais de teste.'
@@ -2675,7 +3076,7 @@ function setZoom(
   nextZoom: number,
   anchor: { svgX: number; svgY: number; worldX: number; worldY: number } | null = null,
 ) {
-  const clampedNextZoom = Math.min(20, Math.max(0.25, Number(nextZoom) || 1))
+  const clampedNextZoom = Math.min(60, Math.max(0.25, Number(nextZoom) || 1))
 
   if (!anchor) {
     zoom.value = clampedNextZoom
@@ -2781,6 +3182,12 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
+  boardResizeObserver?.disconnect()
+  boardResizeObserver = null
+  if (visualRenderFrameId !== null) {
+    cancelAnimationFrame(visualRenderFrameId)
+    visualRenderFrameId = null
+  }
   stopMovementLoop()
 })
 </script>
@@ -2797,6 +3204,7 @@ onBeforeUnmount(() => {
 
     <div v-else-if="mapData && (mapData.points ?? []).length" class="map-stage">
       <div
+        ref="boardWrapRef"
         class="board-wrap"
         :class="{ 'frontline-active': frontlineSelectionMode }"
         @wheel="onWheelZoom"
@@ -2806,6 +3214,17 @@ onBeforeUnmount(() => {
         @mouseup="handleBoardMouseUp"
         @mouseleave="handleBoardMouseUp"
       >
+        <canvas
+          ref="visualMapCanvas"
+          class="visual-map-canvas"
+          aria-hidden="true"
+        />
+        <div v-if="isPreparingVisualLayer" class="visual-loading-overlay">
+          <div class="visual-loading-card">
+            <strong>Mapa em preparo</strong>
+            <span>{{ visualLayerStatusLabel }}</span>
+          </div>
+        </div>
         <svg
           class="board-svg"
           :width="boardWidth"
@@ -2862,19 +3281,7 @@ onBeforeUnmount(() => {
               />
             </g>
 
-            <g v-if="visualProvincePolygons.length" class="visual-provinces-layer">
-              <polygon
-                v-for="province in visualProvincePolygons"
-                :key="`visual-province-${province.id}`"
-                :points="province.points"
-                :fill="province.fill"
-                stroke="#0f172a"
-                stroke-width="1.7"
-                opacity="0.56"
-              />
-            </g>
-
-            <g class="borders-layer">
+            <g v-if="shouldShowBorderSegments" class="borders-layer">
               <line
                 v-for="segment in borderSegments"
                 :key="segment.key"
@@ -2890,21 +3297,23 @@ onBeforeUnmount(() => {
             </g>
 
             <g class="points-layer">
-              <circle
-                v-for="point in visibleMapPoints"
-                :key="point.id"
-                :cx="point.x"
-                :cy="point.y"
-                :r="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? 3.2 : hoveredDestinationId === point.id && isMovementMode ? 2.9 : 2.1"
-                fill="#020617"
-                stroke="#f8fafc"
-                :stroke-width="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? 1.2 : hoveredDestinationId === point.id && isMovementMode ? 1.1 : 0.7"
-                :opacity="frontlineSelectionMode ? (isPointFrontlineEligible(point.id) ? 0.95 : 0.16) : hoveredDestinationId === point.id && isMovementMode ? 0.95 : 0.75"
-                :filter="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? `drop-shadow(0 0 5px ${MAP_THEME.frontlineGlow})` : undefined"
-                @mouseenter="handleMapPointMouseEnter(point.id)"
-                @mouseleave="handleMapPointMouseLeave(point.id)"
-                @click="handleMapPointClick(point.id)"
-              />
+              <g v-if="shouldShowMapPoints">
+                <circle
+                  v-for="point in visibleMapPoints"
+                  :key="point.id"
+                  :cx="point.x"
+                  :cy="point.y"
+                  :r="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? 3.2 : hoveredDestinationId === point.id && isMovementMode ? 2.9 : 1.1"
+                  fill="#020617"
+                  stroke="#f0cf9d"
+                  :stroke-width="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? 1.2 : hoveredDestinationId === point.id && isMovementMode ? 1.1 : 0.1"
+                  :opacity="frontlineSelectionMode ? (isPointFrontlineEligible(point.id) ? 0.95 : 0.16) : hoveredDestinationId === point.id && isMovementMode ? 0.95 : 0.75"
+                  :filter="frontlineSelectionMode && isPointFrontlineEligible(point.id) ? `drop-shadow(0 0 5px ${MAP_THEME.frontlineGlow})` : undefined"
+                  @mouseenter="handleMapPointMouseEnter(point.id)"
+                  @mouseleave="handleMapPointMouseLeave(point.id)"
+                  @click="handleMapPointClick(point.id)"
+                />
+              </g>
 
               <g v-for="division in divisionRenderItems" :key="`division-${division.id}`">
                 <circle
@@ -2946,7 +3355,7 @@ onBeforeUnmount(() => {
                   :x="getTroopRenderPosition(troop).x + 14"
                   :y="getTroopRenderPosition(troop).y - 12"
                   font-size="10"
-                  fill="#f8fafc"
+                  fill="#f0cf9d"
                 >
                   {{ troop.label }}
                 </text>
@@ -2958,7 +3367,7 @@ onBeforeUnmount(() => {
                   :cy="indicator.y - 16"
                   r="8"
                   fill="#0f172a"
-                  stroke="#f8fafc"
+                  stroke="#f0cf9d"
                   stroke-width="1.2"
                   opacity="0.9"
                 />
@@ -2968,7 +3377,7 @@ onBeforeUnmount(() => {
                   font-size="10"
                   font-weight="700"
                   text-anchor="middle"
-                  fill="#f8fafc"
+                  fill="#f0cf9d"
                 >
                   {{ indicator.count }}
                 </text>
@@ -3151,16 +3560,60 @@ onBeforeUnmount(() => {
   cursor: crosshair;
 }
 
+.visual-map-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.visual-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.visual-loading-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+  min-width: 240px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(15, 23, 42, 0.88);
+  color: #e2e8f0;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.4);
+}
+
+.visual-loading-card strong {
+  font-size: 0.95rem;
+  color: #f0cf9d;
+}
+
+.visual-loading-card span {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
 .board-svg {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background:
-    linear-gradient(rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.2)),
-    rgba(15, 23, 42, 0.7);
   border-radius: 20px;
   transform-origin: center center;
+  z-index: 1;
 }
 
 .status {
@@ -3208,7 +3661,7 @@ onBeforeUnmount(() => {
 .selection-panel h3 {
   margin: 0;
   font-size: 1rem;
-  color: #f8fafc;
+  color: #f0cf9d;
 }
 
 .selection-panel .close-button {
@@ -3217,7 +3670,7 @@ onBeforeUnmount(() => {
   border-radius: 999px;
   border: 1px solid rgba(148, 163, 184, 0.35);
   background: rgba(30, 41, 59, 0.9);
-  color: #f8fafc;
+  color: #f0cf9d;
   font-size: 1.2rem;
   line-height: 1;
   cursor: pointer;
@@ -3266,7 +3719,7 @@ onBeforeUnmount(() => {
   width: 100%;
   border: 1px solid rgba(148, 163, 184, 0.4);
   background: rgba(15, 23, 42, 0.9);
-  color: #f8fafc;
+  color: #f0cf9d;
   border-radius: 10px;
   padding: 0.7rem 0.8rem;
   box-sizing: border-box;
@@ -3326,7 +3779,7 @@ onBeforeUnmount(() => {
   width: 100%;
   border: 1px solid rgba(148, 163, 184, 0.4);
   background: rgba(15, 23, 42, 0.9);
-  color: #f8fafc;
+  color: #f0cf9d;
   border-radius: 10px;
   padding: 0.7rem 0.8rem;
   box-sizing: border-box;
@@ -3363,7 +3816,7 @@ onBeforeUnmount(() => {
 .groups-panel h3 {
   margin: 0;
   font-size: 1rem;
-  color: #f8fafc;
+  color: #f0cf9d;
 }
 
 .groups-panel ul {
@@ -3424,7 +3877,7 @@ onBeforeUnmount(() => {
 }
 
 .group-compact-label {
-  color: #f8fafc;
+  color: #f0cf9d;
   font-size: 0.95rem;
   font-weight: 800;
   letter-spacing: 0.02em;
@@ -3448,7 +3901,7 @@ onBeforeUnmount(() => {
 .province-panel h3 {
   margin: 0 0 0.5rem;
   font-size: 1rem;
-  color: #f8fafc;
+  color: #f0cf9d;
 }
 
 .province-panel p {

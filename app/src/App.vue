@@ -5,8 +5,10 @@ import MapEditorView from './views/MapEditorView.vue'
 import MapCentersCreatorView from './views/MapCentersCreatorView.vue'
 import CombatMapTestView from './views/CombatMapTestView.vue'
 import MapVisualCreatorView from './views/MapVisualCreatorView.vue'
+import MapViewer from './views/MapViewer.vue'
 
-type MapVariant = 'default' | 'world' | 'editor' | 'centers-creator' | 'visual-creator' | 'combat-test'
+
+type MapVariant = 'default' | 'world' | 'editor' | 'centers-creator' | 'visual-creator' | 'combat-test' | 'viewer'
 
 const currentPath = ref(window.location.pathname)
 const currentSearch = ref(window.location.search)
@@ -33,6 +35,10 @@ const mapVariant = computed<MapVariant>(() => {
 
   if (currentPath.value === '/combat-test' || mapQuery === 'combat') {
     return 'combat-test'
+  }
+
+  if (currentPath.value === '/map' || mapQuery === 'viewer') {
+    return 'viewer'
   }
 
   return 'default'
@@ -69,7 +75,15 @@ onBeforeUnmount(() => {
         :class="{ active: mapVariant === 'default' }"
         @click="navigateTo('/')"
       >
-        Mapa Padrao
+        Mapa Padrão
+      </button>
+
+      <button
+        type="button"
+        :class="{ active: mapVariant === 'viewer' }"
+        @click="navigateTo('/map')"
+      >
+        Mapa Padrão
       </button>
 
       <button
@@ -111,6 +125,7 @@ onBeforeUnmount(() => {
     <MapCentersCreatorView v-else-if="mapVariant === 'centers-creator'" :key="mapVariant" />
     <MapVisualCreatorView v-else-if="mapVariant === 'visual-creator'" :key="mapVariant" />
     <CombatMapTestView v-else-if="mapVariant === 'combat-test'" :key="mapVariant" />
+    <MapViewer v-else-if="mapVariant === 'viewer'" :key="mapVariant" />
   </div>
 </template>
 

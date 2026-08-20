@@ -13,7 +13,9 @@
     "generate:map:centers": "node scripts/generate-map-centers-from-visual.mjs"
   },
   "dependencies": {
+    "d3-delaunay": "^6.0.4",
     "pinia": "^3.0.3",
+    "pixi.js": "^8.19.0",
     "vue": "^3.5.40"
   },
   "devDependencies": {

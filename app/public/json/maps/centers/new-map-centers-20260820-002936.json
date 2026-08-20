@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-20T00:29:36.621Z",
+  "width": 2000,
+  "height": 1200,
+  "overlayImage": null,
+  "points": [
+    {
+      "id": 1,
+      "center": true,
+      "name": "Point 1",
+      "x": 134,
+      "y": 139,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 2,
+      "center": true,
+      "name": "Point 2",
+      "x": 181,
+      "y": 143,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 3,
+      "center": true,
+      "name": "Point 3",
+      "x": 225,
+      "y": 143,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 4,
+      "center": true,
+      "name": "Point 4",
+      "x": 254,
+      "y": 143,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 5,
+      "center": true,
+      "name": "Point 5",
+      "x": 298,
+      "y": 143,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 6,
+      "center": true,
+      "name": "Point 6",
+      "x": 334,
+      "y": 144,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 7,
+      "center": true,
+      "name": "Point 7",
+      "x": 139,
+      "y": 184,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 8,
+      "center": true,
+      "name": "Point 8",
+      "x": 139,
+      "y": 217,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 9,
+      "center": true,
+      "name": "Point 9",
+      "x": 180,
+      "y": 219,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 10,
+      "center": true,
+      "name": "Point 10",
+      "x": 182,
+      "y": 182,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 11,
+      "center": true,
+      "name": "Point 11",
+      "x": 218,
+      "y": 183,
+      "owner": 1,
+      "borders": []
+    },
+    {
+      "id": 12,
+      "center": true,
+      "name": "Point 12",
+      "x": 216,
+      "y": 215,
+      "owner": 1,
+      "borders": []
+    }
+  ]
+}

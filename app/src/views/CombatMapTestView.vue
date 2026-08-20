@@ -8,6 +8,7 @@ import {
   getProvinceColor,
   getRoutePreviewColor,
 } from '../data/countryColors'
+import { TROOP_SIZE_CONFIG } from '../data/troopSizeConfig'
 import { buildBorderSegments, normalizeMapJson, type MapJsonData, type MapPointData } from '../utils/mapData'
 import {
   findShortestPath,
@@ -466,6 +467,28 @@ const visualLayerStatusLabel = computed(() => {
     : 'Otimizando visual do mapa...'
 })
 
+const troopZoomScale = computed(() => {
+  const zoomValue = Math.max(zoom.value, TROOP_SIZE_CONFIG.zoomResponse.minZoomForScaling)
+  const rawScale = Math.pow(1 / zoomValue, TROOP_SIZE_CONFIG.zoomResponse.exponent)
+
+  return Math.min(
+    TROOP_SIZE_CONFIG.zoomResponse.maxScaleMultiplier,
+    Math.max(TROOP_SIZE_CONFIG.zoomResponse.minScaleMultiplier, rawScale),
+  )
+})
+
+const divisionUnitRadius = computed(() => TROOP_SIZE_CONFIG.division.radius * troopZoomScale.value)
+const divisionUnitStrokeWidth = computed(() => TROOP_SIZE_CONFIG.division.strokeWidth * troopZoomScale.value)
+const divisionLabelFontSize = computed(() => TROOP_SIZE_CONFIG.division.label.fontSize * troopZoomScale.value)
+const divisionLabelOffsetX = computed(() => TROOP_SIZE_CONFIG.division.label.offsetX * troopZoomScale.value)
+const divisionLabelOffsetY = computed(() => TROOP_SIZE_CONFIG.division.label.offsetY * troopZoomScale.value)
+
+const battalionUnitRadius = computed(() => TROOP_SIZE_CONFIG.battalion.radius * troopZoomScale.value)
+const battalionUnitStrokeWidth = computed(() => TROOP_SIZE_CONFIG.battalion.strokeWidth * troopZoomScale.value)
+const battalionLabelFontSize = computed(() => TROOP_SIZE_CONFIG.battalion.label.fontSize * troopZoomScale.value)
+const battalionLabelOffsetX = computed(() => TROOP_SIZE_CONFIG.battalion.label.offsetX * troopZoomScale.value)
+const battalionLabelOffsetY = computed(() => TROOP_SIZE_CONFIG.battalion.label.offsetY * troopZoomScale.value)
+
 const VISUAL_INDEX_CELL_SIZE = 320
 let visualRenderFrameId: number | null = null
 let boardResizeObserver: ResizeObserver | null = null
@@ -700,7 +723,7 @@ function drawVisualMapCanvas() {
     return
   }
 
-  const drawStrokes = visualRenderMode.value === 'province-detail'
+  const drawStrokes = visualRenderMode.value !== 'country'
 
   for (const province of visualProvinceFeatures.value) {
     if (!boundsIntersectViewport(province.bounds, worldViewport)) {
@@ -711,8 +734,8 @@ function drawVisualMapCanvas() {
     context.fill(province.path)
 
     if (drawStrokes) {
-      context.strokeStyle = '#0f172a'
-      context.lineWidth = 1.5 / zoom.value
+      context.strokeStyle = MAP_THEME.provinceStroke
+      context.lineWidth = MAP_THEME.provinceBorderWidth
       context.stroke(province.path)
     }
   }
@@ -2465,19 +2488,10 @@ async function loadLocalTestData() {
     const requestOptions = { cache: 'force-cache' as RequestCache }
     const [countriesResponse, mapResponse, troopsResponse, playerResponse, visualResponse] = await Promise.all([
       fetch('/teste/countries.json', requestOptions),
-      // fetch('/teste/centers-medium.json', requestOptions),
-      // fetch('/teste/centers-extra-lg.json', requestOptions),
-      // fetch('/teste/centers-dt-small.json', requestOptions),
-      // fetch('/teste/center-final.json', requestOptions),
-      fetch('/teste/center-mc-small.json', requestOptions),
-      
+      fetch('/teste/center-mc-small.json', requestOptions),      
       fetch('/teste/troops.json', requestOptions),
       fetch('/teste/player.json', requestOptions),
-      // fetch('/teste/visual-medium.json', requestOptions),
-      // fetch('/teste/visual-extra-lg.json', requestOptions),
-      // fetch('/teste/visual-dt-small.json', requestOptions),
-      // fetch('/teste/visual-final.json', requestOptions),
-      fetch('/teste/visual-mc-small.json', requestOptions),
+      fetch('/teste/mapa-limpo.json', requestOptions),
     ])
 
     if (!countriesResponse.ok) {
@@ -3289,10 +3303,10 @@ onBeforeUnmount(() => {
                 :y1="segment.y1"
                 :x2="segment.x2"
                 :y2="segment.y2"
-                stroke="#cbd5e1"
-                stroke-width="0.25"
+                :stroke="MAP_THEME.provinceStroke"
+                stroke-width="1.4"
                 stroke-linecap="round"
-                opacity="0.15"
+                opacity="0.9"
               />
             </g>
 
@@ -3319,18 +3333,18 @@ onBeforeUnmount(() => {
                 <circle
                   :cx="division.x"
                   :cy="division.y"
-                  r="10"
+                  :r="divisionUnitRadius"
                   :fill="getDivisionFillColor(division.id, selectedDivisionIds.includes(division.id))"
                   :stroke="getDivisionStrokeColor(division.id, selectedDivisionIds.includes(division.id))"
-                  stroke-width="2"
+                  :stroke-width="divisionUnitStrokeWidth"
                   opacity="1"
                   @click.stop="selectDivision(division.id, $event)"
                   @mousedown.stop
                 />
                 <text
-                  :x="division.x + 12"
-                  :y="division.y + 4"
-                  font-size="10"
+                  :x="division.x + divisionLabelOffsetX"
+                  :y="division.y + divisionLabelOffsetY"
+                  :font-size="divisionLabelFontSize"
                   font-weight="700"
                   fill="#fde68a"
                 >
@@ -3342,19 +3356,19 @@ onBeforeUnmount(() => {
                 <circle
                   :cx="getTroopRenderPosition(troop).x"
                   :cy="getTroopRenderPosition(troop).y"
-                  r="6.5"
+                  :r="battalionUnitRadius"
                   :fill="getTroopFillColor(troop)"
                   :stroke="selectedTroopIds.includes(troop.id) || selectedTroopId === troop.id ? MAP_THEME.selectionStroke : '#0f172a'"
-                  stroke-width="2.5"
+                  :stroke-width="battalionUnitStrokeWidth"
                   :stroke-dasharray="troop.pending_division_id ? '4 3' : undefined"
                   @click.stop="selectTroop(troop.id, $event)"
                   @mousedown.stop
                 />
 
                 <text
-                  :x="getTroopRenderPosition(troop).x + 14"
-                  :y="getTroopRenderPosition(troop).y - 12"
-                  font-size="10"
+                  :x="getTroopRenderPosition(troop).x + battalionLabelOffsetX"
+                  :y="getTroopRenderPosition(troop).y + battalionLabelOffsetY"
+                  :font-size="battalionLabelFontSize"
                   fill="#f0cf9d"
                 >
                   {{ troop.label }}

@@ -42,6 +42,7 @@ const newProvinceCountryId = ref<number | null>(null)
 const selectedProvinceId = ref<number | null>(null)
 const hoverPosition = ref<VisualVertex | null>(null)
 const snapTarget = ref<VisualVertex | null>(null)
+const isProvinceEditMode = ref(false)
 
 const closeTolerancePx = ref(18)
 const snapTolerancePx = ref(14)
@@ -263,6 +264,52 @@ function findCenterIdInsideProvince(vertices: VisualVertex[]) {
   return insideCenters[0]?.id ?? null
 }
 
+function findCenterIdsInsideProvince(vertices: VisualVertex[]) {
+  const centers = centerReferenceMap.value?.points ?? []
+  if (!centers.length || vertices.length < 3) {
+    return [] as number[]
+  }
+
+  return centers
+    .filter((centerPoint) => isPointInsidePolygon({ x: centerPoint.x, y: centerPoint.y }, vertices))
+    .map((centerPoint) => centerPoint.id)
+}
+
+function refreshProvinceCentersFromReference() {
+  if (!centerReferenceMap.value) {
+    feedbackMessage.value = 'Carregue uma referência de centros antes de atualizar os center_id.'
+    return
+  }
+
+  if (!provinces.value.length) {
+    feedbackMessage.value = 'Não há províncias para atualizar.'
+    return
+  }
+
+  let updatedCount = 0
+  let noCenterCount = 0
+  let multipleCentersCount = 0
+
+  for (const province of provinces.value) {
+    const insideCenterIds = findCenterIdsInsideProvince(province.vertices)
+
+    if (insideCenterIds.length === 1) {
+      province.centerId = insideCenterIds[0]
+      updatedCount += 1
+      continue
+    }
+
+    if (insideCenterIds.length === 0) {
+      noCenterCount += 1
+      continue
+    }
+
+    multipleCentersCount += 1
+  }
+
+  feedbackMessage.value = `Atualização concluída: ${updatedCount} província(s) com center_id definido; ${noCenterCount} sem center interno; ${multipleCentersCount} com múltiplos centers internos (inalteradas).`
+}
+
 function closeDraftProvince() {
   if (draftVertices.value.length < 3) {
     feedbackMessage.value = 'Uma província precisa de no mínimo 3 pontos.'
@@ -293,6 +340,19 @@ function closeDraftProvince() {
 function handleBoardClick(event: MouseEvent) {
   const position = getMapCoordinatesFromEvent(event)
   if (!position) {
+    return
+  }
+
+  if (isProvinceEditMode.value) {
+    const clickedProvince = findProvinceAtPoint(position)
+
+    if (!clickedProvince) {
+      feedbackMessage.value = 'Clique em uma província válida para editá-la.'
+      return
+    }
+
+    selectedProvinceId.value = clickedProvince.id
+    feedbackMessage.value = `Província "${clickedProvince.name}" selecionada para edição.`
     return
   }
 
@@ -343,8 +403,19 @@ function removeProvince(provinceId: number) {
   }
 }
 
-function selectProvince(provinceId: number) {
-  selectedProvinceId.value = provinceId
+function findProvinceAtPoint(position: VisualVertex) {
+  return provinces.value.find((province) => isPointInsidePolygon(position, province.vertices)) ?? null
+}
+
+function toggleProvinceEditMode() {
+  isProvinceEditMode.value = !isProvinceEditMode.value
+
+  if (isProvinceEditMode.value) {
+    feedbackMessage.value = 'Modo de edição por clique ativado. Clique em uma província no mapa para editá-la.'
+    return
+  }
+
+  feedbackMessage.value = 'Modo de edição por clique desativado.'
 }
 
 function nudgeSelectedProvinceByInput() {
@@ -693,6 +764,14 @@ onMounted(() => {
           </select>
         </label>
 
+        <button
+          type="button"
+          @click="refreshProvinceCentersFromReference"
+          :disabled="!centerReferenceMap || provinces.length === 0"
+        >
+          Atualizar centros
+        </button>
+
         <label class="field">
           <span>Nome do JSON final (public/json/maps/visual)</span>
           <input v-model="mapFileName" type="text" placeholder="new-visual-map" />
@@ -753,25 +832,15 @@ onMounted(() => {
 
         <p v-if="feedbackMessage" class="feedback">{{ feedbackMessage }}</p>
 
-        <div class="province-list-card">
-          <h3>Províncias</h3>
+        <div class="province-edit-card">
+          <div class="actions-row">
+            <button type="button" class="primary" @click="toggleProvinceEditMode">
+              {{ isProvinceEditMode ? 'Cancelar clique para editar' : 'Editar província por clique' }}
+            </button>
+          </div>
 
-          <ul v-if="provinces.length" class="province-list">
-            <li
-              v-for="province in provinces"
-              :key="province.id"
-              :class="['province-item', selectedProvinceId === province.id ? 'active' : '']"
-              @click="selectProvince(province.id)"
-            >
-              <div class="province-title-row">
-                <strong>{{ province.name }}</strong>
-                <button type="button" class="danger" @click.stop="removeProvince(province.id)">Remover</button>
-              </div>
-              <small>ID {{ province.id }} | País {{ province.countryId ?? 'null' }} | Centro {{ province.centerId ?? 'null' }} | {{ province.vertices.length }} pontos</small>
-            </li>
-          </ul>
-
-          <p v-else class="hint">Nenhuma província criada ainda.</p>
+          <p v-if="isProvinceEditMode" class="hint">Clique em uma província no mapa para selecioná-la e editar individualmente.</p>
+          <p v-else-if="!selectedProvince" class="hint">Nenhuma província selecionada. Use o botão acima para escolher uma no mapa.</p>
 
           <p v-if="selectedProvince" class="selected-info">
             Selecionada: {{ selectedProvince.name }} ({{ selectedProvince.vertices.length }} pontos)

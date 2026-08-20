@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-08-20T00:29:17.162Z",
+  "width": 2000,
+  "height": 1200,
+  "overlayImage": null,
+  "centers": "new-map-centers.json",
+  "type": "visual-province-map",
+  "provinces": [
+    {
+      "id": 1,
+      "name": "Província 1",
+      "country_id": null,
+      "center_id": 1,
+      "vertices": [
+        {
+          "x": 121,
+          "y": 121
+        },
+        {
+          "x": 161,
+          "y": 123
+        },
+        {
+          "x": 163,
+          "y": 157
+        },
+        {
+          "x": 124,
+          "y": 160
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Província 2",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 161,
+          "y": 123
+        },
+        {
+          "x": 200,
+          "y": 123
+        },
+        {
+          "x": 204,
+          "y": 163
+        },
+        {
+          "x": 163,
+          "y": 157
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Província 3",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 200,
+          "y": 123
+        },
+        {
+          "x": 241,
+          "y": 124
+        },
+        {
+          "x": 245,
+          "y": 161
+        },
+        {
+          "x": 204,
+          "y": 163
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Província 4",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 241,
+          "y": 124
+        },
+        {
+          "x": 278,
+          "y": 124
+        },
+        {
+          "x": 286,
+          "y": 160
+        },
+        {
+          "x": 245,
+          "y": 161
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Província 5",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 278,
+          "y": 124
+        },
+        {
+          "x": 324,
+          "y": 124
+        },
+        {
+          "x": 324,
+          "y": 160
+        },
+        {
+          "x": 286,
+          "y": 160
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Província 6",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 324,
+          "y": 124
+        },
+        {
+          "x": 363,
+          "y": 123
+        },
+        {
+          "x": 366,
+          "y": 158
+        },
+        {
+          "x": 324,
+          "y": 160
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Província 7",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 366,
+          "y": 158
+        },
+        {
+          "x": 366,
+          "y": 199
+        },
+        {
+          "x": 325,
+          "y": 201
+        },
+        {
+          "x": 324,
+          "y": 160
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Província 8",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 325,
+          "y": 201
+        },
+        {
+          "x": 283,
+          "y": 202
+        },
+        {
+          "x": 286,
+          "y": 160
+        },
+        {
+          "x": 324,
+          "y": 160
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Província 9",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 283,
+          "y": 202
+        },
+        {
+          "x": 243,
+          "y": 201
+        },
+        {
+          "x": 245,
+          "y": 161
+        },
+        {
+          "x": 286,
+          "y": 160
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Província 10",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 243,
+          "y": 201
+        },
+        {
+          "x": 207,
+          "y": 202
+        },
+        {
+          "x": 204,
+          "y": 163
+        },
+        {
+          "x": 245,
+          "y": 161
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Província 11",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 207,
+          "y": 202
+        },
+        {
+          "x": 166,
+          "y": 201
+        },
+        {
+          "x": 163,
+          "y": 157
+        },
+        {
+          "x": 204,
+          "y": 163
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Província 12",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 166,
+          "y": 201
+        },
+        {
+          "x": 122,
+          "y": 200
+        },
+        {
+          "x": 124,
+          "y": 160
+        },
+        {
+          "x": 163,
+          "y": 157
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Província 13",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 122,
+          "y": 200
+        },
+        {
+          "x": 123,
+          "y": 241
+        },
+        {
+          "x": 158,
+          "y": 244
+        },
+        {
+          "x": 166,
+          "y": 201
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Província 14",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 166,
+          "y": 201
+        },
+        {
+          "x": 207,
+          "y": 202
+        },
+        {
+          "x": 204,
+          "y": 234
+        },
+        {
+          "x": 158,
+          "y": 244
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Província 15",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 207,
+          "y": 202
+        },
+        {
+          "x": 243,
+          "y": 201
+        },
+        {
+          "x": 242,
+          "y": 241
+        },
+        {
+          "x": 204,
+          "y": 234
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Província 16",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 243,
+          "y": 201
+        },
+        {
+          "x": 283,
+          "y": 202
+        },
+        {
+          "x": 282,
+          "y": 239
+        },
+        {
+          "x": 242,
+          "y": 241
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Província 17",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 283,
+          "y": 202
+        },
+        {
+          "x": 325,
+          "y": 201
+        },
+        {
+          "x": 327,
+          "y": 238
+        },
+        {
+          "x": 282,
+          "y": 239
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Província 18",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 325,
+          "y": 201
+        },
+        {
+          "x": 366,
+          "y": 199
+        },
+        {
+          "x": 365,
+          "y": 244
+        },
+        {
+          "x": 327,
+          "y": 238
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Província 19",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 363,
+          "y": 123
+        },
+        {
+          "x": 400,
+          "y": 124
+        },
+        {
+          "x": 400,
+          "y": 163
+        },
+        {
+          "x": 366,
+          "y": 158
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Província 20",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 400,
+          "y": 163
+        },
+        {
+          "x": 404,
+          "y": 202
+        },
+        {
+          "x": 366,
+          "y": 199
+        },
+        {
+          "x": 366,
+          "y": 158
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Província 21",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 404,
+          "y": 202
+        },
+        {
+          "x": 404,
+          "y": 245
+        },
+        {
+          "x": 365,
+          "y": 244
+        },
+        {
+          "x": 366,
+          "y": 199
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Província 22",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 400,
+          "y": 124
+        },
+        {
+          "x": 436,
+          "y": 120
+        },
+        {
+          "x": 439,
+          "y": 157
+        },
+        {
+          "x": 400,
+          "y": 163
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Província 23",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 439,
+          "y": 157
+        },
+        {
+          "x": 444,
+          "y": 202
+        },
+        {
+          "x": 404,
+          "y": 202
+        },
+        {
+          "x": 400,
+          "y": 163
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Província 24",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 444,
+          "y": 202
+        },
+        {
+          "x": 441,
+          "y": 239
+        },
+        {
+          "x": 404,
+          "y": 245
+        },
+        {
+          "x": 404,
+          "y": 202
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Província 25",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 327,
+          "y": 238
+        },
+        {
+          "x": 326,
+          "y": 280
+        },
+        {
+          "x": 360,
+          "y": 282
+        },
+        {
+          "x": 365,
+          "y": 244
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Província 26",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 360,
+          "y": 282
+        },
+        {
+          "x": 402,
+          "y": 281
+        },
+        {
+          "x": 404,
+          "y": 245
+        },
+        {
+          "x": 365,
+          "y": 244
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Província 27",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 404,
+          "y": 245
+        },
+        {
+          "x": 441,
+          "y": 239
+        },
+        {
+          "x": 440,
+          "y": 282
+        },
+        {
+          "x": 402,
+          "y": 281
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Província 28",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 326,
+          "y": 280
+        },
+        {
+          "x": 324,
+          "y": 324
+        },
+        {
+          "x": 363,
+          "y": 323
+        },
+        {
+          "x": 360,
+          "y": 282
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Província 29",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 360,
+          "y": 282
+        },
+        {
+          "x": 402,
+          "y": 281
+        },
+        {
+          "x": 401,
+          "y": 320
+        },
+        {
+          "x": 363,
+          "y": 323
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Província 30",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 402,
+          "y": 281
+        },
+        {
+          "x": 440,
+          "y": 282
+        },
+        {
+          "x": 443,
+          "y": 320
+        },
+        {
+          "x": 401,
+          "y": 320
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Província 31",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 324,
+          "y": 324
+        },
+        {
+          "x": 322,
+          "y": 357
+        },
+        {
+          "x": 360,
+          "y": 357
+        },
+        {
+          "x": 363,
+          "y": 323
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Província 32",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 363,
+          "y": 323
+        },
+        {
+          "x": 401,
+          "y": 320
+        },
+        {
+          "x": 401,
+          "y": 360
+        },
+        {
+          "x": 360,
+          "y": 357
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Província 33",
+      "country_id": null,
+      "center_id": null,
+      "vertices": [
+        {
+          "x": 401,
+          "y": 320
+        },
+        {
+          "x": 443,
+          "y": 320
+        },
+        {
+          "x": 444,
+          "y": 361
+        },
+        {
+          "x": 401,
+          "y": 360
+        }
+      ]
+    }
+  ]
+}
